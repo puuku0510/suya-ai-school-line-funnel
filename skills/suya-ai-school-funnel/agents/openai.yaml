@@ -1,0 +1,4 @@
+interface:
+  display_name: "すやさんAIスクールファネル"
+  short_description: "媒体別のLINEファネルをgrillしながら設計するスキル"
+  default_prompt: "Use $suya-ai-school-funnel to grill me one question at a time and build a complete AI school funnel for YouTube, X, or Instagram."
