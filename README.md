@@ -7,7 +7,8 @@ YouTubeからLINE登録した見込み客に、動画固有特典を配布し、
 - `docs/youtube-line-funnel-spec.md` — 全体フロー、タグ、優先順位、停止・遷移ルール
 - `docs/youtube-line-message-copy.md` — LINE・メールの全文台本と推奨形式
 - `docs/utage-implementation-checklist.md` — UTAGEへの実装順と公開前テスト
-- `skills/suya-ai-school-funnel/` — YouTube・X・Instagramに対応した再利用Skill
+
+YouTube・X・Instagramに対応した再利用Skillは、[専用リポジトリ](https://github.com/puuku0510/suya-ai-school-funnel-skill)に分離しています。
 
 ## 今回の設計範囲
 
