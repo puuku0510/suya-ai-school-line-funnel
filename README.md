@@ -7,7 +7,9 @@ YouTubeからLINE登録した見込み客に、動画固有特典を配布し、
 - `docs/youtube-line-funnel-spec.md` — 全体フロー、タグ、優先順位、停止・遷移ルール
 - `docs/youtube-line-message-copy.md` — LINE・メールの全文台本と推奨形式
 - `docs/utage-implementation-checklist.md` — UTAGEへの実装順と公開前テスト
-- `skills/suya-ai-school-funnel/` — YouTube・X・Instagramに対応した再利用Skill
+- `exports/youtube-line-funnel-messages.csv` — Google Sheets貼り付け・インポート用の全149本文
+
+YouTube・X・Instagramに対応した再利用Skillは、[専用リポジトリ](https://github.com/puuku0510/suya-ai-school-funnel-skill)に分離しています。
 
 ## 今回の設計範囲
 
@@ -26,3 +28,11 @@ YouTubeからLINE登録した見込み客に、動画固有特典を配布し、
 2. UTAGE実装チェックリストの順にタグとシナリオを作る
 3. 全文台本を登録し、変数を差し替える
 4. テスト友だちで全分岐を通す
+
+## CSVをGoogle Sheetsへ入れる方法
+
+1. GitHubからCSVのRawファイルを保存する
+2. Google Sheetsの `ファイル` → `インポート` → `アップロード` を選ぶ
+3. 区切り文字をカンマ、文字コードをUTF-8として読み込む
+
+本文内の改行はCSVセル内に保持されています。
