@@ -36,7 +36,7 @@ YouTube用のZoom活用サポート会は作りません。
 |---|---|---|
 | 登録直後 | `yJmSFG2efpDL` / 3通 / 稼働中 | 特典①〜④とセミナー案内あり |
 | セミナー未申込 | `LGY0cMN82rqq` / 18通 / 稼働中 | 停止条件を補強済み |
-| 申込ページクリック・未申込 | `hSBYOxL1fC7r` / 10通 / 下書き | 入口アクション未接続 |
+| 申込ページクリック・未申込 | `hSBYOxL1fC7r` / 10通 / 下書き | 誤アクション解除済み・正しい入口アクション未接続 |
 | 申込者LINE | `ygT4wXC7zJah` / 9通 / 稼働中 | 読者2人 |
 | 旧申込者リマインダ | `jkgFPq78MtRK` / 7通 / 稼働中 | 新旧重複候補。読者1人 |
 | 参加者特典 | `HHbjLEfv9iIo` / 1通 / 下書き | 参加判定アクション未接続 |
@@ -77,13 +77,22 @@ YouTube用のZoom活用サポート会は作りません。
 
 ### 5.1 申込ページクリック
 
-既存アクション `kpqaWZkjUyD1` は、クリック時点で `seminar_main_registered` を付けています。これは誤りです。
+既存アクション `kpqaWZkjUyD1` は、クリック時点で `seminar_main_registered` を付けていました。誤登録を止めるため、このアクションは次の29通のURLから解除済みです。
 
-クリック時は次だけを実行します。
+- `登録直後`: 1通
+- `セミナー未申込者`: 18通
+- `申込ページクリック・未申込`: 10通
 
-1. `seminar_main_page_clicked` を付与
-2. `セミナー申込ページクリック・未申込`（`hSBYOxL1fC7r`）へ登録
-3. `seminar_main_registered` は付与しない
+29通をUTAGEから再取得し、`kpqaWZkjUyD1` が残っていないことを確認済みです。URLそのものは変更していません。
+
+管理画面で `SEMページ閲覧_Instagram` アクションを新設します。`登録直後` 1通と `セミナー未申込者` 18通へだけ接続し、クリック時は次を実行します。
+
+1. `seminar_main_page_clicked`（`H68EUqKlG0lg`）を付与
+2. `セミナー未申込者`（`LGY0cMN82rqq`）から解除
+3. `セミナー申込ページクリック・未申込`（`hSBYOxL1fC7r`）へ登録
+4. `seminar_main_registered` は付与しない
+
+`申込ページクリック・未申込` 内の10通は、再クリックでシナリオを先頭へ戻さないよう、アクションなしのままにします。
 
 ### 5.2 イベント申込完了
 
@@ -116,7 +125,22 @@ YouTube用のZoom活用サポート会は作りません。
 
 カウントダウンは `subscribe_absolute`・3日で、読者の登録日時を基準にします。読者文脈を取得できない場合は `unknown_target_action: 404` の設定どおり404へ送られます。したがって、認証情報のないHTTP直接取得が404であることだけを「ページ未公開」の根拠にしません。
 
-実機ページの動画要素には79分地点の `video_actions` がありますが、`message_action_id` が `null` です。本番前にInstagram専用のVSL完了アクションを作成し、79分地点または完了CTAへ設定します。
+実機ページの動画要素には79分地点の `video_actions` がありますが、`message_action_id` が `null` です。本番前にInstagram専用の `VSL完了_Instagram` アクションを作成し、79分地点または完了CTAへ設定します。
+
+また、VSL未視聴5通のボタンは `vsl_page_clicked` だけを直接付与しており、`vsl_partial` の付与と途中離脱シナリオへの登録がありません。`VSL初回クリック_Instagram` アクションを作成し、未視聴5通のVSL URLへ接続します。
+
+### `VSL初回クリック_Instagram`
+
+1. `vsl_page_clicked`（`wxPX0katO0Yb`）を付与
+2. `vsl_partial`（`UKwO9DM5tVlT`）を付与
+3. `VSL未視聴`（`KXlnmXtfBXYc`）から解除
+4. `VSL途中離脱`（`H58UZOKeS4UW`）へ登録
+
+### `VSL完了_Instagram`
+
+1. `vsl_completed`（`xUPl6CZ91cRl`）を付与
+2. `VSL未視聴`（`KXlnmXtfBXYc`）と `VSL途中離脱`（`H58UZOKeS4UW`）から解除
+3. `VSL90％以上・個別面談`（`8kRDb7qWDEYr`）へ登録
 
 1. UTAGEのLINEテスト読者へ実際の計測リンクを送る
 2. 計測リンク経由で `https://utage-system.com/p/noc7btpfUP1q` が表示される
@@ -148,10 +172,10 @@ YouTube用のZoom活用サポート会は作りません。
 
 ## 9. 未確定・管理画面作業待ち
 
-- クリック用アクションの作成・既存URLアクション差し替え
+- `SEMページ閲覧_Instagram` の作成と、登録直後1通・未申込18通への接続（誤アクションは解除済み）
 - イベント申込完了時アクション
 - 開催後の参加／欠席振り分け
-- Instagram用VSLの79分完了アクション作成・接続とLINE計測リンク経由テスト
+- `VSL初回クリック_Instagram` と `VSL完了_Instagram` の作成・接続、LINE計測リンク経由テスト
 - 旧リマインダ `jkgFPq78MtRK` の停止可否
 - 実績、参加人数、残席、期限表現の事実確認
 

@@ -1,4 +1,4 @@
-﻿"No.","シナリオ順","シナリオ名","配信区分","区分内順","媒体","管理名称","配信基準","配信タイミング","ステータス","送信元","件名","本文（全文・絵文字／改行保持）","URL・ボタン／アクション","配信条件","UTAGE編集URL","メッセージID"
+"No.","シナリオ順","シナリオ名","配信区分","区分内順","媒体","管理名称","配信基準","配信タイミング","ステータス","送信元","件名","本文（全文・絵文字／改行保持）","URL・ボタン／アクション","配信条件","UTAGE編集URL","メッセージID"
 "1","20","登録直後","ステップ配信","3","LINE","","none","登録直後","稼働中","","","【LINEメッセージ 1／text】
 ご登録ありがとうございます！😊
 「AIでひとり起業」運営事務局です。
@@ -105,7 +105,7 @@ AI初心者の方にも分かるように、
 }","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","","https://utage-system.com/account/66ET2JNrdHub/scenario/yJmSFG2efpDL/step/line/z1YioBQDDbRK/edit","z1YioBQDDbRK"
@@ -174,7 +174,7 @@ https://line.me/ti/g2/qtQ6WBe1vMODUq86aG-DL8AlkyGa_5J56xW0Xg?utm_source=invitati
 https://utage-system.com/event/AlKrSxXMyzNt/register","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
@@ -207,7 +207,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
 https://utage-system.com/event/AlKrSxXMyzNt/register","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
@@ -240,7 +240,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
 https://utage-system.com/event/AlKrSxXMyzNt/register","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
@@ -278,7 +278,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
 https://utage-system.com/event/AlKrSxXMyzNt/register","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
@@ -312,7 +312,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
 https://seminar-voices.netlify.app/","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
@@ -345,7 +345,7 @@ LINEとメールでお送りいたします。
 https://utage-system.com/event/AlKrSxXMyzNt/register","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
@@ -380,7 +380,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
 https://utage-system.com/event/AlKrSxXMyzNt/register","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
@@ -416,7 +416,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
 https://utage-system.com/event/AlKrSxXMyzNt/register","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
@@ -450,7 +450,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
 https://utage-system.com/event/AlKrSxXMyzNt/register","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
@@ -482,7 +482,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
 https://utage-system.com/event/AlKrSxXMyzNt/register","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
@@ -518,7 +518,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
 https://utage-system.com/event/AlKrSxXMyzNt/register","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
@@ -558,7 +558,7 @@ AIに限ったことではないですが、道具の使い方が分かっても
 https://utage-system.com/event/AlKrSxXMyzNt/register","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
@@ -592,7 +592,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
 https://utage-system.com/event/AlKrSxXMyzNt/register","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
@@ -622,7 +622,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
 https://utage-system.com/event/AlKrSxXMyzNt/register","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
@@ -651,7 +651,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
 https://utage-system.com/event/AlKrSxXMyzNt/register","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
@@ -686,7 +686,7 @@ AIをビジネスに発展させるのに必要なのは""知識""ではなく""
 https://utage-system.com/event/AlKrSxXMyzNt/register","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
@@ -719,7 +719,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
 https://utage-system.com/event/AlKrSxXMyzNt/register","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
@@ -750,7 +750,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
 https://utage-system.com/event/AlKrSxXMyzNt/register","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
@@ -782,7 +782,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
 https://utage-system.com/event/AlKrSxXMyzNt/register","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
@@ -819,7 +819,7 @@ AIを学ぶだけではビジネスは出来ません💦
 https://utage-system.com/event/AlKrSxXMyzNt/register","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
@@ -849,7 +849,7 @@ LINEとメールの両方にお送りします📧✨
 https://utage-system.com/event/AlKrSxXMyzNt/register","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
@@ -883,7 +883,7 @@ AIを使ったことがない初心者の方でも、
 https://utage-system.com/event/AlKrSxXMyzNt/register","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
@@ -915,7 +915,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
 https://utage-system.com/event/AlKrSxXMyzNt/register","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
@@ -951,7 +951,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
 https://utage-system.com/event/AlKrSxXMyzNt/register","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
@@ -986,7 +986,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
 https://utage-system.com/event/AlKrSxXMyzNt/register","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
@@ -1016,7 +1016,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
 https://utage-system.com/event/AlKrSxXMyzNt/register","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
@@ -1048,7 +1048,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
 https://utage-system.com/event/AlKrSxXMyzNt/register","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
@@ -1079,7 +1079,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
 https://utage-system.com/event/AlKrSxXMyzNt/register","[
   {
     ""url"": ""https://utage-system.com/event/AlKrSxXMyzNt/register"",
-    ""action_id"": ""kpqaWZkjUyD1"",
+    ""action_id"": null,
     ""expiration_type"": ""none""
   }
 ]","{
