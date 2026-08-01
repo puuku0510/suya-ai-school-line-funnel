@@ -1,38 +1,33 @@
 # すやさん「AIひとり起業スクール」LINEファネル
 
-YouTubeからLINE登録した見込み客に、動画固有特典を配布し、個別面談・ライブセミナー・期間限定VSL・オープンチャット勉強会を通じて成約へつなぐUTAGE実装用パッケージです。
+UTAGEで運用する媒体別LINEファネルの正本リポジトリです。媒体ごとに入口と分岐が異なるため、資料・アカウント・シナリオ・URLを混在させないでください。
 
-## 成果物
+## 媒体別の正本
 
-- `docs/youtube-line-funnel-spec.md` — 全体フロー、タグ、優先順位、停止・遷移ルール
-- `docs/youtube-line-message-copy.md` — LINE・メールの全文台本と推奨形式
-- `docs/utage-implementation-checklist.md` — UTAGEへの実装順と公開前テスト
-- `exports/youtube-line-funnel-messages.csv` — Google Sheets貼り付け・インポート用の全149本文
+| 媒体 | 正しい入口 | 正本 |
+|---|---|---|
+| YouTube | 動画別特典 → 活用サポート → ライブセミナー → VSL | [`docs/youtube-line-funnel-spec.md`](docs/youtube-line-funnel-spec.md) |
+| Instagram 10大特典 | 特典①〜④ → 特典⑤ライブセミナー → 欠席・見逃しVSL → ロードマップ作成会 | [`instagram-10-benefits-live-seminar-vsl/`](instagram-10-benefits-live-seminar-vsl/) |
+| Meta広告 | 広告 → LINE → VSL → ロードマップ作成会 | [`kaneko-meta-utage-handoff/`](kaneko-meta-utage-handoff/) |
 
-YouTube・X・Instagramに対応した再利用Skillは、[専用リポジトリ](https://github.com/puuku0510/suya-ai-school-funnel-skill)に分離しています。
+`instagram-ig-harness-consultation-line-handoff/` は、Instagramから面談専用LINEへ直接誘導する旧案件です。今回の「10大特典」ファネルとは別物なので、実装時に参照しません。
 
-## 今回の設計範囲
+## 2026-08-02 実機監査
 
-- 現行ファネルの入口はYouTube
-- 最終CVは `AIひとり起業スクール` の成約
-- 個別面談は30分Zoom。入口側は `[特典名] 活用サポート会`、セミナー後は `AIひとり起業ロードマップ作成会`
-- 本命ライブセミナーは `AIでひとり起業攻略法`
-- オープンチャットは `AIマニアの放課後`
-- 成約時は集客ファネルを完全停止
+- Instagram配信アカウント: `66ET2JNrdHub`
+- Meta広告配信アカウント: `3TS1vbmqlbNx`
+- Instagramは、申込ページクリックと申込完了を同じ状態としていたため分離が必要です。
+- InstagramのVSL配信本文は存在しますが、公開ページとイベント後の自動遷移が未完成です。
+- Meta広告はVSL起点の6シナリオが稼働中です。上位状態の除外条件は監査時に補強しました。
+- 本番予約・本文・配信時刻を変更するときは、各案件READMEの未完了項目とテストケースを先に確認してください。
 
-価格・募集人数・実績・残席・特典の具体値は、事実確認前に本文へ固定していません。角括弧の変数をキャンペーンごとに差し替えて使います。
+## Claude Code／Codexへの開始プロンプト
 
-## 推奨の読み順
+```text
+このGitHubリポジトリを正本として扱ってください。
+最初に対象媒体をYouTube / Instagram 10大特典 / Meta広告から1つだけ選び、その媒体のREADME、実装指示書、CSVをすべて読んでください。
 
-1. ファネル仕様書で状態と停止条件を確認する
-2. UTAGE実装チェックリストの順にタグとシナリオを作る
-3. 全文台本を登録し、変数を差し替える
-4. テスト友だちで全分岐を通す
+UTAGEの既存本番設定を取得し、新規作成・更新・変更しないものを分けて提示してください。別媒体のアカウント、シナリオ、URL、ラベルを流用しないでください。
 
-## CSVをGoogle Sheetsへ入れる方法
-
-1. GitHubからCSVのRawファイルを保存する
-2. Google Sheetsの `ファイル` → `インポート` → `アップロード` を選ぶ
-3. 区切り文字をカンマ、文字コードをUTF-8として読み込む
-
-本文内の改行はCSVセル内に保持されています。
+承認済み本文を独自に書き換えず、実値を推測しないでください。本番変更前に差分、影響範囲、テスト方法、未確定値を提示し、変更後はUTAGEから再取得して照合してください。
+```
