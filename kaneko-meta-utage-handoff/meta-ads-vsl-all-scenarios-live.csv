@@ -62,7 +62,7 @@ SUYA（スヤ）
 無料個別相談に申し込む","","","https://utage-system.com/page/ud2vxiIdzVOc","ud2vxiIdzVOc"
 "1","4","META_VSL_10_未視聴","ステップ配信","2","アクション","META_VSL_10_未視聴_No.00_入口ラベル付与","immediately","登録直後","稼働中","","","【アクション実行】
 アクションID: mm34lEzhBt6E","アクションID: mm34lEzhBt6E","","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/action/Yys8Iic79z4A/edit","Yys8Iic79z4A"
-"2","4","META_VSL_10_未視聴","ステップ配信","24","LINE","META_VSL_10_未視聴_No.01","immediately","登録直後","稼働中","","","【LINEメッセージ 1／text】
+"2","4","META_VSL_10_未視聴","ステップ配信","24","LINE","META_VSL_10_未視聴_No.01","none","0日後 0:01","稼働中","","","【LINEメッセージ 1／text】
 %line_name%さん、お待たせしました🎬
 
 AI×ひとり起業のセミナー動画が公開されました！
@@ -93,7 +93,26 @@ AI×ひとり起業のセミナー動画が公開されました！
     ""action_id"": ""3Unj2dV0Qc39"",
     ""expiration_type"": ""none""
   }
-]","","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/line/haK9EW1F6dGj/edit","haK9EW1F6dGj"
+]","[
+  {
+    ""rules"": [
+      {
+        ""key"": ""label"",
+        ""condition"": ""not-including"",
+        ""value"": [
+          ""2JXooWR9V9cd"",
+          ""q3mX5zbyI4kI"",
+          ""AjCisycMbEia"",
+          ""r2vnCTyseMYh"",
+          ""ztlcWnxeo2Gd"",
+          ""44XxGPtTHwBN"",
+          ""VHfYW7D9Sqaa"",
+          ""l7UEdnmvTDIV""
+        ]
+      }
+    ]
+  }
+]","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/line/haK9EW1F6dGj/edit","haK9EW1F6dGj"
 "3","4","META_VSL_10_未視聴","ステップ配信","25","LINE","META_VSL_10_未視聴_No.02","none","0日後 0:20（時刻指定）","稼働中","","","【LINEメッセージ 1／text】
 こんな収入、想像できますか？👀
 
