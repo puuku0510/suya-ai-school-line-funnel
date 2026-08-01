@@ -40,15 +40,15 @@ YouTube用のZoom活用サポート会は作りません。
 | 申込者LINE | `ygT4wXC7zJah` / 9通 / 稼働中 | 読者2人 |
 | 旧申込者リマインダ | `jkgFPq78MtRK` / 7通 / 稼働中 | 新旧重複候補。読者1人 |
 | 参加者特典 | `HHbjLEfv9iIo` / 1通 / 下書き | 参加判定アクション未接続 |
-| VSL未視聴 | `KXlnmXtfBXYc` / 5通 / 下書き | 公開URLが404 |
-| VSL途中離脱 | `H58UZOKeS4UW` / 5通 / 下書き | 公開URLが404 |
+| VSL未視聴 | `KXlnmXtfBXYc` / 5通 / 下書き | 登録日起算・読者別期限。LINE計測リンク経由のテスト待ち |
+| VSL途中離脱 | `H58UZOKeS4UW` / 5通 / 下書き | 動画79分地点の完了アクションが未設定 |
 | VSL90%以上 | `8kRDb7qWDEYr` / 6通 / 下書き | 面談URLは有効 |
 | 個別面談リマインダ | `20lJAcFLCNit` / 7通 / 稼働中 | 読者0人 |
 
 ### 確認済みURL
 
 - セミナー申込: `https://utage-system.com/event/AlKrSxXMyzNt/register`（200）
-- Instagram用VSL: `https://utage-system.com/p/noc7btpfUP1q`（2026-08-02時点404）
+- Instagram用VSL: `https://utage-system.com/p/noc7btpfUP1q`（読者文脈なしの直アクセスは設定どおり404）
 - ロードマップ作成会: `https://utage-system.com/event/bi5FCdSPf6ju/register`（200）
 
 ## 4. 監査時に補修したもの
@@ -112,15 +112,18 @@ YouTube用のZoom活用サポート会は作りません。
 
 ## 6. VSLページ
 
-ファネル `w8Gyfweu0qLz`、ステップ `noc7btpfUP1q`、ページ `ju41r0jM7xBd` は存在しますが、公開URLが404です。
+ファネル `w8Gyfweu0qLz`、ステップ `noc7btpfUP1q`、ページ `ju41r0jM7xBd` は存在します。
 
-本番前に管理画面でページを公開し、次をテストします。
+カウントダウンは `subscribe_absolute`・3日で、読者の登録日時を基準にします。読者文脈を取得できない場合は `unknown_target_action: 404` の設定どおり404へ送られます。したがって、認証情報のないHTTP直接取得が404であることだけを「ページ未公開」の根拠にしません。
 
-1. `https://utage-system.com/p/noc7btpfUP1q` が200で表示される
-2. ページ到達で `vsl_page_clicked` と `vsl_partial` を付与
-3. 90%以上または完了CTAで `vsl_completed` を付与
-4. `vsl_completed` 付与時に未視聴・途中離脱を停止し、`VSL90％以上・個別面談` へ登録
-5. Meta広告用の `W8wW6ShW0iHd` とMeta用ラベルは使用しない
+実機ページの動画要素には79分地点の `video_actions` がありますが、`message_action_id` が `null` です。本番前にInstagram専用のVSL完了アクションを作成し、79分地点または完了CTAへ設定します。
+
+1. UTAGEのLINEテスト読者へ実際の計測リンクを送る
+2. 計測リンク経由で `https://utage-system.com/p/noc7btpfUP1q` が表示される
+3. ページ到達で `vsl_page_clicked` と `vsl_partial` を付与
+4. 79分地点または完了CTAで `vsl_completed` を付与
+5. `vsl_completed` 付与時に未視聴・途中離脱を停止し、`VSL90％以上・個別面談` へ登録
+6. Meta広告用の `W8wW6ShW0iHd` とMeta用ラベルは使用しない
 
 ## 7. 優先順位
 
@@ -137,7 +140,7 @@ YouTube用のZoom活用サポート会は作りません。
 2. フォーム送信後だけ未申込追撃が止まる。
 3. 申込者に旧・新リマインドが二重送信されない。
 4. 参加者には特典⑥〜⑩が届き、純粋な欠席文面が届かない。
-5. 欠席・不明者はVSLへ入り、公開URLが表示される。
+5. 欠席・不明者はVSLへ入り、実際のLINE計測リンク経由でページが表示される。
 6. VSLクリックで未視聴が止まり、途中離脱へ移る。
 7. VSL完了で未視聴・途中離脱が止まり、作成会案内へ移る。
 8. 作成会予約直後に全募集が止まり、予約リマインドだけになる。
@@ -148,7 +151,7 @@ YouTube用のZoom活用サポート会は作りません。
 - クリック用アクションの作成・既存URLアクション差し替え
 - イベント申込完了時アクション
 - 開催後の参加／欠席振り分け
-- Instagram用VSLページ公開
+- Instagram用VSLの79分完了アクション作成・接続とLINE計測リンク経由テスト
 - 旧リマインダ `jkgFPq78MtRK` の停止可否
 - 実績、参加人数、残席、期限表現の事実確認
 
