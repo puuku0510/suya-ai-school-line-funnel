@@ -1142,7 +1142,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
     ]
   }
 ]","https://utage-system.com/account/66ET2JNrdHub/scenario/ygT4wXC7zJah/step/line/PSmeTzXQUps0/edit","PSmeTzXQUps0"
-"36","15","セミナー申込者LINEリマインド（新／下書き）","ステップ配信","8","LINE","REG-L02 D-7 10:00","none","0日後 10:00","稼働中","","","【LINEメッセージ 1／text】
+"36","15","セミナー申込者LINEリマインド（新／下書き）","ステップ配信","8","LINE","REG-L02 D-7 10:00","none","0日後 10:00","下書き","","","【LINEメッセージ 1／text】
 セミナー開催の【1週間前】となりました！🗓️
 
 「うっかり忘れていた！」とならないように、
@@ -1180,7 +1180,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
     ]
   }
 ]","https://utage-system.com/account/66ET2JNrdHub/scenario/ygT4wXC7zJah/step/line/2MnoZ5qIH2oe/edit","2MnoZ5qIH2oe"
-"37","15","セミナー申込者LINEリマインド（新／下書き）","ステップ配信","7","LINE","REG-L03 D-3 10:00","none","4日後 10:00","稼働中","","","【LINEメッセージ 1／text】
+"37","15","セミナー申込者LINEリマインド（新／下書き）","ステップ配信","7","LINE","REG-L03 D-3 10:00","none","4日後 10:00","下書き","","","【LINEメッセージ 1／text】
 セミナー開催まで【あと3日】です！⏰✨
 
 お早めにお申し込みいただいた方にのみ、
@@ -1209,7 +1209,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
     ]
   }
 ]","https://utage-system.com/account/66ET2JNrdHub/scenario/ygT4wXC7zJah/step/line/LVkgEcVUezLh/edit","LVkgEcVUezLh"
-"38","15","セミナー申込者LINEリマインド（新／下書き）","ステップ配信","6","LINE","REG-L03b D-2","none","5日後 10:00","稼働中","","","【LINEメッセージ 1／text】
+"38","15","セミナー申込者LINEリマインド（新／下書き）","ステップ配信","6","LINE","REG-L03b D-2","none","5日後 10:00","下書き","","","【LINEメッセージ 1／text】
 セミナー開催まで【あと2日】です！⏰✨
 
 予想以上に多くの方にご申し込みいただき嬉しい限りです😭
@@ -1230,7 +1230,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
     ]
   }
 ]","https://utage-system.com/account/66ET2JNrdHub/scenario/ygT4wXC7zJah/step/line/umX99SV2s9Oz/edit","umX99SV2s9Oz"
-"39","15","セミナー申込者LINEリマインド（新／下書き）","ステップ配信","5","LINE","REG-L04 D-1 19:00","none","6日後 19:00","稼働中","","","【LINEメッセージ 1／text】
+"39","15","セミナー申込者LINEリマインド（新／下書き）","ステップ配信","5","LINE","REG-L04 D-1 19:00","none","6日後 19:00","下書き","","","【LINEメッセージ 1／text】
 いよいよ【明日開催】となりました！🎉
 
 開催が近づくにつれて、私の方もより一層気合いが入ってきました🚀🔥
@@ -1271,7 +1271,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
     ]
   }
 ]","https://utage-system.com/account/66ET2JNrdHub/scenario/ygT4wXC7zJah/step/line/qO5GPK3xBOx8/edit","qO5GPK3xBOx8"
-"40","15","セミナー申込者LINEリマインド（新／下書き）","ステップ配信","4","LINE","REG-L05 当日09:00","none","7日後 9:00","稼働中","","","【LINEメッセージ 1／text】
+"40","15","セミナー申込者LINEリマインド（新／下書き）","ステップ配信","4","LINE","REG-L05 当日09:00","none","7日後 9:00","下書き","","","【LINEメッセージ 1／text】
 %line_name%さん、いよいよ【本日開催】です！🔔
 
 ご参加いただいたことを後悔させない内容に仕上がりました...!!
@@ -1313,7 +1313,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
     ]
   }
 ]","https://utage-system.com/account/66ET2JNrdHub/scenario/ygT4wXC7zJah/step/line/9JYJjX8f7mtD/edit","9JYJjX8f7mtD"
-"41","15","セミナー申込者LINEリマインド（新／下書き）","ステップ配信","3","LINE","REG-L06 開始3時間前","none","7日後 18:00","稼働中","","","【LINEメッセージ 1／text】
+"41","15","セミナー申込者LINEリマインド（新／下書き）","ステップ配信","3","LINE","REG-L06 開始3時間前","none","7日後 18:00","下書き","","","【LINEメッセージ 1／text】
 セミナー開始まで【あと3時間】となりました！⏰
 
 直前に慌てないように、参加用URLが問題なく開けるか、今のうちに一度テストクリックしておくと安心です😊
@@ -1350,7 +1350,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
     ]
   }
 ]","https://utage-system.com/account/66ET2JNrdHub/scenario/ygT4wXC7zJah/step/line/tFTkgfZLpHFO/edit","tFTkgfZLpHFO"
-"42","15","セミナー申込者LINEリマインド（新／下書き）","ステップ配信","2","LINE","REG-L07 開始30分前","none","7日後 20:30","稼働中","","","【LINEメッセージ 1／text】
+"42","15","セミナー申込者LINEリマインド（新／下書き）","ステップ配信","2","LINE","REG-L07 開始30分前","none","7日後 20:30","下書き","","","【LINEメッセージ 1／text】
 セミナー開始まで【あと30分】です！⏳✨
 
 ぜひリラックスして、お好きな飲み物を片手にご参加ください！☕️
@@ -1388,7 +1388,7 @@ https://utage-system.com/event/AlKrSxXMyzNt/register","[
     ]
   }
 ]","https://utage-system.com/account/66ET2JNrdHub/scenario/ygT4wXC7zJah/step/line/JF2yG69XEHAS/edit","JF2yG69XEHAS"
-"43","15","セミナー申込者LINEリマインド（新／下書き）","ステップ配信","1","LINE","REG-L08 開始時刻","none","7日後 21:00","稼働中","","","【LINEメッセージ 1／text】
+"43","15","セミナー申込者LINEリマインド（新／下書き）","ステップ配信","1","LINE","REG-L08 開始時刻","none","7日後 21:00","下書き","","","【LINEメッセージ 1／text】
 セミナーが【ただいま開始】いたしました！🎉
 
 途中からでも全く問題なくご参加いただけますので、ぜひ下のボタンからお入りくださいね😊

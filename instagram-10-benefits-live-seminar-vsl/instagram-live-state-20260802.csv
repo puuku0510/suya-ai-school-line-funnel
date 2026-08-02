@@ -1,0 +1,20 @@
+区分,管理名称,UTAGE_IDまたは対象,タイミング,状態,備考
+アクション,SEMページ閲覧_Instagram,x1xPC12gSDjV,リンククリック時,稼働中,申込完了ラベルは付与しない
+アクション,SEM申込完了_Instagram,Vr7UecxwCuCl,イベント申込完了時,稼働中,新リマインドygT4wXC7zJahへ登録
+アクション,SEM参加_Instagram,bZo7BGUmu7RA,イベント参加日+1日 09:00,稼働中,参加済・遅刻のみ
+アクション,SEM欠席_VSL開始_Instagram,aFlVjsaEZLNw,イベント参加日+1日 09:05,稼働中,参加予定・無断キャンセル
+アクション,VSL初回クリック_Instagram,tQSVljUyhIey,VSLリンククリック時,稼働中,未視聴停止・途中離脱開始
+アクション,VSL完了_Instagram,FR9Hujbs6tzK,動画79分地点,稼働中,VSL90%以上シナリオへ登録
+ステップ,REG-A00 申込完了整理,ygT4wXC7zJah,登録直後,稼働中,申込完了アクション実行
+ステップ,REG-L01 申込直後,ygT4wXC7zJah,登録直後,稼働中,
+旧ステップ,REG-L02〜REG-L08,ygT4wXC7zJah,登録日起算,下書き,重複防止のため8本すべて停止
+リマインダ,REM-REG-L02 D-7 10:00,ygT4wXC7zJah,イベント7日前 10:00,稼働中,
+リマインダ,REM-REG-L03 D-3 10:00,ygT4wXC7zJah,イベント3日前 10:00,稼働中,
+リマインダ,REM-REG-L03b D-2 10:00,ygT4wXC7zJah,イベント2日前 10:00,稼働中,
+リマインダ,REM-REG-L04 D-1 19:00,ygT4wXC7zJah,イベント1日前 19:00,稼働中,
+リマインダ,REM-REG-L05 当日09:00,ygT4wXC7zJah,イベント当日 09:00,稼働中,
+リマインダ,REM-REG-L06 開始3時間前,ygT4wXC7zJah,イベント3時間前,稼働中,
+リマインダ,REM-REG-L07 開始30分前,ygT4wXC7zJah,イベント30分前,稼働中,
+リマインダ,REM-REG-L08 開始時刻,ygT4wXC7zJah,イベント当日 21:00,稼働中,
+開催後アクション,POST-A01 参加者→特典配布,ygT4wXC7zJah,イベント+1日 09:00,稼働中,参加済・遅刻
+開催後アクション,POST-A02 欠席者→VSL開始,ygT4wXC7zJah,イベント+1日 09:05,稼働中,参加予定・無断キャンセル
