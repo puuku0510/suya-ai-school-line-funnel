@@ -14,9 +14,9 @@ Spreadsheetの承認対象は次の3タブです。
 - `REVIEW_METAセミナー直行_20260805`
 - `REVIEW_Instagram10大特典_20260805`
 
-2026-08-05に、すやさんから「スプシOK」を受領済みです。2026-08-06にInstagramだけ追加方針が入り、吉本さん原案の文章・絵文字・画像を最優先する形へ更新しています。原案に足りない行だけYouTube承認済み本文で補い、新規オリジナル文は作りません。
+2026-08-05に、すやさんから「スプシOK」を受領済みです。2026-08-06に追加方針が入り、Instagramは吉本さん原案の文章・絵文字・画像を最優先し、Metaセミナー直行は吉本さんDrive原案22枚を使用する形へ更新しています。原案に足りない行だけYouTube承認済み本文で補い、新規オリジナル文は作りません。
 
-Instagram画像は [吉本さん原案画像](assets/instagram-yoshimoto/README.md) を参照してください。吉本さんのDrive原本13枚を `assets/instagram-yoshimoto/source-original/` に格納し、Spreadsheetの対応13行へ原本URLとセル内プレビューを設定済みです。
+Instagram画像は [Instagram原案画像](assets/instagram-yoshimoto/README.md)、Metaセミナー直行画像は [Metaセミナー原案画像](assets/meta-seminar-yoshimoto/README.md) を参照してください。Driveフォルダの全35枚（Instagram 13枚＋Metaセミナー直行22枚）を格納し、Spreadsheetの対応35行へ原本URLとセル内プレビューを設定済みです。
 
 ## 実装対象と非対象
 
@@ -36,7 +36,7 @@ Instagram画像は [吉本さん原案画像](assets/instagram-yoshimoto/README.
 - セミナー参加／欠席をVSL入口の条件にすること
 - 再公開希望ボタンを押していない人へのVSL配信
 - Instagramの文章・絵文字を、吉本さん原案または指定済みYouTube補完文以外へ独自リライトすること
-- 吉本さん原案画像13枚を再生成・リデザイン・画像内文言変更すること
+- 吉本さんDrive原案画像35枚を再生成・リデザイン・画像内文言変更すること
 
 ## Claude Code／Codexへ渡す開始プロンプト
 
@@ -57,7 +57,7 @@ Instagram画像は [吉本さん原案画像](assets/instagram-yoshimoto/README.
 - Meta VSL直行は初回3日VSLの終了後、再公開希望ボタンを押した人だけ同じVSLを再度3日公開する。
 - Metaセミナー直行とInstagramは、セミナー申込済み・面談未予約者へ翌日10:00に再公開希望確認を送り、クリック者だけ3日VSLへ入れる。参加／欠席は判定条件にしない。
 - Instagramは特典①〜④を登録直後、特典⑤のセミナー案内を5分後に送る。短い案内動画は挟まない。特典⑥〜⑩はセミナー中のQR配布でありLINEでは送らない。
-- Instagramの本文・絵文字は吉本さん原案を最優先する。原案で通数が足りない箇所だけ承認済みYouTube本文を使い、新規オリジナル文章を作らない。画像は assets/instagram-yoshimoto/source-original/ の13枚をREADME対応表どおり設定し、加工しない。
+- Instagramの本文・絵文字は吉本さん原案を最優先する。原案で通数が足りない箇所だけ承認済みYouTube本文を使い、新規オリジナル文章を作らない。画像は `assets/instagram-yoshimoto/source-original/` の13枚、Metaセミナー直行は `assets/meta-seminar-yoshimoto/source-original/` の22枚を各README対応表どおり設定し、加工しない。
 - 面談予約、商談中、次回面談あり、成約、営業停止の上位状態が付いたら、競合する下位シナリオを即停止する。
 - 不明な実値や事実根拠を推測で本番設定しない。
 
@@ -89,7 +89,7 @@ Instagram画像は [吉本さん原案画像](assets/instagram-yoshimoto/README.
 - セミナー型は再公開希望者だけVSLへ入る。
 - Meta VSL直行だけVSLが最大2サイクルになる。
 - Instagramの特典⑤は登録5分後、特典⑥〜⑩はLINE非配信。
-- Instagramの吉本さん原本画像13枚がSpreadsheetの対応行とUTAGEにすべて設定されている。
+- 吉本さんDrive原本画像35枚（Instagram 13枚＋Metaセミナー直行22枚）がSpreadsheetの対応行とUTAGEにすべて設定されている。
 - YouTubeの更新履歴に本案件由来の変更がない。
 - テスト結果と未解決事項が実装指示書へ追記されている。
 

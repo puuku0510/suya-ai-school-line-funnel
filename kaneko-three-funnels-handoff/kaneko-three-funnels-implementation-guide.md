@@ -10,7 +10,7 @@
 - Google Spreadsheet: https://docs.google.com/spreadsheets/d/1TGC-Jtf4z2IA1PpL8dK0oyHrh74d2uPkmfGCNQCnxus/edit
 - GitHub案件フォルダ: https://github.com/puuku0510/suya-ai-school-line-funnel/tree/agent/audit-instagram-meta-funnels/kaneko-three-funnels-handoff
 - 最終更新日: 2026-08-06
-- 承認: すやさん「スプシOK」（2026-08-05）／Instagramは吉本さん原案の文章・絵文字・Drive原本画像13枚を優先する方針へ更新（2026-08-06）
+- 承認: すやさん「スプシOK」（2026-08-05）／Instagramは吉本さん原案の文章・絵文字・Drive原本13枚、Metaセミナー直行はDrive原本22枚を優先する方針へ更新（2026-08-06）
 - 実装対象UTAGEアカウント: 実機監査で確定する。推測禁止
 - 変更禁止UTAGEアカウント: YouTube `Y86og5tIw1hZ`
 
@@ -31,9 +31,10 @@
 
 1. Spreadsheet承認済み3タブ: 本文、絵文字、画像、CTA、配信時刻
 2. Instagramの文章・絵文字・画像: 吉本さん原案Spreadsheetと `assets/instagram-yoshimoto/`
-3. 本書: 状態、分岐、優先順位、停止条件、実装順、テスト
-4. 全シナリオCSV: 承認済み255行の機械可読エクスポート
-5. UTAGE本番: アカウント、オブジェクトID、イベント、URL、置換文字の実値
+3. Metaセミナー直行の画像: `assets/meta-seminar-yoshimoto/` のDrive原本22枚
+4. 本書: 状態、分岐、優先順位、停止条件、実装順、テスト
+5. 全シナリオCSV: 承認済み255行の機械可読エクスポート
+6. UTAGE本番: アカウント、オブジェクトID、イベント、URL、置換文字の実値
 
 Instagramだけは、確定済みの状態遷移・配信時刻・停止条件を維持した上で、吉本さん原案の文章と絵文字を最優先する。原案に該当文がない行だけYouTube本文で補完し、実装者が新しい訴求文を独自作成してはいけない。
 
@@ -44,7 +45,7 @@ Instagramだけは、確定済みの状態遷移・配信時刻・停止条件�
 - CSVの承認済み本文、件名、絵文字、画像、CTA、順番、配信時刻
 - 別媒体の登録経路、ラベル、シナリオ、URLの流用
 - Instagram本文を、吉本さん原案または指定済みYouTube補完文以外のオリジナル文章へ書き換えること
-- `assets/instagram-yoshimoto/source-original/` の原本画像13枚を再生成、リデザイン、文字変更すること
+- `assets/instagram-yoshimoto/source-original/` の原本13枚、および `assets/meta-seminar-yoshimoto/source-original/` の原本22枚を再生成、リデザイン、文字変更すること
 
 YouTubeは共通コピーの参照元であり、本案件の実装先ではない。本番変更前後にYouTubeアカウントの更新履歴または対象オブジェクトの変更なしを確認する。
 
@@ -257,7 +258,7 @@ MetaセミナーとInstagramを同一UTAGEアカウントへ実装する場合�
 
 #### 画像の出典ルール
 
-吉本さんのDrive原本画像フォルダから回収した13枚は `assets/instagram-yoshimoto/source-original/` を正本とする。本文行との対応は同フォルダのREADMEを参照し、SpreadsheetのU/V/X/Y列およびUTAGEの対応行へすべて設定する。`6641105e-3faa-4150-9a5f-6c64d87ba6dd.png` は画像内では「セミナー参加者様へ」となっているが、これを理由に参加／欠席分岐を新設してはいけない。
+吉本さんのDrive原本画像フォルダから回収した全35枚を正本とする。Instagram 13枚は `assets/instagram-yoshimoto/source-original/`、Metaセミナー直行22枚は `assets/meta-seminar-yoshimoto/source-original/` に格納している。本文行との対応は各READMEを参照し、SpreadsheetのU/V/X/Y列およびUTAGEの対応行へすべて設定する。`6641105e-3faa-4150-9a5f-6c64d87ba6dd.png` は画像内では「セミナー参加者様へ」となっているが、これを理由に参加／欠席分岐を新設してはいけない。
 
 | シナリオ | CSV No. | 通数 | 起点 |
 |---|---:|---:|---|
@@ -329,7 +330,7 @@ MetaセミナーとInstagramを同一UTAGEアカウントへ実装する場合�
 7. セミナーイベント、面談予約、VSLページ、Zoom、メール連携を設定する。
 8. 29アクションを依存順に作る。予約・成約・営業停止の停止処理を先に完成させる。
 9. 29シナリオ、226メッセージをCSV順に下書きで作る。
-10. 画像、CTA、計測リンク、置換文字、期限を行単位で照合する。Instagramは原本画像13枚がREADME対応表どおり全件設定されていることを確認する。
+10. 画像、CTA、計測リンク、置換文字、期限を行単位で照合する。Instagram原本13枚とMetaセミナー直行原本22枚が各README対応表どおり全件設定されていることを確認する。
 11. テストユーザーで全経路を実行する。
 12. テスト合格後に公開し、UTAGEから再取得して件数と条件を照合する。
 13. 実装日、担当者、実ID、変更内容、テスト結果を本書へ追記する。
@@ -382,7 +383,7 @@ MetaセミナーとInstagramを同一UTAGEアカウントへ実装する場合�
 9. VSL終了後は2回目を送らず、オプチャまたは終了へ進む。
 10. 吉本さん原案を割り当てた55件の本文・絵文字がSpreadsheetおよびCSVと一致する。
 11. 残り20件は指定済みYouTube補完文であり、新規オリジナル文がない。
-12. `assets/instagram-yoshimoto/source-original/` の原本画像13枚が全件存在し、Spreadsheetの対応13行とUTAGEから確認できる。
+12. Drive原本画像35枚（Instagram 13枚＋Metaセミナー直行22枚）が全件存在し、Spreadsheetの対応35行とUTAGEから確認できる。
 
 ## 11. 実装者への注意
 
