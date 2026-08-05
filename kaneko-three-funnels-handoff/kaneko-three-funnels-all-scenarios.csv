@@ -1,0 +1,3780 @@
+﻿ファネル,承認元シート,No.,レビュー状態,行種別,フェーズ,シナリオ名,管理ID,対象・入口条件,配信タイミング,媒体,推奨形式,管理名称,件名,本文（全文・編集可）,CTA文言,CTA URL／変数,付与ラベル,解除ラベル,停止・除外条件,終了条件／次シナリオ,実装メモ,画像URL（YouTube原本）,画像プレビュー（セル内）,UTAGE挿入位置,画像内テキスト,使用指示・注意
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,1,レビュー中,アクション,入口,META_VSL_00_入口,ACT-ENTRY,Meta広告専用LINEへ新規登録,登録直後,UTAGE,ラベル・シナリオ遷移,Meta VSL入口,,媒体専用アカウントで開始,,,src_meta_ads / line_main_registered / vsl_meta_offered / vsl_meta_unwatched,,sales_won / sales_stop,META_VSL_10_初回未視聴,媒体専用アカウントで開始,,,,,
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,2,レビュー中,アクション,VSL,META_VSL_15_視聴開始,ACT-VSL-START,VSLページクリック,クリック直後,UTAGE,ラベル・シナリオ遷移,VSL視聴開始,,YouTubeの視聴開始アクション相当,,,vsl_meta_partial,vsl_meta_unwatched,roadmap_meta_booked / sales_in_progress / sales_next_meeting / sales_won / sales_stop,META_VSL_20_初回途中,YouTubeの視聴開始アクション相当,,,,,
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,3,レビュー中,アクション,VSL,META_VSL_25_視聴完了,ACT-VSL-COMPLETE,完了地点到達,到達直後,UTAGE,ラベル・シナリオ遷移,VSL視聴完了,,10地点計測の完了地点を使用,,,vsl_meta_completed,vsl_meta_unwatched / vsl_meta_partial,roadmap_meta_booked / sales_in_progress / sales_next_meeting / sales_won / sales_stop,META_VSL_30_初回完了,10地点計測の完了地点を使用,,,,,
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,4,レビュー中,アクション,VSL,META_VSL_35_初回期限切れ,ACT-VSL-EXPIRE,初回3日終了・未予約,3日目23:59,UTAGE,ラベル・シナリオ遷移,初回VSL期限切れ,,翌日に再公開希望だけ確認,,,vsl_meta_expired,vsl_meta_unwatched / vsl_meta_partial,roadmap_meta_booked / sales_in_progress / sales_next_meeting / sales_won / sales_stop,META_VSL_40_再公開希望確認,翌日に再公開希望だけ確認,,,,,
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,5,レビュー中,アクション,再公開,META_VSL_45_再公開開始,ACT-VSL-REOPEN,再公開希望ボタン押下,クリック直後,UTAGE,ラベル・シナリオ遷移,再公開VSL開始,,同じVSLを別シナリオで3日再公開,,,vsl_meta_reopen_requested / vsl_meta_reopened / vsl_meta_unwatched,vsl_meta_expired,roadmap_meta_booked / sales_in_progress / sales_next_meeting / sales_won / sales_stop,META_VSL_50_再公開未視聴,同じVSLを別シナリオで3日再公開,,,,,
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,6,レビュー中,アクション,面談,META_VSL_75_面談ページクリック,ACT-RM-CLICK,ロードマップ作成会ページクリック,クリック直後,UTAGE,ラベル・シナリオ遷移,面談ページクリック,,クリックと予約を分離,,,roadmap_meta_page_clicked,,sales_won / sales_stop,予約ページ,クリックと予約を分離,,,,,
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,7,レビュー中,アクション,面談,META_VSL_76_面談予約完了,ACT-RM-BOOK,面談予約完了,予約直後,UTAGE,ラベル・シナリオ遷移,面談予約完了,,全営業募集を停止,,,roadmap_meta_booked,vsl_meta_unwatched / vsl_meta_partial / vsl_meta_completed / vsl_meta_expired / vsl_meta_reopened / openchat_invited,sales_won / sales_stop,META_VSL_80_面談リマインド,全営業募集を停止,,,,,
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,8,レビュー中,アクション,終了,META_VSL_85_未転換終了,ACT-OPENCHAT,再公開3日終了・未予約,翌朝10:00,UTAGE,ラベル・シナリオ遷移,オプチャ移行,,営業ファネル終了,,,openchat_invited,vsl_meta_reopened / vsl_meta_unwatched / vsl_meta_partial,roadmap_meta_booked / sales_in_progress / sales_next_meeting / sales_won / sales_stop,META_VSL_90_オプチャ案内,営業ファネル終了,,,,,
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,9,レビュー中,アクション,最優先,META_VSL_99_営業結果,ACT-SALES,営業結果更新,即時,UTAGE,ラベル・シナリオ遷移,上位状態停止,,上位状態で下位シナリオを停止,,,sales_won / sales_next_meeting / sales_no_next_meeting / sales_stop,,,該当する最上位状態,上位状態で下位シナリオを停止,,,,,
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,10,レビュー中,メッセージ,VSL未視聴,META_VSL_10_VSL_未開封,erP64nKaKQfs,Meta広告登録・初回VSL状態該当,登録から0日後 10:00,LINE,画像パネル＋本文＋ボタン,VSL-U01,,"【LINEメッセージ 1／image】
+{
+  ""seq"": 0,
+  ""type"": ""image"",
+  ""original_content_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/BP6jdJufvGaM.png""
+}
+
+【LINEメッセージ 2／text】
+ご登録ありがとうございます！すやです😊
+
+AIでひとり起業攻略法 の内容を、本日から3日間だけ視聴できます。✨
+👇
+
+【LINEメッセージ 3／button】
+{
+  ""seq"": 2,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】期間限定・無料公開のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""無料公開は登録から3日間・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/BP6jdJufvGaM.png,"=IF(U22="""","""",IMAGE(U22))",本文直前（画像→本文→CTA）,,YouTube原本画像をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,11,レビュー中,メッセージ,VSL未視聴,META_VSL_10_VSL_未開封,t0CViMJ6jbZk,Meta広告登録・初回VSL状態該当,登録から0日後 13:00,LINE,テキスト＋ボタン,VSL-U02,,"【LINEメッセージ 1／text】
+先ほど期間限定動画を公開しました。🎥
+
+AIツールの紹介だけではなく、自分に合う事業テーマをどう見つけ、商品・集客・販売へつなげるかを順番に解説しています。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】期間限定・無料公開のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""無料公開は登録から3日間・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,12,レビュー中,メッセージ,VSL未視聴,META_VSL_10_VSL_未開封,WrAkXMAcgVcn,Meta広告登録・初回VSL状態該当,登録から0日後 18:00,LINE,テキスト,VSL-U03,,"【LINEメッセージ 1／text】
+%line_name%さん👀
+
+まとまった時間がなくても、まずページを開いて視聴できる状態だけ確認しておいてください。公開は3日間です。🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,13,レビュー中,メッセージ,VSL未視聴,META_VSL_10_VSL_未開封,mbbRaBAoA64G,Meta広告登録・初回VSL状態該当,登録から0日後 21:00,LINE,テキスト＋ボタン,VSL-U04,,"【LINEメッセージ 1／text】
+AIについて学んでも行動に移せないときは、能力よりも進める順番が曖昧なことが多いです。💡
+
+動画では、AIエージェントで事業を形にする全体の流れをお伝えしています。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】期間限定・無料公開のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""無料公開は登録から3日間・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,14,レビュー中,メッセージ,VSL未視聴,META_VSL_10_VSL_未開封,lhRYYqfY3Z65,Meta広告登録・初回VSL状態該当,登録から1日後 09:00,LINE,テキスト,VSL-U05,,"【LINEメッセージ 1／text】
+残り２日です。😊
+
+AIエージェントの全貌をお伝えするのは今回だけです。✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,15,レビュー中,メッセージ,VSL未視聴,META_VSL_10_VSL_未開封,40JbjOH3V041,Meta広告登録・初回VSL状態該当,登録から1日後 13:00,LINE,テキスト＋ボタン,VSL-U06,,"【LINEメッセージ 1／text】
+明日で完全終了です👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】期間限定・無料公開のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""無料公開は登録から3日間・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,16,レビュー中,メッセージ,VSL未視聴,META_VSL_10_VSL_未開封,pl8XyFNAsg3R,Meta広告登録・初回VSL状態該当,登録から1日後 18:00,LINE,テキスト,VSL-U07,,"【LINEメッセージ 1／text】
+%line_name%さん、公開期間は明日までです。⏰
+
+視聴後特典で、AIひとり起業ロードマップ作成会が存在します。まずは内容を見て、自分に必要か判断してください。🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,17,レビュー中,メッセージ,VSL未視聴,META_VSL_10_VSL_未開封,eLjR3vW1Po0s,Meta広告登録・初回VSL状態該当,登録から1日後 21:00,LINE,テキスト＋ボタン,VSL-U08,,"【LINEメッセージ 1／text】
+今日のうちに見始めておくと、明日は必要な箇所を見直す時間に使えます。😊
+
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】期間限定・無料公開のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""無料公開は登録から3日間・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,18,レビュー中,メッセージ,VSL未視聴,META_VSL_10_VSL_未開封,pNiEq3QAw7li,Meta広告登録・初回VSL状態該当,登録から2日後 08:00,LINE,テキスト,VSL-U09,,"【LINEメッセージ 1／text】
+本日23:59で公開終了です。⏰
+
+日程が合わずセミナーに参加できなかった方も、今日中なら内容を確認できます。✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,19,レビュー中,メッセージ,VSL未視聴,META_VSL_10_VSL_未開封,rshejwulCzb8,Meta広告登録・初回VSL状態該当,登録から2日後 10:00,LINE,テキスト＋ボタン,VSL-U10,,"【LINEメッセージ 1／text】
+公開最終日になりました。🔥
+
+AIでのひとり起業に興味がある方は、今日の予定に視聴時間を入れてください。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】本日が公開最終日です"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""公開は本日まで・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,20,レビュー中,メッセージ,VSL未視聴,META_VSL_10_VSL_未開封,rSdX9Ug0LLj1,Meta広告登録・初回VSL状態該当,登録から2日後 12:00,LINE,テキスト,VSL-U11,,"【LINEメッセージ 1／text】
+あと半日ほどで終了します。⏰
+
+ページを開いていないまま期限を迎えると、今回の動画は見られなくなります。
+今のうちにご覧ください。🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,21,レビュー中,メッセージ,VSL未視聴,META_VSL_10_VSL_未開封,5LCZMUE4Si6x,Meta広告登録・初回VSL状態該当,登録から2日後 15:00,LINE,テキスト＋ボタン,VSL-U12,,"【LINEメッセージ 1／text】
+%line_name%さん、まだ間に合います。😊
+
+完璧に理解しようとせず、まず全体像を通して見るのがおすすめです。公開は本日23:59までです。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】公開は本日23:59まで"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""公開は本日23:59まで"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,22,レビュー中,メッセージ,VSL未視聴,META_VSL_10_VSL_未開封,8lEagN0kny0j,Meta広告登録・初回VSL状態該当,登録から2日後 18:00,LINE,テキスト,VSL-U13,,"【LINEメッセージ 1／text】
+残り6時間。⏰
+
+限定公開は今夜で終了します。AIの情報収集から、自分の事業を作る側へ進みたい方はご視聴ください。✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,23,レビュー中,メッセージ,VSL未視聴,META_VSL_10_VSL_未開封,hYYgJFw7xNEl,Meta広告登録・初回VSL状態該当,登録から2日後 21:00,LINE,テキスト＋ボタン,VSL-U14,,"【LINEメッセージ 1／text】
+終了まであと3時間です。⏰
+
+視聴するか迷っていた方へ。ページを開けるのは本日23:59までです。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】終了まであと3時間です"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""終了まであと3時間"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,24,レビュー中,メッセージ,VSL未視聴,META_VSL_10_VSL_未開封,ZjANTpPHmTOH,Meta広告登録・初回VSL状態該当,登録から2日後 23:00,LINE,テキスト,VSL-U15,,"【LINEメッセージ 1／text】
+あと1時間で公開終了です。⏰
+
+これが3日限定公開の最後のご案内です。今すぐ視聴ページを開いてください。🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,25,レビュー中,メッセージ,VSL途中,META_VSL_10_VSL_一部視聴,jd8LZ2WGD22p,Meta広告登録・初回VSL状態該当,登録から 0日 0時間 30分後,LINE,テキスト＋ボタン,VSL-P01,,"【LINEメッセージ 1／text】
+%line_name%さん、動画を開いてくださりありがとうございます。😊
+
+途中で止めた場合は、こちらから続きに戻れます。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】続きはこちらから再生できます"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""途中から続きを再生できます"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,26,レビュー中,メッセージ,VSL途中,META_VSL_10_VSL_一部視聴,RLqgOQRNAf29,Meta広告登録・初回VSL状態該当,登録から0日後 17:00,LINE,テキスト,VSL-P02,,"【LINEメッセージ 1／text】
+一度で見きれなくても大丈夫です。😊
+
+ただ、視聴期限はお忘れなく✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,27,レビュー中,メッセージ,VSL途中,META_VSL_10_VSL_一部視聴,1P8u09TqQLyk,Meta広告登録・初回VSL状態該当,登録から0日後 21:00,LINE,テキスト＋ボタン,VSL-P03,,"【LINEメッセージ 1／text】
+動画の途中で止まっている方へ。😊
+
+「自分なら何を事業にするか」を考えながら見ると、ただの情報ではなく行動の材料になります✨
+特に最後は多くの感想をいただくので、是非最後までご覧ください👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】続きはこちらから再生できます"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""途中から続きを再生できます"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。『多くの感想』は公開前に根拠確認。未確認なら該当文のみ削除、または事実ベースへ置換。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,28,レビュー中,メッセージ,VSL途中,META_VSL_10_VSL_一部視聴,hZGpXnuEz1xg,Meta広告登録・初回VSL状態該当,登録から1日後 09:00,LINE,テキスト,VSL-P04,,"【LINEメッセージ 1／text】
+あと２日で視聴終了です😊🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,29,レビュー中,メッセージ,VSL途中,META_VSL_10_VSL_一部視聴,suBXJeaTTYkm,Meta広告登録・初回VSL状態該当,登録から1日後 14:00,LINE,テキスト,VSL-P05,,"【LINEメッセージ 1／text】
+
+後半では、学びを事業につなげる考え方も扱っています。📣",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,30,レビュー中,メッセージ,VSL途中,META_VSL_10_VSL_一部視聴,6kJfk5ZhL0ZI,Meta広告登録・初回VSL状態該当,登録から1日後 20:00,LINE,テキスト,VSL-P06,,"【LINEメッセージ 1／text】
+公開期限は あと28時間です。⏰
+
+視聴を始めた時刻にかかわらず延長はされないので、余裕があるうちに続きをご覧ください。✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,31,レビュー中,メッセージ,VSL途中,META_VSL_10_VSL_一部視聴,Pkn7lktciPoS,Meta広告登録・初回VSL状態該当,登録から2日後 09:00,LINE,テキスト,VSL-P07,,"【LINEメッセージ 1／text】
+本日が視聴最終日です。⏰🎥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,32,レビュー中,メッセージ,VSL途中,META_VSL_10_VSL_一部視聴,CiZEgXL5O3Uz,Meta広告登録・初回VSL状態該当,登録から2日後 14:00,LINE,テキスト＋ボタン,VSL-P08,,"【LINEメッセージ 1／text】
+残り時間が少なくなってきました。⏰
+
+最後には、 AIひとり起業ロードマップ作成会の無料枠も案内しております。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】公開は本日23:59まで"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""公開は本日23:59まで"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,33,レビュー中,メッセージ,VSL途中,META_VSL_10_VSL_一部視聴,ETjHWlvzXGr3,Meta広告登録・初回VSL状態該当,登録から2日後 19:00,LINE,テキスト,VSL-P09,,"【LINEメッセージ 1／text】
+公開終了まであと数時間です。⏰📣",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,34,レビュー中,メッセージ,VSL途中,META_VSL_10_VSL_一部視聴,WhfdR94zX0IG,Meta広告登録・初回VSL状態該当,登録から2日後 22:30,LINE,テキスト＋ボタン,VSL-P10,,"【LINEメッセージ 1／text】
+23:59で終了します。⏰
+
+視聴途中の方への最後のご案内です。今すぐこちらから続きをご覧ください。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】本日23:59で終了します"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""本日23:59で終了"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,35,レビュー中,メッセージ,VSL完了・面談,META_VSL_10_VSL_視聴完了,DciEDgOwZDeT,Meta広告登録・初回VSL状態該当,登録直後,LINE,テキスト,VSL-C01,,"【LINEメッセージ 1／text】
+%line_name%さん、ロードマップ作成会のお申し込みは完了してますでしょうか？
+[ロードマップ作成会URL]
+
+↑
+こちらからもお申し込み可能です🎥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,36,レビュー中,メッセージ,VSL完了・面談,META_VSL_10_VSL_視聴完了,wh7dGNiiq0ob,Meta広告登録・初回VSL状態該当,登録から 0日 2時間 0分後,LINE,画像パネル＋本文＋ボタン,VSL-C02,,"【LINEメッセージ 1／image】
+{
+  ""seq"": 0,
+  ""type"": ""image"",
+  ""original_content_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/VoadmjkSafaL.png""
+}
+
+【LINEメッセージ 2／text】
+ロードマップ作成会は、めったに行われない特典です。次の開催は本当に未定ですので、今回を機にぜひお申し込みください👇
+
+【LINEメッセージ 3／button】
+{
+  ""seq"": 2,
+  ""type"": ""button"",
+  ""alt_text"": ""【個別】AIひとり起業ロードマップ作成会のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIひとり起業ロードマップ作成会"",
+  ""text"": ""Zoom30分・名前とメールだけで予約OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""日程を見て予約する"",
+      ""uri"": ""[ロードマップ作成会URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",日程を見て予約する,"[
+  {
+    ""url"": ""[ロードマップ作成会URL]"",
+    ""action_id"": ""lMxbsrSPWV9W"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/VoadmjkSafaL.png,"=IF(U48="""","""",IMAGE(U48))",本文直前（画像→本文→CTA）,,YouTube原本画像をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,37,レビュー中,メッセージ,VSL完了・面談,META_VSL_10_VSL_視聴完了,0Qha2c1IJnIT,Meta広告登録・初回VSL状態該当,登録から 0日 5時間 0分後,LINE,テキスト,VSL-C03,,"【LINEメッセージ 1／text】
+まだ商品がなくても、AI初心者でも大丈夫です。😊
+
+",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,38,レビュー中,メッセージ,VSL完了・面談,META_VSL_10_VSL_視聴完了,QUfY1iY6FCsU,Meta広告登録・初回VSL状態該当,登録から0日後 10:00,LINE,テキスト,VSL-C04,,"【LINEメッセージ 1／text】
+「ロードマップ作成会が分岐点になりました😊」
+
+最近こう言われることが増えてきました。
+今回は特別開放になります✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,39,レビュー中,メッセージ,VSL完了・面談,META_VSL_10_VSL_視聴完了,2nRWHPzRXiBP,Meta広告登録・初回VSL状態該当,登録から 1日 0時間 0分後,LINE,テキスト,VSL-C05,,"【LINEメッセージ 1／text】
+%line_name%さん、動画のご感想はいかがでしょうか。😊
+
+一人で整理すると止まりそうなら、ロードマップ作成会を使ってください🎥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,40,レビュー中,メッセージ,VSL完了・面談,META_VSL_10_VSL_視聴完了,JOAMSplqPBcC,Meta広告登録・初回VSL状態該当,登録から 1日 4時間 0分後,LINE,テキスト,VSL-C06,,"【LINEメッセージ 1／text】
+事業テーマ、商品、集客、販売。😌
+
+すべてを同時に考えると動けません。今の自分が最初に決める一つを、30分で明確にします。🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,41,レビュー中,メッセージ,VSL完了・面談,META_VSL_10_VSL_視聴完了,xCT9FyxEdkBJ,Meta広告登録・初回VSL状態該当,登録から1日後 10:00,LINE,テキスト＋ボタン,VSL-C07,,"【LINEメッセージ 1／text】
+予約は名前とメールアドレスの2項目で完了します😊
+
+都合が変わった場合は日程変更できます。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【個別】AIひとり起業ロードマップ作成会のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIひとり起業ロードマップ作成会"",
+  ""text"": ""Zoom30分・名前とメールだけで予約OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""日程を見て予約する"",
+      ""uri"": ""[ロードマップ作成会URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",日程を見て予約する,"[
+  {
+    ""url"": ""[ロードマップ作成会URL]"",
+    ""action_id"": ""lMxbsrSPWV9W"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,42,レビュー中,メッセージ,VSL完了・面談,META_VSL_10_VSL_視聴完了,brqYAbNWbjhP,Meta広告登録・初回VSL状態該当,登録から1日後 15:00,LINE,テキスト,VSL-C08,,"【LINEメッセージ 1／text】
+あと9時間でロードマップ作成会の申し込みは終了します。⏰
+
+日程を確保してください。✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,43,レビュー中,メッセージ,VSL完了・面談,META_VSL_10_VSL_視聴完了,zlm87BKwfnhi,Meta広告登録・初回VSL状態該当,登録から1日後 21:00,LINE,テキスト＋ボタン,VSL-C09,,"【LINEメッセージ 1／text】
+受付終了まであと3時間です。⏰
+
+自分に合う進め方を直接相談したい方は、こちらから予約してください。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【個別】ロードマップ作成会・受付終了まであと3時間"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIひとり起業ロードマップ作成会"",
+  ""text"": ""受付終了まであと3時間"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""日程を見て予約する"",
+      ""uri"": ""[ロードマップ作成会URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",日程を見て予約する,"[
+  {
+    ""url"": ""[ロードマップ作成会URL]"",
+    ""action_id"": ""lMxbsrSPWV9W"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,44,レビュー中,メッセージ,VSL完了・面談,META_VSL_10_VSL_視聴完了,Lw5hWl0hKeJK,Meta広告登録・初回VSL状態該当,登録から1日後 23:00,LINE,テキスト,VSL-C10,,"【LINEメッセージ 1／text】
+あと1時間で受付終了です。⏰
+
+AIひとり起業ロードマップ作成会 のご案内はこれで最後です。参加したい方は、今すぐ予約を完了してください。🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本。初回入口文だけMeta VSL直行向けに最小調整。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,45,レビュー中,メッセージ,再公開確認,META_VSL_40_再公開希望確認,META-RQ-01,初回VSL終了・面談未予約・再公開未申請,初回VSL終了翌日 12:00,LINE,テキスト＋ボタン,META-RQ-01,,"%line_name%さん、3日間の動画公開は終了しました🙏
+
+「時間が足りなかったので、もう一度だけ見たい」という方には、同じ動画をもう一度3日間だけ公開します😊
+
+希望する方は、下のボタンを押してください👇",もう一度3日間見る,[再公開希望アクション],vsl_meta_reopen_requested,,面談予約済／商談中／成約／営業停止は除外,クリック→再公開VSL／未クリック→オプチャ,VSL直行だけに存在する2回目のVSL入口。,,,本文→CTA,もう一度見たい方へ,再公開は希望者のみ。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,46,レビュー中,メッセージ,VSL未視聴,META_VSL_50_VSL_未開封,erP64nKaKQfs,再公開希望済み・再公開VSL状態該当,登録から0日後 10:00,LINE,画像パネル＋本文＋ボタン,VSL-U01,,"【LINEメッセージ 1／image】
+{
+  ""seq"": 0,
+  ""type"": ""image"",
+  ""original_content_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/BP6jdJufvGaM.png""
+}
+
+【LINEメッセージ 2／text】
+見逃した方・復習したい方へ。😊
+日程が合わなかった方向けの特別公開です。✨
+
+AIでひとり起業攻略法 の内容を、本日から3日間だけ視聴できます。
+👇
+
+【LINEメッセージ 3／button】
+{
+  ""seq"": 2,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】期間限定・無料公開のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""無料公開は登録から3日間・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/BP6jdJufvGaM.png,"=IF(U58="""","""",IMAGE(U58))",本文直前（画像→本文→CTA）,,YouTube原本画像をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,47,レビュー中,メッセージ,VSL未視聴,META_VSL_50_VSL_未開封,t0CViMJ6jbZk,再公開希望済み・再公開VSL状態該当,登録から0日後 13:00,LINE,テキスト＋ボタン,VSL-U02,,"【LINEメッセージ 1／text】
+先ほど期間限定動画を公開しました。🎥
+
+AIツールの紹介だけではなく、自分に合う事業テーマをどう見つけ、商品・集客・販売へつなげるかを順番に解説しています。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】期間限定・無料公開のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""無料公開は登録から3日間・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,48,レビュー中,メッセージ,VSL未視聴,META_VSL_50_VSL_未開封,WrAkXMAcgVcn,再公開希望済み・再公開VSL状態該当,登録から0日後 18:00,LINE,テキスト,VSL-U03,,"【LINEメッセージ 1／text】
+%line_name%さん👀
+
+まとまった時間がなくても、まずページを開いて視聴できる状態だけ確認しておいてください。公開は3日間です。🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,49,レビュー中,メッセージ,VSL未視聴,META_VSL_50_VSL_未開封,mbbRaBAoA64G,再公開希望済み・再公開VSL状態該当,登録から0日後 21:00,LINE,テキスト＋ボタン,VSL-U04,,"【LINEメッセージ 1／text】
+AIについて学んでも行動に移せないときは、能力よりも進める順番が曖昧なことが多いです。💡
+
+動画では、AIエージェントで事業を形にする全体の流れをお伝えしています。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】期間限定・無料公開のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""無料公開は登録から3日間・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,50,レビュー中,メッセージ,VSL未視聴,META_VSL_50_VSL_未開封,lhRYYqfY3Z65,再公開希望済み・再公開VSL状態該当,登録から1日後 09:00,LINE,テキスト,VSL-U05,,"【LINEメッセージ 1／text】
+残り２日です。😊
+
+AIエージェントの全貌をお伝えするのは今回だけです。✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,51,レビュー中,メッセージ,VSL未視聴,META_VSL_50_VSL_未開封,40JbjOH3V041,再公開希望済み・再公開VSL状態該当,登録から1日後 13:00,LINE,テキスト＋ボタン,VSL-U06,,"【LINEメッセージ 1／text】
+明日で完全終了です👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】期間限定・無料公開のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""無料公開は登録から3日間・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,52,レビュー中,メッセージ,VSL未視聴,META_VSL_50_VSL_未開封,pl8XyFNAsg3R,再公開希望済み・再公開VSL状態該当,登録から1日後 18:00,LINE,テキスト,VSL-U07,,"【LINEメッセージ 1／text】
+%line_name%さん、公開期間は明日までです。⏰
+
+視聴後特典で、AIひとり起業ロードマップ作成会が存在します。まずは内容を見て、自分に必要か判断してください。🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,53,レビュー中,メッセージ,VSL未視聴,META_VSL_50_VSL_未開封,eLjR3vW1Po0s,再公開希望済み・再公開VSL状態該当,登録から1日後 21:00,LINE,テキスト＋ボタン,VSL-U08,,"【LINEメッセージ 1／text】
+今日のうちに見始めておくと、明日は必要な箇所を見直す時間に使えます。😊
+
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】期間限定・無料公開のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""無料公開は登録から3日間・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,54,レビュー中,メッセージ,VSL未視聴,META_VSL_50_VSL_未開封,pNiEq3QAw7li,再公開希望済み・再公開VSL状態該当,登録から2日後 08:00,LINE,テキスト,VSL-U09,,"【LINEメッセージ 1／text】
+本日23:59で公開終了です。⏰
+
+日程が合わずセミナーに参加できなかった方も、今日中なら内容を確認できます。✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,55,レビュー中,メッセージ,VSL未視聴,META_VSL_50_VSL_未開封,rshejwulCzb8,再公開希望済み・再公開VSL状態該当,登録から2日後 10:00,LINE,テキスト＋ボタン,VSL-U10,,"【LINEメッセージ 1／text】
+公開最終日になりました。🔥
+
+AIでのひとり起業に興味がある方は、今日の予定に視聴時間を入れてください。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】本日が公開最終日です"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""公開は本日まで・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,56,レビュー中,メッセージ,VSL未視聴,META_VSL_50_VSL_未開封,rSdX9Ug0LLj1,再公開希望済み・再公開VSL状態該当,登録から2日後 12:00,LINE,テキスト,VSL-U11,,"【LINEメッセージ 1／text】
+あと半日ほどで終了します。⏰
+
+ページを開いていないまま期限を迎えると、今回の動画は見られなくなります。
+今のうちにご覧ください。🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,57,レビュー中,メッセージ,VSL未視聴,META_VSL_50_VSL_未開封,5LCZMUE4Si6x,再公開希望済み・再公開VSL状態該当,登録から2日後 15:00,LINE,テキスト＋ボタン,VSL-U12,,"【LINEメッセージ 1／text】
+%line_name%さん、まだ間に合います。😊
+
+完璧に理解しようとせず、まず全体像を通して見るのがおすすめです。公開は本日23:59までです。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】公開は本日23:59まで"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""公開は本日23:59まで"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,58,レビュー中,メッセージ,VSL未視聴,META_VSL_50_VSL_未開封,8lEagN0kny0j,再公開希望済み・再公開VSL状態該当,登録から2日後 18:00,LINE,テキスト,VSL-U13,,"【LINEメッセージ 1／text】
+残り6時間。⏰
+
+限定公開は今夜で終了します。AIの情報収集から、自分の事業を作る側へ進みたい方はご視聴ください。✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,59,レビュー中,メッセージ,VSL未視聴,META_VSL_50_VSL_未開封,hYYgJFw7xNEl,再公開希望済み・再公開VSL状態該当,登録から2日後 21:00,LINE,テキスト＋ボタン,VSL-U14,,"【LINEメッセージ 1／text】
+終了まであと3時間です。⏰
+
+視聴するか迷っていた方へ。ページを開けるのは本日23:59までです。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】終了まであと3時間です"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""終了まであと3時間"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,60,レビュー中,メッセージ,VSL未視聴,META_VSL_50_VSL_未開封,ZjANTpPHmTOH,再公開希望済み・再公開VSL状態該当,登録から2日後 23:00,LINE,テキスト,VSL-U15,,"【LINEメッセージ 1／text】
+あと1時間で公開終了です。⏰
+
+これが3日限定公開の最後のご案内です。今すぐ視聴ページを開いてください。🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,61,レビュー中,メッセージ,VSL途中,META_VSL_50_VSL_一部視聴,jd8LZ2WGD22p,再公開希望済み・再公開VSL状態該当,登録から 0日 0時間 30分後,LINE,テキスト＋ボタン,VSL-P01,,"【LINEメッセージ 1／text】
+%line_name%さん、動画を開いてくださりありがとうございます。😊
+
+途中で止めた場合は、こちらから続きに戻れます。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】続きはこちらから再生できます"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""途中から続きを再生できます"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,62,レビュー中,メッセージ,VSL途中,META_VSL_50_VSL_一部視聴,RLqgOQRNAf29,再公開希望済み・再公開VSL状態該当,登録から0日後 17:00,LINE,テキスト,VSL-P02,,"【LINEメッセージ 1／text】
+一度で見きれなくても大丈夫です。😊
+
+ただ、視聴期限はお忘れなく✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,63,レビュー中,メッセージ,VSL途中,META_VSL_50_VSL_一部視聴,1P8u09TqQLyk,再公開希望済み・再公開VSL状態該当,登録から0日後 21:00,LINE,テキスト＋ボタン,VSL-P03,,"【LINEメッセージ 1／text】
+動画の途中で止まっている方へ。😊
+
+「自分なら何を事業にするか」を考えながら見ると、ただの情報ではなく行動の材料になります✨
+特に最後は多くの感想をいただくので、是非最後までご覧ください👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】続きはこちらから再生できます"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""途中から続きを再生できます"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。『多くの感想』は公開前に根拠確認。未確認なら該当文のみ削除、または事実ベースへ置換。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,64,レビュー中,メッセージ,VSL途中,META_VSL_50_VSL_一部視聴,hZGpXnuEz1xg,再公開希望済み・再公開VSL状態該当,登録から1日後 09:00,LINE,テキスト,VSL-P04,,"【LINEメッセージ 1／text】
+あと２日で視聴終了です😊🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,65,レビュー中,メッセージ,VSL途中,META_VSL_50_VSL_一部視聴,suBXJeaTTYkm,再公開希望済み・再公開VSL状態該当,登録から1日後 14:00,LINE,テキスト,VSL-P05,,"【LINEメッセージ 1／text】
+
+後半では、学びを事業につなげる考え方も扱っています。📣",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,66,レビュー中,メッセージ,VSL途中,META_VSL_50_VSL_一部視聴,6kJfk5ZhL0ZI,再公開希望済み・再公開VSL状態該当,登録から1日後 20:00,LINE,テキスト,VSL-P06,,"【LINEメッセージ 1／text】
+公開期限は あと28時間です。⏰
+
+視聴を始めた時刻にかかわらず延長はされないので、余裕があるうちに続きをご覧ください。✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,67,レビュー中,メッセージ,VSL途中,META_VSL_50_VSL_一部視聴,Pkn7lktciPoS,再公開希望済み・再公開VSL状態該当,登録から2日後 09:00,LINE,テキスト,VSL-P07,,"【LINEメッセージ 1／text】
+本日が視聴最終日です。⏰🎥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,68,レビュー中,メッセージ,VSL途中,META_VSL_50_VSL_一部視聴,CiZEgXL5O3Uz,再公開希望済み・再公開VSL状態該当,登録から2日後 14:00,LINE,テキスト＋ボタン,VSL-P08,,"【LINEメッセージ 1／text】
+残り時間が少なくなってきました。⏰
+
+最後には、 AIひとり起業ロードマップ作成会の無料枠も案内しております。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】公開は本日23:59まで"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""公開は本日23:59まで"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,69,レビュー中,メッセージ,VSL途中,META_VSL_50_VSL_一部視聴,ETjHWlvzXGr3,再公開希望済み・再公開VSL状態該当,登録から2日後 19:00,LINE,テキスト,VSL-P09,,"【LINEメッセージ 1／text】
+公開終了まであと数時間です。⏰📣",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,70,レビュー中,メッセージ,VSL途中,META_VSL_50_VSL_一部視聴,WhfdR94zX0IG,再公開希望済み・再公開VSL状態該当,登録から2日後 22:30,LINE,テキスト＋ボタン,VSL-P10,,"【LINEメッセージ 1／text】
+23:59で終了します。⏰
+
+視聴途中の方への最後のご案内です。今すぐこちらから続きをご覧ください。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】本日23:59で終了します"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""本日23:59で終了"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,71,レビュー中,メッセージ,VSL完了・面談,META_VSL_50_VSL_視聴完了,DciEDgOwZDeT,再公開希望済み・再公開VSL状態該当,登録直後,LINE,テキスト,VSL-C01,,"【LINEメッセージ 1／text】
+%line_name%さん、ロードマップ作成会のお申し込みは完了してますでしょうか？
+[ロードマップ作成会URL]
+
+↑
+こちらからもお申し込み可能です🎥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,72,レビュー中,メッセージ,VSL完了・面談,META_VSL_50_VSL_視聴完了,wh7dGNiiq0ob,再公開希望済み・再公開VSL状態該当,登録から 0日 2時間 0分後,LINE,画像パネル＋本文＋ボタン,VSL-C02,,"【LINEメッセージ 1／image】
+{
+  ""seq"": 0,
+  ""type"": ""image"",
+  ""original_content_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/VoadmjkSafaL.png""
+}
+
+【LINEメッセージ 2／text】
+ロードマップ作成会は、めったに行われない特典です。次の開催は本当に未定ですので、今回を機にぜひお申し込みください👇
+
+【LINEメッセージ 3／button】
+{
+  ""seq"": 2,
+  ""type"": ""button"",
+  ""alt_text"": ""【個別】AIひとり起業ロードマップ作成会のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIひとり起業ロードマップ作成会"",
+  ""text"": ""Zoom30分・名前とメールだけで予約OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""日程を見て予約する"",
+      ""uri"": ""[ロードマップ作成会URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",日程を見て予約する,"[
+  {
+    ""url"": ""[ロードマップ作成会URL]"",
+    ""action_id"": ""lMxbsrSPWV9W"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/VoadmjkSafaL.png,"=IF(U84="""","""",IMAGE(U84))",本文直前（画像→本文→CTA）,,YouTube原本画像をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,73,レビュー中,メッセージ,VSL完了・面談,META_VSL_50_VSL_視聴完了,0Qha2c1IJnIT,再公開希望済み・再公開VSL状態該当,登録から 0日 5時間 0分後,LINE,テキスト,VSL-C03,,"【LINEメッセージ 1／text】
+まだ商品がなくても、AI初心者でも大丈夫です。😊
+
+",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,74,レビュー中,メッセージ,VSL完了・面談,META_VSL_50_VSL_視聴完了,QUfY1iY6FCsU,再公開希望済み・再公開VSL状態該当,登録から0日後 10:00,LINE,テキスト,VSL-C04,,"【LINEメッセージ 1／text】
+「ロードマップ作成会が分岐点になりました😊」
+
+最近こう言われることが増えてきました。
+今回は特別開放になります✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,75,レビュー中,メッセージ,VSL完了・面談,META_VSL_50_VSL_視聴完了,2nRWHPzRXiBP,再公開希望済み・再公開VSL状態該当,登録から 1日 0時間 0分後,LINE,テキスト,VSL-C05,,"【LINEメッセージ 1／text】
+%line_name%さん、動画のご感想はいかがでしょうか。😊
+
+一人で整理すると止まりそうなら、ロードマップ作成会を使ってください🎥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,76,レビュー中,メッセージ,VSL完了・面談,META_VSL_50_VSL_視聴完了,JOAMSplqPBcC,再公開希望済み・再公開VSL状態該当,登録から 1日 4時間 0分後,LINE,テキスト,VSL-C06,,"【LINEメッセージ 1／text】
+事業テーマ、商品、集客、販売。😌
+
+すべてを同時に考えると動けません。今の自分が最初に決める一つを、30分で明確にします。🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,77,レビュー中,メッセージ,VSL完了・面談,META_VSL_50_VSL_視聴完了,xCT9FyxEdkBJ,再公開希望済み・再公開VSL状態該当,登録から1日後 10:00,LINE,テキスト＋ボタン,VSL-C07,,"【LINEメッセージ 1／text】
+予約は名前とメールアドレスの2項目で完了します😊
+
+都合が変わった場合は日程変更できます。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【個別】AIひとり起業ロードマップ作成会のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIひとり起業ロードマップ作成会"",
+  ""text"": ""Zoom30分・名前とメールだけで予約OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""日程を見て予約する"",
+      ""uri"": ""[ロードマップ作成会URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",日程を見て予約する,"[
+  {
+    ""url"": ""[ロードマップ作成会URL]"",
+    ""action_id"": ""lMxbsrSPWV9W"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,78,レビュー中,メッセージ,VSL完了・面談,META_VSL_50_VSL_視聴完了,brqYAbNWbjhP,再公開希望済み・再公開VSL状態該当,登録から1日後 15:00,LINE,テキスト,VSL-C08,,"【LINEメッセージ 1／text】
+あと9時間でロードマップ作成会の申し込みは終了します。⏰
+
+日程を確保してください。✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,79,レビュー中,メッセージ,VSL完了・面談,META_VSL_50_VSL_視聴完了,zlm87BKwfnhi,再公開希望済み・再公開VSL状態該当,登録から1日後 21:00,LINE,テキスト＋ボタン,VSL-C09,,"【LINEメッセージ 1／text】
+受付終了まであと3時間です。⏰
+
+自分に合う進め方を直接相談したい方は、こちらから予約してください。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【個別】ロードマップ作成会・受付終了まであと3時間"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIひとり起業ロードマップ作成会"",
+  ""text"": ""受付終了まであと3時間"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""日程を見て予約する"",
+      ""uri"": ""[ロードマップ作成会URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",日程を見て予約する,"[
+  {
+    ""url"": ""[ロードマップ作成会URL]"",
+    ""action_id"": ""lMxbsrSPWV9W"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,80,レビュー中,メッセージ,VSL完了・面談,META_VSL_50_VSL_視聴完了,Lw5hWl0hKeJK,再公開希望済み・再公開VSL状態該当,登録から1日後 23:00,LINE,テキスト,VSL-C10,,"【LINEメッセージ 1／text】
+あと1時間で受付終了です。⏰
+
+AIひとり起業ロードマップ作成会 のご案内はこれで最後です。参加したい方は、今すぐ予約を完了してください。🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原本を同じ画像・絵文字で再利用。別シナリオとして3日間。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,81,レビュー中,メッセージ,面談予約後,META_VSL_80_05 面談予約リマインド（vVq新規）,k3OhRf27yoJ6,ロードマップ作成会予約済み,登録直後,LINE,テキスト,RSV-01（予約直後）,,"【LINEメッセージ 1／text】
+%line_name%さん、ロードマップ作成会のご予約ありがとうございます。😊
+
+日時： %event_schedule%
+形式： Zoom（30分）
+参加URL： %event_info%
+
+当日はよろしくお願いいたします。
+",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,82,レビュー中,メッセージ,面談予約後,META_VSL_80_05 面談予約リマインド（vVq新規）,v7clpa04Kfjk,ロードマップ作成会予約済み,イベント1日前 19:00,LINE,テキスト,RSV-02（前日19:00）,,"【LINEメッセージ 1／text】
+明日のリマインドになります。⏰
+
+%event_schedule%／Zoom30分
+%event_info%
+
+",,"[
+  {
+    ""url"": ""https://zoom.us/j/*"",
+    ""action_id"": null,
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,83,レビュー中,メッセージ,面談予約後,META_VSL_80_05 面談予約リマインド（vVq新規）,B7xRXy9LCLzz,ロードマップ作成会予約済み,イベント当日 09:00,LINE,テキスト,RSV-03（当日朝09:00）,,"【LINEメッセージ 1／text】
+%line_name%さん、本日が面談日です。😊
+
+開始時刻になりましたら、こちらからZoomへお入りください。
+%event_info%
+
+お話しできるのを楽しみにしています。🙌",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,84,レビュー中,メッセージ,面談予約後,META_VSL_80_05 面談予約リマインド（vVq新規）,OP9miZrixzvV,ロードマップ作成会予約済み,イベント3時間0分前,LINE,テキスト,RSV-04（3時間前）,,"【LINEメッセージ 1／text】
+面談まであと3時間です。⏰
+
+%event_info%
+
+",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,85,レビュー中,メッセージ,面談予約後,META_VSL_80_05 面談予約リマインド（vVq新規）,vDsOxRKEpvb5,ロードマップ作成会予約済み,イベント30分前,LINE,テキスト,RSV-05（30分前）,,"【LINEメッセージ 1／text】
+あと30分で開始します。⏰
+
+こちらのZoomでお待ちしています。
+%event_info%
+
+それでは後ほど、よろしくお願いします。🙌",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,86,レビュー中,メッセージ,オプチャ,META_VSL_90_オプチャ_初回参加案内,Keai6IIELEtI,再公開終了・面談未予約,登録直後,LINE,テキスト＋ボタン,OC-J01,,"【LINEメッセージ 1／text】
+%line_name%さん、AIの学びを続けたい方へ。😊
+
+私がやっている無料コミュニティにご招待させていただきます。
+AI活用やひとり起業についての無料勉強会が頻繁に行われています。オプチャから匿名で参加できます🙌
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": 
+  ""react_type"": ""one_time"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": null,
+  ""text"": ""スマートフォンから閲覧してください。"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""オプチャに参加する🔥"",
+      ""uri"": ""[オプチャURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",オプチャに参加する🔥,"[
+  {
+    ""url"": "" [オプチャURL]"",
+    ""action_id"": null,
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_VSL直行,REVIEW_META_VSL直行_20260805,87,レビュー中,メッセージ,オプチャ,META_VSL_90_オプチャ_初回参加案内,NTIhWrYdF9wK,再公開終了・面談未予約,登録から1日後 19:00,LINE,テキスト,OC-J02,,"【LINEメッセージ 1／text】
+AI起業家無料コミュニティにはご参加いただけましたでしょうか😌👇
+
+[オプチャURL]",,"[
+  {
+    ""url"": ""[オプチャURL]"",
+    ""action_id"": ""ua4O1UzrwOxm"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,1,レビュー中,アクション,入口,META_SEM_00_入口,ACT-ENTRY,Meta広告から専用LINEへ登録,登録直後,UTAGE,ラベル・シナリオ遷移,媒体入口,,媒体別アカウント・ラベルを混在させない,,,src_meta_ads_seminar / line_main_registered,,sales_won / sales_stop,META_SEM_10_セミナー募集,媒体別アカウント・ラベルを混在させない,,,,,
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,2,レビュー中,アクション,セミナー,META_SEM_15_申込完了,ACT-SEM-REG,セミナー申込完了,申込直後,UTAGE,ラベル・シナリオ遷移,セミナー申込完了,,名前・メール必須,,,seminar_main_registered,seminar_main_offered,roadmap_booked / sales_in_progress / sales_next_meeting / sales_won / sales_stop,META_SEM_20_申込者リマインド,名前・メール必須,,,,,
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,3,レビュー中,アクション,面談,META_SEM_25_面談予約完了,ACT-RM-BOOK,ロードマップ作成会予約完了,予約直後,UTAGE,ラベル・シナリオ遷移,面談予約完了,,予約時点でVSL・募集を停止,,,roadmap_booked,seminar_main_offered / vsl_main_offered / vsl_main_started / vsl_main_completed / openchat_invited,sales_won / sales_stop,META_SEM_80_面談リマインド,予約時点でVSL・募集を停止,,,,,
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,4,レビュー中,アクション,見逃し,META_SEM_30_再公開確認開始,ACT-RQ-START,セミナー申込済み・面談未予約,セミナー翌日10:00,UTAGE,ラベル・シナリオ遷移,再公開希望確認開始,,参加／欠席を問わない,,,,,roadmap_booked / sales_in_progress / sales_next_meeting / sales_won / sales_stop,META_SEM_30_再公開希望確認,参加／欠席を問わない,,,,,
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,5,レビュー中,アクション,見逃し,META_SEM_35_再公開希望,ACT-RQ-CLICK,再公開希望ボタン押下,クリック直後,UTAGE,ラベル・シナリオ遷移,3日VSL公開,,押した人だけ登録,,,vsl_replay_requested / vsl_main_offered,,roadmap_booked / sales_in_progress / sales_next_meeting / sales_won / sales_stop,META_SEM_40_VSL未視聴,押した人だけ登録,,,,,
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,6,レビュー中,アクション,VSL,META_SEM_45_視聴開始,ACT-VSL-START,VSLページクリック,クリック直後,UTAGE,ラベル・シナリオ遷移,VSL視聴開始,,未視聴を停止,,,vsl_main_started,,roadmap_booked / sales_in_progress / sales_next_meeting / sales_won / sales_stop,META_SEM_50_VSL途中,未視聴を停止,,,,,
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,7,レビュー中,アクション,VSL,META_SEM_55_視聴完了,ACT-VSL-COMPLETE,VSL完了地点到達,到達直後,UTAGE,ラベル・シナリオ遷移,VSL視聴完了,,完了者へ面談,,,vsl_main_completed,vsl_main_started,roadmap_booked / sales_in_progress / sales_next_meeting / sales_won / sales_stop,META_SEM_60_VSL完了_面談,完了者へ面談,,,,,
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,8,レビュー中,アクション,VSL,META_SEM_65_期限切れ,ACT-VSL-EXPIRE,3日VSL終了・面談未予約,3日目23:59,UTAGE,ラベル・シナリオ遷移,VSL期限切れ,,再公開は行わない,,,vsl_main_expired,vsl_main_started,roadmap_booked / sales_in_progress / sales_next_meeting / sales_won / sales_stop,META_SEM_90_オプチャ案内,再公開は行わない,,,,,
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,9,レビュー中,アクション,終了,META_SEM_90_未転換終了,ACT-OPENCHAT,VSL未転換または再公開未希望,翌朝10:00,UTAGE,ラベル・シナリオ遷移,オプチャ移行,,営業ファネル終了,,,openchat_invited,,roadmap_booked / sales_in_progress / sales_next_meeting / sales_won / sales_stop,META_SEM_90_オプチャ案内,営業ファネル終了,,,,,
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,10,レビュー中,アクション,最優先,META_SEM_99_営業結果,ACT-SALES,営業結果更新,即時,UTAGE,ラベル・シナリオ遷移,上位状態停止,,上位状態で下位シナリオを停止,,,sales_won / sales_next_meeting / sales_no_next_meeting / sales_stop,,,該当する最上位状態,上位状態で下位シナリオを停止,,,,,
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,11,レビュー中,メッセージ,セミナー募集,META_SEM_10_セミナー募集_未申込者,LQpvKDFjDGsM,Meta広告登録・セミナー未申込,登録から0日後 10:00,LINE,テキスト＋ボタン,SEM-A01（開催14日前10:00）,,"【LINEメッセージ 1／text】
+%line_name%さん、次回のZoomライブセミナーが決まりました。✨
+
+「AIでひとり起業攻略法」
+開催日時は申込ページでご確認ください
+
+AIを触るだけで終わらず、自分に合う事業テーマを見つけ、商品・集客・販売へつなげる考え方をお伝えします。😊
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,12,レビュー中,メッセージ,セミナー募集,META_SEM_10_セミナー募集_未申込者,AqiRBjFsP3Kl,Meta広告登録・セミナー未申込,登録から2日後 19:00,LINE,テキスト＋ボタン,SEM-A02（開催12日前19:00）,,"【LINEメッセージ 1／text】
+AIの情報は増えているのに、「自分は何をすればいいか」が決まらない。😌
+
+そんな状態から抜け出したい方。こちらのセミナーにぜひお申し込みください👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,13,レビュー中,メッセージ,セミナー募集,META_SEM_10_セミナー募集_未申込者,JHSy8ypSk7Oy,Meta広告登録・セミナー未申込,登録から4日後 10:00,LINE,テキスト＋ボタン,SEM-A03（開催10日前10:00）,,"【LINEメッセージ 1／text】
+ひとり起業は、全部を一人で頑張ることではありません。😊
+
+AIに任せる部分と、自分が判断する部分を分けることで、商品づくり・発信・販売を小さく回し始められます。AIでひとり起業攻略法 で具体的に解説します。📣
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,14,レビュー中,メッセージ,セミナー募集,META_SEM_10_セミナー募集_未申込者,pn1FoJ7Cr80a,Meta広告登録・セミナー未申込,登録から6日後 19:00,LINE,テキスト＋ボタン,SEM-A04（開催8日前19:00）,,"【LINEメッセージ 1／text】
+AI初心者大歓迎です。😊
+
+まだ商品がない、強みが分からない、副業の方向性も決まっていない。そこからスタートしていきましょう。💡
+
+開催日時は申込ページでご確認ください
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,15,レビュー中,メッセージ,セミナー募集,META_SEM_10_セミナー募集_未申込者,hwMrSLSGqmde,Meta広告登録・セミナー未申込,登録から8日後 10:00,LINE,テキスト＋ボタン,SEM-A05（開催6日前10:00）,,"【LINEメッセージ 1／text】
+AIツールの使い方だけ学んでも、AIで事業は構築できません。😌
+
+今回のセミナーでは、AIで同事業を構築するかをお見せし、ストレスのない働き方を手に入れていただきます👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,16,レビュー中,メッセージ,セミナー募集,META_SEM_10_セミナー募集_未申込者,UGcaRCoMFOxK,Meta広告登録・セミナー未申込,登録から9日後 19:00,LINE,テキスト＋ボタン,SEM-A06（開催5日前19:00）,,"【LINEメッセージ 1／text】
+今回は録画教材ではなく、Zoomライブで開催します。🎥
+
+同じ内容でも、開催日に時間を取り、その場で自分の課題として考えると理解が変わります。参加できる方は今のうちに予定を確保してください。🔥
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,17,レビュー中,メッセージ,セミナー募集,META_SEM_10_セミナー募集_未申込者,RokpcnZILyfj,Meta広告登録・セミナー未申込,登録から10日後 20:00,LINE,テキスト＋ボタン,SEM-A07（開催4日前20:00）,,"【LINEメッセージ 1／text】
+
+仕事の悩みってほとんどが人間関係だといわれています。
+
+でも、AIエージェントを使えば不要な人間関係に悩まされず、自分らしい働き方を手に入れることができます📣
+
+AIでひとり起業攻略法
+開催日時は申込ページでご確認ください
+
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,ラベル付与ー開催4日前,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,18,レビュー中,メッセージ,セミナー募集,META_SEM_10_セミナー募集_未申込者,yfZhr4eBiYca,Meta広告登録・セミナー未申込,登録から11日後 10:00,LINE,テキスト＋ボタン,SEM-B01（開催3日前10:00）,,"【LINEメッセージ 1／text】
+
+あなたは指示するだけ。手を動かすのはAIエージェント。
+実際にどう働いているのかをZoomライブでお見せします。🙌
+
+開催日時は申込ページでご確認ください
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,19,レビュー中,メッセージ,セミナー募集,META_SEM_10_セミナー募集_未申込者,DDbLkDS5Bs2y,Meta広告登録・セミナー未申込,登録から11日後 20:00,LINE,テキスト＋ボタン,SEM-B02（開催3日前20:00）,,"【LINEメッセージ 1／text】
+「自分には売れるものがない」そんな方でも問題ありません。AIエージェントが考えてくれるし、作ってもくれます。😌
+
+「え？どういうこと？」って思われるかもしれませんが、セミナーにお越しいただければ納得できます。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,20,レビュー中,メッセージ,セミナー募集,META_SEM_10_セミナー募集_未申込者,chBZyUC5u0cb,Meta広告登録・セミナー未申込,登録から12日後 10:00,LINE,テキスト＋ボタン,SEM-B03（開催2日前10:00）,,"【LINEメッセージ 1／text】
+
+こんな方に向いています。😊
+・AIを仕事や副業につなげたい
+・自分の商品を作りたい
+・発信しても何を売ればいいか分からない
+・一人で回せる仕組みを作りたい🔥
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,21,レビュー中,メッセージ,セミナー募集,META_SEM_10_セミナー募集_未申込者,bPqbxIX4OVHi,Meta広告登録・セミナー未申込,登録から12日後 20:00,LINE,テキスト＋ボタン,SEM-B04（開催2日前20:00）,,"【LINEメッセージ 1／text】
+社長、営業マン、経理担当者、マーケティング担当者💡
+
+雇わなくてもAIエージェントがあなたの手と足になって働いてくれます。AIエージェントを使って会社を作る方法を学びましょう。📣
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,22,レビュー中,メッセージ,セミナー募集,META_SEM_10_セミナー募集_未申込者,RSqeGyYE2rfk,Meta広告登録・セミナー未申込,登録から13日後 09:00,LINE,テキスト＋ボタン,SEM-B05（開催前日09:00）,,"【LINEメッセージ 1／text】
+
+AIでひとり起業攻略法
+開催日時は申込ページでご確認ください
+
+申込は名前とメールアドレスの2項目で完了します。✨
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,23,レビュー中,メッセージ,セミナー募集,META_SEM_10_セミナー募集_未申込者,3343Rx0CqrIS,Meta広告登録・セミナー未申込,登録から13日後 15:00,LINE,テキスト＋ボタン,SEM-B06（開催前日15:00）,,"【LINEメッセージ 1／text】
+AIを使えば、作業時間は短くなり、外注費も雇用も必要なくなります。🚀
+
+ただし、AIエージェントを適切に組織化して運用するテクニックが必要です。明日は、その設計部分を中心にお話しします。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,24,レビュー中,メッセージ,セミナー募集,META_SEM_10_セミナー募集_未申込者,24HUpDar6IB0,Meta広告登録・セミナー未申込,登録から13日後 21:00,LINE,テキスト＋ボタン,SEM-B07（開催前日21:00）,,"【LINEメッセージ 1／text】
+%line_name%さん、どこか予定は空けられそうですか？😊
+
+セミナーはライブなので、その場で質問も可能です。参加する場合は、今のうちに登録を済ませてください。🔥
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,25,レビュー中,メッセージ,セミナー募集,META_SEM_10_セミナー募集_未申込者,WvjKarVV5Oh3,Meta広告登録・セミナー未申込,登録から14日後 09:00,LINE,テキスト＋ボタン,SEM-B08（開催当日09:00）,,"【LINEメッセージ 1／text】
+
+AIでひとり起業攻略法
+開催日時は申込ページでご確認ください
+
+AIを自分の事業へつなぐ道筋を、今日のセミナーですべてお伝えします。📣
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,26,レビュー中,メッセージ,セミナー募集,META_SEM_10_セミナー募集_未申込者,uFvnt0A4Njsx,Meta広告登録・セミナー未申込,登録から14日後 17:00,LINE,テキスト＋ボタン,SEM-B09（開始3時間前）,,"【LINEメッセージ 1／text】
+
+
+まだ申込は間に合います。名前とメールアドレスを入力すると、参加用Zoom URLが届きます。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,27,レビュー中,メッセージ,セミナー募集,META_SEM_10_セミナー募集_未申込者,Dq5k8JrM1aww,Meta広告登録・セミナー未申込,登録から14日後 19:30,LINE,テキスト＋ボタン,SEM-B10（開始30分前）,,"【LINEメッセージ 1／text】
+
+
+今日ここで、AIの情報収集から「自分の事業を作る側」へ進みたい方はご参加ください。🎥
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,28,レビュー中,メッセージ,セミナー募集,META_SEM_10_セミナー募集_未申込者,c4DE7dl6EP7m,Meta広告登録・セミナー未申込,登録から14日後 23:50,LINE,テキスト＋ボタン,SEM-B11（開始10分前）,,"【LINEメッセージ 1／text】
+セミナーご参加を
+迷っていた方は、こちらが最後のご案内です。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,29,レビュー中,メッセージ,セミナー申込後,META_SEM_20_09 申込者LINE（k6x新規）,fhJhNIy50WL7,セミナー申込済み,登録直後,LINE,テキスト,REG-L01（申込直後・参加URL）,,"【LINEメッセージ 1／text】
+%line_name%さん、お申し込みありがとうございます。😊
+
+AIでひとり起業攻略法
+日時：%event_schedule%
+形式：Zoomライブセミナー
+参加URL：[ZoomURL]
+
+当日は開始数分前からお入りください。🙌",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,30,レビュー中,メッセージ,セミナー申込後,META_SEM_20_09 申込者LINE（k6x新規）,QUYj2IR2g1p8,セミナー申込済み,イベント7日前 10:00,LINE,テキスト,REG-L02（D-7）,,"【LINEメッセージ 1／text】
+開催1週間前になりました。⏰
+
+AIエージェントで会社経営する方法を楽しみにしていてください。
+そして、カレンダーに予定が入っているかご確認ください。😊
+
+[ZoomURL]",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,31,レビュー中,メッセージ,セミナー申込後,META_SEM_20_09 申込者LINE（k6x新規）,2ciSNpYtRfnb,セミナー申込済み,イベント3日前 10:05,LINE,テキスト,REG-L03（D-3）,,"【LINEメッセージ 1／text】
+あと3日です。⏰
+
+当日は、準備不要です。😊
+AIエージェントで組織を作ることで、仕事における人間関係の悩みから解放されます。楽しみにしていてください。",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,32,レビュー中,メッセージ,セミナー申込後,META_SEM_20_09 申込者LINE（k6x新規）,DIEmmzPsfmrf,セミナー申込済み,イベント1日前 19:00,LINE,テキスト,REG-L04（D-1・明日開催）,,"【LINEメッセージ 1／text】
+いよいよ明日です🎉
+
+AIでひとり起業攻略法
+%event_schedule%
+
+参加URL：[ZoomURL]
+お会いできるのを楽しみにしています。😊",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,33,レビュー中,メッセージ,セミナー申込後,META_SEM_20_09 申込者LINE（k6x新規）,MwJOVPgE3BV4,セミナー申込済み,イベント当日 09:05,LINE,テキスト,REG-L05（当日09:00）,,"【LINEメッセージ 1／text】
+%line_name%さん、おはようございます。
+本日開催です。🎉
+
+開始時刻になりましたら、こちらからZoomへお入りください。
+[ZoomURL]
+
+落ち着いて参加できる場所と、メモをご用意ください。😊",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,34,レビュー中,メッセージ,セミナー申込後,META_SEM_20_09 申込者LINE（k6x新規）,HA5p8YbgmKae,セミナー申込済み,イベント3時間5分前,LINE,テキスト,REG-L06（開始3時間前）,,"【LINEメッセージ 1／text】
+開始まであと3時間です。⏰
+AIを使った自分らしい働き方を身につけましょう！
+
+%event_schedule%
+Zoom：[ZoomURL]
+
+参加URLを今のうちに開けるか確認しておくと安心です。😊",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,35,レビュー中,メッセージ,セミナー申込後,META_SEM_20_09 申込者LINE（k6x新規）,2bUCN2biSqlZ,セミナー申込済み,イベント35分前,LINE,テキスト,REG-L07（開始30分前）,,"【LINEメッセージ 1／text】
+あと30分で開始します。⏰
+
+こちらのZoomからご参加ください。
+[ZoomURL]
+
+開始5分前を目安にお入りください。🙌",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,36,レビュー中,メッセージ,セミナー申込後,META_SEM_20_09 申込者LINE（k6x新規）,itk1TAwfH0hB,セミナー申込済み,イベント当日 20:00,LINE,テキスト,REG-L08（開始時刻）,,"【LINEメッセージ 1／text】
+ただいま開始しました。📣
+
+まだ間に合います。こちらからZoomへお入りください。
+[ZoomURL]",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,37,レビュー中,メッセージ,セミナー申込後,META_SEM_20_10 申込者メール（k6x新規）,Iadok2cdRNFH,セミナー申込済み,登録直後,メール,テキスト,REG-M01（申込直後メール）,【申込完了】AIでひとり起業攻略法の参加URL,"%line_name%さん😊
+
+すやです。
+AIでひとり起業攻略法 へお申し込みいただき、ありがとうございます。
+
+【開催日時】%event_schedule%
+【形式】Zoomライブセミナー
+【参加URL】[ZoomURL]
+
+当日は開始３分前を目安にZoomへお入りください。AIを使って自分に合う事業テーマを見つけ、商品づくり・集客・販売までをどうつなぐか、全体像をお伝えします。
+
+このメールは当日まで保存してください。
+
+すや
+
+配信停止をご希望の方はこちら：%cancel%",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,38,レビュー中,メッセージ,セミナー申込後,META_SEM_20_10 申込者メール（k6x新規）,WjL2iv3dSDDl,セミナー申込済み,イベント1日前 19:00,メール,テキスト,REG-M02（前日19:00メール）,【明日開催】AIでひとり起業攻略法,"%line_name%さん😊
+
+すやです。明日はいよいよ AIでひとり起業攻略法 の開催日です。
+
+【開催日時】%event_schedule%
+【参加URL】[ZoomURL]
+
+事前準備は必要ありませんが、理想の生活、ストレスのない働き方、を少し思い浮かべておくと、内容を自分に当てはめやすくなります。
+
+Zoomでお会いできるのを楽しみにしています。🙌
+
+すや
+
+配信停止をご希望の方はこちら：%cancel%",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,39,レビュー中,メッセージ,セミナー申込後,META_SEM_20_10 申込者メール（k6x新規）,aJvyaQPQ29RP,セミナー申込済み,イベント1時間5分前,メール,テキスト,REG-M03（1時間前メール）,【1時間後スタート】Zoom参加URLはこちら,"%line_name%さん😊
+
+すやです。AIでひとり起業攻略法 は1時間後に開始します。
+
+【日時】%event_schedule%
+【Zoom】[ZoomURL]
+
+開始３分前を目安にお入りください。接続が不安な場合は、今のうちにURLが開くか確認しておくと安心です。
+
+それでは後ほどお会いしましょう。🙌
+
+すや
+
+配信停止をご希望の方はこちら：%cancel%",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,40,レビュー中,メッセージ,セミナー申込後,META_SEM_20_10 申込者メール（k6x新規）,aDHRAeyeSKgt,セミナー申込済み,イベント1日後 10:00,メール,テキスト,REG-M04（翌日10:00・VSL案内メール）,【3日限定】見逃した方・復習したい方へ,"%line_name%さん😊
+
+すやです。昨日の 「AIでひとり起業攻略法 」について、みなさまのご参加ありがとうございました。
+
+「参加できなかった」
+「途中で離籍しなければならなくなり公開している」
+
+という連絡を何名かからいただいたので、見逃した方・もう一度確認したい方向けに、内容を3日間だけ公開します。
+
+【視聴ページ】[VSLURL]
+
+視聴後の特典もございますので是非最後までご覧ください。
+すや
+
+配信停止をご希望の方はこちら：%cancel%",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,41,レビュー中,メッセージ,見逃し配信確認,META_SEM_30_再公開希望確認,META_SEM-RQ-01,セミナー申込済み・面談未予約,セミナー翌日 10:00,LINE,テキスト＋ボタン,META_SEM-RQ-01,,"%line_name%さん、昨日の「AIでひとり起業攻略法」について、見逃した方・もう一度確認したい方向けに、3日間の見逃し配信をご用意しています😊
+
+視聴を希望する方は、下のボタンを押してください👇",3日間の見逃し配信を希望する,[再公開希望アクション],vsl_replay_requested,,面談予約済／商談中／成約／営業停止は除外,クリック→VSL未視聴／未クリック→営業ファネル終了,媒体特性上必要な新規接続文。押した人だけVSLへ登録する。,,,本文→CTA,見逃し配信を希望しますか？,未クリック者へVSLを送らない。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,42,レビュー中,メッセージ,VSL未視聴,META_SEM_40_VSL_未開封,erP64nKaKQfs,再公開希望済み・VSL状態該当,登録から0日後 10:00,LINE,画像パネル＋本文＋ボタン,VSL-U01,,"【LINEメッセージ 1／image】
+{
+  ""seq"": 0,
+  ""type"": ""image"",
+  ""original_content_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/BP6jdJufvGaM.png""
+}
+
+【LINEメッセージ 2／text】
+見逃した方・復習したい方へ。😊
+日程が合わなかった方向けの特別公開です。✨
+
+AIでひとり起業攻略法 の内容を、本日から3日間だけ視聴できます。
+👇
+
+【LINEメッセージ 3／button】
+{
+  ""seq"": 2,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】期間限定・無料公開のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""無料公開は登録から3日間・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/BP6jdJufvGaM.png,"=IF(U54="""","""",IMAGE(U54))",本文直前（画像→本文→CTA）,,YouTube原本画像をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,43,レビュー中,メッセージ,VSL未視聴,META_SEM_40_VSL_未開封,t0CViMJ6jbZk,再公開希望済み・VSL状態該当,登録から0日後 13:00,LINE,テキスト＋ボタン,VSL-U02,,"【LINEメッセージ 1／text】
+先ほど期間限定動画を公開しました。🎥
+
+AIツールの紹介だけではなく、自分に合う事業テーマをどう見つけ、商品・集客・販売へつなげるかを順番に解説しています。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】期間限定・無料公開のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""無料公開は登録から3日間・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,44,レビュー中,メッセージ,VSL未視聴,META_SEM_40_VSL_未開封,WrAkXMAcgVcn,再公開希望済み・VSL状態該当,登録から0日後 18:00,LINE,テキスト,VSL-U03,,"【LINEメッセージ 1／text】
+%line_name%さん👀
+
+まとまった時間がなくても、まずページを開いて視聴できる状態だけ確認しておいてください。公開は3日間です。🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,45,レビュー中,メッセージ,VSL未視聴,META_SEM_40_VSL_未開封,mbbRaBAoA64G,再公開希望済み・VSL状態該当,登録から0日後 21:00,LINE,テキスト＋ボタン,VSL-U04,,"【LINEメッセージ 1／text】
+AIについて学んでも行動に移せないときは、能力よりも進める順番が曖昧なことが多いです。💡
+
+動画では、AIエージェントで事業を形にする全体の流れをお伝えしています。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】期間限定・無料公開のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""無料公開は登録から3日間・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,46,レビュー中,メッセージ,VSL未視聴,META_SEM_40_VSL_未開封,lhRYYqfY3Z65,再公開希望済み・VSL状態該当,登録から1日後 09:00,LINE,テキスト,VSL-U05,,"【LINEメッセージ 1／text】
+残り２日です。😊
+
+AIエージェントの全貌をお伝えするのは今回だけです。✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,47,レビュー中,メッセージ,VSL未視聴,META_SEM_40_VSL_未開封,40JbjOH3V041,再公開希望済み・VSL状態該当,登録から1日後 13:00,LINE,テキスト＋ボタン,VSL-U06,,"【LINEメッセージ 1／text】
+明日で完全終了です👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】期間限定・無料公開のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""無料公開は登録から3日間・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,48,レビュー中,メッセージ,VSL未視聴,META_SEM_40_VSL_未開封,pl8XyFNAsg3R,再公開希望済み・VSL状態該当,登録から1日後 18:00,LINE,テキスト,VSL-U07,,"【LINEメッセージ 1／text】
+%line_name%さん、公開期間は明日までです。⏰
+
+視聴後特典で、AIひとり起業ロードマップ作成会が存在します。まずは内容を見て、自分に必要か判断してください。🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,49,レビュー中,メッセージ,VSL未視聴,META_SEM_40_VSL_未開封,eLjR3vW1Po0s,再公開希望済み・VSL状態該当,登録から1日後 21:00,LINE,テキスト＋ボタン,VSL-U08,,"【LINEメッセージ 1／text】
+今日のうちに見始めておくと、明日は必要な箇所を見直す時間に使えます。😊
+
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】期間限定・無料公開のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""無料公開は登録から3日間・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,50,レビュー中,メッセージ,VSL未視聴,META_SEM_40_VSL_未開封,pNiEq3QAw7li,再公開希望済み・VSL状態該当,登録から2日後 08:00,LINE,テキスト,VSL-U09,,"【LINEメッセージ 1／text】
+本日23:59で公開終了です。⏰
+
+日程が合わずセミナーに参加できなかった方も、今日中なら内容を確認できます。✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,51,レビュー中,メッセージ,VSL未視聴,META_SEM_40_VSL_未開封,rshejwulCzb8,再公開希望済み・VSL状態該当,登録から2日後 10:00,LINE,テキスト＋ボタン,VSL-U10,,"【LINEメッセージ 1／text】
+公開最終日になりました。🔥
+
+AIでのひとり起業に興味がある方は、今日の予定に視聴時間を入れてください。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】本日が公開最終日です"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""公開は本日まで・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,52,レビュー中,メッセージ,VSL未視聴,META_SEM_40_VSL_未開封,rSdX9Ug0LLj1,再公開希望済み・VSL状態該当,登録から2日後 12:00,LINE,テキスト,VSL-U11,,"【LINEメッセージ 1／text】
+あと半日ほどで終了します。⏰
+
+ページを開いていないまま期限を迎えると、今回の動画は見られなくなります。
+今のうちにご覧ください。🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,53,レビュー中,メッセージ,VSL未視聴,META_SEM_40_VSL_未開封,5LCZMUE4Si6x,再公開希望済み・VSL状態該当,登録から2日後 15:00,LINE,テキスト＋ボタン,VSL-U12,,"【LINEメッセージ 1／text】
+%line_name%さん、まだ間に合います。😊
+
+完璧に理解しようとせず、まず全体像を通して見るのがおすすめです。公開は本日23:59までです。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】公開は本日23:59まで"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""公開は本日23:59まで"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,54,レビュー中,メッセージ,VSL未視聴,META_SEM_40_VSL_未開封,8lEagN0kny0j,再公開希望済み・VSL状態該当,登録から2日後 18:00,LINE,テキスト,VSL-U13,,"【LINEメッセージ 1／text】
+残り6時間。⏰
+
+限定公開は今夜で終了します。AIの情報収集から、自分の事業を作る側へ進みたい方はご視聴ください。✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,55,レビュー中,メッセージ,VSL未視聴,META_SEM_40_VSL_未開封,hYYgJFw7xNEl,再公開希望済み・VSL状態該当,登録から2日後 21:00,LINE,テキスト＋ボタン,VSL-U14,,"【LINEメッセージ 1／text】
+終了まであと3時間です。⏰
+
+視聴するか迷っていた方へ。ページを開けるのは本日23:59までです。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】終了まであと3時間です"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""終了まであと3時間"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,56,レビュー中,メッセージ,VSL未視聴,META_SEM_40_VSL_未開封,ZjANTpPHmTOH,再公開希望済み・VSL状態該当,登録から2日後 23:00,LINE,テキスト,VSL-U15,,"【LINEメッセージ 1／text】
+あと1時間で公開終了です。⏰
+
+これが3日限定公開の最後のご案内です。今すぐ視聴ページを開いてください。🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,57,レビュー中,メッセージ,VSL途中,META_SEM_40_VSL_一部視聴,jd8LZ2WGD22p,再公開希望済み・VSL状態該当,登録から 0日 0時間 30分後,LINE,テキスト＋ボタン,VSL-P01,,"【LINEメッセージ 1／text】
+%line_name%さん、動画を開いてくださりありがとうございます。😊
+
+途中で止めた場合は、こちらから続きに戻れます。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】続きはこちらから再生できます"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""途中から続きを再生できます"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,58,レビュー中,メッセージ,VSL途中,META_SEM_40_VSL_一部視聴,RLqgOQRNAf29,再公開希望済み・VSL状態該当,登録から0日後 17:00,LINE,テキスト,VSL-P02,,"【LINEメッセージ 1／text】
+一度で見きれなくても大丈夫です。😊
+
+ただ、視聴期限はお忘れなく✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,59,レビュー中,メッセージ,VSL途中,META_SEM_40_VSL_一部視聴,1P8u09TqQLyk,再公開希望済み・VSL状態該当,登録から0日後 21:00,LINE,テキスト＋ボタン,VSL-P03,,"【LINEメッセージ 1／text】
+動画の途中で止まっている方へ。😊
+
+「自分なら何を事業にするか」を考えながら見ると、ただの情報ではなく行動の材料になります✨
+特に最後は多くの感想をいただくので、是非最後までご覧ください👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】続きはこちらから再生できます"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""途中から続きを再生できます"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。『多くの感想』は公開前に根拠確認。未確認なら該当文のみ削除、または事実ベースへ置換。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,60,レビュー中,メッセージ,VSL途中,META_SEM_40_VSL_一部視聴,hZGpXnuEz1xg,再公開希望済み・VSL状態該当,登録から1日後 09:00,LINE,テキスト,VSL-P04,,"【LINEメッセージ 1／text】
+あと２日で視聴終了です😊🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,61,レビュー中,メッセージ,VSL途中,META_SEM_40_VSL_一部視聴,suBXJeaTTYkm,再公開希望済み・VSL状態該当,登録から1日後 14:00,LINE,テキスト,VSL-P05,,"【LINEメッセージ 1／text】
+
+後半では、学びを事業につなげる考え方も扱っています。📣",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,62,レビュー中,メッセージ,VSL途中,META_SEM_40_VSL_一部視聴,6kJfk5ZhL0ZI,再公開希望済み・VSL状態該当,登録から1日後 20:00,LINE,テキスト,VSL-P06,,"【LINEメッセージ 1／text】
+公開期限は あと28時間です。⏰
+
+視聴を始めた時刻にかかわらず延長はされないので、余裕があるうちに続きをご覧ください。✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,63,レビュー中,メッセージ,VSL途中,META_SEM_40_VSL_一部視聴,Pkn7lktciPoS,再公開希望済み・VSL状態該当,登録から2日後 09:00,LINE,テキスト,VSL-P07,,"【LINEメッセージ 1／text】
+本日が視聴最終日です。⏰🎥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,64,レビュー中,メッセージ,VSL途中,META_SEM_40_VSL_一部視聴,CiZEgXL5O3Uz,再公開希望済み・VSL状態該当,登録から2日後 14:00,LINE,テキスト＋ボタン,VSL-P08,,"【LINEメッセージ 1／text】
+残り時間が少なくなってきました。⏰
+
+最後には、 AIひとり起業ロードマップ作成会の無料枠も案内しております。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】公開は本日23:59まで"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""公開は本日23:59まで"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,65,レビュー中,メッセージ,VSL途中,META_SEM_40_VSL_一部視聴,ETjHWlvzXGr3,再公開希望済み・VSL状態該当,登録から2日後 19:00,LINE,テキスト,VSL-P09,,"【LINEメッセージ 1／text】
+公開終了まであと数時間です。⏰📣",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,66,レビュー中,メッセージ,VSL途中,META_SEM_40_VSL_一部視聴,WhfdR94zX0IG,再公開希望済み・VSL状態該当,登録から2日後 22:30,LINE,テキスト＋ボタン,VSL-P10,,"【LINEメッセージ 1／text】
+23:59で終了します。⏰
+
+視聴途中の方への最後のご案内です。今すぐこちらから続きをご覧ください。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】本日23:59で終了します"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""本日23:59で終了"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,67,レビュー中,メッセージ,VSL完了・面談,META_SEM_40_VSL_視聴完了,DciEDgOwZDeT,再公開希望済み・VSL状態該当,登録直後,LINE,テキスト,VSL-C01,,"【LINEメッセージ 1／text】
+%line_name%さん、ロードマップ作成会のお申し込みは完了してますでしょうか？
+[ロードマップ作成会URL]
+
+↑
+こちらからもお申し込み可能です🎥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,68,レビュー中,メッセージ,VSL完了・面談,META_SEM_40_VSL_視聴完了,wh7dGNiiq0ob,再公開希望済み・VSL状態該当,登録から 0日 2時間 0分後,LINE,画像パネル＋本文＋ボタン,VSL-C02,,"【LINEメッセージ 1／image】
+{
+  ""seq"": 0,
+  ""type"": ""image"",
+  ""original_content_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/VoadmjkSafaL.png""
+}
+
+【LINEメッセージ 2／text】
+ロードマップ作成会は、めったに行われない特典です。次の開催は本当に未定ですので、今回を機にぜひお申し込みください👇
+
+【LINEメッセージ 3／button】
+{
+  ""seq"": 2,
+  ""type"": ""button"",
+  ""alt_text"": ""【個別】AIひとり起業ロードマップ作成会のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIひとり起業ロードマップ作成会"",
+  ""text"": ""Zoom30分・名前とメールだけで予約OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""日程を見て予約する"",
+      ""uri"": ""[ロードマップ作成会URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",日程を見て予約する,"[
+  {
+    ""url"": ""[ロードマップ作成会URL]"",
+    ""action_id"": ""lMxbsrSPWV9W"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/VoadmjkSafaL.png,"=IF(U80="""","""",IMAGE(U80))",本文直前（画像→本文→CTA）,,YouTube原本画像をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,69,レビュー中,メッセージ,VSL完了・面談,META_SEM_40_VSL_視聴完了,0Qha2c1IJnIT,再公開希望済み・VSL状態該当,登録から 0日 5時間 0分後,LINE,テキスト,VSL-C03,,"【LINEメッセージ 1／text】
+まだ商品がなくても、AI初心者でも大丈夫です。😊
+
+",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,70,レビュー中,メッセージ,VSL完了・面談,META_SEM_40_VSL_視聴完了,QUfY1iY6FCsU,再公開希望済み・VSL状態該当,登録から0日後 10:00,LINE,テキスト,VSL-C04,,"【LINEメッセージ 1／text】
+「ロードマップ作成会が分岐点になりました😊」
+
+最近こう言われることが増えてきました。
+今回は特別開放になります✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,71,レビュー中,メッセージ,VSL完了・面談,META_SEM_40_VSL_視聴完了,2nRWHPzRXiBP,再公開希望済み・VSL状態該当,登録から 1日 0時間 0分後,LINE,テキスト,VSL-C05,,"【LINEメッセージ 1／text】
+%line_name%さん、動画のご感想はいかがでしょうか。😊
+
+一人で整理すると止まりそうなら、ロードマップ作成会を使ってください🎥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,72,レビュー中,メッセージ,VSL完了・面談,META_SEM_40_VSL_視聴完了,JOAMSplqPBcC,再公開希望済み・VSL状態該当,登録から 1日 4時間 0分後,LINE,テキスト,VSL-C06,,"【LINEメッセージ 1／text】
+事業テーマ、商品、集客、販売。😌
+
+すべてを同時に考えると動けません。今の自分が最初に決める一つを、30分で明確にします。🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,73,レビュー中,メッセージ,VSL完了・面談,META_SEM_40_VSL_視聴完了,xCT9FyxEdkBJ,再公開希望済み・VSL状態該当,登録から1日後 10:00,LINE,テキスト＋ボタン,VSL-C07,,"【LINEメッセージ 1／text】
+予約は名前とメールアドレスの2項目で完了します😊
+
+都合が変わった場合は日程変更できます。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【個別】AIひとり起業ロードマップ作成会のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIひとり起業ロードマップ作成会"",
+  ""text"": ""Zoom30分・名前とメールだけで予約OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""日程を見て予約する"",
+      ""uri"": ""[ロードマップ作成会URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",日程を見て予約する,"[
+  {
+    ""url"": ""[ロードマップ作成会URL]"",
+    ""action_id"": ""lMxbsrSPWV9W"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,74,レビュー中,メッセージ,VSL完了・面談,META_SEM_40_VSL_視聴完了,brqYAbNWbjhP,再公開希望済み・VSL状態該当,登録から1日後 15:00,LINE,テキスト,VSL-C08,,"【LINEメッセージ 1／text】
+あと9時間でロードマップ作成会の申し込みは終了します。⏰
+
+日程を確保してください。✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,75,レビュー中,メッセージ,VSL完了・面談,META_SEM_40_VSL_視聴完了,zlm87BKwfnhi,再公開希望済み・VSL状態該当,登録から1日後 21:00,LINE,テキスト＋ボタン,VSL-C09,,"【LINEメッセージ 1／text】
+受付終了まであと3時間です。⏰
+
+自分に合う進め方を直接相談したい方は、こちらから予約してください。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【個別】ロードマップ作成会・受付終了まであと3時間"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIひとり起業ロードマップ作成会"",
+  ""text"": ""受付終了まであと3時間"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""日程を見て予約する"",
+      ""uri"": ""[ロードマップ作成会URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",日程を見て予約する,"[
+  {
+    ""url"": ""[ロードマップ作成会URL]"",
+    ""action_id"": ""lMxbsrSPWV9W"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,76,レビュー中,メッセージ,VSL完了・面談,META_SEM_40_VSL_視聴完了,Lw5hWl0hKeJK,再公開希望済み・VSL状態該当,登録から1日後 23:00,LINE,テキスト,VSL-C10,,"【LINEメッセージ 1／text】
+あと1時間で受付終了です。⏰
+
+AIひとり起業ロードマップ作成会 のご案内はこれで最後です。参加したい方は、今すぐ予約を完了してください。🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,77,レビュー中,メッセージ,面談予約後,META_SEM_80_05 面談予約リマインド（vVq新規）,k3OhRf27yoJ6,ロードマップ作成会予約済み,登録直後,LINE,テキスト,RSV-01（予約直後）,,"【LINEメッセージ 1／text】
+%line_name%さん、ロードマップ作成会のご予約ありがとうございます。😊
+
+日時： %event_schedule%
+形式： Zoom（30分）
+参加URL： %event_info%
+
+当日はよろしくお願いいたします。
+",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,78,レビュー中,メッセージ,面談予約後,META_SEM_80_05 面談予約リマインド（vVq新規）,v7clpa04Kfjk,ロードマップ作成会予約済み,イベント1日前 19:00,LINE,テキスト,RSV-02（前日19:00）,,"【LINEメッセージ 1／text】
+明日のリマインドになります。⏰
+
+%event_schedule%／Zoom30分
+%event_info%
+
+",,"[
+  {
+    ""url"": ""https://zoom.us/j/*"",
+    ""action_id"": null,
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,79,レビュー中,メッセージ,面談予約後,META_SEM_80_05 面談予約リマインド（vVq新規）,B7xRXy9LCLzz,ロードマップ作成会予約済み,イベント当日 09:00,LINE,テキスト,RSV-03（当日朝09:00）,,"【LINEメッセージ 1／text】
+%line_name%さん、本日が面談日です。😊
+
+開始時刻になりましたら、こちらからZoomへお入りください。
+%event_info%
+
+お話しできるのを楽しみにしています。🙌",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,80,レビュー中,メッセージ,面談予約後,META_SEM_80_05 面談予約リマインド（vVq新規）,OP9miZrixzvV,ロードマップ作成会予約済み,イベント3時間0分前,LINE,テキスト,RSV-04（3時間前）,,"【LINEメッセージ 1／text】
+面談まであと3時間です。⏰
+
+%event_info%
+
+",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,81,レビュー中,メッセージ,面談予約後,META_SEM_80_05 面談予約リマインド（vVq新規）,vDsOxRKEpvb5,ロードマップ作成会予約済み,イベント30分前,LINE,テキスト,RSV-05（30分前）,,"【LINEメッセージ 1／text】
+あと30分で開始します。⏰
+
+こちらのZoomでお待ちしています。
+%event_info%
+
+それでは後ほど、よろしくお願いします。🙌",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,82,レビュー中,メッセージ,オプチャ,META_SEM_90_オプチャ_初回参加案内,Keai6IIELEtI,VSL未転換または再公開未希望,登録直後,LINE,テキスト＋ボタン,OC-J01,,"【LINEメッセージ 1／text】
+%line_name%さん、AIの学びを続けたい方へ。😊
+
+私がやっている無料コミュニティにご招待させていただきます。
+AI活用やひとり起業についての無料勉強会が頻繁に行われています。オプチャから匿名で参加できます🙌
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": 
+  ""react_type"": ""one_time"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": null,
+  ""text"": ""スマートフォンから閲覧してください。"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""オプチャに参加する🔥"",
+      ""uri"": ""[オプチャURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",オプチャに参加する🔥,"[
+  {
+    ""url"": "" [オプチャURL]"",
+    ""action_id"": null,
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Meta広告_セミナー直行,REVIEW_METAセミナー直行_20260805,83,レビュー中,メッセージ,オプチャ,META_SEM_90_オプチャ_初回参加案内,NTIhWrYdF9wK,VSL未転換または再公開未希望,登録から1日後 19:00,LINE,テキスト,OC-J02,,"【LINEメッセージ 1／text】
+AI起業家無料コミュニティにはご参加いただけましたでしょうか😌👇
+
+[オプチャURL]",,"[
+  {
+    ""url"": ""[オプチャURL]"",
+    ""action_id"": ""ua4O1UzrwOxm"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,1,レビュー中,アクション,入口,IG_00_入口,ACT-ENTRY,Instagram 10大特典から専用LINEへ登録,登録直後,UTAGE,ラベル・シナリオ遷移,媒体入口,,媒体別アカウント・ラベルを混在させない,,,src_instagram_10benefits / line_main_registered / ig_benefit_1to4_delivered,,sales_won / sales_stop,IG_10_セミナー募集,媒体別アカウント・ラベルを混在させない,,,,,
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,2,レビュー中,アクション,セミナー,IG_15_申込完了,ACT-SEM-REG,セミナー申込完了,申込直後,UTAGE,ラベル・シナリオ遷移,セミナー申込完了,,名前・メール必須,,,seminar_main_registered,seminar_main_offered,roadmap_booked / sales_in_progress / sales_next_meeting / sales_won / sales_stop,IG_20_申込者リマインド,名前・メール必須,,,,,
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,3,レビュー中,アクション,面談,IG_25_面談予約完了,ACT-RM-BOOK,ロードマップ作成会予約完了,予約直後,UTAGE,ラベル・シナリオ遷移,面談予約完了,,予約時点でVSL・募集を停止,,,roadmap_booked,seminar_main_offered / vsl_main_offered / vsl_main_started / vsl_main_completed / openchat_invited,sales_won / sales_stop,IG_80_面談リマインド,予約時点でVSL・募集を停止,,,,,
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,4,レビュー中,アクション,見逃し,IG_30_再公開確認開始,ACT-RQ-START,セミナー申込済み・面談未予約,セミナー翌日10:00,UTAGE,ラベル・シナリオ遷移,再公開希望確認開始,,参加／欠席を問わない,,,,,roadmap_booked / sales_in_progress / sales_next_meeting / sales_won / sales_stop,IG_30_再公開希望確認,参加／欠席を問わない,,,,,
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,5,レビュー中,アクション,見逃し,IG_35_再公開希望,ACT-RQ-CLICK,再公開希望ボタン押下,クリック直後,UTAGE,ラベル・シナリオ遷移,3日VSL公開,,押した人だけ登録,,,vsl_replay_requested / vsl_main_offered,,roadmap_booked / sales_in_progress / sales_next_meeting / sales_won / sales_stop,IG_40_VSL未視聴,押した人だけ登録,,,,,
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,6,レビュー中,アクション,VSL,IG_45_視聴開始,ACT-VSL-START,VSLページクリック,クリック直後,UTAGE,ラベル・シナリオ遷移,VSL視聴開始,,未視聴を停止,,,vsl_main_started,,roadmap_booked / sales_in_progress / sales_next_meeting / sales_won / sales_stop,IG_50_VSL途中,未視聴を停止,,,,,
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,7,レビュー中,アクション,VSL,IG_55_視聴完了,ACT-VSL-COMPLETE,VSL完了地点到達,到達直後,UTAGE,ラベル・シナリオ遷移,VSL視聴完了,,完了者へ面談,,,vsl_main_completed,vsl_main_started,roadmap_booked / sales_in_progress / sales_next_meeting / sales_won / sales_stop,IG_60_VSL完了_面談,完了者へ面談,,,,,
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,8,レビュー中,アクション,VSL,IG_65_期限切れ,ACT-VSL-EXPIRE,3日VSL終了・面談未予約,3日目23:59,UTAGE,ラベル・シナリオ遷移,VSL期限切れ,,再公開は行わない,,,vsl_main_expired,vsl_main_started,roadmap_booked / sales_in_progress / sales_next_meeting / sales_won / sales_stop,IG_90_オプチャ案内,再公開は行わない,,,,,
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,9,レビュー中,アクション,終了,IG_90_未転換終了,ACT-OPENCHAT,VSL未転換または再公開未希望,翌朝10:00,UTAGE,ラベル・シナリオ遷移,オプチャ移行,,営業ファネル終了,,,openchat_invited,,roadmap_booked / sales_in_progress / sales_next_meeting / sales_won / sales_stop,IG_90_オプチャ案内,営業ファネル終了,,,,,
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,10,レビュー中,アクション,最優先,IG_99_営業結果,ACT-SALES,営業結果更新,即時,UTAGE,ラベル・シナリオ遷移,上位状態停止,,上位状態で下位シナリオを停止,,,sales_won / sales_next_meeting / sales_no_next_meeting / sales_stop,,,該当する最上位状態,上位状態で下位シナリオを停止,,,,,
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,11,レビュー中,メッセージ,入口・特典,IG_00_登録直後,IG-ENTRY-01,Instagram経由でLINE登録・未配布,登録直後,LINE,テキスト,IG-BEN-01,,"【LINEメッセージ 1／text】
+ご登録ありがとうございます！😊
+「AIでひとり起業」運営事務局です。
+
+さっそく、公式LINE登録特典をお届けします🎁
+
+━━━━━━━━━━
+① AI海外起業ビジネスモデル10選
+━━━━━━━━━━
+海外で生まれているAIビジネスを、10個に厳選してまとめています。
+
+▼こちらからご覧ください
+https://utagesystem.s3.ap-northeast-1.amazonaws.com/GX6OYW2fVtRD/O7A5XYh2PyVYoV5DWPTqUYkYOSiAt8Z9kYkydMPm.pdf
+
+━━━━━━━━━━
+② Claude Code・Codexなど
+環境セットアップ完全手順書
+━━━━━━━━━━
+AIを使ってホームページやツールを作るための準備を、初心者向けに解説しています。
+
+▼こちらからご覧ください
+https://utagesystem.s3.ap-northeast-1.amazonaws.com/GX6OYW2fVtRD/86Ln3pi7lvBUS3hi5m12ZvAI8UoMFEoXQLI00VIp.pdf
+
+━━━━━━━━━━
+③ これだけは知っておくべきコマンド5選
+━━━━━━━━━━
+AIを使ううえで、まず覚えておきたい基本コマンドをまとめています。
+
+▼こちらからご覧ください
+https://utagesystem.s3.ap-northeast-1.amazonaws.com/GX6OYW2fVtRD/YHSlEkeZB9T9gsqQGIPWmzvSq9m4QFLmnR8dtXFg.pdf
+
+━━━━━━━━━━
+④ 知っておくと差がつくSkills 10選
+━━━━━━━━━━
+AIに専門的な仕事を任せやすくする、便利なSkillsをまとめています。
+
+▼こちらからご覧ください
+https://utagesystem.s3.ap-northeast-1.amazonaws.com/GX6OYW2fVtRD/5bOaVbp2Mj7aqeVK3rQodv8Agq0D0j8nxLVup94C.pdf
+
+まずは気になるものから、ぜひご活用ください☺️",特典①〜④を見る,"[
+  {
+    ""url"": ""https://utagesystem.s3.ap-northeast-1.amazonaws.com/GX6OYW2fVtRD/O7A5XYh2PyVYoV5DWPTqUYkYOSiAt8Z9kYkydMPm.pdf"",
+    ""action_id"": null,
+    ""expiration_type"": ""none""
+  },
+  {
+    ""url"": ""https://utagesystem.s3.ap-northeast-1.amazonaws.com/GX6OYW2fVtRD/86Ln3pi7lvBUS3hi5m12ZvAI8UoMFEoXQLI00VIp.pdf"",
+    ""action_id"": null,
+    ""expiration_type"": ""none""
+  },
+  {
+    ""url"": ""https://utagesystem.s3.ap-northeast-1.amazonaws.com/GX6OYW2fVtRD/YHSlEkeZB9T9gsqQGIPWmzvSq9m4QFLmnR8dtXFg.pdf"",
+    ""action_id"": null,
+    ""expiration_type"": ""none""
+  },
+  {
+    ""url"": ""https://utagesystem.s3.ap-northeast-1.amazonaws.com/GX6OYW2fVtRD/5bOaVbp2Mj7aqeVK3rQodv8Agq0D0j8nxLVup94C.pdf"",
+    ""action_id"": null,
+    ""expiration_type"": ""none""
+  }
+]",ig_benefit_1to4_delivered,,面談予約済／商談中／成約／営業停止は除外,IG_10_セミナー募集,Instagram現行文を転用。4特典を一括配布。,,,本文内リンク,10大特典①〜④,Instagram固有のため既存Instagram本文を使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,12,レビュー中,メッセージ,入口・特典,IG_10_セミナー募集,IG-SEM-01,特典①〜④配布済み・セミナー未申込,登録から0日後 0:05,LINE,テキスト＋ボタン,IG-SEM-01,,"【LINEメッセージ 1／text】
+そして、登録特典⑤として無料セミナーへご招待します！😊
+
+テーマは、
+「AIでひとり起業攻略法」
+
+AI初心者の方にも分かるように、
+
+・AIを使ってどんなビジネスができるのか
+・ひとりでも事業を形にできる理由
+・何から始めればいいのか
+・AIを仕事や収入につなげる具体的な方法
+
+を、実例を交えながらお話しします。
+
+さらに、当日ご参加いただいた方には、実践に使える限定特典⑥〜⑩もご用意しています🎁
+
+📅 開催日時：[開催日時]
+💻 オンライン開催
+
+見るだけの参加でも大丈夫です。
+下記よりぜひ気軽にご参加ください！
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""スマートフォンから閲覧してください。"",
+  ""react_type"": ""one_time"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": null,
+  ""text"": ""特典の無料セミナーはこちら"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""枠を確保する"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",枠を確保する,[セミナー申込URL],seminar_main_offered,,面談予約済／商談中／成約／営業停止／セミナー申込済は除外,セミナー申込または募集継続,Instagram固有。5個目は動画ではなくライブセミナー招待。登録5分後。,,,本文→CTA,特典⑤：無料ライブセミナー,日時・URLだけ変数化。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,13,レビュー中,メッセージ,セミナー募集,IG_10_セミナー募集_未申込者,LQpvKDFjDGsM,Instagram 10大特典登録・セミナー未申込,登録から0日後 10:00,LINE,テキスト＋ボタン,SEM-A01（開催14日前10:00）,,"【LINEメッセージ 1／text】
+%line_name%さん、次回のZoomライブセミナーが決まりました。✨
+
+「AIでひとり起業攻略法」
+開催日時は申込ページでご確認ください
+
+AIを触るだけで終わらず、自分に合う事業テーマを見つけ、商品・集客・販売へつなげる考え方をお伝えします。😊
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,14,レビュー中,メッセージ,セミナー募集,IG_10_セミナー募集_未申込者,AqiRBjFsP3Kl,Instagram 10大特典登録・セミナー未申込,登録から2日後 19:00,LINE,テキスト＋ボタン,SEM-A02（開催12日前19:00）,,"【LINEメッセージ 1／text】
+AIの情報は増えているのに、「自分は何をすればいいか」が決まらない。😌
+
+そんな状態から抜け出したい方。こちらのセミナーにぜひお申し込みください👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,15,レビュー中,メッセージ,セミナー募集,IG_10_セミナー募集_未申込者,JHSy8ypSk7Oy,Instagram 10大特典登録・セミナー未申込,登録から4日後 10:00,LINE,テキスト＋ボタン,SEM-A03（開催10日前10:00）,,"【LINEメッセージ 1／text】
+ひとり起業は、全部を一人で頑張ることではありません。😊
+
+AIに任せる部分と、自分が判断する部分を分けることで、商品づくり・発信・販売を小さく回し始められます。AIでひとり起業攻略法 で具体的に解説します。📣
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,16,レビュー中,メッセージ,セミナー募集,IG_10_セミナー募集_未申込者,pn1FoJ7Cr80a,Instagram 10大特典登録・セミナー未申込,登録から6日後 19:00,LINE,テキスト＋ボタン,SEM-A04（開催8日前19:00）,,"【LINEメッセージ 1／text】
+AI初心者大歓迎です。😊
+
+まだ商品がない、強みが分からない、副業の方向性も決まっていない。そこからスタートしていきましょう。💡
+
+開催日時は申込ページでご確認ください
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,17,レビュー中,メッセージ,セミナー募集,IG_10_セミナー募集_未申込者,hwMrSLSGqmde,Instagram 10大特典登録・セミナー未申込,登録から8日後 10:00,LINE,テキスト＋ボタン,SEM-A05（開催6日前10:00）,,"【LINEメッセージ 1／text】
+AIツールの使い方だけ学んでも、AIで事業は構築できません。😌
+
+今回のセミナーでは、AIで同事業を構築するかをお見せし、ストレスのない働き方を手に入れていただきます👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,18,レビュー中,メッセージ,セミナー募集,IG_10_セミナー募集_未申込者,UGcaRCoMFOxK,Instagram 10大特典登録・セミナー未申込,登録から9日後 19:00,LINE,テキスト＋ボタン,SEM-A06（開催5日前19:00）,,"【LINEメッセージ 1／text】
+今回は録画教材ではなく、Zoomライブで開催します。🎥
+
+同じ内容でも、開催日に時間を取り、その場で自分の課題として考えると理解が変わります。参加できる方は今のうちに予定を確保してください。🔥
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,19,レビュー中,メッセージ,セミナー募集,IG_10_セミナー募集_未申込者,RokpcnZILyfj,Instagram 10大特典登録・セミナー未申込,登録から10日後 20:00,LINE,テキスト＋ボタン,SEM-A07（開催4日前20:00）,,"【LINEメッセージ 1／text】
+
+仕事の悩みってほとんどが人間関係だといわれています。
+
+でも、AIエージェントを使えば不要な人間関係に悩まされず、自分らしい働き方を手に入れることができます📣
+
+AIでひとり起業攻略法
+開催日時は申込ページでご確認ください
+
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,ラベル付与ー開催4日前,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,20,レビュー中,メッセージ,セミナー募集,IG_10_セミナー募集_未申込者,yfZhr4eBiYca,Instagram 10大特典登録・セミナー未申込,登録から11日後 10:00,LINE,テキスト＋ボタン,SEM-B01（開催3日前10:00）,,"【LINEメッセージ 1／text】
+
+あなたは指示するだけ。手を動かすのはAIエージェント。
+実際にどう働いているのかをZoomライブでお見せします。🙌
+
+開催日時は申込ページでご確認ください
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,21,レビュー中,メッセージ,セミナー募集,IG_10_セミナー募集_未申込者,DDbLkDS5Bs2y,Instagram 10大特典登録・セミナー未申込,登録から11日後 20:00,LINE,テキスト＋ボタン,SEM-B02（開催3日前20:00）,,"【LINEメッセージ 1／text】
+「自分には売れるものがない」そんな方でも問題ありません。AIエージェントが考えてくれるし、作ってもくれます。😌
+
+「え？どういうこと？」って思われるかもしれませんが、セミナーにお越しいただければ納得できます。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,22,レビュー中,メッセージ,セミナー募集,IG_10_セミナー募集_未申込者,chBZyUC5u0cb,Instagram 10大特典登録・セミナー未申込,登録から12日後 10:00,LINE,テキスト＋ボタン,SEM-B03（開催2日前10:00）,,"【LINEメッセージ 1／text】
+
+こんな方に向いています。😊
+・AIを仕事や副業につなげたい
+・自分の商品を作りたい
+・発信しても何を売ればいいか分からない
+・一人で回せる仕組みを作りたい🔥
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,23,レビュー中,メッセージ,セミナー募集,IG_10_セミナー募集_未申込者,bPqbxIX4OVHi,Instagram 10大特典登録・セミナー未申込,登録から12日後 20:00,LINE,テキスト＋ボタン,SEM-B04（開催2日前20:00）,,"【LINEメッセージ 1／text】
+社長、営業マン、経理担当者、マーケティング担当者💡
+
+雇わなくてもAIエージェントがあなたの手と足になって働いてくれます。AIエージェントを使って会社を作る方法を学びましょう。📣
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,24,レビュー中,メッセージ,セミナー募集,IG_10_セミナー募集_未申込者,RSqeGyYE2rfk,Instagram 10大特典登録・セミナー未申込,登録から13日後 09:00,LINE,テキスト＋ボタン,SEM-B05（開催前日09:00）,,"【LINEメッセージ 1／text】
+
+AIでひとり起業攻略法
+開催日時は申込ページでご確認ください
+
+申込は名前とメールアドレスの2項目で完了します。✨
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,25,レビュー中,メッセージ,セミナー募集,IG_10_セミナー募集_未申込者,3343Rx0CqrIS,Instagram 10大特典登録・セミナー未申込,登録から13日後 15:00,LINE,テキスト＋ボタン,SEM-B06（開催前日15:00）,,"【LINEメッセージ 1／text】
+AIを使えば、作業時間は短くなり、外注費も雇用も必要なくなります。🚀
+
+ただし、AIエージェントを適切に組織化して運用するテクニックが必要です。明日は、その設計部分を中心にお話しします。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,26,レビュー中,メッセージ,セミナー募集,IG_10_セミナー募集_未申込者,24HUpDar6IB0,Instagram 10大特典登録・セミナー未申込,登録から13日後 21:00,LINE,テキスト＋ボタン,SEM-B07（開催前日21:00）,,"【LINEメッセージ 1／text】
+%line_name%さん、どこか予定は空けられそうですか？😊
+
+セミナーはライブなので、その場で質問も可能です。参加する場合は、今のうちに登録を済ませてください。🔥
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,27,レビュー中,メッセージ,セミナー募集,IG_10_セミナー募集_未申込者,WvjKarVV5Oh3,Instagram 10大特典登録・セミナー未申込,登録から14日後 09:00,LINE,テキスト＋ボタン,SEM-B08（開催当日09:00）,,"【LINEメッセージ 1／text】
+
+AIでひとり起業攻略法
+開催日時は申込ページでご確認ください
+
+AIを自分の事業へつなぐ道筋を、今日のセミナーですべてお伝えします。📣
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,28,レビュー中,メッセージ,セミナー募集,IG_10_セミナー募集_未申込者,uFvnt0A4Njsx,Instagram 10大特典登録・セミナー未申込,登録から14日後 17:00,LINE,テキスト＋ボタン,SEM-B09（開始3時間前）,,"【LINEメッセージ 1／text】
+
+
+まだ申込は間に合います。名前とメールアドレスを入力すると、参加用Zoom URLが届きます。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,29,レビュー中,メッセージ,セミナー募集,IG_10_セミナー募集_未申込者,Dq5k8JrM1aww,Instagram 10大特典登録・セミナー未申込,登録から14日後 19:30,LINE,テキスト＋ボタン,SEM-B10（開始30分前）,,"【LINEメッセージ 1／text】
+
+
+今日ここで、AIの情報収集から「自分の事業を作る側」へ進みたい方はご参加ください。🎥
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,30,レビュー中,メッセージ,セミナー募集,IG_10_セミナー募集_未申込者,c4DE7dl6EP7m,Instagram 10大特典登録・セミナー未申込,登録から14日後 23:50,LINE,テキスト＋ボタン,SEM-B11（開始10分前）,,"【LINEメッセージ 1／text】
+セミナーご参加を
+迷っていた方は、こちらが最後のご案内です。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[セミナー申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,31,レビュー中,メッセージ,セミナー申込後,IG_20_09 申込者LINE（k6x新規）,fhJhNIy50WL7,セミナー申込済み,登録直後,LINE,テキスト,REG-L01（申込直後・参加URL）,,"【LINEメッセージ 1／text】
+%line_name%さん、お申し込みありがとうございます。😊
+
+AIでひとり起業攻略法
+日時：%event_schedule%
+形式：Zoomライブセミナー
+参加URL：[ZoomURL]
+
+当日は開始数分前からお入りください。🙌",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,32,レビュー中,メッセージ,セミナー申込後,IG_20_09 申込者LINE（k6x新規）,QUYj2IR2g1p8,セミナー申込済み,イベント7日前 10:00,LINE,テキスト,REG-L02（D-7）,,"【LINEメッセージ 1／text】
+開催1週間前になりました。⏰
+
+AIエージェントで会社経営する方法を楽しみにしていてください。
+そして、カレンダーに予定が入っているかご確認ください。😊
+
+[ZoomURL]",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,33,レビュー中,メッセージ,セミナー申込後,IG_20_09 申込者LINE（k6x新規）,2ciSNpYtRfnb,セミナー申込済み,イベント3日前 10:05,LINE,テキスト,REG-L03（D-3）,,"【LINEメッセージ 1／text】
+あと3日です。⏰
+
+当日は、準備不要です。😊
+AIエージェントで組織を作ることで、仕事における人間関係の悩みから解放されます。楽しみにしていてください。",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,34,レビュー中,メッセージ,セミナー申込後,IG_20_09 申込者LINE（k6x新規）,DIEmmzPsfmrf,セミナー申込済み,イベント1日前 19:00,LINE,テキスト,REG-L04（D-1・明日開催）,,"【LINEメッセージ 1／text】
+いよいよ明日です🎉
+
+AIでひとり起業攻略法
+%event_schedule%
+
+参加URL：[ZoomURL]
+お会いできるのを楽しみにしています。😊",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,35,レビュー中,メッセージ,セミナー申込後,IG_20_09 申込者LINE（k6x新規）,MwJOVPgE3BV4,セミナー申込済み,イベント当日 09:05,LINE,テキスト,REG-L05（当日09:00）,,"【LINEメッセージ 1／text】
+%line_name%さん、おはようございます。
+本日開催です。🎉
+
+開始時刻になりましたら、こちらからZoomへお入りください。
+[ZoomURL]
+
+落ち着いて参加できる場所と、メモをご用意ください。😊",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,36,レビュー中,メッセージ,セミナー申込後,IG_20_09 申込者LINE（k6x新規）,HA5p8YbgmKae,セミナー申込済み,イベント3時間5分前,LINE,テキスト,REG-L06（開始3時間前）,,"【LINEメッセージ 1／text】
+開始まであと3時間です。⏰
+AIを使った自分らしい働き方を身につけましょう！
+
+%event_schedule%
+Zoom：[ZoomURL]
+
+参加URLを今のうちに開けるか確認しておくと安心です。😊",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,37,レビュー中,メッセージ,セミナー申込後,IG_20_09 申込者LINE（k6x新規）,2bUCN2biSqlZ,セミナー申込済み,イベント35分前,LINE,テキスト,REG-L07（開始30分前）,,"【LINEメッセージ 1／text】
+あと30分で開始します。⏰
+
+こちらのZoomからご参加ください。
+[ZoomURL]
+
+開始5分前を目安にお入りください。🙌",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,38,レビュー中,メッセージ,セミナー申込後,IG_20_09 申込者LINE（k6x新規）,itk1TAwfH0hB,セミナー申込済み,イベント当日 20:00,LINE,テキスト,REG-L08（開始時刻）,,"【LINEメッセージ 1／text】
+ただいま開始しました。📣
+
+まだ間に合います。こちらからZoomへお入りください。
+[ZoomURL]",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,39,レビュー中,メッセージ,セミナー申込後,IG_20_10 申込者メール（k6x新規）,Iadok2cdRNFH,セミナー申込済み,登録直後,メール,テキスト,REG-M01（申込直後メール）,【申込完了】AIでひとり起業攻略法の参加URL,"%line_name%さん😊
+
+すやです。
+AIでひとり起業攻略法 へお申し込みいただき、ありがとうございます。
+
+【開催日時】%event_schedule%
+【形式】Zoomライブセミナー
+【参加URL】[ZoomURL]
+
+当日は開始３分前を目安にZoomへお入りください。AIを使って自分に合う事業テーマを見つけ、商品づくり・集客・販売までをどうつなぐか、全体像をお伝えします。
+
+このメールは当日まで保存してください。
+
+すや
+
+配信停止をご希望の方はこちら：%cancel%",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,40,レビュー中,メッセージ,セミナー申込後,IG_20_10 申込者メール（k6x新規）,WjL2iv3dSDDl,セミナー申込済み,イベント1日前 19:00,メール,テキスト,REG-M02（前日19:00メール）,【明日開催】AIでひとり起業攻略法,"%line_name%さん😊
+
+すやです。明日はいよいよ AIでひとり起業攻略法 の開催日です。
+
+【開催日時】%event_schedule%
+【参加URL】[ZoomURL]
+
+事前準備は必要ありませんが、理想の生活、ストレスのない働き方、を少し思い浮かべておくと、内容を自分に当てはめやすくなります。
+
+Zoomでお会いできるのを楽しみにしています。🙌
+
+すや
+
+配信停止をご希望の方はこちら：%cancel%",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,41,レビュー中,メッセージ,セミナー申込後,IG_20_10 申込者メール（k6x新規）,aJvyaQPQ29RP,セミナー申込済み,イベント1時間5分前,メール,テキスト,REG-M03（1時間前メール）,【1時間後スタート】Zoom参加URLはこちら,"%line_name%さん😊
+
+すやです。AIでひとり起業攻略法 は1時間後に開始します。
+
+【日時】%event_schedule%
+【Zoom】[ZoomURL]
+
+開始３分前を目安にお入りください。接続が不安な場合は、今のうちにURLが開くか確認しておくと安心です。
+
+それでは後ほどお会いしましょう。🙌
+
+すや
+
+配信停止をご希望の方はこちら：%cancel%",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,42,レビュー中,メッセージ,セミナー申込後,IG_20_10 申込者メール（k6x新規）,aDHRAeyeSKgt,セミナー申込済み,イベント1日後 10:00,メール,テキスト,REG-M04（翌日10:00・VSL案内メール）,【3日限定】見逃した方・復習したい方へ,"%line_name%さん😊
+
+すやです。昨日の 「AIでひとり起業攻略法 」について、みなさまのご参加ありがとうございました。
+
+「参加できなかった」
+「途中で離籍しなければならなくなり公開している」
+
+という連絡を何名かからいただいたので、見逃した方・もう一度確認したい方向けに、内容を3日間だけ公開します。
+
+【視聴ページ】[VSLURL]
+
+視聴後の特典もございますので是非最後までご覧ください。
+すや
+
+配信停止をご希望の方はこちら：%cancel%",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,43,レビュー中,メッセージ,見逃し配信確認,IG_30_再公開希望確認,IG-RQ-01,セミナー申込済み・面談未予約,セミナー翌日 10:00,LINE,テキスト＋ボタン,IG-RQ-01,,"%line_name%さん、昨日の「AIでひとり起業攻略法」について、見逃した方・もう一度確認したい方向けに、3日間の見逃し配信をご用意しています😊
+
+視聴を希望する方は、下のボタンを押してください👇",3日間の見逃し配信を希望する,[再公開希望アクション],vsl_replay_requested,,面談予約済／商談中／成約／営業停止は除外,クリック→VSL未視聴／未クリック→営業ファネル終了,媒体特性上必要な新規接続文。押した人だけVSLへ登録する。,,,本文→CTA,見逃し配信を希望しますか？,未クリック者へVSLを送らない。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,44,レビュー中,メッセージ,VSL未視聴,IG_40_VSL_未開封,erP64nKaKQfs,再公開希望済み・VSL状態該当,登録から0日後 10:00,LINE,画像パネル＋本文＋ボタン,VSL-U01,,"【LINEメッセージ 1／image】
+{
+  ""seq"": 0,
+  ""type"": ""image"",
+  ""original_content_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/BP6jdJufvGaM.png""
+}
+
+【LINEメッセージ 2／text】
+見逃した方・復習したい方へ。😊
+日程が合わなかった方向けの特別公開です。✨
+
+AIでひとり起業攻略法 の内容を、本日から3日間だけ視聴できます。
+👇
+
+【LINEメッセージ 3／button】
+{
+  ""seq"": 2,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】期間限定・無料公開のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""無料公開は登録から3日間・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/BP6jdJufvGaM.png,"=IF(U56="""","""",IMAGE(U56))",本文直前（画像→本文→CTA）,,YouTube原本画像をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,45,レビュー中,メッセージ,VSL未視聴,IG_40_VSL_未開封,t0CViMJ6jbZk,再公開希望済み・VSL状態該当,登録から0日後 13:00,LINE,テキスト＋ボタン,VSL-U02,,"【LINEメッセージ 1／text】
+先ほど期間限定動画を公開しました。🎥
+
+AIツールの紹介だけではなく、自分に合う事業テーマをどう見つけ、商品・集客・販売へつなげるかを順番に解説しています。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】期間限定・無料公開のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""無料公開は登録から3日間・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,46,レビュー中,メッセージ,VSL未視聴,IG_40_VSL_未開封,WrAkXMAcgVcn,再公開希望済み・VSL状態該当,登録から0日後 18:00,LINE,テキスト,VSL-U03,,"【LINEメッセージ 1／text】
+%line_name%さん👀
+
+まとまった時間がなくても、まずページを開いて視聴できる状態だけ確認しておいてください。公開は3日間です。🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,47,レビュー中,メッセージ,VSL未視聴,IG_40_VSL_未開封,mbbRaBAoA64G,再公開希望済み・VSL状態該当,登録から0日後 21:00,LINE,テキスト＋ボタン,VSL-U04,,"【LINEメッセージ 1／text】
+AIについて学んでも行動に移せないときは、能力よりも進める順番が曖昧なことが多いです。💡
+
+動画では、AIエージェントで事業を形にする全体の流れをお伝えしています。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】期間限定・無料公開のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""無料公開は登録から3日間・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,48,レビュー中,メッセージ,VSL未視聴,IG_40_VSL_未開封,lhRYYqfY3Z65,再公開希望済み・VSL状態該当,登録から1日後 09:00,LINE,テキスト,VSL-U05,,"【LINEメッセージ 1／text】
+残り２日です。😊
+
+AIエージェントの全貌をお伝えするのは今回だけです。✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,49,レビュー中,メッセージ,VSL未視聴,IG_40_VSL_未開封,40JbjOH3V041,再公開希望済み・VSL状態該当,登録から1日後 13:00,LINE,テキスト＋ボタン,VSL-U06,,"【LINEメッセージ 1／text】
+明日で完全終了です👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】期間限定・無料公開のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""無料公開は登録から3日間・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,50,レビュー中,メッセージ,VSL未視聴,IG_40_VSL_未開封,pl8XyFNAsg3R,再公開希望済み・VSL状態該当,登録から1日後 18:00,LINE,テキスト,VSL-U07,,"【LINEメッセージ 1／text】
+%line_name%さん、公開期間は明日までです。⏰
+
+視聴後特典で、AIひとり起業ロードマップ作成会が存在します。まずは内容を見て、自分に必要か判断してください。🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,51,レビュー中,メッセージ,VSL未視聴,IG_40_VSL_未開封,eLjR3vW1Po0s,再公開希望済み・VSL状態該当,登録から1日後 21:00,LINE,テキスト＋ボタン,VSL-U08,,"【LINEメッセージ 1／text】
+今日のうちに見始めておくと、明日は必要な箇所を見直す時間に使えます。😊
+
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】期間限定・無料公開のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""無料公開は登録から3日間・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,52,レビュー中,メッセージ,VSL未視聴,IG_40_VSL_未開封,pNiEq3QAw7li,再公開希望済み・VSL状態該当,登録から2日後 08:00,LINE,テキスト,VSL-U09,,"【LINEメッセージ 1／text】
+本日23:59で公開終了です。⏰
+
+日程が合わずセミナーに参加できなかった方も、今日中なら内容を確認できます。✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,53,レビュー中,メッセージ,VSL未視聴,IG_40_VSL_未開封,rshejwulCzb8,再公開希望済み・VSL状態該当,登録から2日後 10:00,LINE,テキスト＋ボタン,VSL-U10,,"【LINEメッセージ 1／text】
+公開最終日になりました。🔥
+
+AIでのひとり起業に興味がある方は、今日の予定に視聴時間を入れてください。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】本日が公開最終日です"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""公開は本日まで・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,54,レビュー中,メッセージ,VSL未視聴,IG_40_VSL_未開封,rSdX9Ug0LLj1,再公開希望済み・VSL状態該当,登録から2日後 12:00,LINE,テキスト,VSL-U11,,"【LINEメッセージ 1／text】
+あと半日ほどで終了します。⏰
+
+ページを開いていないまま期限を迎えると、今回の動画は見られなくなります。
+今のうちにご覧ください。🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,55,レビュー中,メッセージ,VSL未視聴,IG_40_VSL_未開封,5LCZMUE4Si6x,再公開希望済み・VSL状態該当,登録から2日後 15:00,LINE,テキスト＋ボタン,VSL-U12,,"【LINEメッセージ 1／text】
+%line_name%さん、まだ間に合います。😊
+
+完璧に理解しようとせず、まず全体像を通して見るのがおすすめです。公開は本日23:59までです。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】公開は本日23:59まで"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""公開は本日23:59まで"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,56,レビュー中,メッセージ,VSL未視聴,IG_40_VSL_未開封,8lEagN0kny0j,再公開希望済み・VSL状態該当,登録から2日後 18:00,LINE,テキスト,VSL-U13,,"【LINEメッセージ 1／text】
+残り6時間。⏰
+
+限定公開は今夜で終了します。AIの情報収集から、自分の事業を作る側へ進みたい方はご視聴ください。✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,57,レビュー中,メッセージ,VSL未視聴,IG_40_VSL_未開封,hYYgJFw7xNEl,再公開希望済み・VSL状態該当,登録から2日後 21:00,LINE,テキスト＋ボタン,VSL-U14,,"【LINEメッセージ 1／text】
+終了まであと3時間です。⏰
+
+視聴するか迷っていた方へ。ページを開けるのは本日23:59までです。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】終了まであと3時間です"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""終了まであと3時間"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,58,レビュー中,メッセージ,VSL未視聴,IG_40_VSL_未開封,ZjANTpPHmTOH,再公開希望済み・VSL状態該当,登録から2日後 23:00,LINE,テキスト,VSL-U15,,"【LINEメッセージ 1／text】
+あと1時間で公開終了です。⏰
+
+これが3日限定公開の最後のご案内です。今すぐ視聴ページを開いてください。🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,59,レビュー中,メッセージ,VSL途中,IG_40_VSL_一部視聴,jd8LZ2WGD22p,再公開希望済み・VSL状態該当,登録から 0日 0時間 30分後,LINE,テキスト＋ボタン,VSL-P01,,"【LINEメッセージ 1／text】
+%line_name%さん、動画を開いてくださりありがとうございます。😊
+
+途中で止めた場合は、こちらから続きに戻れます。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】続きはこちらから再生できます"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""途中から続きを再生できます"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,60,レビュー中,メッセージ,VSL途中,IG_40_VSL_一部視聴,RLqgOQRNAf29,再公開希望済み・VSL状態該当,登録から0日後 17:00,LINE,テキスト,VSL-P02,,"【LINEメッセージ 1／text】
+一度で見きれなくても大丈夫です。😊
+
+ただ、視聴期限はお忘れなく✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,61,レビュー中,メッセージ,VSL途中,IG_40_VSL_一部視聴,1P8u09TqQLyk,再公開希望済み・VSL状態該当,登録から0日後 21:00,LINE,テキスト＋ボタン,VSL-P03,,"【LINEメッセージ 1／text】
+動画の途中で止まっている方へ。😊
+
+「自分なら何を事業にするか」を考えながら見ると、ただの情報ではなく行動の材料になります✨
+特に最後は多くの感想をいただくので、是非最後までご覧ください👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】続きはこちらから再生できます"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""途中から続きを再生できます"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。『多くの感想』は公開前に根拠確認。未確認なら該当文のみ削除、または事実ベースへ置換。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,62,レビュー中,メッセージ,VSL途中,IG_40_VSL_一部視聴,hZGpXnuEz1xg,再公開希望済み・VSL状態該当,登録から1日後 09:00,LINE,テキスト,VSL-P04,,"【LINEメッセージ 1／text】
+あと２日で視聴終了です😊🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,63,レビュー中,メッセージ,VSL途中,IG_40_VSL_一部視聴,suBXJeaTTYkm,再公開希望済み・VSL状態該当,登録から1日後 14:00,LINE,テキスト,VSL-P05,,"【LINEメッセージ 1／text】
+
+後半では、学びを事業につなげる考え方も扱っています。📣",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,64,レビュー中,メッセージ,VSL途中,IG_40_VSL_一部視聴,6kJfk5ZhL0ZI,再公開希望済み・VSL状態該当,登録から1日後 20:00,LINE,テキスト,VSL-P06,,"【LINEメッセージ 1／text】
+公開期限は あと28時間です。⏰
+
+視聴を始めた時刻にかかわらず延長はされないので、余裕があるうちに続きをご覧ください。✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,65,レビュー中,メッセージ,VSL途中,IG_40_VSL_一部視聴,Pkn7lktciPoS,再公開希望済み・VSL状態該当,登録から2日後 09:00,LINE,テキスト,VSL-P07,,"【LINEメッセージ 1／text】
+本日が視聴最終日です。⏰🎥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,66,レビュー中,メッセージ,VSL途中,IG_40_VSL_一部視聴,CiZEgXL5O3Uz,再公開希望済み・VSL状態該当,登録から2日後 14:00,LINE,テキスト＋ボタン,VSL-P08,,"【LINEメッセージ 1／text】
+残り時間が少なくなってきました。⏰
+
+最後には、 AIひとり起業ロードマップ作成会の無料枠も案内しております。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】公開は本日23:59まで"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""公開は本日23:59まで"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,67,レビュー中,メッセージ,VSL途中,IG_40_VSL_一部視聴,ETjHWlvzXGr3,再公開希望済み・VSL状態該当,登録から2日後 19:00,LINE,テキスト,VSL-P09,,"【LINEメッセージ 1／text】
+公開終了まであと数時間です。⏰📣",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,68,レビュー中,メッセージ,VSL途中,IG_40_VSL_一部視聴,WhfdR94zX0IG,再公開希望済み・VSL状態該当,登録から2日後 22:30,LINE,テキスト＋ボタン,VSL-P10,,"【LINEメッセージ 1／text】
+23:59で終了します。⏰
+
+視聴途中の方への最後のご案内です。今すぐこちらから続きをご覧ください。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】本日23:59で終了します"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""本日23:59で終了"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",動画を見る,"[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,69,レビュー中,メッセージ,VSL完了・面談,IG_40_VSL_視聴完了,DciEDgOwZDeT,再公開希望済み・VSL状態該当,登録直後,LINE,テキスト,VSL-C01,,"【LINEメッセージ 1／text】
+%line_name%さん、ロードマップ作成会のお申し込みは完了してますでしょうか？
+[ロードマップ作成会URL]
+
+↑
+こちらからもお申し込み可能です🎥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,70,レビュー中,メッセージ,VSL完了・面談,IG_40_VSL_視聴完了,wh7dGNiiq0ob,再公開希望済み・VSL状態該当,登録から 0日 2時間 0分後,LINE,画像パネル＋本文＋ボタン,VSL-C02,,"【LINEメッセージ 1／image】
+{
+  ""seq"": 0,
+  ""type"": ""image"",
+  ""original_content_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/VoadmjkSafaL.png""
+}
+
+【LINEメッセージ 2／text】
+ロードマップ作成会は、めったに行われない特典です。次の開催は本当に未定ですので、今回を機にぜひお申し込みください👇
+
+【LINEメッセージ 3／button】
+{
+  ""seq"": 2,
+  ""type"": ""button"",
+  ""alt_text"": ""【個別】AIひとり起業ロードマップ作成会のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIひとり起業ロードマップ作成会"",
+  ""text"": ""Zoom30分・名前とメールだけで予約OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""日程を見て予約する"",
+      ""uri"": ""[ロードマップ作成会URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",日程を見て予約する,"[
+  {
+    ""url"": ""[ロードマップ作成会URL]"",
+    ""action_id"": ""lMxbsrSPWV9W"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/VoadmjkSafaL.png,"=IF(U82="""","""",IMAGE(U82))",本文直前（画像→本文→CTA）,,YouTube原本画像をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,71,レビュー中,メッセージ,VSL完了・面談,IG_40_VSL_視聴完了,0Qha2c1IJnIT,再公開希望済み・VSL状態該当,登録から 0日 5時間 0分後,LINE,テキスト,VSL-C03,,"【LINEメッセージ 1／text】
+まだ商品がなくても、AI初心者でも大丈夫です。😊
+
+",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,72,レビュー中,メッセージ,VSL完了・面談,IG_40_VSL_視聴完了,QUfY1iY6FCsU,再公開希望済み・VSL状態該当,登録から0日後 10:00,LINE,テキスト,VSL-C04,,"【LINEメッセージ 1／text】
+「ロードマップ作成会が分岐点になりました😊」
+
+最近こう言われることが増えてきました。
+今回は特別開放になります✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,73,レビュー中,メッセージ,VSL完了・面談,IG_40_VSL_視聴完了,2nRWHPzRXiBP,再公開希望済み・VSL状態該当,登録から 1日 0時間 0分後,LINE,テキスト,VSL-C05,,"【LINEメッセージ 1／text】
+%line_name%さん、動画のご感想はいかがでしょうか。😊
+
+一人で整理すると止まりそうなら、ロードマップ作成会を使ってください🎥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,74,レビュー中,メッセージ,VSL完了・面談,IG_40_VSL_視聴完了,JOAMSplqPBcC,再公開希望済み・VSL状態該当,登録から 1日 4時間 0分後,LINE,テキスト,VSL-C06,,"【LINEメッセージ 1／text】
+事業テーマ、商品、集客、販売。😌
+
+すべてを同時に考えると動けません。今の自分が最初に決める一つを、30分で明確にします。🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,75,レビュー中,メッセージ,VSL完了・面談,IG_40_VSL_視聴完了,xCT9FyxEdkBJ,再公開希望済み・VSL状態該当,登録から1日後 10:00,LINE,テキスト＋ボタン,VSL-C07,,"【LINEメッセージ 1／text】
+予約は名前とメールアドレスの2項目で完了します😊
+
+都合が変わった場合は日程変更できます。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【個別】AIひとり起業ロードマップ作成会のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIひとり起業ロードマップ作成会"",
+  ""text"": ""Zoom30分・名前とメールだけで予約OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""日程を見て予約する"",
+      ""uri"": ""[ロードマップ作成会URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",日程を見て予約する,"[
+  {
+    ""url"": ""[ロードマップ作成会URL]"",
+    ""action_id"": ""lMxbsrSPWV9W"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,76,レビュー中,メッセージ,VSL完了・面談,IG_40_VSL_視聴完了,brqYAbNWbjhP,再公開希望済み・VSL状態該当,登録から1日後 15:00,LINE,テキスト,VSL-C08,,"【LINEメッセージ 1／text】
+あと9時間でロードマップ作成会の申し込みは終了します。⏰
+
+日程を確保してください。✨",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,77,レビュー中,メッセージ,VSL完了・面談,IG_40_VSL_視聴完了,zlm87BKwfnhi,再公開希望済み・VSL状態該当,登録から1日後 21:00,LINE,テキスト＋ボタン,VSL-C09,,"【LINEメッセージ 1／text】
+受付終了まであと3時間です。⏰
+
+自分に合う進め方を直接相談したい方は、こちらから予約してください。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【個別】ロードマップ作成会・受付終了まであと3時間"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIひとり起業ロードマップ作成会"",
+  ""text"": ""受付終了まであと3時間"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""日程を見て予約する"",
+      ""uri"": ""[ロードマップ作成会URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",日程を見て予約する,"[
+  {
+    ""url"": ""[ロードマップ作成会URL]"",
+    ""action_id"": ""lMxbsrSPWV9W"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,78,レビュー中,メッセージ,VSL完了・面談,IG_40_VSL_視聴完了,Lw5hWl0hKeJK,再公開希望済み・VSL状態該当,登録から1日後 23:00,LINE,テキスト,VSL-C10,,"【LINEメッセージ 1／text】
+あと1時間で受付終了です。⏰
+
+AIひとり起業ロードマップ作成会 のご案内はこれで最後です。参加したい方は、今すぐ予約を完了してください。🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,79,レビュー中,メッセージ,面談予約後,IG_80_05 面談予約リマインド（vVq新規）,k3OhRf27yoJ6,ロードマップ作成会予約済み,登録直後,LINE,テキスト,RSV-01（予約直後）,,"【LINEメッセージ 1／text】
+%line_name%さん、ロードマップ作成会のご予約ありがとうございます。😊
+
+日時： %event_schedule%
+形式： Zoom（30分）
+参加URL： %event_info%
+
+当日はよろしくお願いいたします。
+",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,80,レビュー中,メッセージ,面談予約後,IG_80_05 面談予約リマインド（vVq新規）,v7clpa04Kfjk,ロードマップ作成会予約済み,イベント1日前 19:00,LINE,テキスト,RSV-02（前日19:00）,,"【LINEメッセージ 1／text】
+明日のリマインドになります。⏰
+
+%event_schedule%／Zoom30分
+%event_info%
+
+",,"[
+  {
+    ""url"": ""https://zoom.us/j/*"",
+    ""action_id"": null,
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,81,レビュー中,メッセージ,面談予約後,IG_80_05 面談予約リマインド（vVq新規）,B7xRXy9LCLzz,ロードマップ作成会予約済み,イベント当日 09:00,LINE,テキスト,RSV-03（当日朝09:00）,,"【LINEメッセージ 1／text】
+%line_name%さん、本日が面談日です。😊
+
+開始時刻になりましたら、こちらからZoomへお入りください。
+%event_info%
+
+お話しできるのを楽しみにしています。🙌",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,82,レビュー中,メッセージ,面談予約後,IG_80_05 面談予約リマインド（vVq新規）,OP9miZrixzvV,ロードマップ作成会予約済み,イベント3時間0分前,LINE,テキスト,RSV-04（3時間前）,,"【LINEメッセージ 1／text】
+面談まであと3時間です。⏰
+
+%event_info%
+
+",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,83,レビュー中,メッセージ,面談予約後,IG_80_05 面談予約リマインド（vVq新規）,vDsOxRKEpvb5,ロードマップ作成会予約済み,イベント30分前,LINE,テキスト,RSV-05（30分前）,,"【LINEメッセージ 1／text】
+あと30分で開始します。⏰
+
+こちらのZoomでお待ちしています。
+%event_info%
+
+それでは後ほど、よろしくお願いします。🙌",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,84,レビュー中,メッセージ,オプチャ,IG_90_オプチャ_初回参加案内,Keai6IIELEtI,VSL未転換または再公開未希望,登録直後,LINE,テキスト＋ボタン,OC-J01,,"【LINEメッセージ 1／text】
+%line_name%さん、AIの学びを続けたい方へ。😊
+
+私がやっている無料コミュニティにご招待させていただきます。
+AI活用やひとり起業についての無料勉強会が頻繁に行われています。オプチャから匿名で参加できます🙌
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": 
+  ""react_type"": ""one_time"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": null,
+  ""text"": ""スマートフォンから閲覧してください。"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""オプチャに参加する🔥"",
+      ""uri"": ""[オプチャURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}",オプチャに参加する🔥,"[
+  {
+    ""url"": "" [オプチャURL]"",
+    ""action_id"": null,
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+Instagram_10大特典,REVIEW_Instagram10大特典_20260805,85,レビュー中,メッセージ,オプチャ,IG_90_オプチャ_初回参加案内,NTIhWrYdF9wK,VSL未転換または再公開未希望,登録から1日後 19:00,LINE,テキスト,OC-J02,,"【LINEメッセージ 1／text】
+AI起業家無料コミュニティにはご参加いただけましたでしょうか😌👇
+
+[オプチャURL]",,"[
+  {
+    ""url"": ""[オプチャURL]"",
+    ""action_id"": ""ua4O1UzrwOxm"",
+    ""expiration_type"": ""none""
+  }
+]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。

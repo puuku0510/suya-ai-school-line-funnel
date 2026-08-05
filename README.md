@@ -10,6 +10,12 @@ UTAGEで運用する媒体別LINEファネルの正本リポジトリです。�
 | Instagram 10大特典 | 特典①〜④ → 特典⑤ライブセミナー → 欠席・見逃しVSL → ロードマップ作成会 | [`instagram-10-benefits-live-seminar-vsl/`](instagram-10-benefits-live-seminar-vsl/) |
 | Meta広告 | 広告 → LINE → VSL → ロードマップ作成会 | [`kaneko-meta-utage-handoff/`](kaneko-meta-utage-handoff/) |
 
+## 金子さん向け3ファネル統合ハンドオフ（2026-08-05承認版）
+
+VSL直行、Metaセミナー直行、Instagram 10大特典を新規実装するときは、[`kaneko-three-funnels-handoff/`](kaneko-three-funnels-handoff/) を正本として使用してください。承認済みSpreadsheet 3タブ、Claude Code／Codex開始プロンプト、実装指示書、全255行のCSVを1フォルダにまとめています。
+
+YouTubeファネルおよびYouTube配信アカウント `Y86og5tIw1hZ` は参照専用で、変更禁止です。
+
 `instagram-ig-harness-consultation-line-handoff/` は、Instagramから面談専用LINEへ直接誘導する旧案件です。今回の「10大特典」ファネルとは別物なので、実装時に参照しません。
 
 ## 2026-08-02 実機監査
