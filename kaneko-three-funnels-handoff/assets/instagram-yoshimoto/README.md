@@ -18,15 +18,15 @@
 | `source-original/7d3a84d1-785a-4cbe-95c8-eec7c4f543d5.png` | 24 | 12 | 登録5分後・特典⑤のセミナー招待券 |
 | `source-original/a61066b1-911e-4aa9-9dae-effb289e7601.png` | 25 | 13 | AIでひとり起業攻略法の説明 |
 | `source-original/84dbdc97-a0b4-4788-9d9c-6d402e369798.png` | 26 | 14 | セミナー参加限定の残り5特典 |
-| `source-original/f4b7db08-16a9-43f0-aaf3-caa0cb744151.png` | 46 | 34 | セミナー前日リマインド |
-| `source-original/9994c0c9-dd85-4813-9d25-adadd2687812.png` | 47 | 35 | セミナー当日リマインド・人物あり版 |
-| `source-original/e012febb-3b0a-4b8a-8ebb-91255149c38f.png` | 49 | 37 | セミナー当日リマインド・人物なし版 |
-| `source-original/edab37b2-5f31-4063-acc0-498b0d4d1096.png` | 50 | 38 | 20:00開始・ライブ参加案内 |
-| `source-original/6c890565-c8b5-4e58-948d-db5502dabbed.png` | 56 | 44 | 再公開希望者への3日VSL初回案内 |
-| `source-original/b8df8636-aa27-4f4a-a7a1-7ce2e3631b87.png` | 81 | 69 | VSL視聴完了者への30分個別面談案内 |
-| `source-original/6641105e-3faa-4150-9a5f-6c64d87ba6dd.png` | 82 | 70 | セミナー参加者向け個別面談クリエイティブ |
-| `source-original/54f809d5-cf88-40f4-88b3-4147a1ec8fe7.png` | 91 | 79 | 個別面談予約完了 |
-| `source-original/生成画像1.png` | 96 | 84 | LINEオープンチャット初回案内 |
+| `source-original/f4b7db08-16a9-43f0-aaf3-caa0cb744151.png` | 48 | 36 | セミナー前日リマインド |
+| `source-original/9994c0c9-dd85-4813-9d25-adadd2687812.png` | 49 | 37 | セミナー当日リマインド・人物あり版 |
+| `source-original/e012febb-3b0a-4b8a-8ebb-91255149c38f.png` | 51 | 39 | セミナー当日リマインド・人物なし版 |
+| `source-original/edab37b2-5f31-4063-acc0-498b0d4d1096.png` | 52 | 40 | 20:00開始・ライブ参加案内 |
+| `source-original/6c890565-c8b5-4e58-948d-db5502dabbed.png` | 60 | 48 | 再公開希望者への3日VSL初回案内 |
+| `source-original/b8df8636-aa27-4f4a-a7a1-7ce2e3631b87.png` | 85 | 73 | VSL視聴完了者への30分個別面談案内 |
+| `source-original/6641105e-3faa-4150-9a5f-6c64d87ba6dd.png` | 86 | 74 | セミナー参加者向け個別面談クリエイティブ |
+| `source-original/54f809d5-cf88-40f4-88b3-4147a1ec8fe7.png` | 95 | 83 | 個別面談予約完了 |
+| `source-original/生成画像1.png` | 100 | 88 | LINEオープンチャット初回案内 |
 
 上記13行は、`REVIEW_Instagram10大特典_20260805` のU列に原本URL、V列にセル内プレビュー、X列に画像内テキスト、Y列に使用指示を設定済みです。
 

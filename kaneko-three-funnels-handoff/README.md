@@ -24,9 +24,9 @@ Instagram画像は [Instagram原案画像](assets/instagram-yoshimoto/README.md)
 |---|---|---:|
 | Meta広告 VSL直行 | LINE登録 → 3日VSL | 87 |
 | Meta広告 セミナー直行 | LINE登録 → セミナー申込 | 83 |
-| Instagram 10大特典 | 特典①〜④ → 5分後に特典⑤＝セミナー案内 | 85 |
+| Instagram 10大特典 | 特典①〜④ → 5分後に特典⑤＝セミナー案内 | 89 |
 
-合計255行です。
+合計259行です。
 
 非対象:
 
@@ -75,7 +75,7 @@ Instagram画像は [Instagram原案画像](assets/instagram-yoshimoto/README.md)
 
 1. 承認済みSpreadsheet 3タブ: コピーと行単位設定
 2. このフォルダの実装指示書: 状態、分岐、停止条件、実装順
-3. このフォルダのCSV: 機械可読な承認済み255行
+3. このフォルダのCSV: 機械可読な承認済み259行
 4. UTAGE既存本番: 実値と既存IDの確認元
 
 矛盾を見つけた場合は本番変更を止め、差分を報告してください。YouTube本番を正本としてコピーした共通本文であっても、YouTube側へ逆反映してはいけません。
@@ -83,7 +83,7 @@ Instagram画像は [Instagram原案画像](assets/instagram-yoshimoto/README.md)
 ## 完了条件
 
 - 3ファネルが媒体別に分離されている。
-- CSVの255行とUTAGEの実装件数が一致する。
+- CSVの259行とUTAGEの実装件数が一致する。
 - 全アクションに入口、終了、競合停止がある。
 - 面談予約直後に募集配信が止まる。
 - セミナー型は再公開希望者だけVSLへ入る。
