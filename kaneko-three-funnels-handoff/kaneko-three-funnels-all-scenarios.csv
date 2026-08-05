@@ -2449,7 +2449,7 @@ Instagram_10大特典,REVIEW_Instagram10大特典_20260805,7,レビュー中,ア
 Instagram_10大特典,REVIEW_Instagram10大特典_20260805,8,レビュー中,アクション,VSL,IG_65_期限切れ,ACT-VSL-EXPIRE,3日VSL終了・面談未予約,3日目23:59,UTAGE,ラベル・シナリオ遷移,VSL期限切れ,,再公開は行わない,,,vsl_main_expired,vsl_main_started,roadmap_booked / sales_in_progress / sales_next_meeting / sales_won / sales_stop,IG_90_オプチャ案内,再公開は行わない,,,,,
 Instagram_10大特典,REVIEW_Instagram10大特典_20260805,9,レビュー中,アクション,終了,IG_90_未転換終了,ACT-OPENCHAT,VSL未転換または再公開未希望,翌朝10:00,UTAGE,ラベル・シナリオ遷移,オプチャ移行,,営業ファネル終了,,,openchat_invited,,roadmap_booked / sales_in_progress / sales_next_meeting / sales_won / sales_stop,IG_90_オプチャ案内,営業ファネル終了,,,,,
 Instagram_10大特典,REVIEW_Instagram10大特典_20260805,10,レビュー中,アクション,最優先,IG_99_営業結果,ACT-SALES,営業結果更新,即時,UTAGE,ラベル・シナリオ遷移,上位状態停止,,上位状態で下位シナリオを停止,,,sales_won / sales_next_meeting / sales_no_next_meeting / sales_stop,,,該当する最上位状態,上位状態で下位シナリオを停止,,,,,
-Instagram_10大特典,REVIEW_Instagram10大特典_20260805,11,レビュー中,メッセージ,入口・特典,IG_00_登録直後,IG-ENTRY-01,Instagram経由でLINE登録・未配布,登録直後,LINE,テキスト,IG-BEN-01,,"【LINEメッセージ 1／text】
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260805","11","レビュー中","メッセージ","入口・特典","IG_00_登録直後","IG-ENTRY-01","Instagram経由でLINE登録・未配布","登録直後","LINE","テキスト","IG-BEN-01","","【LINEメッセージ 1／text】
 ご登録ありがとうございます！😊
 「AIでひとり起業」運営事務局です。
 
@@ -2488,7 +2488,7 @@ AIに専門的な仕事を任せやすくする、便利なSkillsをまとめて
 ▼こちらからご覧ください
 https://utagesystem.s3.ap-northeast-1.amazonaws.com/GX6OYW2fVtRD/5bOaVbp2Mj7aqeVK3rQodv8Agq0D0j8nxLVup94C.pdf
 
-まずは気になるものから、ぜひご活用ください☺️",特典①〜④を見る,"[
+まずは気になるものから、ぜひご活用ください☺️","特典①〜④を見る","[
   {
     ""url"": ""https://utagesystem.s3.ap-northeast-1.amazonaws.com/GX6OYW2fVtRD/O7A5XYh2PyVYoV5DWPTqUYkYOSiAt8Z9kYkydMPm.pdf"",
     ""action_id"": null,
@@ -2509,8 +2509,8 @@ https://utagesystem.s3.ap-northeast-1.amazonaws.com/GX6OYW2fVtRD/5bOaVbp2Mj7aqeV
     ""action_id"": null,
     ""expiration_type"": ""none""
   }
-]",ig_benefit_1to4_delivered,,面談予約済／商談中／成約／営業停止は除外,IG_10_セミナー募集,Instagram現行文を転用。4特典を一括配布。,,,本文内リンク,10大特典①〜④,Instagram固有のため既存Instagram本文を使用。
-Instagram_10大特典,REVIEW_Instagram10大特典_20260805,12,レビュー中,メッセージ,入口・特典,IG_10_セミナー募集,IG-SEM-01,特典①〜④配布済み・セミナー未申込,登録から0日後 0:05,LINE,テキスト＋ボタン,IG-SEM-01,,"【LINEメッセージ 1／text】
+]","ig_benefit_1to4_delivered","","面談予約済／商談中／成約／営業停止は除外","IG_10_セミナー募集","Instagram現行文を転用。4特典を一括配布。","https://drive.usercontent.google.com/download?id=1Nh4_vdd1fOpvrmIFTaxjUSrK2ADEIV-t&export=view&confirm=t","=IF(U23="""","""",IMAGE(U23))","本文内リンク","公式LINE登録で豪華10大特典（AI×ひとり起業完全版）","吉本さん原案 8a963208-e6c2-4363-8049-9099e2528212.png を原寸・無加工で使用。文章・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260805","12","レビュー中","メッセージ","入口・特典","IG_10_セミナー募集","IG-SEM-01","特典①〜④配布済み・セミナー未申込","登録から0日後 0:05","LINE","テキスト＋ボタン","IG-SEM-01","","【LINEメッセージ 1／text】
 そして、登録特典⑤として無料セミナーへご招待します！😊
 
 テーマは、
@@ -2552,8 +2552,8 @@ AI初心者の方にも分かるように、
       ""del_label_id"": null
     }
   ]
-}",枠を確保する,[セミナー申込URL],seminar_main_offered,,面談予約済／商談中／成約／営業停止／セミナー申込済は除外,セミナー申込または募集継続,Instagram固有。5個目は動画ではなくライブセミナー招待。登録5分後。,,,本文→CTA,特典⑤：無料ライブセミナー,日時・URLだけ変数化。
-Instagram_10大特典,REVIEW_Instagram10大特典_20260805,13,レビュー中,メッセージ,セミナー募集,IG_10_セミナー募集_未申込者,LQpvKDFjDGsM,Instagram 10大特典登録・セミナー未申込,登録から0日後 10:00,LINE,テキスト＋ボタン,SEM-A01（開催14日前10:00）,,"【LINEメッセージ 1／text】
+}","枠を確保する","[セミナー申込URL]","seminar_main_offered","","面談予約済／商談中／成約／営業停止／セミナー申込済は除外","セミナー申込または募集継続","Instagram固有。5個目は動画ではなくライブセミナー招待。登録5分後。","https://drive.usercontent.google.com/download?id=1_VhKIcMLuby5D7FQQ7MLGTJcMseY4f7I&export=view&confirm=t","=IF(U24="""","""",IMAGE(U24))","本文→CTA","登録特典⑤・オンラインセミナー招待券／参加者へ特典⑥〜⑩","吉本さん原案 7d3a84d1-785a-4cbe-95c8-eec7c4f543d5.png を原寸・無加工で使用。文章・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260805","13","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_未申込者","LQpvKDFjDGsM","Instagram 10大特典登録・セミナー未申込","登録から0日後 10:00","LINE","テキスト＋ボタン","SEM-A01（開催14日前10:00）","","【LINEメッセージ 1／text】
 %line_name%さん、次回のZoomライブセミナーが決まりました。✨
 
 「AIでひとり起業攻略法」
@@ -2580,8 +2580,8 @@ AIを触るだけで終わらず、自分に合う事業テーマを見つけ、
       ""del_label_id"": null
     }
   ]
-}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
-Instagram_10大特典,REVIEW_Instagram10大特典_20260805,14,レビュー中,メッセージ,セミナー募集,IG_10_セミナー募集_未申込者,AqiRBjFsP3Kl,Instagram 10大特典登録・セミナー未申込,登録から2日後 19:00,LINE,テキスト＋ボタン,SEM-A02（開催12日前19:00）,,"【LINEメッセージ 1／text】
+}","セミナーに申し込む","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","https://drive.usercontent.google.com/download?id=1hDHYwE25L5n73r3M4u7dnhZP935HQ8-5&export=view&confirm=t","=IF(U25="""","""",IMAGE(U25))","本文直前（画像→本文→CTA）","AIでひとり起業攻略法とは何か／具体的な次の一歩","吉本さん原案 a61066b1-911e-4aa9-9dae-effb289e7601.png を原寸・無加工で使用。文章・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260805","14","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_未申込者","AqiRBjFsP3Kl","Instagram 10大特典登録・セミナー未申込","登録から2日後 19:00","LINE","テキスト＋ボタン","SEM-A02（開催12日前19:00）","","【LINEメッセージ 1／text】
 AIの情報は増えているのに、「自分は何をすればいいか」が決まらない。😌
 
 そんな状態から抜け出したい方。こちらのセミナーにぜひお申し込みください👇
@@ -2605,7 +2605,7 @@ AIの情報は増えているのに、「自分は何をすればいいか」が
       ""del_label_id"": null
     }
   ]
-}",セミナーに申し込む,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+}","セミナーに申し込む","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","https://drive.usercontent.google.com/download?id=1N4ce4deT64SE9bn9-tsgLF3B-K6o4coO&export=view&confirm=t","=IF(U26="""","""",IMAGE(U26))","本文直前（画像→本文→CTA）","セミナー参加限定特典①〜⑤（豪華特典⑥〜⑩）","吉本さん原案 84dbdc97-a0b4-4788-9d9c-6d402e369798.png を原寸・無加工で使用。文章・絵文字・分岐・配信時刻は承認済み行を維持する。"
 Instagram_10大特典,REVIEW_Instagram10大特典_20260805,15,レビュー中,メッセージ,セミナー募集,IG_10_セミナー募集_未申込者,JHSy8ypSk7Oy,Instagram 10大特典登録・セミナー未申込,登録から4日後 10:00,LINE,テキスト＋ボタン,SEM-A03（開催10日前10:00）,,"【LINEメッセージ 1／text】
 ひとり起業は、全部を一人で頑張ることではありません。😊
 
@@ -3042,22 +3042,22 @@ Instagram_10大特典,REVIEW_Instagram10大特典_20260805,33,レビュー中,�
 
 当日は、準備不要です。😊
 AIエージェントで組織を作ることで、仕事における人間関係の悩みから解放されます。楽しみにしていてください。",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
-Instagram_10大特典,REVIEW_Instagram10大特典_20260805,34,レビュー中,メッセージ,セミナー申込後,IG_20_09 申込者LINE（k6x新規）,DIEmmzPsfmrf,セミナー申込済み,イベント1日前 19:00,LINE,テキスト,REG-L04（D-1・明日開催）,,"【LINEメッセージ 1／text】
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260805","34","レビュー中","メッセージ","セミナー申込後","IG_20_09 申込者LINE（k6x新規）","DIEmmzPsfmrf","セミナー申込済み","イベント1日前 19:00","LINE","テキスト","REG-L04（D-1・明日開催）","","【LINEメッセージ 1／text】
 いよいよ明日です🎉
 
 AIでひとり起業攻略法
 %event_schedule%
 
 参加URL：[ZoomURL]
-お会いできるのを楽しみにしています。😊",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
-Instagram_10大特典,REVIEW_Instagram10大特典_20260805,35,レビュー中,メッセージ,セミナー申込後,IG_20_09 申込者LINE（k6x新規）,MwJOVPgE3BV4,セミナー申込済み,イベント当日 09:05,LINE,テキスト,REG-L05（当日09:00）,,"【LINEメッセージ 1／text】
+お会いできるのを楽しみにしています。😊","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","https://drive.usercontent.google.com/download?id=1Z9VB42yiv1z89nCcPCO37reyGAPcLgtf&export=view&confirm=t","=IF(U46="""","""",IMAGE(U46))","本文直前（画像→本文→CTA）","いよいよ明日開催・AIでひとり起業攻略法","吉本さん原案 f4b7db08-16a9-43f0-aaf3-caa0cb744151.png を原寸・無加工で使用。文章・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260805","35","レビュー中","メッセージ","セミナー申込後","IG_20_09 申込者LINE（k6x新規）","MwJOVPgE3BV4","セミナー申込済み","イベント当日 09:05","LINE","テキスト","REG-L05（当日09:00）","","【LINEメッセージ 1／text】
 %line_name%さん、おはようございます。
 本日開催です。🎉
 
 開始時刻になりましたら、こちらからZoomへお入りください。
 [ZoomURL]
 
-落ち着いて参加できる場所と、メモをご用意ください。😊",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+落ち着いて参加できる場所と、メモをご用意ください。😊","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","https://drive.usercontent.google.com/download?id=1XtcF3PKgU1v3is1AMfU6Y2u-m4SIP4u5&export=view&confirm=t","=IF(U47="""","""",IMAGE(U47))","本文直前（画像→本文→CTA）","いよいよ本日開催・まだ申込可能・参加者限定5特典","吉本さん原案 9994c0c9-dd85-4813-9d25-adadd2687812.png を原寸・無加工で使用。文章・絵文字・分岐・配信時刻は承認済み行を維持する。"
 Instagram_10大特典,REVIEW_Instagram10大特典_20260805,36,レビュー中,メッセージ,セミナー申込後,IG_20_09 申込者LINE（k6x新規）,HA5p8YbgmKae,セミナー申込済み,イベント3時間5分前,LINE,テキスト,REG-L06（開始3時間前）,,"【LINEメッセージ 1／text】
 開始まであと3時間です。⏰
 AIを使った自分らしい働き方を身につけましょう！
@@ -3066,18 +3066,18 @@ AIを使った自分らしい働き方を身につけましょう！
 Zoom：[ZoomURL]
 
 参加URLを今のうちに開けるか確認しておくと安心です。😊",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
-Instagram_10大特典,REVIEW_Instagram10大特典_20260805,37,レビュー中,メッセージ,セミナー申込後,IG_20_09 申込者LINE（k6x新規）,2bUCN2biSqlZ,セミナー申込済み,イベント35分前,LINE,テキスト,REG-L07（開始30分前）,,"【LINEメッセージ 1／text】
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260805","37","レビュー中","メッセージ","セミナー申込後","IG_20_09 申込者LINE（k6x新規）","2bUCN2biSqlZ","セミナー申込済み","イベント35分前","LINE","テキスト","REG-L07（開始30分前）","","【LINEメッセージ 1／text】
 あと30分で開始します。⏰
 
 こちらのZoomからご参加ください。
 [ZoomURL]
 
-開始5分前を目安にお入りください。🙌",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
-Instagram_10大特典,REVIEW_Instagram10大特典_20260805,38,レビュー中,メッセージ,セミナー申込後,IG_20_09 申込者LINE（k6x新規）,itk1TAwfH0hB,セミナー申込済み,イベント当日 20:00,LINE,テキスト,REG-L08（開始時刻）,,"【LINEメッセージ 1／text】
+開始5分前を目安にお入りください。🙌","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","https://drive.usercontent.google.com/download?id=1LzdwxCZo6t1L1_48Qto7ZCfEm0To2kw6&export=view&confirm=t","=IF(U49="""","""",IMAGE(U49))","本文直前（画像→本文→CTA）","いよいよ本日開催・まだ申込可能・参加者限定5特典（人物なし版）","吉本さん原案 e012febb-3b0a-4b8a-8ebb-91255149c38f.png を原寸・無加工で使用。文章・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260805","38","レビュー中","メッセージ","セミナー申込後","IG_20_09 申込者LINE（k6x新規）","itk1TAwfH0hB","セミナー申込済み","イベント当日 20:00","LINE","テキスト","REG-L08（開始時刻）","","【LINEメッセージ 1／text】
 ただいま開始しました。📣
 
 まだ間に合います。こちらからZoomへお入りください。
-[ZoomURL]",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+[ZoomURL]","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","https://drive.usercontent.google.com/download?id=1178CLZ6IuL48LtOLodOt42idmxdI649q&export=view&confirm=t","=IF(U50="""","""",IMAGE(U50))","本文直前（画像→本文→CTA）","20:00開始・AIでインスタ集客する方法・ライブ参加案内","吉本さん原案 edab37b2-5f31-4063-acc0-498b0d4d1096.png を原寸・無加工で使用。文章・絵文字・分岐・配信時刻は承認済み行を維持する。"
 Instagram_10大特典,REVIEW_Instagram10大特典_20260805,39,レビュー中,メッセージ,セミナー申込後,IG_20_10 申込者メール（k6x新規）,Iadok2cdRNFH,セミナー申込済み,登録直後,メール,テキスト,REG-M01（申込直後メール）,【申込完了】AIでひとり起業攻略法の参加URL,"%line_name%さん😊
 
 すやです。
@@ -3140,7 +3140,7 @@ Instagram_10大特典,REVIEW_Instagram10大特典_20260805,42,レビュー中,�
 Instagram_10大特典,REVIEW_Instagram10大特典_20260805,43,レビュー中,メッセージ,見逃し配信確認,IG_30_再公開希望確認,IG-RQ-01,セミナー申込済み・面談未予約,セミナー翌日 10:00,LINE,テキスト＋ボタン,IG-RQ-01,,"%line_name%さん、昨日の「AIでひとり起業攻略法」について、見逃した方・もう一度確認したい方向けに、3日間の見逃し配信をご用意しています😊
 
 視聴を希望する方は、下のボタンを押してください👇",3日間の見逃し配信を希望する,[再公開希望アクション],vsl_replay_requested,,面談予約済／商談中／成約／営業停止は除外,クリック→VSL未視聴／未クリック→営業ファネル終了,媒体特性上必要な新規接続文。押した人だけVSLへ登録する。,,,本文→CTA,見逃し配信を希望しますか？,未クリック者へVSLを送らない。
-Instagram_10大特典,REVIEW_Instagram10大特典_20260805,44,レビュー中,メッセージ,VSL未視聴,IG_40_VSL_未開封,erP64nKaKQfs,再公開希望済み・VSL状態該当,登録から0日後 10:00,LINE,画像パネル＋本文＋ボタン,VSL-U01,,"【LINEメッセージ 1／image】
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260805","44","レビュー中","メッセージ","VSL未視聴","IG_40_VSL_未開封","erP64nKaKQfs","再公開希望済み・VSL状態該当","登録から0日後 10:00","LINE","画像パネル＋本文＋ボタン","VSL-U01","","【LINEメッセージ 1／image】
 {
   ""seq"": 0,
   ""type"": ""image"",
@@ -3173,13 +3173,13 @@ AIでひとり起業攻略法 の内容を、本日から3日間だけ視聴で�
       ""del_label_id"": null
     }
   ]
-}",動画を見る,"[
+}","動画を見る","[
   {
     ""url"": ""[VSLURL]"",
     ""action_id"": ""mjNKfwKZJRag"",
     ""expiration_type"": ""none""
   }
-]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/BP6jdJufvGaM.png,"=IF(U56="""","""",IMAGE(U56))",本文直前（画像→本文→CTA）,,YouTube原本画像をそのまま使用。
+]","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","https://drive.usercontent.google.com/download?id=1yzVOowf9tGuaAintrOgi6rdIDqiE9tSt&export=view&confirm=t","=IF(U56="""","""",IMAGE(U56))","本文直前（画像→本文→CTA）","セミナー不参加者へ3日間限定の録画公開","吉本さん原案 6c890565-c8b5-4e58-948d-db5502dabbed.png を原寸・無加工で使用。文章・絵文字・分岐・配信時刻は承認済み行を維持する。"
 Instagram_10大特典,REVIEW_Instagram10大特典_20260805,45,レビュー中,メッセージ,VSL未視聴,IG_40_VSL_未開封,t0CViMJ6jbZk,再公開希望済み・VSL状態該当,登録から0日後 13:00,LINE,テキスト＋ボタン,VSL-U02,,"【LINEメッセージ 1／text】
 先ほど期間限定動画を公開しました。🎥
 
@@ -3565,13 +3565,13 @@ Instagram_10大特典,REVIEW_Instagram10大特典_20260805,68,レビュー中,�
     ""expiration_type"": ""none""
   }
 ]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
-Instagram_10大特典,REVIEW_Instagram10大特典_20260805,69,レビュー中,メッセージ,VSL完了・面談,IG_40_VSL_視聴完了,DciEDgOwZDeT,再公開希望済み・VSL状態該当,登録直後,LINE,テキスト,VSL-C01,,"【LINEメッセージ 1／text】
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260805","69","レビュー中","メッセージ","VSL完了・面談","IG_40_VSL_視聴完了","DciEDgOwZDeT","再公開希望済み・VSL状態該当","登録直後","LINE","テキスト","VSL-C01","","【LINEメッセージ 1／text】
 %line_name%さん、ロードマップ作成会のお申し込みは完了してますでしょうか？
 [ロードマップ作成会URL]
 
 ↑
-こちらからもお申し込み可能です🎥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
-Instagram_10大特典,REVIEW_Instagram10大特典_20260805,70,レビュー中,メッセージ,VSL完了・面談,IG_40_VSL_視聴完了,wh7dGNiiq0ob,再公開希望済み・VSL状態該当,登録から 0日 2時間 0分後,LINE,画像パネル＋本文＋ボタン,VSL-C02,,"【LINEメッセージ 1／image】
+こちらからもお申し込み可能です🎥","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","https://drive.usercontent.google.com/download?id=1zDdYksox-PG8m4w80F3160DbK4iy8DOM&export=view&confirm=t","=IF(U81="""","""",IMAGE(U81))","本文直前（画像→本文→CTA）","動画視聴者へ30分無料個別面談","吉本さん原案 b8df8636-aa27-4f4a-a7a1-7ce2e3631b87.png を原寸・無加工で使用。文章・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260805","70","レビュー中","メッセージ","VSL完了・面談","IG_40_VSL_視聴完了","wh7dGNiiq0ob","再公開希望済み・VSL状態該当","登録から 0日 2時間 0分後","LINE","画像パネル＋本文＋ボタン","VSL-C02","","【LINEメッセージ 1／image】
 {
   ""seq"": 0,
   ""type"": ""image"",
@@ -3600,13 +3600,13 @@ Instagram_10大特典,REVIEW_Instagram10大特典_20260805,70,レビュー中,�
       ""del_label_id"": null
     }
   ]
-}",日程を見て予約する,"[
+}","日程を見て予約する","[
   {
     ""url"": ""[ロードマップ作成会URL]"",
     ""action_id"": ""lMxbsrSPWV9W"",
     ""expiration_type"": ""none""
   }
-]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/VoadmjkSafaL.png,"=IF(U82="""","""",IMAGE(U82))",本文直前（画像→本文→CTA）,,YouTube原本画像をそのまま使用。
+]","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","https://drive.usercontent.google.com/download?id=1Ohu9GY2Tfou6npPdp-9bE4CUJj4kzLxV&export=view&confirm=t","=IF(U82="""","""",IMAGE(U82))","本文直前（画像→本文→CTA）","セミナー参加者へ30分無料個別面談","吉本さん原案 6641105e-3faa-4150-9a5f-6c64d87ba6dd.png を原寸・無加工で使用。文章・絵文字・分岐・配信時刻は承認済み行を維持する。"
 Instagram_10大特典,REVIEW_Instagram10大特典_20260805,71,レビュー中,メッセージ,VSL完了・面談,IG_40_VSL_視聴完了,0Qha2c1IJnIT,再公開希望済み・VSL状態該当,登録から 0日 5時間 0分後,LINE,テキスト,VSL-C03,,"【LINEメッセージ 1／text】
 まだ商品がなくても、AI初心者でも大丈夫です。😊
 
@@ -3694,7 +3694,7 @@ Instagram_10大特典,REVIEW_Instagram10大特典_20260805,78,レビュー中,�
 あと1時間で受付終了です。⏰
 
 AIひとり起業ロードマップ作成会 のご案内はこれで最後です。参加したい方は、今すぐ予約を完了してください。🔥",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
-Instagram_10大特典,REVIEW_Instagram10大特典_20260805,79,レビュー中,メッセージ,面談予約後,IG_80_05 面談予約リマインド（vVq新規）,k3OhRf27yoJ6,ロードマップ作成会予約済み,登録直後,LINE,テキスト,RSV-01（予約直後）,,"【LINEメッセージ 1／text】
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260805","79","レビュー中","メッセージ","面談予約後","IG_80_05 面談予約リマインド（vVq新規）","k3OhRf27yoJ6","ロードマップ作成会予約済み","登録直後","LINE","テキスト","RSV-01（予約直後）","","【LINEメッセージ 1／text】
 %line_name%さん、ロードマップ作成会のご予約ありがとうございます。😊
 
 日時： %event_schedule%
@@ -3702,7 +3702,7 @@ Instagram_10大特典,REVIEW_Instagram10大特典_20260805,79,レビュー中,�
 参加URL： %event_info%
 
 当日はよろしくお願いいたします。
-",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","https://drive.usercontent.google.com/download?id=1YCKctnlBFecaORB5B8Aa4z0ZnoWchcW6&export=view&confirm=t","=IF(U91="""","""",IMAGE(U91))","本文直前（画像→本文→CTA）","個別面談の予約ありがとうございます","吉本さん原案 54f809d5-cf88-40f4-88b3-4147a1ec8fe7.png を原寸・無加工で使用。文章・絵文字・分岐・配信時刻は承認済み行を維持する。"
 Instagram_10大特典,REVIEW_Instagram10大特典_20260805,80,レビュー中,メッセージ,面談予約後,IG_80_05 面談予約リマインド（vVq新規）,v7clpa04Kfjk,ロードマップ作成会予約済み,イベント1日前 19:00,LINE,テキスト,RSV-02（前日19:00）,,"【LINEメッセージ 1／text】
 明日のリマインドになります。⏰
 
@@ -3736,7 +3736,7 @@ Instagram_10大特典,REVIEW_Instagram10大特典_20260805,83,レビュー中,�
 %event_info%
 
 それでは後ほど、よろしくお願いします。🙌",,,,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
-Instagram_10大特典,REVIEW_Instagram10大特典_20260805,84,レビュー中,メッセージ,オプチャ,IG_90_オプチャ_初回参加案内,Keai6IIELEtI,VSL未転換または再公開未希望,登録直後,LINE,テキスト＋ボタン,OC-J01,,"【LINEメッセージ 1／text】
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260805","84","レビュー中","メッセージ","オプチャ","IG_90_オプチャ_初回参加案内","Keai6IIELEtI","VSL未転換または再公開未希望","登録直後","LINE","テキスト＋ボタン","OC-J01","","【LINEメッセージ 1／text】
 %line_name%さん、AIの学びを続けたい方へ。😊
 
 私がやっている無料コミュニティにご招待させていただきます。
@@ -3761,13 +3761,13 @@ AI活用やひとり起業についての無料勉強会が頻繁に行われて
       ""del_label_id"": null
     }
   ]
-}",オプチャに参加する🔥,"[
+}","オプチャに参加する🔥","[
   {
     ""url"": "" [オプチャURL]"",
     ""action_id"": null,
     ""expiration_type"": ""none""
   }
-]",,,面談予約済／商談中／成約／営業停止は除外,次メッセージまたは状態分岐,YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。,,,本文直前（画像→本文→CTA）,,YouTube原文をそのまま使用。
+]","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","https://drive.usercontent.google.com/download?id=1rO5MZ9rDi6NHj-7zdqZOQs7VtrrLGfpn&export=view&confirm=t","=IF(U96="""","""",IMAGE(U96))","本文直前（画像→本文→CTA）","LINEオープンチャット・無料勉強会の案内","吉本さん原案 生成画像1.png を原寸・無加工で使用。文章・絵文字・分岐・配信時刻は承認済み行を維持する。"
 Instagram_10大特典,REVIEW_Instagram10大特典_20260805,85,レビュー中,メッセージ,オプチャ,IG_90_オプチャ_初回参加案内,NTIhWrYdF9wK,VSL未転換または再公開未希望,登録から1日後 19:00,LINE,テキスト,OC-J02,,"【LINEメッセージ 1／text】
 AI起業家無料コミュニティにはご参加いただけましたでしょうか😌👇
 
