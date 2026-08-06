@@ -33,6 +33,8 @@ Instagram画像は [Instagram原案画像](assets/instagram-yoshimoto/README.md)
 - YouTubeファネルおよびYouTube配信アカウント `Y86og5tIw1hZ` の変更
 - Instagramでの特典⑥〜⑩のLINE配布（セミナー中のQRで配布）
 - Instagram登録後に短い案内動画を挟むこと
+- Instagramの特典①〜④について、リンクのクリック有無を判定・分岐条件にすること
+- 旧「特典リンク未クリック」「特典クリック済み」反応別シナリオをInstagramへ実装すること
 - セミナー参加／欠席をVSL入口の条件にすること
 - 再公開希望ボタンを押していない人へのVSL配信
 - Instagramの文章・絵文字を、吉本さん原案または指定済みYouTube補完文以外へ独自リライトすること
@@ -59,6 +61,7 @@ Instagram画像は [Instagram原案画像](assets/instagram-yoshimoto/README.md)
 - Metaセミナー直行とInstagramの未申込募集はセミナー申込完了で即停止する。開始10分前の最終案内はイベント相対時刻で設定する。
 - 面談予約リマインドは予約済みの人だけへ送り、予約済み状態そのものを除外条件にしない。キャンセル済み、日程変更後の旧予約、成約、営業停止で止める。
 - Instagramは特典①〜④を登録直後、特典⑤のセミナー案内を5分後に送る。短い案内動画は挟まない。特典⑥〜⑩はセミナー中のQR配布でありLINEでは送らない。
+- InstagramはLINE登録と特典①〜④の配布完了をもって受取済み扱いにする。特典リンクのクリック有無を計測・分岐せず、旧 BEN-C / BEN-N の反応別シナリオは作成・稼働させない。
 - Instagramの本文・絵文字は吉本さん原案を最優先する。原案で通数が足りない箇所だけ承認済みYouTube本文を使い、新規オリジナル文章を作らない。画像は `assets/instagram-yoshimoto/source-original/` の13枚、Metaセミナー直行は `assets/meta-seminar-yoshimoto/source-original/` の22枚を各README対応表どおり設定し、加工しない。
 - 面談予約、商談中、次回面談あり、成約、営業停止の上位状態が付いたら、競合する下位シナリオを即停止する。
 - 不明な実値や事実根拠を推測で本番設定しない。
@@ -91,6 +94,7 @@ Instagram画像は [Instagram原案画像](assets/instagram-yoshimoto/README.md)
 - セミナー型は再公開希望者だけVSLへ入る。
 - Meta VSL直行だけVSLが最大2サイクルになる。
 - Instagramの特典⑤は登録5分後、特典⑥〜⑩はLINE非配信。
+- Instagramの特典①〜④は配布完了だけで次へ進み、特典リンククリック判定や旧BEN-C／BEN-N配信がない。
 - 吉本さんDrive原本画像35枚（Instagram 13枚＋Metaセミナー直行22枚）がSpreadsheetの対応行とUTAGEにすべて設定されている。
 - YouTubeの更新履歴に本案件由来の変更がない。
 - テスト結果と未解決事項が実装指示書へ追記されている。

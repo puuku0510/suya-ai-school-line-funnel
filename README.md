@@ -7,14 +7,22 @@ UTAGEで運用する媒体別LINEファネルの正本リポジトリです。�
 | 媒体 | 正しい入口 | 正本 |
 |---|---|---|
 | YouTube | 動画別特典 → 活用サポート → ライブセミナー → VSL | [`docs/youtube-line-funnel-spec.md`](docs/youtube-line-funnel-spec.md) |
-| Instagram 10大特典 | 特典①〜④ → 特典⑤ライブセミナー → 欠席・見逃しVSL → ロードマップ作成会 | [`instagram-10-benefits-live-seminar-vsl/`](instagram-10-benefits-live-seminar-vsl/) |
+| Instagram 10大特典 | 特典①〜④ → 5分後に特典⑤ライブセミナー → 翌朝の再公開希望者だけVSL → ロードマップ作成会 | [`instagram-10-benefits-live-seminar-vsl/`](instagram-10-benefits-live-seminar-vsl/) |
 | Meta広告 | 広告 → LINE → VSL → ロードマップ作成会 | [`kaneko-meta-utage-handoff/`](kaneko-meta-utage-handoff/) |
 
 ## 金子さん向け3ファネル統合ハンドオフ（2026-08-05承認版）
 
-VSL直行、Metaセミナー直行、Instagram 10大特典を新規実装するときは、[`kaneko-three-funnels-handoff/`](kaneko-three-funnels-handoff/) を正本として使用してください。承認済みSpreadsheet 3タブ、Claude Code／Codex開始プロンプト、実装指示書、全255行のCSVを1フォルダにまとめています。
+VSL直行、Metaセミナー直行、Instagram 10大特典を新規実装するときは、[`kaneko-three-funnels-handoff/`](kaneko-three-funnels-handoff/) を正本として使用してください。承認済みSpreadsheet 3タブ、Claude Code／Codex開始プロンプト、実装指示書、全263行のCSVを1フォルダにまとめています。
 
 YouTubeファネルおよびYouTube配信アカウント `Y86og5tIw1hZ` は参照専用で、変更禁止です。
+
+## 2026-08-06 特典クリック判定の共通修正
+
+- YouTubeは、正しいキーワード受信と特典配布完了をもって受取済み扱いにし、実際の特典リンククリック有無では分岐しません。
+- Instagramは、専用LINE登録と特典①〜④の配布完了をもって受取済み扱いにし、実際の特典クリック有無では分岐しません。
+- 旧「特典リンク未クリック」催促シナリオは実装・配信しません。既存UTAGEにある場合は手動で停止します。
+- YouTubeの10分後メッセージ「キーワードの送信は大丈夫そうですか？」は、キーワード未送信者だけに従来どおり送ります。
+- セミナー申込、再公開希望、VSL視聴、面談予約ページなど、特典以外の計測クリックはこの修正の対象外です。
 
 `instagram-ig-harness-consultation-line-handoff/` は、Instagramから面談専用LINEへ直接誘導する旧案件です。今回の「10大特典」ファネルとは別物なので、実装時に参照しません。
 
@@ -37,4 +45,6 @@ YouTubeファネルおよびYouTube配信アカウント `Y86og5tIw1hZ` は参�
 UTAGEの既存本番設定を取得し、新規作成・更新・変更しないものを分けて提示してください。別媒体のアカウント、シナリオ、URL、ラベルを流用しないでください。
 
 承認済み本文を独自に書き換えず、実値を推測しないでください。本番変更前に差分、影響範囲、テスト方法、未確定値を提示し、変更後はUTAGEから再取得して照合してください。
+
+特典リンクのクリック有無を状態や分岐条件にしないでください。YouTubeはキーワード受信・特典配布完了、Instagramは登録・特典①〜④配布完了を受取済みの入口とします。旧「特典リンク未クリック」シナリオは停止対象です。セミナー・VSL・面談など特典以外の計測クリックは維持してください。
 ```

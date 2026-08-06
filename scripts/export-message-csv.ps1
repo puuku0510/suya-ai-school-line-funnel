@@ -76,8 +76,8 @@ foreach ($line in Get-Content -Encoding UTF8 -LiteralPath $Source) {
     }
 }
 
-if ($rows.Count -ne 149) {
-    throw "Expected 149 message rows, found $($rows.Count)."
+if ($rows.Count -ne 143) {
+    throw "Expected 143 message rows, found $($rows.Count)."
 }
 
 $duplicateIds = $rows | Group-Object ID | Where-Object Count -gt 1
