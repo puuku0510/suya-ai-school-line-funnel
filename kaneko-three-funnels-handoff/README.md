@@ -14,7 +14,7 @@ Spreadsheetの承認対象は次の3タブです。
 - `REVIEW_METAセミナー直行_20260805`
 - `REVIEW_Instagram10大特典_20260805`
 
-2026-08-05に「スプシOK」を受領済みです。Instagramは2026-08-07に、YouTube本番UTAGEとの照合と追加レビューを経た123行の最新版へ再承認・同期しました。文章・絵文字は吉本さん原案を最優先し、原案に足りない行だけ承認済みYouTube本文で補完します。新規オリジナル文は作りません。
+2026-08-05に「スプシOK」を受領済みです。Instagramは2026-08-07に、YouTube本番UTAGEとの照合と追加レビューを経た123行の最新版へ再承認・同期しました。同日、Spreadsheet上で直接修正された本文17行を、そのまま再同期しています。文章・絵文字は吉本さん原案を最優先し、原案に足りない行だけ承認済みYouTube本文で補完します。新規オリジナル文は作りません。
 
 Instagram画像は [Instagram原案画像](assets/instagram-yoshimoto/README.md)、Metaセミナー直行画像は [Metaセミナー原案画像](assets/meta-seminar-yoshimoto/README.md) を参照してください。Drive原本35枚（Instagram 13枚＋Metaセミナー直行22枚）を格納済みです。
 
