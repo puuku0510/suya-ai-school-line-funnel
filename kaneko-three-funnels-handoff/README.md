@@ -1,90 +1,105 @@
-# 金子さん用｜3媒体UTAGEファネル実装ハンドオフ
+# 金子さん用｜YouTube 3入口・Instagram・Meta広告 UTAGEファネル実装ハンドオフ
 
-VSL直行、Metaセミナー直行、Instagram 10大特典の3ファネルを、承認済みGoogle SpreadsheetからUTAGEへ実装するための正本フォルダです。
+Spreadsheet承認済み（スプシOK: 2026-08-09）・UTAGE実装待ちの2026-08-10版正本です。
 
-## 先に読むもの
+- [承認済みGoogle Spreadsheet](https://docs.google.com/spreadsheets/d/1TGC-Jtf4z2IA1PpL8dK0oyHrh74d2uPkmfGCNQCnxus/edit)
+- [GitHub案件フォルダ](https://github.com/puuku0510/suya-ai-school-line-funnel/tree/agent/audit-instagram-meta-funnels/kaneko-three-funnels-handoff)
+- [UTAGE実装指示書](kaneko-three-funnels-implementation-guide.md)
+- [5ファネル統合CSV](kaneko-three-funnels-all-scenarios.csv)
 
-1. [実装指示書](kaneko-three-funnels-implementation-guide.md)
-2. [承認済み全シナリオCSV](kaneko-three-funnels-all-scenarios.csv)
-3. [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1TGC-Jtf4z2IA1PpL8dK0oyHrh74d2uPkmfGCNQCnxus/edit)
+## 最初に読む順番
 
-Spreadsheetの承認対象は次の3タブです。
+1. この `README.md`
+2. [UTAGE実装指示書](kaneko-three-funnels-implementation-guide.md)
+3. [5ファネル統合CSV](kaneko-three-funnels-all-scenarios.csv)
+4. [シート別セル完全CSV](exports/)
+5. [画像原本ハッシュ台帳](assets-manifest.csv)
+6. [検証記録](validation-report.md)
+7. Google Spreadsheetの承認済み5シート
+8. UTAGE本番（ID・URL・イベント・連携の実値確認だけに使う）
 
-- `REVIEW_META_VSL直行_20260805`
-- `REVIEW_METAセミナー直行_20260805`
-- `REVIEW_Instagram10大特典_20260805`
+## 承認済み対象
 
-2026-08-05に「スプシOK」を受領済みです。Instagramは2026-08-07に、YouTube本番UTAGEとの照合と追加レビューを経た123行の最新版へ再承認・同期しました。同日、Spreadsheet上で直接修正された本文17行を、そのまま再同期しています。文章・絵文字は吉本さん原案を最優先し、原案に足りない行だけ承認済みYouTube本文で補完します。新規オリジナル文は作りません。
+| 媒体・入口 | Spreadsheet | 行数 | 運用 |
+|---|---|---:|---|
+| YouTube ゆっくりAI | [REVIEW_YouTube_ゆっくりAI_20260810](https://docs.google.com/spreadsheets/d/1TGC-Jtf4z2IA1PpL8dK0oyHrh74d2uPkmfGCNQCnxus/edit?gid=1154979349) | 199 | 新規読者だけ新ルート。既存読者は旧ルート完走 |
+| YouTube さとり | [REVIEW_YouTube_さとり_20260810](https://docs.google.com/spreadsheets/d/1TGC-Jtf4z2IA1PpL8dK0oyHrh74d2uPkmfGCNQCnxus/edit?gid=1874201366) | 199 | 新規読者だけ新ルート。既存読者は旧ルート完走 |
+| YouTube ゆるAI | [REVIEW_YouTube_ゆるAI_20260810](https://docs.google.com/spreadsheets/d/1TGC-Jtf4z2IA1PpL8dK0oyHrh74d2uPkmfGCNQCnxus/edit?gid=746825696) | 199 | 新規読者だけ新ルート。既存読者は旧ルート完走 |
+| Instagram 10大特典 | [REVIEW_Instagram10大特典_20260810](https://docs.google.com/spreadsheets/d/1TGC-Jtf4z2IA1PpL8dK0oyHrh74d2uPkmfGCNQCnxus/edit?gid=1974159573) | 145 | 新規読者だけ新ルート。既存読者は旧ルート完走 |
+| Meta広告 セミナー直行 | [REVIEW_METAセミナー直行_20260810](https://docs.google.com/spreadsheets/d/1TGC-Jtf4z2IA1PpL8dK0oyHrh74d2uPkmfGCNQCnxus/edit?gid=1425948398) | 118 | 新規・既存とも新ルートへ状態別移行 |
 
-Instagram画像は [Instagram原案画像](assets/instagram-yoshimoto/README.md)、Metaセミナー直行画像は [Metaセミナー原案画像](assets/meta-seminar-yoshimoto/README.md) を参照してください。Drive原本35枚（Instagram 13枚＋Metaセミナー直行22枚）を格納済みです。
+合計860行。Meta広告VSL直行87行は今回変更せず、既存参照ファネルとして保持します。
 
-## 実装対象と非対象
+## 絶対条件
 
-| 対象 | 入口 | アクション | メッセージ | 合計 |
-|---|---|---:|---:|---:|
-| Meta広告 VSL直行 | LINE登録 → 3日VSL | 9 | 78 | 87 |
-| Meta広告 セミナー直行 | LINE登録 → セミナー申込 | 10 | 77 | 87 |
-| Instagram 10大特典 | 特典①〜④ → 5分後に特典⑤＝セミナー案内 | 19 | 104 | 123 |
-| 合計 |  | 38 | 259 | 297 |
+- 本文、絵文字、画像、CTA、配信順、承認済み時刻を独自に書き換えない。
+- ID、URL、イベント、置換文字、別LINE連携キーを推測しない。
+- 1人に複数の営業オファーを同時配信しない。
+- 個別面談は予約ページクリックではなく、予約完了を全オファー停止点にする。
+- 面談完了者はゴール。自動オプチャを含む全営業配信を停止する。
+- 特典リンクを開いたかどうかで分岐しない。
+- YouTube 3入口は流入タグだけ分離し、YouTube/Instagram共通の2日程セミナーへ合流する。
+- YouTubeだけZoomサポート会を挟む。InstagramとMeta広告は挟まない。
+- Instagramは特典①〜④を登録直後、特典⑤＝セミナー案内を5分後に送る。
+- Metaセミナー直行はYouTube/Instagramとは別の2日程を使う。
+- Instagram 13枚、Meta 22枚の吉本さん原本画像を無加工で使う。
+- 画像内の3日程・参加者・不参加者などが実際の対象条件と一致しない場合は送信せず、原本保管とする。
+- YouTubeの `廃止対象（UTAGEで停止）` 6行と `旧読者のみ・新規停止` 行を新規読者へ実装しない。
 
-非対象:
-
-- YouTubeファネルおよびYouTube配信アカウント `Y86og5tIw1hZ` の変更
-- Instagramの特典①〜④について、リンククリック有無を判定・分岐条件にすること
-- 旧「特典リンク未クリック」「特典クリック済み」反応別シナリオ
-- Instagramでの特典⑥〜⑩のLINE配布（セミナー中のQRで配布）
-- Instagram登録後に短い案内動画を挟むこと
-- セミナー参加／欠席をVSL入口の条件にすること
-- 再公開希望ボタンを押していない人へのVSL配信
-- 吉本さん原案または承認済みYouTube補完文以外への独自リライト
-- Drive原本画像35枚の再生成、加工、画像内文言変更
-
-## Claude Code／Codexへ渡す開始プロンプト
+## Claude Code／Coderへそのまま渡すプロンプト
 
 ```text
-この案件では、GitHubの kaneko-three-funnels-handoff フォルダを実装仕様の正本として扱ってください。
+このGitHub案件フォルダを2026-08-10版UTAGEファネルの正本として扱ってください。
 
-最初に README.md、kaneko-three-funnels-implementation-guide.md、kaneko-three-funnels-all-scenarios.csv をすべて読んでください。次にUTAGEの既存本番設定を読み取りで監査し、3ファネルごとに「新規作成」「既存を更新」「変更しない」を分けた差分計画を提示してください。ID、URL、置換文字は推測せず、実機から取得するか未確定値一覧にしてください。
+最初に README.md、kaneko-three-funnels-implementation-guide.md、kaneko-three-funnels-all-scenarios.csv、exports/ の5つのシート別CSV、assets-manifest.csv、validation-report.md をすべて読んでください。
+
+次にUTAGEの既存本番設定を読み取りで監査し、対象アカウント・LINE連携・登録経路・ラベル・アクション・シナリオ・イベント・VSLページ・面談予約・計測リンク・既存読者数を実値で一覧化してください。「新規作成」「既存を更新」「変更しない」「停止」をオブジェクトID単位で分けてください。
 
 絶対条件:
-- YouTubeファネルおよびYouTube配信アカウント Y86og5tIw1hZ を変更しない。
-- 承認済みCSVの本文、件名、絵文字、画像、CTA、順番、配信時刻を独自に書き換えない。
-- 3媒体のアカウント、登録経路、ラベル、シナリオ、イベント、URLを混在させない。
-- Meta VSL直行は初回3日VSLの終了後、再公開希望ボタンを押した人だけ同じVSLを再度3日公開する。
-- Metaセミナー直行は承認済みCSVと実装指示書の状態遷移に従う。
-- InstagramはLINE登録直後に特典①〜④、5分後に特典⑤＝セミナー案内を送る。短い案内動画は挟まない。特典⑥〜⑩はセミナー中のQR配布でありLINEでは送らない。
-- InstagramはLINE登録と特典①〜④の配布完了をもって受取済み扱いにする。特典クリック有無を計測・分岐せず、旧BEN-C／BEN-Nを作成・稼働させない。
-- InstagramのセミナーURLクリック時点で通常募集を止め、ページクリック後未申込10通へ移す。申込完了時は未申込系をすべて止め、申込者LINE8通・メール6通へ移す。
-- Instagramはセミナー終了後、未申込者と申込済み・面談未予約者へ、見逃し再公開の希望確認3通を送る。参加／欠席は入口条件にしない。再公開ボタン押下者だけ、押下時点から72時間のVSLへ入れる。
-- InstagramのVSLは未視聴15通、途中10通、完了後面談案内10通。視聴開始で未視聴、完了で未視聴・途中を停止する。
-- Instagramは面談ページクリックでVSL完了向け配信、VSL期限案内、オプチャ移行を止め、厳密な48時間の面談催促10通へ移す。48時間内の予約で催促を止め、予約後リマインド5通へ移す。
-- Instagramの面談無断欠席者には再予約案内3通を送り、再予約がなければオプチャ2通へ移す。面談完了はゴールとして全自動配信を止める。
-- オプチャリンククリック時点で残りのオプチャ配信を止める。
-- Instagram本文・絵文字は吉本さん原案を最優先し、足りない箇所だけ承認済みYouTube本文を使う。画像は assets/instagram-yoshimoto/source-original/ の13枚、Metaセミナー直行は assets/meta-seminar-yoshimoto/source-original/ の22枚を対応表どおり設定し、加工しない。
-- 面談予約、商談中、次回面談あり、成約、営業停止の上位状態が付いたら、競合する下位シナリオを即停止する。
-- 不明な実値や事実根拠を推測で本番設定しない。
+- Spreadsheet承認済みの本文、絵文字、画像、CTA、配信順、配信時刻を独自に書き換えない。
+- ID、URL、イベント、置換文字、個別面談用公式LINEとの照合キーを推測しない。
+- YouTube/Instagramは2026-08-10以降の新規読者だけ新ルートへ入れ、既存読者は旧ルートを完走させる。
+- Metaセミナー直行は既存読者も状態別に新ルートへ移行する。ただし進行中VSLの起点と72時間期限をリセットしない。
+- YouTube 3入口は媒体タグを分離し、YouTube/Instagram共通の2日程へ合流する。Metaは別の2日程を使う。
+- InstagramはZoomサポートを挟まず、特典①〜④を即時、特典⑤＝セミナー案内を5分後に送る。
+- 特典リンクのクリック有無で分岐しない。
+- 1人1オファーを徹底し、セミナー申込、VSL開始・完了、面談予約完了、面談完了、オプチャクリックで競合配信を停止する。
+- 面談予約ページクリックではなく予約完了を全停止点にする。メインLINEと別の個別面談LINEを連携する。
+- 2日程未申込者は第2日程終了の翌朝06:00からVSL。申込者は本人の日程翌朝06:00に面談案内、同日23:59締切、未予約なら次の朝06:00からVSL。
+- 「どちらの日程も合わない」は募集を止め、前回企画ダイジェスト版として72時間VSLへ即移行する。再クリックで期限を延長しない。
+- VSL未視聴・途中・完了を排他制御し、72時間終了後も面談未予約ならオプチャへ移行する。
+- 面談無断欠席者にはNS-01〜03の3通を送り、未再予約ならオプチャへ移行する。
+- 面談完了者はゴールとし、自動オプチャを含む全営業配信を停止する。
+- Instagram 13枚・Meta 22枚の原本画像をassets/から無加工で設定する。
 
-YouTube本番UTAGEには、申込者向けメールからVSLを直接送る既存行 REG-M04 が確認されています。ただし、今回承認されたInstagramは「希望確認3通 → ボタン押下者だけ72時間VSL」が正本です。この差分を理由にYouTubeまたはInstagramの承認済みCSVを独自変更しないでください。
+本番変更前に、対象アカウント、対象人数、変更前後差分、誤配信リスク、未確定の実値、テスト計画、ロールバック方法を提示して、人間の承認を待ってください。本番権限がなければ、画面名・項目名・入力値をクリック単位で案内してください。
 
-本番変更前に、対象アカウントと変更オブジェクト一覧、変更前後差分、影響人数と誤配信リスク、未確定の実値、テスト計画とロールバック方法を提示して承認を得てください。実装後は指示書の全テストケースを実行し、件数、状態遷移、停止条件、URL、画像、置換文字、送信者名を実機から再取得して報告してください。
+実装後は指示書の全テストケースを実行し、UTAGEから実値を再取得して、件数、分岐、停止条件、URL、画像、置換文字、対象読者を報告してください。
 ```
 
-## 正本の優先順位
+## ファイルと画像
 
-1. 承認済みSpreadsheet 3タブ: コピーと行単位設定
-2. このフォルダの実装指示書: 状態、分岐、停止条件、実装順
-3. このフォルダのCSV: 機械可読な承認済み297行
-4. UTAGE既存本番: 実値と既存IDの確認元
+- 統合CSV: 860行・32列。YouTubeの4本文列、UTAGE編集URL、原本メッセージIDも保持。
+- シート別CSV: Spreadsheetセルを媒体別に保持。
+- Instagram原本: [assets/instagram-yoshimoto/source-original/](assets/instagram-yoshimoto/source-original/)
+- Meta原本: [assets/meta-seminar-yoshimoto/source-original/](assets/meta-seminar-yoshimoto/source-original/)
+- 画像台帳: [assets-manifest.csv](assets-manifest.csv)
+- 検証スクリプト: [verify-handoff.ps1](verify-handoff.ps1)
 
-矛盾を見つけた場合は本番変更を止め、差分を報告してください。YouTube本番を参照してもYouTube側へ逆反映してはいけません。
+Windows PowerShellでの再検証:
+
+```powershell
+& .\verify-handoff.ps1
+```
+
+期待結果: `Handoff verification passed.`
 
 ## 完了条件
 
-- 3ファネルが媒体別に分離され、CSVの297行とUTAGEの実装件数が一致する。
-- Instagramは19アクション・104メッセージ・合計123行である。
-- Instagramの希望確認3通、VSL35通、面談クリック後48時間10通、予約後5通、無断欠席3通、オプチャ2通が正しい停止条件でつながる。
-- セミナーURLクリック、申込完了、VSL開始・完了、面談ページクリック、面談予約、面談完了、オプチャリンククリックで競合配信が止まる。
-- Meta VSL直行だけVSLが最大2サイクルになる。
-- 吉本さんDrive原本画像35枚が対応行とUTAGEにすべて設定されている。
-- YouTubeの更新履歴に本案件由来の変更がない。
-- テスト結果と未解決事項が実装指示書へ追記されている。
+- 5シート・860行とUTAGE実装対象が対応する。
+- YouTube 3入口、Instagram、Metaの日程・流入・読者移行が混ざらない。
+- 予約完了・面談完了・成約・営業停止で競合配信が止まる。
+- VSLの72時間起点が延長・リセットされない。
+- 無断欠席3通後の出口がオプチャへつながる。
+- 原本画像35枚が対応行へ設定される。
+- 本番テストとロールバック記録が実装指示書へ追記される。

@@ -1,0 +1,1862 @@
+"ファネル","承認元シート","No.","レビュー状態","行種別","フェーズ","シナリオ名","管理ID","対象・入口条件","配信タイミング","媒体","推奨形式","管理名称","件名","本文（全文・編集可）","CTA文言","CTA URL／変数","付与ラベル","解除ラベル","停止・除外条件","終了条件／次シナリオ","実装メモ","画像URL（YouTube原本）","画像プレビュー（セル内）","UTAGE挿入位置","画像内テキスト","使用指示・注意"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","1","レビュー中","アクション","入口","META_SEM_00_入口","ACT-ENTRY","Metaセミナー広告からLINE登録","登録直後","UTAGE","ラベル・シナリオ遷移","媒体入口","","Meta専用の2日程セミナー募集を即開始。Zoomサポート会は起動しない。","","","src_meta_seminar / line_main_registered / offer_seminar_active","","roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","META_SEM_10_2日程提示","既存読者は状態別移行。新規読者は全員2026-08-10版へ。","","","","",""
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","2","レビュー中","アクション","セミナー","META_SEM_15_申込完了","ACT-SEM-REG","Meta第1または第2日程のセミナー申込完了","申込直後","UTAGE","ラベル・シナリオ遷移","セミナー申込完了","","選択した開催日程を保存し、未申込募集を即停止。","","","seminar_meta_registered / seminar_meta_schedule_1 または 2 / offer_seminar_active","seminar_main_offered / seminar_page_clicked_unregistered / seminar_date_unavailable","roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","META_SEM_20_申込者リマインド","申込日程を基準にリマインドし、開催翌朝06:00の面談案内へ。","","","","",""
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","3","レビュー中","アクション","面談","META_SEM_25_面談予約完了","ACT-RM-BOOK","個別面談の予約完了","予約完了時","UTAGE","ラベル・シナリオ遷移","面談予約完了","","予約完了を全オファーの停止点にする。","","","roadmap_booked","offer_seminar_active / offer_vsl_active / offer_consult_day_active / offer_consult_48h_active / offer_noshow_rebook_active / openchat_invited","meeting_completed / sales_won / sales_stop","META_SEM_80_面談リマインド","別の個別面談用公式LINEとの連携必須。実装時に両UTAGEアカウントの予約完了イベントと照合キーを確認。","","","","",""
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","4","レビュー中","アクション","見逃し","META_SEM_30_開催翌朝面談案内開始","ACT-POSTSEM-CONSULT","セミナー申込済み・面談未予約","申込したセミナー開催日の翌朝06:00","UTAGE","ラベル・シナリオ遷移","参加者向け面談案内開始","","参加／欠席は判定せず、ロードマップ作成会を当日23:59まで案内。","","","offer_consult_day_active","offer_seminar_active / seminar_main_offered","roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","META_SEM_30_参加者向け面談案内","イベント開始15分後ではなく翌朝06:00。","","","","",""
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","5","レビュー中","アクション","見逃し","META_SEM_35_日程不可VSL即時開始","ACT-NODATE-VSL","「どちらの日程も合わない」ボタン初回押下","クリック直後","UTAGE","ラベル・シナリオ遷移","前回企画ダイジェストVSL開始","","セミナー募集を即停止し、同じVSLを前回企画ダイジェスト版として72時間公開。","","","seminar_date_unavailable / vsl_main_offered / offer_vsl_active","offer_seminar_active / seminar_main_offered / seminar_page_clicked_unregistered","roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","META_SEM_40_VSL_未開封","初回クリック時刻をVSL開始日時として固定。再クリックで延長しない。","","","","",""
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","6","レビュー中","アクション","VSL","META_SEM_45_視聴開始","ACT-VSL-START","VSLページクリック","クリック直後","UTAGE","ラベル・シナリオ遷移","VSL視聴開始","","未視聴を停止","","","vsl_main_started","","roadmap_booked / sales_in_progress / sales_next_meeting / sales_won / sales_stop","META_SEM_50_VSL途中","未視聴を停止","","","","",""
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","7","レビュー中","アクション","VSL","META_SEM_55_視聴完了","ACT-VSL-COMPLETE","VSL完了地点到達","到達直後","UTAGE","ラベル・シナリオ遷移","VSL視聴完了","","完了者へ面談","","","vsl_main_completed","vsl_main_started","roadmap_booked / sales_in_progress / sales_next_meeting / sales_won / sales_stop","META_SEM_60_VSL完了_面談","完了者へ面談","","","","",""
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","8","レビュー中","アクション","VSL","META_SEM_65_期限切れ","ACT-VSL-EXPIRE","VSL開始から72時間・面談未予約","VSL初回開始時刻から厳密に72時間後","UTAGE","ラベル・シナリオ遷移","VSL期限切れ","","72時間VSLを終了し、面談予約済みでなければオプチャへ。","","","vsl_main_expired","vsl_main_started / vsl_main_offered / offer_vsl_active","roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop / offer_noshow_rebook_active","META_SEM_90_オプチャ案内","全VSL入口で同じ72時間判定。","","","","",""
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","9","レビュー中","アクション","終了","META_SEM_90_未転換終了","ACT-OPENCHAT","VSL72時間終了・面談未予約","各上位オファー終了直後","UTAGE","ラベル・シナリオ遷移","オプチャ移行","","まだ面談予約・実施していない未転換者だけをオプチャへ。","","","openchat_invited","offer_seminar_active / offer_vsl_active / offer_consult_day_active / offer_consult_48h_active / offer_noshow_rebook_active","roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","META_SEM_90_オプチャ案内","面談予約済み・面談済みは自動対象外。","","","","",""
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","10","レビュー中","アクション","最優先","META_SEM_99_営業結果","ACT-SALES","営業結果更新","即時","UTAGE","ラベル・シナリオ遷移","上位状態停止","","上位状態で下位シナリオを停止","","","sales_won / sales_next_meeting / sales_no_next_meeting / sales_stop","","","該当する最上位状態","上位状態で下位シナリオを停止","","","","",""
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","11","","","","META_SEM_29_第2日程終了未申込","ACT-SEM2-END-NOREG","Meta第2日程終了時点でセミナー未申込・面談未予約","Meta第2日程の翌朝06:00","","","未申込→72時間VSL","","確認ボタンを挟まず通常のVSL案内を自動開始。","","","seminar_main_unregistered_closed / vsl_main_offered / offer_vsl_active","offer_seminar_active / seminar_main_offered / seminar_page_clicked_unregistered","roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","META_SEM_40_VSL_未開封","第1日程終了後は第2日程募集を続け、第2終了後だけ実行。","","","","",""
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","12","","","","META_SEM_39_参加者面談受付終了","ACT-POSTSEM-CONSULT-EXPIRE","セミナー申込済み・当日23:59時点で面談未予約","申込したセミナー開催翌日の23:59で締切、次の朝06:00に実行","","","面談未予約→72時間VSL","","参加者向けロードマップ作成会を締め切り、次の朝からVSLを自動開始。","","","vsl_main_offered / offer_vsl_active","offer_consult_day_active","roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","META_SEM_40_VSL_未開封","確認ボタンは使わない。","","","","",""
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","13","レビュー中","アクション","面談無断欠席","META_SEM_81_面談無断欠席","ACT-RM-NOSHOW","ロードマップ作成会の無断欠席を確認（事前キャンセル・日程変更は除く）","欠席確認直後","UTAGE","ラベル・シナリオ遷移","面談無断欠席","","YouTube同様、初回はroadmap_noshow_1、2回目以降はroadmap_noshow_2plus。再予約案内へ。","","","roadmap_noshow_1 または roadmap_noshow_2plus / offer_noshow_rebook_active","roadmap_booked / sales_in_progress / openchat_invited","再予約済／meeting_completed／成約／営業停止は除外","META_SEM_81_面談無断欠席再予約","事前キャンセル・日程変更では欠席回数を増やさない。無断欠席3通の間はoffer_noshow_rebook_activeで他オファーを止める。","","","","",""
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","14","レビュー中","アクション","面談無断欠席","META_SEM_82_無断欠席再予約終了","ACT-NOSHOW-EXPIRE","無断欠席後3通終了・未再予約・面談未実施","NS-03配信後","UTAGE","ラベル・シナリオ遷移","無断欠席未再予約→オプチャ","","無断欠席後の再予約オファーを終了し、面談未実施者だけオプチャへ移行する","","","roadmap_noshow_rebook_expired","offer_noshow_rebook_active","roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","META_SEM_90_オプチャ案内","YouTubeの無断欠席3通終了後の出口。事前キャンセル・日程変更はこのルートへ入れない。","","","","",""
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","15","レビュー中","メッセージ","セミナー募集","META_SEM_10_2日程提示","META-SEM-CHOICE","Meta広告登録・セミナー未申込","登録直後","LINE","text+3button","SEM-CHOICE","","【LINEメッセージ 1／text】
+%line_name%さん、次回のZoomライブセミナーが決まりました。✨
+
+「AIでひとり起業攻略法」
+📅 日程①：[Meta第1日程]
+📅 日程②：[Meta第2日程]
+
+AIを触るだけで終わらず、自分に合う事業テーマを見つけ、商品・集客・販売へつなげる考え方をお伝えします。😊
+
+ご都合の合う日程を選択してください👇","日程①に申し込む / 日程②に申し込む / どちらの日程も合わない","[Meta第1日程申込URL｜ACT-SEM-PAGE] / [Meta第2日程申込URL｜ACT-SEM-PAGE] / [ACT-NODATE-VSL]","seminar_main_offered / offer_seminar_active","","seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","選択日程の申込催促／日程不可→META_SEM_40_VSL_未開封","既存Meta原文・絵文字・画像を維持し、2日程と第3ボタンだけ追加。","","","","",""
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","16","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第1日程","LQpvKDFjDGsM","セミナー未申込・日程不可未選択・面談未予約","Meta第1日程 14日前10:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-A01（開催14日前10:00）","","【LINEメッセージ 1／text】
+%line_name%さん、次回のZoomライブセミナーが決まりました。✨
+
+「AIでひとり起業攻略法」
+開催日時は申込ページでご確認ください
+
+AIを触るだけで終わらず、自分に合う事業テーマを見つけ、商品・集客・販売へつなげる考え方をお伝えします。😊
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第1日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","https://drive.usercontent.google.com/download?id=13_uoqZJY14DwBZZe7mcFTkkE-umdd3AX&export=view&confirm=t","=IF(U28="""","""",IMAGE(U28))","本文直前（画像→本文→CTA）","セミナー3日程案内","保管のみ。画像内に「直近3日程から選べます」とあるため、今回の2日程運用ではUTAGE送信に使用しない。2日程版の承認画像が用意された場合のみ差し替える。原本自体は削除・加工しない。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","17","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第1日程","AqiRBjFsP3Kl","セミナー未申込・日程不可未選択・面談未予約","Meta第1日程 12日前19:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-A02（開催12日前19:00）","","【LINEメッセージ 1／text】
+AIの情報は増えているのに、「自分は何をすればいいか」が決まらない。😌
+
+そんな状態から抜け出したい方。こちらのセミナーにぜひお申し込みください👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第1日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","https://drive.usercontent.google.com/download?id=1TJcHlzjBljzex6UaexU-app0GpFuRI5K&export=view&confirm=t","=IF(U29="""","""",IMAGE(U29))","本文直前（画像→本文→CTA）","金子さん向けセミナー初期案内","吉本さんDrive原案 META_SEMINAR_16_金子さん_セミナー初期案内.png を原寸・無加工で使用。本文・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","18","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第1日程","JHSy8ypSk7Oy","セミナー未申込・日程不可未選択・面談未予約","Meta第1日程 10日前10:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-A03（開催10日前10:00）","","【LINEメッセージ 1／text】
+ひとり起業は、全部を一人で頑張ることではありません。😊
+
+AIに任せる部分と、自分が判断する部分を分けることで、商品づくり・発信・販売を小さく回し始められます。AIでひとり起業攻略法 で具体的に解説します。📣
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第1日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","19","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第1日程","pn1FoJ7Cr80a","セミナー未申込・日程不可未選択・面談未予約","Meta第1日程 8日前19:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-A04（開催8日前19:00）","","【LINEメッセージ 1／text】
+AI初心者大歓迎です。😊
+
+まだ商品がない、強みが分からない、副業の方向性も決まっていない。そこからスタートしていきましょう。💡
+
+開催日時は申込ページでご確認ください
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第1日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","https://drive.usercontent.google.com/download?id=1Hs1omPXAszBt_06r5nnIGFS8kHrRYtAW&export=view&confirm=t","=IF(U31="""","""",IMAGE(U31))","本文直前（画像→本文→CTA）","金子さん向けセミナー日程選択","吉本さんDrive原案 META_SEMINAR_17_金子さん_日程選択.png を原寸・無加工で使用。本文・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","20","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第1日程","META-SEM-D7-10-NEW","セミナー未申込・日程不可未選択・面談未予約","Meta第1日程 7日前10:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-D7-01（開催7日前10:00）","","【LINEメッセージ 1／text】
+セミナー開催まで【あと1週間】です！🗓️✨
+
+今回のセミナーでは、単にAIの知識を
+増やすだけではなく、以下の3点を
+あなたのペースに合わせて整理していきます🌱✨
+
+１．今のあなたに実践できること🚀
+２．あなたの生活・仕事で「AIを活かせる場面」🤖
+３．今日からスタートできる「最初の一歩」💪
+
+▼お席の確保はこちらからどうぞ👇😊
+[Meta第1日程申込URL]","セミナー内容を確認する","[Meta第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U17 を基礎。本文・絵文字を優先し、開催1週間前の表記と分岐・変数だけ現行確定ルールへ合わせる。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","21","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第1日程","META-SEM-D7-20-NEW","セミナー未申込・日程不可未選択・面談未予約","Meta第1日程 7日前20:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-D7-02（開催7日前20:00）","","【LINEメッセージ 1／text】
+セミナー開催まで【あと1週間】です！🗓️✨
+
+セミナーのお申し込みは、お名前と
+メールアドレスを入力するだけで完了します📝✨
+
+ご登録後、参加URLをLINEとメールの
+両方へお送りします。
+当日都合が悪くなりましたら、キャンセルの連絡をいただければ問題ございませんので、
+まずは開催日時が合うかだけでも確認してみてくださいね👇😊
+[Meta第1日程申込URL]","日時を確認して申し込む","[Meta第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U18 を基礎。本文・絵文字を優先し、開催1週間前の表記と分岐・変数だけ現行確定ルールへ合わせる。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","22","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第1日程","hwMrSLSGqmde","セミナー未申込・日程不可未選択・面談未予約","Meta第1日程 6日前10:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-A05（開催6日前10:00）","","【LINEメッセージ 1／text】
+AIツールの使い方だけ学んでも、AIで事業は構築できません。😌
+
+今回のセミナーでは、AIで同事業を構築するかをお見せし、ストレスのない働き方を手に入れていただきます👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第1日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","https://drive.usercontent.google.com/download?id=1xxqJTBBM9ICNyq8QRZOEH_eKjlSqSCqR&export=view&confirm=t","=IF(U34="""","""",IMAGE(U34))","本文直前（画像→本文→CTA）","AIひとり起業セミナー訴求","吉本さんDrive原案 META_SEMINAR_02-ai-solo-business.png を原寸・無加工で使用。本文・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","23","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第1日程","UGcaRCoMFOxK","セミナー未申込・日程不可未選択・面談未予約","Meta第1日程 5日前19:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-A06（開催5日前19:00）","","【LINEメッセージ 1／text】
+今回は録画教材ではなく、Zoomライブで開催します。🎥
+
+同じ内容でも、開催日に時間を取り、その場で自分の課題として考えると理解が変わります。参加できる方は今のうちに予定を確保してください。🔥
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第1日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","24","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第1日程","RokpcnZILyfj","セミナー未申込・日程不可未選択・面談未予約","Meta第1日程 4日前20:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-A07（開催4日前20:00）","","【LINEメッセージ 1／text】
+
+仕事の悩みってほとんどが人間関係だといわれています。
+
+でも、AIエージェントを使えば不要な人間関係に悩まされず、自分らしい働き方を手に入れることができます📣
+
+AIでひとり起業攻略法
+開催日時は申込ページでご確認ください
+
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第1日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","25","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第1日程","yfZhr4eBiYca","セミナー未申込・日程不可未選択・面談未予約","Meta第1日程 3日前10:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-B01（開催3日前10:00）","","【LINEメッセージ 1／text】
+
+あなたは指示するだけ。手を動かすのはAIエージェント。
+実際にどう働いているのかをZoomライブでお見せします。🙌
+
+開催日時は申込ページでご確認ください
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第1日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","26","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第1日程","DDbLkDS5Bs2y","セミナー未申込・日程不可未選択・面談未予約","Meta第1日程 3日前20:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-B02（開催3日前20:00）","","【LINEメッセージ 1／text】
+「自分には売れるものがない」そんな方でも問題ありません。AIエージェントが考えてくれるし、作ってもくれます。😌
+
+「え？どういうこと？」って思われるかもしれませんが、セミナーにお越しいただければ納得できます。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第1日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","27","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第1日程","chBZyUC5u0cb","セミナー未申込・日程不可未選択・面談未予約","Meta第1日程 2日前10:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-B03（開催2日前10:00）","","【LINEメッセージ 1／text】
+
+こんな方に向いています。😊
+・AIを仕事や副業につなげたい
+・自分の商品を作りたい
+・発信しても何を売ればいいか分からない
+・一人で回せる仕組みを作りたい🔥
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第1日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","https://drive.usercontent.google.com/download?id=1TfZL9mHXInWc6LCLOoJNmpwH6znqJLcZ&export=view&confirm=t","=IF(U39="""","""",IMAGE(U39))","本文直前（画像→本文→CTA）","セミナー第2回案内","吉本さんDrive原案 META_SEMINAR_04-seminar-second-session.png を原寸・無加工で使用。本文・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","28","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第1日程","bPqbxIX4OVHi","セミナー未申込・日程不可未選択・面談未予約","Meta第1日程 2日前20:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-B04（開催2日前20:00）","","【LINEメッセージ 1／text】
+社長、営業マン、経理担当者、マーケティング担当者💡
+
+雇わなくてもAIエージェントがあなたの手と足になって働いてくれます。AIエージェントを使って会社を作る方法を学びましょう。📣
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第1日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","29","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第1日程","RSqeGyYE2rfk","セミナー未申込・日程不可未選択・面談未予約","Meta第1日程 前日09:00","LINE","テキスト＋ボタン","SEM-B05（開催前日09:00）","","【LINEメッセージ 1／text】
+
+AIでひとり起業攻略法
+開催日時は申込ページでご確認ください
+
+申込は名前とメールアドレスの2項目で完了します。✨
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第1日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","30","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第1日程","3343Rx0CqrIS","セミナー未申込・日程不可未選択・面談未予約","Meta第1日程 前日15:00","LINE","テキスト＋ボタン","SEM-B06（開催前日15:00）","","【LINEメッセージ 1／text】
+AIを使えば、作業時間は短くなり、外注費も雇用も必要なくなります。🚀
+
+ただし、AIエージェントを適切に組織化して運用するテクニックが必要です。明日は、その設計部分を中心にお話しします。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第1日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","31","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第1日程","24HUpDar6IB0","セミナー未申込・日程不可未選択・面談未予約","Meta第1日程 前日21:00","LINE","テキスト＋ボタン","SEM-B07（開催前日21:00）","","【LINEメッセージ 1／text】
+%line_name%さん、どこか予定は空けられそうですか？😊
+
+セミナーはライブなので、その場で質問も可能です。参加する場合は、今のうちに登録を済ませてください。🔥
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第1日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","32","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第1日程","WvjKarVV5Oh3","セミナー未申込・日程不可未選択・面談未予約","Meta第1日程 当日09:00","LINE","テキスト＋ボタン","SEM-B08（開催当日09:00）","","【LINEメッセージ 1／text】
+
+AIでひとり起業攻略法
+開催日時は申込ページでご確認ください
+
+AIを自分の事業へつなぐ道筋を、今日のセミナーですべてお伝えします。📣
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第1日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","https://drive.usercontent.google.com/download?id=1yrLlzX5f_0dyNEwmmawSqjPnFl55cQtN&export=view&confirm=t","=IF(U44="""","""",IMAGE(U44))","本文直前（画像→本文→CTA）","セミナー本日開催","吉本さんDrive原案 META_SEMINAR_03-seminar-today.png を原寸・無加工で使用。本文・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","33","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第1日程","uFvnt0A4Njsx","セミナー未申込・日程不可未選択・面談未予約","Meta第1日程 開始3時間前","LINE","テキスト＋ボタン","SEM-B09（開始3時間前）","","【LINEメッセージ 1／text】
+
+
+まだ申込は間に合います。名前とメールアドレスを入力すると、参加用Zoom URLが届きます。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第1日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","34","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第1日程","Dq5k8JrM1aww","セミナー未申込・日程不可未選択・面談未予約","Meta第1日程 開始30分前","LINE","テキスト＋ボタン","SEM-B10（開始30分前）","","【LINEメッセージ 1／text】
+
+
+今日ここで、AIの情報収集から「自分の事業を作る側」へ進みたい方はご参加ください。🎥
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第1日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","35","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第1日程","c4DE7dl6EP7m","セミナー未申込・日程不可未選択・面談未予約","Meta第1日程 開始10分前","LINE","テキスト＋ボタン","SEM-B11（開始10分前）","","【LINEメッセージ 1／text】
+セミナーご参加を
+迷っていた方は、こちらが最後のご案内です。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第1日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","META_SEM_11_第2日程が最後","第1日程開始まで。未経過の配信だけ実行。","https://drive.usercontent.google.com/download?id=1ExnPbEFrCOaYOdqHC0SC9KGVSzmedlQm&export=view&confirm=t","=IF(U47="""","""",IMAGE(U47))","本文直前（画像→本文→CTA）","セミナー最終案内","吉本さんDrive原案 META_SEMINAR_05-seminar-final-day.png を原寸・無加工で使用。本文・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","36","レビュー中","メッセージ","セミナー募集","META_SEM_11_第2日程が最後","META-SEM-LAST-DATE","第1日程終了・セミナー未申込・日程不可未選択","Meta第1日程終了後（第2日程の募集開始時刻）","LINE","text+button","SEM-LAST-DATE","","【LINEメッセージ 1／text】
+Meta第1日程は終了しました。
+次が最後の日程です！📢
+
+📅 [Meta第2日程]
+
+まだお申し込みでない方は、こちらから参加枠をご確認ください👇","最後の日程に申し込む","[Meta第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","META_SEM_10_セミナー募集_第2日程","2日程制に必要な最小限の新規文。","","","","",""
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","37","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第2日程","LQpvKDFjDGsM","セミナー未申込・日程不可未選択・面談未予約","Meta第2日程 14日前10:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-A01（開催14日前10:00）","","【LINEメッセージ 1／text】
+%line_name%さん、次回のZoomライブセミナーが決まりました。✨
+
+「AIでひとり起業攻略法」
+開催日時は申込ページでご確認ください
+
+AIを触るだけで終わらず、自分に合う事業テーマを見つけ、商品・集客・販売へつなげる考え方をお伝えします。😊
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第2日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","https://drive.usercontent.google.com/download?id=13_uoqZJY14DwBZZe7mcFTkkE-umdd3AX&export=view&confirm=t","=IF(U49="""","""",IMAGE(U49))","本文直前（画像→本文→CTA）","セミナー3日程案内","保管のみ。画像内に「直近3日程から選べます」とあるため、今回の2日程運用ではUTAGE送信に使用しない。2日程版の承認画像が用意された場合のみ差し替える。原本自体は削除・加工しない。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","38","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第2日程","AqiRBjFsP3Kl","セミナー未申込・日程不可未選択・面談未予約","Meta第2日程 12日前19:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-A02（開催12日前19:00）","","【LINEメッセージ 1／text】
+AIの情報は増えているのに、「自分は何をすればいいか」が決まらない。😌
+
+そんな状態から抜け出したい方。こちらのセミナーにぜひお申し込みください👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第2日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","https://drive.usercontent.google.com/download?id=1TJcHlzjBljzex6UaexU-app0GpFuRI5K&export=view&confirm=t","=IF(U50="""","""",IMAGE(U50))","本文直前（画像→本文→CTA）","金子さん向けセミナー初期案内","吉本さんDrive原案 META_SEMINAR_16_金子さん_セミナー初期案内.png を原寸・無加工で使用。本文・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","39","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第2日程","JHSy8ypSk7Oy","セミナー未申込・日程不可未選択・面談未予約","Meta第2日程 10日前10:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-A03（開催10日前10:00）","","【LINEメッセージ 1／text】
+ひとり起業は、全部を一人で頑張ることではありません。😊
+
+AIに任せる部分と、自分が判断する部分を分けることで、商品づくり・発信・販売を小さく回し始められます。AIでひとり起業攻略法 で具体的に解説します。📣
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第2日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","40","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第2日程","pn1FoJ7Cr80a","セミナー未申込・日程不可未選択・面談未予約","Meta第2日程 8日前19:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-A04（開催8日前19:00）","","【LINEメッセージ 1／text】
+AI初心者大歓迎です。😊
+
+まだ商品がない、強みが分からない、副業の方向性も決まっていない。そこからスタートしていきましょう。💡
+
+開催日時は申込ページでご確認ください
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第2日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","https://drive.usercontent.google.com/download?id=1Hs1omPXAszBt_06r5nnIGFS8kHrRYtAW&export=view&confirm=t","=IF(U52="""","""",IMAGE(U52))","本文直前（画像→本文→CTA）","金子さん向けセミナー日程選択","吉本さんDrive原案 META_SEMINAR_17_金子さん_日程選択.png を原寸・無加工で使用。本文・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","41","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第2日程","META-SEM-D7-10-NEW","セミナー未申込・日程不可未選択・面談未予約","Meta第2日程 7日前10:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-D7-01（開催7日前10:00）","","【LINEメッセージ 1／text】
+セミナー開催まで【あと1週間】です！🗓️✨
+
+今回のセミナーでは、単にAIの知識を
+増やすだけではなく、以下の3点を
+あなたのペースに合わせて整理していきます🌱✨
+
+１．今のあなたに実践できること🚀
+２．あなたの生活・仕事で「AIを活かせる場面」🤖
+３．今日からスタートできる「最初の一歩」💪
+
+▼お席の確保はこちらからどうぞ👇😊
+[Meta第2日程申込URL]","セミナー内容を確認する","[Meta第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U17 を基礎。本文・絵文字を優先し、開催1週間前の表記と分岐・変数だけ現行確定ルールへ合わせる。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","42","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第2日程","META-SEM-D7-20-NEW","セミナー未申込・日程不可未選択・面談未予約","Meta第2日程 7日前20:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-D7-02（開催7日前20:00）","","【LINEメッセージ 1／text】
+セミナー開催まで【あと1週間】です！🗓️✨
+
+セミナーのお申し込みは、お名前と
+メールアドレスを入力するだけで完了します📝✨
+
+ご登録後、参加URLをLINEとメールの
+両方へお送りします。
+当日都合が悪くなりましたら、キャンセルの連絡をいただければ問題ございませんので、
+まずは開催日時が合うかだけでも確認してみてくださいね👇😊
+[Meta第2日程申込URL]","日時を確認して申し込む","[Meta第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U18 を基礎。本文・絵文字を優先し、開催1週間前の表記と分岐・変数だけ現行確定ルールへ合わせる。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","43","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第2日程","hwMrSLSGqmde","セミナー未申込・日程不可未選択・面談未予約","Meta第2日程 6日前10:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-A05（開催6日前10:00）","","【LINEメッセージ 1／text】
+AIツールの使い方だけ学んでも、AIで事業は構築できません。😌
+
+今回のセミナーでは、AIで同事業を構築するかをお見せし、ストレスのない働き方を手に入れていただきます👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第2日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","https://drive.usercontent.google.com/download?id=1xxqJTBBM9ICNyq8QRZOEH_eKjlSqSCqR&export=view&confirm=t","=IF(U55="""","""",IMAGE(U55))","本文直前（画像→本文→CTA）","AIひとり起業セミナー訴求","吉本さんDrive原案 META_SEMINAR_02-ai-solo-business.png を原寸・無加工で使用。本文・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","44","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第2日程","UGcaRCoMFOxK","セミナー未申込・日程不可未選択・面談未予約","Meta第2日程 5日前19:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-A06（開催5日前19:00）","","【LINEメッセージ 1／text】
+今回は録画教材ではなく、Zoomライブで開催します。🎥
+
+同じ内容でも、開催日に時間を取り、その場で自分の課題として考えると理解が変わります。参加できる方は今のうちに予定を確保してください。🔥
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第2日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","45","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第2日程","RokpcnZILyfj","セミナー未申込・日程不可未選択・面談未予約","Meta第2日程 4日前20:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-A07（開催4日前20:00）","","【LINEメッセージ 1／text】
+
+仕事の悩みってほとんどが人間関係だといわれています。
+
+でも、AIエージェントを使えば不要な人間関係に悩まされず、自分らしい働き方を手に入れることができます📣
+
+AIでひとり起業攻略法
+開催日時は申込ページでご確認ください
+
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第2日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","46","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第2日程","yfZhr4eBiYca","セミナー未申込・日程不可未選択・面談未予約","Meta第2日程 3日前10:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-B01（開催3日前10:00）","","【LINEメッセージ 1／text】
+
+あなたは指示するだけ。手を動かすのはAIエージェント。
+実際にどう働いているのかをZoomライブでお見せします。🙌
+
+開催日時は申込ページでご確認ください
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第2日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","47","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第2日程","DDbLkDS5Bs2y","セミナー未申込・日程不可未選択・面談未予約","Meta第2日程 3日前20:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-B02（開催3日前20:00）","","【LINEメッセージ 1／text】
+「自分には売れるものがない」そんな方でも問題ありません。AIエージェントが考えてくれるし、作ってもくれます。😌
+
+「え？どういうこと？」って思われるかもしれませんが、セミナーにお越しいただければ納得できます。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第2日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","48","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第2日程","chBZyUC5u0cb","セミナー未申込・日程不可未選択・面談未予約","Meta第2日程 2日前10:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-B03（開催2日前10:00）","","【LINEメッセージ 1／text】
+
+こんな方に向いています。😊
+・AIを仕事や副業につなげたい
+・自分の商品を作りたい
+・発信しても何を売ればいいか分からない
+・一人で回せる仕組みを作りたい🔥
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第2日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","https://drive.usercontent.google.com/download?id=1TfZL9mHXInWc6LCLOoJNmpwH6znqJLcZ&export=view&confirm=t","=IF(U60="""","""",IMAGE(U60))","本文直前（画像→本文→CTA）","セミナー第2回案内","吉本さんDrive原案 META_SEMINAR_04-seminar-second-session.png を原寸・無加工で使用。本文・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","49","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第2日程","bPqbxIX4OVHi","セミナー未申込・日程不可未選択・面談未予約","Meta第2日程 2日前20:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-B04（開催2日前20:00）","","【LINEメッセージ 1／text】
+社長、営業マン、経理担当者、マーケティング担当者💡
+
+雇わなくてもAIエージェントがあなたの手と足になって働いてくれます。AIエージェントを使って会社を作る方法を学びましょう。📣
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第2日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","50","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第2日程","RSqeGyYE2rfk","セミナー未申込・日程不可未選択・面談未予約","Meta第2日程 前日09:00","LINE","テキスト＋ボタン","SEM-B05（開催前日09:00）","","【LINEメッセージ 1／text】
+
+AIでひとり起業攻略法
+開催日時は申込ページでご確認ください
+
+申込は名前とメールアドレスの2項目で完了します。✨
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第2日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","51","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第2日程","3343Rx0CqrIS","セミナー未申込・日程不可未選択・面談未予約","Meta第2日程 前日15:00","LINE","テキスト＋ボタン","SEM-B06（開催前日15:00）","","【LINEメッセージ 1／text】
+AIを使えば、作業時間は短くなり、外注費も雇用も必要なくなります。🚀
+
+ただし、AIエージェントを適切に組織化して運用するテクニックが必要です。明日は、その設計部分を中心にお話しします。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第2日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","52","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第2日程","24HUpDar6IB0","セミナー未申込・日程不可未選択・面談未予約","Meta第2日程 前日21:00","LINE","テキスト＋ボタン","SEM-B07（開催前日21:00）","","【LINEメッセージ 1／text】
+%line_name%さん、どこか予定は空けられそうですか？😊
+
+セミナーはライブなので、その場で質問も可能です。参加する場合は、今のうちに登録を済ませてください。🔥
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第2日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","53","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第2日程","WvjKarVV5Oh3","セミナー未申込・日程不可未選択・面談未予約","Meta第2日程 当日09:00","LINE","テキスト＋ボタン","SEM-B08（開催当日09:00）","","【LINEメッセージ 1／text】
+
+AIでひとり起業攻略法
+開催日時は申込ページでご確認ください
+
+AIを自分の事業へつなぐ道筋を、今日のセミナーですべてお伝えします。📣
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第2日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","https://drive.usercontent.google.com/download?id=1yrLlzX5f_0dyNEwmmawSqjPnFl55cQtN&export=view&confirm=t","=IF(U65="""","""",IMAGE(U65))","本文直前（画像→本文→CTA）","セミナー本日開催","吉本さんDrive原案 META_SEMINAR_03-seminar-today.png を原寸・無加工で使用。本文・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","54","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第2日程","uFvnt0A4Njsx","セミナー未申込・日程不可未選択・面談未予約","Meta第2日程 開始3時間前","LINE","テキスト＋ボタン","SEM-B09（開始3時間前）","","【LINEメッセージ 1／text】
+
+
+まだ申込は間に合います。名前とメールアドレスを入力すると、参加用Zoom URLが届きます。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第2日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","55","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第2日程","Dq5k8JrM1aww","セミナー未申込・日程不可未選択・面談未予約","Meta第2日程 開始30分前","LINE","テキスト＋ボタン","SEM-B10（開始30分前）","","【LINEメッセージ 1／text】
+
+
+今日ここで、AIの情報収集から「自分の事業を作る側」へ進みたい方はご参加ください。🎥
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第2日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","56","レビュー中","メッセージ","セミナー募集","META_SEM_10_セミナー募集_第2日程","c4DE7dl6EP7m","セミナー未申込・日程不可未選択・面談未予約","Meta第2日程 開始10分前","LINE","テキスト＋ボタン","SEM-B11（開始10分前）","","【LINEメッセージ 1／text】
+セミナーご参加を
+迷っていた方は、こちらが最後のご案内です。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[Meta第2日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[Meta第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","META_SEM_29_第2日程終了未申込","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","https://drive.usercontent.google.com/download?id=1ExnPbEFrCOaYOdqHC0SC9KGVSzmedlQm&export=view&confirm=t","=IF(U68="""","""",IMAGE(U68))","本文直前（画像→本文→CTA）","セミナー最終案内","吉本さんDrive原案 META_SEMINAR_05-seminar-final-day.png を原寸・無加工で使用。本文・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","57","レビュー中","メッセージ","セミナー申込後","META_SEM_20_09 申込者LINE（k6x新規）","fhJhNIy50WL7","セミナー申込済み","登録直後","LINE","テキスト","REG-L01（申込直後・参加URL）","","【LINEメッセージ 1／text】
+%line_name%さん、お申し込みありがとうございます。😊
+
+AIでひとり起業攻略法
+日時：%event_schedule%
+形式：Zoomライブセミナー
+参加URL：[ZoomURL]
+
+当日は開始数分前からお入りください。🙌","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","https://drive.usercontent.google.com/download?id=1VjHp1HnL3vcKWdFwd6fIEmCPHDhyaCFu&export=view&confirm=t","=IF(U69="""","""",IMAGE(U69))","本文直前（画像→本文→CTA）","金子さん向け申込完了案内","吉本さんDrive原案 META_SEMINAR_19_金子さん_申込完了.png を原寸・無加工で使用。本文・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","58","レビュー中","メッセージ","セミナー申込後","META_SEM_20_09 申込者LINE（k6x新規）","QUYj2IR2g1p8","セミナー申込済み","イベント7日前 10:00","LINE","テキスト","REG-L02（D-7）","","【LINEメッセージ 1／text】
+開催1週間前になりました。⏰
+
+AIエージェントで会社経営する方法を楽しみにしていてください。
+そして、カレンダーに予定が入っているかご確認ください。😊
+
+[ZoomURL]","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","59","レビュー中","メッセージ","セミナー申込後","META_SEM_20_09 申込者LINE（k6x新規）","2ciSNpYtRfnb","セミナー申込済み","イベント3日前 10:05","LINE","テキスト","REG-L03（D-3）","","【LINEメッセージ 1／text】
+あと3日です。⏰
+
+当日は、準備不要です。😊
+AIエージェントで組織を作ることで、仕事における人間関係の悩みから解放されます。楽しみにしていてください。","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","60","レビュー中","メッセージ","セミナー申込後","META_SEM_20_09 申込者LINE（k6x新規）","DIEmmzPsfmrf","セミナー申込済み","イベント1日前 19:00","LINE","テキスト","REG-L04（D-1・明日開催）","","【LINEメッセージ 1／text】
+いよいよ明日です🎉
+
+AIでひとり起業攻略法
+%event_schedule%
+
+参加URL：[ZoomURL]
+お会いできるのを楽しみにしています。😊","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","61","レビュー中","メッセージ","セミナー申込後","META_SEM_20_09 申込者LINE（k6x新規）","MwJOVPgE3BV4","セミナー申込済み","イベント当日 09:05","LINE","テキスト","REG-L05（当日09:00）","","【LINEメッセージ 1／text】
+%line_name%さん、おはようございます。
+本日開催です。🎉
+
+開始時刻になりましたら、こちらからZoomへお入りください。
+[ZoomURL]
+
+落ち着いて参加できる場所と、メモをご用意ください。😊","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","62","レビュー中","メッセージ","セミナー申込後","META_SEM_20_09 申込者LINE（k6x新規）","HA5p8YbgmKae","セミナー申込済み","イベント3時間5分前","LINE","テキスト","REG-L06（開始3時間前）","","【LINEメッセージ 1／text】
+開始まであと3時間です。⏰
+AIを使った自分らしい働き方を身につけましょう！
+
+%event_schedule%
+Zoom：[ZoomURL]
+
+参加URLを今のうちに開けるか確認しておくと安心です。😊","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","63","レビュー中","メッセージ","セミナー申込後","META_SEM_20_09 申込者LINE（k6x新規）","2bUCN2biSqlZ","セミナー申込済み","イベント35分前","LINE","テキスト","REG-L07（開始30分前）","","【LINEメッセージ 1／text】
+あと30分で開始します。⏰
+
+こちらのZoomからご参加ください。
+[ZoomURL]
+
+開始5分前を目安にお入りください。🙌","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","64","レビュー中","メッセージ","セミナー申込後","META_SEM_20_09 申込者LINE（k6x新規）","itk1TAwfH0hB","セミナー申込済み","イベント当日 20:00","LINE","テキスト","REG-L08（開始時刻）","","【LINEメッセージ 1／text】
+ただいま開始しました。📣
+
+まだ間に合います。こちらからZoomへお入りください。
+[ZoomURL]","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","https://drive.usercontent.google.com/download?id=1tBMYqNwTv8OeKvfo4V_1H--VEujTmVfm&export=view&confirm=t","=IF(U76="""","""",IMAGE(U76))","本文直前（画像→本文→CTA）","金子さん向け本日ライブ案内","吉本さんDrive原案 META_SEMINAR_18_金子さん_本日ライブ.png を原寸・無加工で使用。本文・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","65","レビュー中","メッセージ","セミナー申込後","META_SEM_20_10 申込者メール（k6x新規）","Iadok2cdRNFH","セミナー申込済み","登録直後","メール","テキスト","REG-M01（申込直後メール）","【申込完了】AIでひとり起業攻略法の参加URL","%line_name%さん😊
+
+すやです。
+AIでひとり起業攻略法 へお申し込みいただき、ありがとうございます。
+
+【開催日時】%event_schedule%
+【形式】Zoomライブセミナー
+【参加URL】[ZoomURL]
+
+当日は開始３分前を目安にZoomへお入りください。AIを使って自分に合う事業テーマを見つけ、商品づくり・集客・販売までをどうつなぐか、全体像をお伝えします。
+
+このメールは当日まで保存してください。
+
+すや
+
+配信停止をご希望の方はこちら：%cancel%","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","66","レビュー中","メッセージ","セミナー申込後","META_SEM_20_10 申込者メール（k6x新規）","META-REG-M-D7-NEW","セミナー申込済み","イベント7日前 08:00","メール","テキスト","REG-M02（7日前メール）","開催1週間前｜[セミナー名]","%line_name%さん
+
+すやです😊
+セミナー開催の【1週間前】となりました！🗓️
+
+「うっかり忘れていた！」とならないように、
+カレンダーへのご登録や、参加用URLの保存が
+お済みか、今一度ご確認くださいね😊👇
+
+━━━━━━━━━━━━━━━━━━━━
+【日時】%event_schedule%
+【参加URL】[ZoomURL]
+━━━━━━━━━━━━━━━━━━━━
+
+配信停止をご希望の方はこちら：%cancel%","参加情報を確認する","[ZoomURL]","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","吉本さん原案 REG-L02 の文章・絵文字をメール形式へ転用。配信時刻・分岐・変数は確定済みMetaセミナー直行設計を優先。","","","本文直前（画像→本文→CTA）","","吉本さん原案 REG-L02 を基礎。本文・絵文字は維持し、メールに必要な宛名・参加情報・配信停止だけ既存メール形式で補う。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","67","レビュー中","メッセージ","セミナー申込後","META_SEM_20_10 申込者メール（k6x新規）","META-REG-M-D3-NEW","セミナー申込済み","イベント3日前 08:00","メール","テキスト","REG-M03（3日前メール）","開催3日前｜[セミナー名]","%line_name%さん
+
+すやです😊
+セミナー開催まで【あと3日】です！⏰✨
+
+お早めにお申し込みいただいた方にのみ、
+よりセミナーを充実した時間にする方法をお伝えします㊙️
+
+以下の3点を参加前に整理しておくのがオススメです！
+・今の仕事でのお悩み
+・自分の得意なこと
+・AIでやってみたいこと
+
+というのも、セミナー時は常に質疑応答を受け付けております。☺️
+特に最後には長い時間確保し、壁打ちの時間を用意しているので、
+少しだけ質問や解消したい事を考えておくと、
+私が全てお答えいたします🚀🔥
+
+楽しみにしていてください😊
+
+━━━━━━━━━━━━━━━━━━━━
+【日時】%event_schedule%
+【参加URL】[ZoomURL]
+━━━━━━━━━━━━━━━━━━━━
+
+配信停止をご希望の方はこちら：%cancel%","参加URLを確認する","[ZoomURL]","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","吉本さん原案 REG-L03 の文章・絵文字をメール形式へ転用。配信時刻・分岐・変数は確定済みMetaセミナー直行設計を優先。","","","本文直前（画像→本文→CTA）","","吉本さん原案 REG-L03 を基礎。本文・絵文字は維持し、メールに必要な宛名・参加情報・配信停止だけ既存メール形式で補う。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","68","レビュー中","メッセージ","セミナー申込後","META_SEM_20_10 申込者メール（k6x新規）","WjL2iv3dSDDl","セミナー申込済み","イベント1日前 19:00","メール","テキスト","REG-M02（前日19:00メール）","【明日開催】AIでひとり起業攻略法","%line_name%さん😊
+
+すやです。明日はいよいよ AIでひとり起業攻略法 の開催日です。
+
+【開催日時】%event_schedule%
+【参加URL】[ZoomURL]
+
+事前準備は必要ありませんが、理想の生活、ストレスのない働き方、を少し思い浮かべておくと、内容を自分に当てはめやすくなります。
+
+Zoomでお会いできるのを楽しみにしています。🙌
+
+すや
+
+配信停止をご希望の方はこちら：%cancel%","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","69","レビュー中","メッセージ","セミナー申込後","META_SEM_20_10 申込者メール（k6x新規）","aJvyaQPQ29RP","セミナー申込済み","イベント1時間5分前","メール","テキスト","REG-M03（1時間前メール）","【1時間後スタート】Zoom参加URLはこちら","%line_name%さん😊
+
+すやです。AIでひとり起業攻略法 は1時間後に開始します。
+
+【日時】%event_schedule%
+【Zoom】[ZoomURL]
+
+開始３分前を目安にお入りください。接続が不安な場合は、今のうちにURLが開くか確認しておくと安心です。
+
+それでは後ほどお会いしましょう。🙌
+
+すや
+
+配信停止をご希望の方はこちら：%cancel%","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","70","レビュー中","メッセージ","セミナー後・面談","META_SEM_30_参加者向け面談案内メール","META-ATT-M01","セミナー申込済み・面談未予約","申込したセミナー開催日の翌朝06:00","メール","テキスト","ATT-M01","セミナー参加者向け｜ロードマップ作成会のご案内","件名：セミナー参加者向け｜ロードマップ作成会のご案内
+
+【LINEメッセージ 1／text】
+昨日のセミナー内容を「分かった」で終わらせず、自分の計画に変えたい方へ😊
+
+AIひとり起業ロードマップ作成会 では、今の経験や得意なことをもとに、最初の商品と集客までの順番を30分で整理していきますね🎁
+
+[ロードマップ作成会予約URL]
+
+配信停止をご希望の方はこちら：%cancel%","ロードマップ作成会を予約する","[ロードマップ作成会予約URL｜予約完了ACT-RM-BOOK]","","","roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","23:59締切→翌朝06:00 VSL","YouTube ATT-N02原文をメール形式へ転用。受付は当日23:59。","","","本文直前（画像→本文→CTA）","","VSL URLは直接記載しない。再公開希望アクションのクリック者だけVSLへ登録する。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","71","レビュー中","メッセージ","見逃し配信確認","META_SEM_30_参加者向け面談案内","META-ATT-N02（翌朝06:00）","セミナー申込済み・面談未予約","申込したセミナー開催日の翌朝06:00","LINE","テキスト＋ボタン","ATT-N02（翌朝06:00）","","【LINEメッセージ 1／text】
+昨日のセミナー内容を「分かった」で終わらせず、自分の計画に変えたい方へ😊
+
+AIひとり起業ロードマップ作成会 では、今の経験や得意なことをもとに、最初の商品と集客までの順番を30分で整理していきますね🎁","ロードマップ作成会を予約する","[ロードマップ作成会予約URL｜予約完了ACT-RM-BOOK]","vsl_replay_requested","","roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","未予約→次メッセージ","YouTube原文をそのまま転用。受付は当日23:59で実際に閉じる。","","","本文→CTA","見逃し配信を希望しますか？","未クリック者へVSLを送らない。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","72","","","","META_SEM_30_参加者向け面談案内","META-ATT-C09（締切前）","セミナー申込済み・面談未予約","同日20:00","","","ATT-C09（締切前）","","【LINEメッセージ 1／text】
+あと数時間で、今回の参加者向け案内を終了しますね⏰
+
+考え続けるより、一度話して方向を明確にしたい方はこちらです👇
+
+────────────
+
+【LINEメッセージ 2／button】
+{
+  ""alt_text"": ""【個別】ロードマップ作成会・まもなく受付終了"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIひとり起業ロードマップ作成会"",
+  ""text"": ""今回の案内はまもなく終了"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""日程を見て予約する"",
+      ""uri"": ""https://utage-system.com/event/DkY6Co3mN1oB/register"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","ロードマップ作成会を予約する","[ロードマップ作成会予約URL｜予約完了ACT-RM-BOOK]","","","roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","未予約→次メッセージ","YouTube原文をそのまま転用。受付は当日23:59で実際に閉じる。","","","","",""
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","73","","","","META_SEM_30_参加者向け面談案内","META-ATT-C10（最終）","セミナー申込済み・面談未予約","同日23:00","","","ATT-C10（最終）","","【LINEメッセージ 1／text】
+これで最後です🔥
+
+AIひとり起業ロードマップ作成会 の受付をまもなく終了します。参加したい方は、今のうちに予約を完了してくださいね(^^)","ロードマップ作成会を予約する","[ロードマップ作成会予約URL｜予約完了ACT-RM-BOOK]","","","roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","23:59締切→翌朝06:00 VSL","YouTube原文をそのまま転用。受付は当日23:59で実際に閉じる。","","","","",""
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","74","レビュー中","メッセージ","VSL未視聴","META_SEM_40_VSL_未開封","erP64nKaKQfs","72時間VSL開始済み・VSL状態該当","登録から0日後 10:00","LINE","画像パネル＋本文＋ボタン","VSL-U01","","【LINEメッセージ 1／image】
+{
+  ""seq"": 0,
+  ""type"": ""image"",
+  ""original_content_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/BP6jdJufvGaM.png""
+}
+
+【LINEメッセージ 2／text】
+見逃した方・復習したい方へ。😊
+日程が合わなかった方向けの特別公開です。✨
+
+AIでひとり起業攻略法 の内容を、本日から3日間だけ視聴できます。
+👇
+
+【LINEメッセージ 3／button】
+{
+  ""seq"": 2,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】期間限定・無料公開のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""無料公開は登録から3日間・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","動画を見る","[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","https://drive.usercontent.google.com/download?id=1nKhNf4mPteiuMqUOjWe5GT1bhBRMZ9ld&export=view&confirm=t","=IF(U86="""","""",IMAGE(U86))","本文直前（画像→本文→CTA）","金子さん向けVSL案内","吉本さんDrive原案 META_SEMINAR_21_金子さん_VSL案内.png を原寸・無加工で使用。本文・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","75","レビュー中","メッセージ","VSL未視聴","META_SEM_40_VSL_未開封","t0CViMJ6jbZk","72時間VSL開始済み・VSL状態該当","登録から0日後 13:00","LINE","テキスト＋ボタン","VSL-U02","","【LINEメッセージ 1／text】
+先ほど期間限定動画を公開しました。🎥
+
+AIツールの紹介だけではなく、自分に合う事業テーマをどう見つけ、商品・集客・販売へつなげるかを順番に解説しています。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】期間限定・無料公開のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""無料公開は登録から3日間・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","動画を見る","[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","76","レビュー中","メッセージ","VSL未視聴","META_SEM_40_VSL_未開封","WrAkXMAcgVcn","72時間VSL開始済み・VSL状態該当","登録から0日後 18:00","LINE","テキスト","VSL-U03","","【LINEメッセージ 1／text】
+%line_name%さん👀
+
+まとまった時間がなくても、まずページを開いて視聴できる状態だけ確認しておいてください。公開は3日間です。🔥","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","77","レビュー中","メッセージ","VSL未視聴","META_SEM_40_VSL_未開封","mbbRaBAoA64G","72時間VSL開始済み・VSL状態該当","登録から0日後 21:00","LINE","テキスト＋ボタン","VSL-U04","","【LINEメッセージ 1／text】
+AIについて学んでも行動に移せないときは、能力よりも進める順番が曖昧なことが多いです。💡
+
+動画では、AIエージェントで事業を形にする全体の流れをお伝えしています。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】期間限定・無料公開のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""無料公開は登録から3日間・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","動画を見る","[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","78","レビュー中","メッセージ","VSL未視聴","META_SEM_40_VSL_未開封","lhRYYqfY3Z65","72時間VSL開始済み・VSL状態該当","登録から1日後 09:00","LINE","テキスト","VSL-U05","","【LINEメッセージ 1／text】
+残り２日です。😊
+
+公開期間中に、AIエージェントで事業を形にする全体の流れをご確認ください。✨","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","既存3日VSLの期限案内。事実未確認の「今回だけ」は使用しない。","https://drive.usercontent.google.com/download?id=1aDsy7ttWVdlGA-ba8R_EHHam7lYuIi4M&export=view&confirm=t","=IF(U90="""","""",IMAGE(U90))","本文直前（画像→本文→CTA）","VSL残り2日","公開期限が実設定と一致することを確認して配信する。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","79","レビュー中","メッセージ","VSL未視聴","META_SEM_40_VSL_未開封","40JbjOH3V041","72時間VSL開始済み・VSL状態該当","登録から1日後 13:00","LINE","テキスト＋ボタン","VSL-U06","","【LINEメッセージ 1／text】
+明日で完全終了です👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】期間限定・無料公開のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""無料公開は登録から3日間・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","動画を見る","[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","80","レビュー中","メッセージ","VSL未視聴","META_SEM_40_VSL_未開封","pl8XyFNAsg3R","72時間VSL開始済み・VSL状態該当","登録から1日後 18:00","LINE","テキスト","VSL-U07","","【LINEメッセージ 1／text】
+%line_name%さん、公開期間は明日までです。⏰
+
+視聴後特典で、AIひとり起業ロードマップ作成会が存在します。まずは内容を見て、自分に必要か判断してください。🔥","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","81","レビュー中","メッセージ","VSL未視聴","META_SEM_40_VSL_未開封","eLjR3vW1Po0s","72時間VSL開始済み・VSL状態該当","登録から1日後 21:00","LINE","テキスト＋ボタン","VSL-U08","","【LINEメッセージ 1／text】
+今日のうちに見始めておくと、明日は必要な箇所を見直す時間に使えます。😊
+
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】期間限定・無料公開のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""無料公開は登録から3日間・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","動画を見る","[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","82","レビュー中","メッセージ","VSL未視聴","META_SEM_40_VSL_未開封","pNiEq3QAw7li","72時間VSL開始済み・VSL状態該当","登録から2日後 08:00","LINE","テキスト","VSL-U09","","【LINEメッセージ 1／text】
+本日23:59で公開終了です。⏰
+
+日程が合わずセミナーに参加できなかった方も、今日中なら内容を確認できます。✨","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","83","レビュー中","メッセージ","VSL未視聴","META_SEM_40_VSL_未開封","rshejwulCzb8","72時間VSL開始済み・VSL状態該当","登録から2日後 10:00","LINE","テキスト＋ボタン","VSL-U10","","【LINEメッセージ 1／text】
+公開最終日になりました。🔥
+
+AIでのひとり起業に興味がある方は、今日の予定に視聴時間を入れてください。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】本日が公開最終日です"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""公開は本日まで・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","動画を見る","[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","https://drive.usercontent.google.com/download?id=1Y9NCfQLupBAplJDlJMD7MgyzMwQlXvPq&export=view&confirm=t","=IF(U95="""","""",IMAGE(U95))","本文直前（画像→本文→CTA）","VSL公開最終日","吉本さんDrive原案 META_SEMINAR_09-vsl-final-day.png を原寸・無加工で使用。本文・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","84","レビュー中","メッセージ","VSL未視聴","META_SEM_40_VSL_未開封","rSdX9Ug0LLj1","72時間VSL開始済み・VSL状態該当","登録から2日後 12:00","LINE","テキスト","VSL-U11","","【LINEメッセージ 1／text】
+あと半日ほどで終了します。⏰
+
+ページを開いていないまま期限を迎えると、今回の動画は見られなくなります。
+今のうちにご覧ください。🔥","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","85","レビュー中","メッセージ","VSL未視聴","META_SEM_40_VSL_未開封","5LCZMUE4Si6x","72時間VSL開始済み・VSL状態該当","登録から2日後 15:00","LINE","テキスト＋ボタン","VSL-U12","","【LINEメッセージ 1／text】
+%line_name%さん、まだ間に合います。😊
+
+完璧に理解しようとせず、まず全体像を通して見るのがおすすめです。公開は本日23:59までです。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】公開は本日23:59まで"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""公開は本日23:59まで"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","動画を見る","[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","86","レビュー中","メッセージ","VSL未視聴","META_SEM_40_VSL_未開封","8lEagN0kny0j","72時間VSL開始済み・VSL状態該当","登録から2日後 18:00","LINE","テキスト","VSL-U13","","【LINEメッセージ 1／text】
+残り6時間。⏰
+
+限定公開は今夜で終了します。AIの情報収集から、自分の事業を作る側へ進みたい方はご視聴ください。✨","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","87","レビュー中","メッセージ","VSL未視聴","META_SEM_40_VSL_未開封","hYYgJFw7xNEl","72時間VSL開始済み・VSL状態該当","登録から2日後 21:00","LINE","テキスト＋ボタン","VSL-U14","","【LINEメッセージ 1／text】
+終了まであと3時間です。⏰
+
+視聴するか迷っていた方へ。ページを開けるのは本日23:59までです。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】終了まであと3時間です"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""終了まであと3時間"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","動画を見る","[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","88","レビュー中","メッセージ","VSL未視聴","META_SEM_40_VSL_未開封","ZjANTpPHmTOH","72時間VSL開始済み・VSL状態該当","登録から2日後 23:00","LINE","テキスト","VSL-U15","","【LINEメッセージ 1／text】
+あと1時間で公開終了です。⏰
+
+これが3日限定公開の最後のご案内です。今すぐ視聴ページを開いてください。🔥","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","https://drive.usercontent.google.com/download?id=1FLRsX4ZylbiaUUV1J4JM9G0oZ1hm2IA_&export=view&confirm=t","=IF(U100="""","""",IMAGE(U100))","本文直前（画像→本文→CTA）","VSL終了まで1時間","吉本さんDrive原案 META_SEMINAR_10-vsl-one-hour.png を原寸・無加工で使用。本文・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","89","レビュー中","メッセージ","VSL途中","META_SEM_40_VSL_一部視聴","jd8LZ2WGD22p","72時間VSL開始済み・VSL状態該当","登録から 0日 0時間 30分後","LINE","テキスト＋ボタン","VSL-P01","","【LINEメッセージ 1／text】
+%line_name%さん、動画を開いてくださりありがとうございます。😊
+
+途中で止めた場合は、こちらから続きに戻れます。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】続きはこちらから再生できます"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""途中から続きを再生できます"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","動画を見る","[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","90","レビュー中","メッセージ","VSL途中","META_SEM_40_VSL_一部視聴","RLqgOQRNAf29","72時間VSL開始済み・VSL状態該当","登録から0日後 17:00","LINE","テキスト","VSL-P02","","【LINEメッセージ 1／text】
+一度で見きれなくても大丈夫です。😊
+
+ただ、視聴期限はお忘れなく✨","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","91","レビュー中","メッセージ","VSL途中","META_SEM_40_VSL_一部視聴","1P8u09TqQLyk","72時間VSL開始済み・VSL状態該当","登録から0日後 21:00","LINE","テキスト＋ボタン","VSL-P03","","【LINEメッセージ 1／text】
+動画の途中で止まっている方へ。😊
+
+「自分なら何を事業にするか」を考えながら見ると、ただの情報ではなく行動の材料になります✨
+特に最後は多くの感想をいただくので、是非最後までご覧ください👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】続きはこちらから再生できます"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""途中から続きを再生できます"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","動画を見る","[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。『多くの感想』は公開前に根拠確認。未確認なら該当文のみ削除、または事実ベースへ置換。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","92","レビュー中","メッセージ","VSL途中","META_SEM_40_VSL_一部視聴","hZGpXnuEz1xg","72時間VSL開始済み・VSL状態該当","登録から1日後 09:00","LINE","テキスト","VSL-P04","","【LINEメッセージ 1／text】
+あと２日で視聴終了です😊🔥","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","93","レビュー中","メッセージ","VSL途中","META_SEM_40_VSL_一部視聴","suBXJeaTTYkm","72時間VSL開始済み・VSL状態該当","登録から1日後 14:00","LINE","テキスト","VSL-P05","","【LINEメッセージ 1／text】
+
+後半では、学びを事業につなげる考え方も扱っています。📣","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","94","レビュー中","メッセージ","VSL途中","META_SEM_40_VSL_一部視聴","6kJfk5ZhL0ZI","72時間VSL開始済み・VSL状態該当","登録から1日後 20:00","LINE","テキスト","VSL-P06","","【LINEメッセージ 1／text】
+公開期限は あと28時間です。⏰
+
+視聴を始めた時刻にかかわらず延長はされないので、余裕があるうちに続きをご覧ください。✨","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","95","レビュー中","メッセージ","VSL途中","META_SEM_40_VSL_一部視聴","Pkn7lktciPoS","72時間VSL開始済み・VSL状態該当","登録から2日後 09:00","LINE","テキスト","VSL-P07","","【LINEメッセージ 1／text】
+本日が視聴最終日です。⏰🎥","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","96","レビュー中","メッセージ","VSL途中","META_SEM_40_VSL_一部視聴","CiZEgXL5O3Uz","72時間VSL開始済み・VSL状態該当","登録から2日後 14:00","LINE","テキスト＋ボタン","VSL-P08","","【LINEメッセージ 1／text】
+残り時間が少なくなってきました。⏰
+
+最後には、 AIひとり起業ロードマップ作成会の無料枠も案内しております。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】公開は本日23:59まで"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""公開は本日23:59まで"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","動画を見る","[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","97","レビュー中","メッセージ","VSL途中","META_SEM_40_VSL_一部視聴","ETjHWlvzXGr3","72時間VSL開始済み・VSL状態該当","登録から2日後 19:00","LINE","テキスト","VSL-P09","","【LINEメッセージ 1／text】
+公開終了まであと数時間です。⏰📣","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","98","レビュー中","メッセージ","VSL途中","META_SEM_40_VSL_一部視聴","WhfdR94zX0IG","72時間VSL開始済み・VSL状態該当","登録から2日後 22:30","LINE","テキスト＋ボタン","VSL-P10","","【LINEメッセージ 1／text】
+23:59で終了します。⏰
+
+視聴途中の方への最後のご案内です。今すぐこちらから続きをご覧ください。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】本日23:59で終了します"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""本日23:59で終了"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","動画を見る","[
+  {
+    ""url"": ""[VSLURL]"",
+    ""action_id"": ""mjNKfwKZJRag"",
+    ""expiration_type"": ""none""
+  }
+]","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","99","レビュー中","メッセージ","VSL完了・面談","META_SEM_40_VSL_視聴完了","DciEDgOwZDeT","72時間VSL開始済み・VSL状態該当","登録直後","LINE","テキスト","VSL-C01","","【LINEメッセージ 1／text】
+%line_name%さん、ロードマップ作成会のお申し込みは完了してますでしょうか？
+[ロードマップ作成会URL]
+
+↑
+こちらからもお申し込み可能です🎥","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","https://drive.usercontent.google.com/download?id=1QOiYn2-7lwedp2kBfyTh9N6TqFrgWDoW&export=view&confirm=t","=IF(U111="""","""",IMAGE(U111))","本文直前（画像→本文→CTA）","VSL視聴完了のお礼","吉本さんDrive原案 META_SEMINAR_11-vsl-complete-thanks.png を原寸・無加工で使用。本文・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","100","レビュー中","メッセージ","VSL完了・面談","META_SEM_40_VSL_視聴完了","wh7dGNiiq0ob","72時間VSL開始済み・VSL状態該当","登録から 0日 2時間 0分後","LINE","画像パネル＋本文＋ボタン","VSL-C02","","【LINEメッセージ 1／image】
+{
+  ""seq"": 0,
+  ""type"": ""image"",
+  ""original_content_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/VoadmjkSafaL.png""
+}
+
+【LINEメッセージ 2／text】
+動画をご覧いただいた方向けに、ロードマップ作成会をご用意しています。今回を機にぜひお申し込みください👇
+
+【LINEメッセージ 3／button】
+{
+  ""seq"": 2,
+  ""type"": ""button"",
+  ""alt_text"": ""【個別】AIひとり起業ロードマップ作成会のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIひとり起業ロードマップ作成会"",
+  ""text"": ""Zoom30分・名前とメールだけで予約OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""日程を見て予約する"",
+      ""uri"": ""[ロードマップ作成会URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","日程を見て予約する","[
+  {
+    ""url"": ""[ロードマップ作成会URL]"",
+    ""action_id"": ""lMxbsrSPWV9W"",
+    ""expiration_type"": ""none""
+  }
+]","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","既存VSL視聴完了案内を使用。事実未確認の希少性表現は使用しない。","https://drive.usercontent.google.com/download?id=1G5rZx9tepJhSirDHK19xZwobJiO-wsNg&export=view&confirm=t","=IF(U112="""","""",IMAGE(U112))","本文直前（画像→本文→CTA）","金子さん向けロードマップ作成会","吉本さんDrive原案 META_SEMINAR_20_金子さん_ロードマップ作成会.png を原寸・無加工で使用。本文・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","101","レビュー中","メッセージ","VSL完了・面談","META_SEM_40_VSL_視聴完了","0Qha2c1IJnIT","72時間VSL開始済み・VSL状態該当","登録から 0日 5時間 0分後","LINE","テキスト","VSL-C03","","【LINEメッセージ 1／text】
+まだ商品がなくても、AI初心者でも大丈夫です。😊
+
+","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","102","レビュー中","メッセージ","VSL完了・面談","META_SEM_40_VSL_視聴完了","QUfY1iY6FCsU","72時間VSL開始済み・VSL状態該当","登録から0日後 10:00","LINE","テキスト","VSL-C04","","【LINEメッセージ 1／text】
+「ロードマップ作成会が分岐点になりました😊」
+
+最近こう言われることが増えてきました。
+今回は特別開放になります✨","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","https://drive.usercontent.google.com/download?id=1mxunMVvNIOEN2YSV8dHds6nKx8cCW15k&export=view&confirm=t","=IF(U114="""","""",IMAGE(U114))","本文直前（画像→本文→CTA）","ロードマップ作成会案内","吉本さんDrive原案 META_SEMINAR_06-roadmap-session.png を原寸・無加工で使用。本文・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","103","レビュー中","メッセージ","VSL完了・面談","META_SEM_40_VSL_視聴完了","2nRWHPzRXiBP","72時間VSL開始済み・VSL状態該当","登録から 1日 0時間 0分後","LINE","テキスト","VSL-C05","","【LINEメッセージ 1／text】
+%line_name%さん、動画のご感想はいかがでしょうか。😊
+
+一人で整理すると止まりそうなら、ロードマップ作成会を使ってください🎥","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","https://drive.usercontent.google.com/download?id=1ygs3It2ectQXDTrNhPMcrDcBpAeT8F3Y&export=view&confirm=t","=IF(U115="""","""",IMAGE(U115))","本文直前（画像→本文→CTA）","学びを行動へつなげる案内","吉本さんDrive原案 META_SEMINAR_12-learning-to-action.png を原寸・無加工で使用。本文・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","104","レビュー中","メッセージ","VSL完了・面談","META_SEM_40_VSL_視聴完了","JOAMSplqPBcC","72時間VSL開始済み・VSL状態該当","登録から 1日 4時間 0分後","LINE","テキスト","VSL-C06","","【LINEメッセージ 1／text】
+事業テーマ、商品、集客、販売。😌
+
+すべてを同時に考えると動けません。今の自分が最初に決める一つを、30分で明確にします。🔥","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","105","レビュー中","メッセージ","VSL完了・面談","META_SEM_40_VSL_視聴完了","xCT9FyxEdkBJ","72時間VSL開始済み・VSL状態該当","登録から1日後 10:00","LINE","テキスト＋ボタン","VSL-C07","","【LINEメッセージ 1／text】
+予約は名前とメールアドレスの2項目で完了します😊
+
+都合が変わった場合は日程変更できます。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【個別】AIひとり起業ロードマップ作成会のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIひとり起業ロードマップ作成会"",
+  ""text"": ""Zoom30分・名前とメールだけで予約OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""日程を見て予約する"",
+      ""uri"": ""[ロードマップ作成会URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","日程を見て予約する","[
+  {
+    ""url"": ""[ロードマップ作成会URL]"",
+    ""action_id"": ""lMxbsrSPWV9W"",
+    ""expiration_type"": ""none""
+  }
+]","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","https://drive.usercontent.google.com/download?id=1-3WyEis8sNJhM0rhJGkOAzsVzN4Xbw1S&export=view&confirm=t","=IF(U117="""","""",IMAGE(U117))","本文直前（画像→本文→CTA）","動画終了・ロードマップ作成会受付","吉本さんDrive原案 META_SEMINAR_13-video-closed-roadmap-open.png を原寸・無加工で使用。本文・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","106","レビュー中","メッセージ","VSL完了・面談","META_SEM_40_VSL_視聴完了","brqYAbNWbjhP","72時間VSL開始済み・VSL状態該当","登録から1日後 15:00","LINE","テキスト","VSL-C08","","【LINEメッセージ 1／text】
+あと9時間でロードマップ作成会の申し込みは終了します。⏰
+
+日程を確保してください。✨","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","107","レビュー中","メッセージ","VSL完了・面談","META_SEM_40_VSL_視聴完了","zlm87BKwfnhi","72時間VSL開始済み・VSL状態該当","登録から1日後 21:00","LINE","テキスト＋ボタン","VSL-C09","","【LINEメッセージ 1／text】
+受付終了まであと3時間です。⏰
+
+自分に合う進め方を直接相談したい方は、こちらから予約してください。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【個別】ロードマップ作成会・受付終了まであと3時間"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIひとり起業ロードマップ作成会"",
+  ""text"": ""受付終了まであと3時間"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""日程を見て予約する"",
+      ""uri"": ""[ロードマップ作成会URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","日程を見て予約する","[
+  {
+    ""url"": ""[ロードマップ作成会URL]"",
+    ""action_id"": ""lMxbsrSPWV9W"",
+    ""expiration_type"": ""none""
+  }
+]","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","https://drive.usercontent.google.com/download?id=1w32JTpAdRDA2toSYaaQfBKhegpu8h4q3&export=view&confirm=t","=IF(U119="""","""",IMAGE(U119))","本文直前（画像→本文→CTA）","個別案内締切","吉本さんDrive原案 META_SEMINAR_07-direct-invite-deadline.png を原寸・無加工で使用。本文・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","108","レビュー中","メッセージ","VSL完了・面談","META_SEM_40_VSL_視聴完了","Lw5hWl0hKeJK","72時間VSL開始済み・VSL状態該当","登録から1日後 23:00","LINE","テキスト","VSL-C10","","【LINEメッセージ 1／text】
+あと1時間で受付終了です。⏰
+
+AIひとり起業ロードマップ作成会 のご案内はこれで最後です。参加したい方は、今すぐ予約を完了してください。🔥","","","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","https://drive.usercontent.google.com/download?id=1gxPIqZXdnXrPerx02k5NYiaACf3pMSrU&export=view&confirm=t","=IF(U120="""","""",IMAGE(U120))","本文直前（画像→本文→CTA）","個別案内の最終案内","吉本さんDrive原案 META_SEMINAR_14-final-direct-invite.png を原寸・無加工で使用。本文・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","109","レビュー中","メッセージ","面談予約後","META_SEM_80_05 面談予約リマインド（vVq新規）","k3OhRf27yoJ6","ロードマップ作成会予約済み","登録直後","LINE","テキスト","RSV-01（予約直後）","","【LINEメッセージ 1／text】
+%line_name%さん、ロードマップ作成会のご予約ありがとうございます。😊
+
+日時： %event_schedule%
+形式： Zoom（30分）
+参加URL： %event_info%
+
+当日はよろしくお願いいたします。
+","","","","","予約キャンセル済／日程変更済みの旧予約／成約／営業停止は除外（予約済み自体は除外しない）","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","110","レビュー中","メッセージ","面談予約後","META_SEM_80_05 面談予約リマインド（vVq新規）","v7clpa04Kfjk","ロードマップ作成会予約済み","イベント1日前 19:00","LINE","テキスト","RSV-02（前日19:00）","","【LINEメッセージ 1／text】
+明日のリマインドになります。⏰
+
+%event_schedule%／Zoom30分
+%event_info%
+
+","","[
+  {
+    ""url"": ""https://zoom.us/j/*"",
+    ""action_id"": null,
+    ""expiration_type"": ""none""
+  }
+]","","","予約キャンセル済／日程変更済みの旧予約／成約／営業停止は除外（予約済み自体は除外しない）","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","111","レビュー中","メッセージ","面談予約後","META_SEM_80_05 面談予約リマインド（vVq新規）","B7xRXy9LCLzz","ロードマップ作成会予約済み","イベント当日 09:00","LINE","テキスト","RSV-03（当日朝09:00）","","【LINEメッセージ 1／text】
+%line_name%さん、本日が面談日です。😊
+
+開始時刻になりましたら、こちらからZoomへお入りください。
+%event_info%
+
+お話しできるのを楽しみにしています。🙌","","","","","予約キャンセル済／日程変更済みの旧予約／成約／営業停止は除外（予約済み自体は除外しない）","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","112","レビュー中","メッセージ","面談予約後","META_SEM_80_05 面談予約リマインド（vVq新規）","OP9miZrixzvV","ロードマップ作成会予約済み","イベント3時間0分前","LINE","テキスト","RSV-04（3時間前）","","【LINEメッセージ 1／text】
+面談まであと3時間です。⏰
+
+%event_info%
+
+","","","","","予約キャンセル済／日程変更済みの旧予約／成約／営業停止は除外（予約済み自体は除外しない）","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","113","レビュー中","メッセージ","面談予約後","META_SEM_80_05 面談予約リマインド（vVq新規）","vDsOxRKEpvb5","ロードマップ作成会予約済み","イベント30分前","LINE","テキスト","RSV-05（30分前）","","【LINEメッセージ 1／text】
+あと30分で開始します。⏰
+
+こちらのZoomでお待ちしています。
+%event_info%
+
+それでは後ほど、よろしくお願いします。🙌","","","","","予約キャンセル済／日程変更済みの旧予約／成約／営業停止は除外（予約済み自体は除外しない）","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","114","レビュー中","メッセージ","面談無断欠席","META_SEM_81_面談無断欠席再予約","NS-01","ロードマップ作成会の無断欠席確認","欠席確認直後","LINE","テキスト","NS-01","","[name]さん、こんにちは🌱
+本日の個別面談ですが、お会いできず少し心配しております🥺
+
+急なお仕事や、接続のトラブルなどがあったかと思います。
+ご事情もあると思いますので、お気になさらないでください😊
+
+もし「改めて相談したいな」と思われましたら、
+こちらからご都合の良い日程を再調整いただけます👇✨
+[ロードマップ作成会URL]","日程を取り直す","[ロードマップ作成会URL]","","","再予約済／sales_in_progress／meeting_completed／成約／営業停止は除外","再予約→META_SEM_80／3通終了→ACT-NOSHOW-EXPIRE→オプチャ","Instagram/Dさん承認済みNS-01をそのまま転用。技術変数のみ現行名。","","","","","Dさん原文を基礎に使用。独自加筆禁止。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","115","レビュー中","メッセージ","面談無断欠席","META_SEM_81_面談無断欠席再予約","NS-02","ロードマップ作成会の無断欠席確認","翌日10:00","LINE","テキスト","NS-02","","昨日の個別面談ですが、まだ日程の
+再調整を受け付けておりますのでご安心ください😊✨
+
+事前の準備などは一切不要ですので、
+「ちょっとモヤモヤを聞いてほしいな」
+というくらいの気持ちでお気軽にどうぞ👇🍀
+[ロードマップ作成会URL]","再予約する","[ロードマップ作成会URL]","","","再予約済／sales_in_progress／meeting_completed／成約／営業停止は除外","再予約→META_SEM_80／3通終了→ACT-NOSHOW-EXPIRE→オプチャ","Instagram/Dさん承認済みNS-02をそのまま転用。技術変数のみ現行名。","","","","","Dさん原文を基礎に使用。独自加筆禁止。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","116","レビュー中","メッセージ","面談無断欠席","META_SEM_81_面談無断欠席再予約","NS-03","ロードマップ作成会の無断欠席確認","翌日20:00","LINE","テキスト","NS-03","","個別面談の再予約のご案内は、
+【これで最後】となります🌱
+
+「やっぱり一度直接話して整理したい！」
+と思われた場合は、こちらから都合の良い日時を
+選んでくださいね。お待ちしております😊👇
+[ロードマップ作成会URL]","再予約枠を見る","[ロードマップ作成会URL]","","","再予約済／sales_in_progress／meeting_completed／成約／営業停止は除外","再予約→META_SEM_80／3通終了→ACT-NOSHOW-EXPIRE→オプチャ","Instagram/Dさん承認済みNS-03をそのまま転用。技術変数のみ現行名。","","","","","Dさん原文を基礎に使用。独自加筆禁止。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","117","レビュー中","メッセージ","オプチャ","META_SEM_90_オプチャ_初回参加案内","Keai6IIELEtI","VSL未転換または再公開未希望","登録直後","LINE","テキスト＋ボタン","OC-J01","","【LINEメッセージ 1／text】
+%line_name%さん、AIの学びを続けたい方へ。😊
+
+私がやっている無料コミュニティにご招待させていただきます。
+AI活用やひとり起業についての無料勉強会が頻繁に行われています。オプチャから匿名で参加できます🙌
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"":
+  ""react_type"": ""one_time"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": null,
+  ""text"": ""スマートフォンから閲覧してください。"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""オプチャに参加する🔥"",
+      ""uri"": ""[オプチャURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","オプチャに参加する🔥","[
+  {
+    ""url"": "" [オプチャURL]"",
+    ""action_id"": null,
+    ""expiration_type"": ""none""
+  }
+]","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","https://drive.usercontent.google.com/download?id=12gMRxej-ZC0NN-YwcheiupmCgQWps1Vl&export=view&confirm=t","=IF(U129="""","""",IMAGE(U129))","本文直前（画像→本文→CTA）","AIマニアの放課後オプチャ案内","吉本さんDrive原案 META_SEMINAR_15-openchat-ai-mania.png を原寸・無加工で使用。本文・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Meta広告_セミナー直行","REVIEW_METAセミナー直行_20260810","118","レビュー中","メッセージ","オプチャ","META_SEM_90_オプチャ_初回参加案内","NTIhWrYdF9wK","VSL未転換または再公開未希望","登録から1日後 19:00","LINE","テキスト","OC-J02","","【LINEメッセージ 1／text】
+AI起業家無料コミュニティにはご参加いただけましたでしょうか😌👇
+
+[オプチャURL]","","[
+  {
+    ""url"": ""[オプチャURL]"",
+    ""action_id"": ""ua4O1UzrwOxm"",
+    ""expiration_type"": ""none""
+  }
+]","","","面談予約済／商談中／成約／営業停止は除外","次メッセージまたは状態分岐","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","https://drive.usercontent.google.com/download?id=18_-EvW5CpNIrGCZBv1LQ61iuaXjGS7y3&export=view&confirm=t","=IF(U130="""","""",IMAGE(U130))","本文直前（画像→本文→CTA）","金子さん向けオプチャ案内","吉本さんDrive原案 META_SEMINAR_22_金子さん_オプチャ案内.png を原寸・無加工で使用。本文・絵文字・分岐・配信時刻は承認済み行を維持する。"

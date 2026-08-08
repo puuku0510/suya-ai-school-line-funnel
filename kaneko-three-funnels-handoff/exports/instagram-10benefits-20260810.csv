@@ -1,0 +1,1660 @@
+"ファネル","承認元シート","No.","レビュー状態","行種別","フェーズ","シナリオ名","管理ID","対象・入口条件","配信タイミング","媒体","推奨形式","管理名称","件名","本文（全文・編集可）","CTA文言","CTA URL／変数","付与ラベル","解除ラベル","停止・除外条件","終了条件／次シナリオ","実装メモ","画像URL（YouTube原本）","画像プレビュー（セル内）","UTAGE挿入位置","画像内テキスト","使用指示・注意"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","1","レビュー中","アクション","入口","IG_00_入口","ACT-ENTRY","Instagram 10大特典から新規LINE登録","登録直後","UTAGE","ラベル・シナリオ遷移","媒体入口","","特典①〜④を即時配布。Zoomサポート会は起動しない。","","","src_instagram_10benefits / line_main_registered / ig_benefit_1to4_delivered / offer_seminar_active","","roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","IG_10_セミナー募集","新規登録者だけ2026-08-10版へ。既存読者は旧ルート完走。","","","","",""
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","2","レビュー中","アクション","セミナー","IG_15_申込完了","ACT-SEM-REG","第1または第2日程のセミナー申込完了","申込直後","UTAGE","ラベル・シナリオ遷移","セミナー申込完了","","選択した開催日程を保存し、未申込募集を即停止。","","","seminar_main_registered / seminar_schedule_1 または seminar_schedule_2 / offer_seminar_active","seminar_main_offered / seminar_page_clicked_unregistered / seminar_date_unavailable","roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","IG_20_申込者リマインド","申込日程を基準にリマインドし、開催翌朝06:00の面談案内へ進む。","","","","",""
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","3","レビュー中","アクション","面談","IG_25_面談予約完了","ACT-RM-BOOK","個別面談の予約完了","予約完了時","UTAGE","ラベル・シナリオ遷移","面談予約完了","","予約完了を全オファーの停止点にする。","","","roadmap_booked","offer_seminar_active / offer_vsl_active / offer_consult_day_active / offer_consult_48h_active / offer_noshow_rebook_active / openchat_invited","meeting_completed / sales_won / sales_stop","IG_80_面談リマインド","別の個別面談用公式LINEとの連携必須。実装時に両UTAGEアカウントの予約完了イベントと照合キーを確認。","","","","",""
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","4","レビュー中","アクション","見逃し","IG_30_開催翌朝面談案内開始","ACT-POSTSEM-CONSULT","セミナー申込済み・面談未予約","申込したセミナー開催日の翌朝06:00","UTAGE","ラベル・シナリオ遷移","参加者向け面談案内開始","","参加／欠席は判定せず、ロードマップ作成会を当日23:59まで案内。","","","offer_consult_day_active","offer_seminar_active / seminar_main_offered","roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","IG_30_参加者向け面談案内","現在UTAGEの『イベント開始15分後』設定は使わない。","","","","",""
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","5","レビュー中","アクション","見逃し","IG_35_日程不可VSL即時開始","ACT-NODATE-VSL","「どちらの日程も合わない」ボタン初回押下","クリック直後","UTAGE","ラベル・シナリオ遷移","前回企画ダイジェストVSL開始","","セミナー募集を即停止し、同じVSLを前回企画ダイジェスト版として72時間公開。","","","seminar_date_unavailable / vsl_main_offered / offer_vsl_active","offer_seminar_active / seminar_main_offered / seminar_page_clicked_unregistered","roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","IG_40_VSL_未開封","初回クリック時刻をVSL開始日時として固定。再クリックで期限を延長しない。","","","","",""
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","6","レビュー中","アクション","VSL","IG_45_視聴開始","ACT-VSL-START","VSLページを開いて視聴開始","クリック直後","UTAGE","ラベル・シナリオ遷移","VSL視聴開始","","未視聴シナリオを即停止し、途中視聴へ移行。","","","vsl_main_started / offer_vsl_active","","vsl_main_completed / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","IG_50_VSL途中","YouTubeと同じ視聴開始判定を使用。未視聴15通と途中10通を重ねない。","","","","",""
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","7","レビュー中","アクション","VSL","IG_55_視聴完了","ACT-VSL-COMPLETE","VSL完了地点到達","到達直後","UTAGE","ラベル・シナリオ遷移","VSL視聴完了","","未視聴・途中視聴を即停止し、完了後面談へ移行。","","","vsl_main_completed / offer_vsl_active","vsl_main_started","offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","IG_60_VSL完了_面談","完了時点でVSL-U／VSL-Pを解除。完了シーケンスだけを残す。","","","","",""
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","8","レビュー中","アクション","VSL","IG_65_期限切れ","ACT-VSL-EXPIRE","VSL開始から72時間・面談未予約","VSL初回開始時刻から厳密に72時間後","UTAGE","ラベル・シナリオ遷移","VSL期限切れ","","72時間VSLを終了し、面談予約済みでなければオプチャへ。","","","vsl_main_expired","vsl_main_started / vsl_main_offered / offer_vsl_active","roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop / offer_noshow_rebook_active","IG_90_オプチャ案内","日程不可／第2日程後／セミナー参加者未予約のどの入口でも同じ72時間判定。","","","","",""
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","9","レビュー中","アクション","終了","IG_90_未転換終了","ACT-OPENCHAT","VSL72時間終了・面談未予約、または無断欠席3通後未再予約","各上位オファー終了直後","UTAGE","ラベル・シナリオ遷移","オプチャ移行","","まだ面談予約・実施していない未転換者だけをオプチャへ移行。","","","openchat_invited","offer_seminar_active / offer_vsl_active / offer_consult_day_active / offer_consult_48h_active / offer_noshow_rebook_active","roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","IG_90_オプチャ案内","面談予約済み・面談済みは自動オプチャ対象外。","","","","",""
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","10","レビュー中","アクション","最優先","IG_99_営業結果","ACT-SALES","面談完了後の営業結果を手動更新","面談終了後","UTAGE","ラベル・シナリオ遷移","上位状態停止","","meeting_completedを前提に営業結果4択を記録。自動ファネルは再開しない。","","","sales_won / sales_next_meeting / sales_no_next_meeting / sales_stop","","meeting_completed必須","手動運用","14番はYouTubeの4択を維持。ただし今回の確定事項により面談済みはゴールで、自動オプチャ・自動セミナー再開は行わない。","","","","",""
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","11","レビュー中","アクション","セミナー","IG_12_セミナー申込ページクリック","ACT-SEM-PAGE","第1または第2日程の申込URL初回クリック・未申込","クリック直後","UTAGE","ラベル・シナリオ遷移","セミナー申込ページ離脱","","通常の未申込募集を即停止し、選んだ日程の申込完了催促だけへ移行。","","","seminar_page_clicked / seminar_page_clicked_unregistered / offer_seminar_active","","offer_vsl_active / seminar_main_registered / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","IG_13_セミナー申込ページクリック未申込","第1・第2日程の全CTAへ同一アクション。選択日程を保持。","","","","",""
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","12","レビュー中","アクション","面談","IG_26_面談ページクリック","ACT-RM-PAGE","VSL完了後のロードマップ作成会ページ初回クリック・未予約","クリック直後・ここを48時間開始時刻に保存","UTAGE","ラベル・シナリオ遷移","面談ページ離脱","","VSL完了シーケンス・VSL期限・オプチャを停止し、48時間の面談催促だけへ移行。","","","roadmap_page_clicked / roadmap_page_clicked_unbooked / offer_consult_48h_active","offer_vsl_active / vsl_main_offered / vsl_main_started / vsl_main_completed / openchat_invited","roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop / offer_noshow_rebook_active","IG_27_面談ページクリック未予約","全ロードマップCTAへ同一アクション。初回クリック時刻＋48時間でフォームを厳密に閉鎖。再クリックで期限を延長しない。","","","","",""
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","13","レビュー中","アクション","面談無断欠席","IG_81_面談無断欠席","ACT-RM-NOSHOW","ロードマップ作成会の無断欠席を確認（事前キャンセル・日程変更は除く）","欠席確認直後","UTAGE","ラベル・シナリオ遷移","面談無断欠席","","YouTube同様、初回はroadmap_noshow_1、2回目以降はroadmap_noshow_2plus。再予約案内へ。","","","roadmap_noshow_1 または roadmap_noshow_2plus / offer_noshow_rebook_active","roadmap_booked / sales_in_progress / openchat_invited","再予約済／meeting_completed／成約／営業停止は除外","IG_81_面談無断欠席再予約","事前キャンセル・日程変更では欠席回数を増やさない。無断欠席3通の間はoffer_noshow_rebook_activeで他オファーを止める。","","","","",""
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","14","レビュー中","アクション","セミナー終了","IG_29_第2日程終了未申込","ACT-SEM2-END-NOREG","第2日程終了時点でセミナー未申込・面談未予約","第2日程の翌朝06:00","UTAGE","ラベル・シナリオ遷移","未申込→72時間VSL","","確認ボタンを挟まず、前回企画ダイジェストではない通常のVSL案内を自動開始。","","","seminar_main_unregistered_closed / vsl_main_offered / offer_vsl_active","offer_seminar_active / seminar_main_offered / seminar_page_clicked_unregistered","roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","IG_40_VSL_未開封","第1日程終了後は第2日程の募集を続け、第2日程終了後だけ実行。","","","","",""
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","15","レビュー中","アクション","見逃し","IG_39_参加者面談受付終了","ACT-POSTSEM-CONSULT-EXPIRE","セミナー申込済み・当日23:59時点で面談未予約","申込したセミナー開催翌日の23:59で締切、次の朝06:00に実行","UTAGE","ラベル・シナリオ遷移","面談未予約→72時間VSL","","参加者向けロードマップ作成会を締め切り、次の朝からVSLを自動開始。","","","vsl_main_offered / offer_vsl_active","offer_consult_day_active","roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","IG_40_VSL_未開封","確認ボタンは使わない。","","","","",""
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","16","レビュー中","アクション","面談未予約","IG_28_面談48時間受付終了","ACT-CONSULT-EXPIRE","面談ページクリックから48時間・未予約・面談未実施","クリックから厳密に48時間後","UTAGE","ラベル・シナリオ遷移","面談48時間終了→オプチャ","","48時間の面談催促を終了し、申込フォーム自体をクローズしてからオプチャへ移行する","","","roadmap_offer_expired","offer_consult_48h_active / roadmap_page_clicked_unbooked","roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","IG_90_オプチャ案内","ATT-C08〜10の残り9時間／3時間／1時間表記と同じ実締切を使用。48時間中はVSL期限・オプチャを完全停止。","","","","",""
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","17","レビュー中","アクション","最優先","IG_98_面談完了","ACT-MEETING-COMPLETE","実際に個別面談を実施した人","面談終了直後・担当者が手動更新","UTAGE","ラベル・シナリオ遷移","面談済み＝自動ファネルゴール","","面談を実施した時点で全自動オファーを停止する。以後のオプチャ案内は手動のみ。","","","meeting_completed","offer_seminar_active / offer_vsl_active / offer_consult_48h_active / offer_noshow_rebook_active / seminar_main_offered / vsl_main_offered / vsl_main_started / vsl_main_completed / roadmap_page_clicked_unbooked / openchat_invited","","自動ファネル終了","面談後にsales_won／sales_next_meeting／sales_no_next_meeting／sales_stopを手動更新。どの営業結果でも自動オプチャへは送らない。","","","","",""
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","18","レビュー中","アクション","終了","IG_91_オプチャリンククリック","ACT-OPENCHAT-CLICK","オプチャ参加リンクをクリック","クリック直後","UTAGE","ラベル・シナリオ遷移","オプチャ案内停止","","YouTube側と同様、リンククリック時点で残りの初回案内を停止する","","","openchat_link_clicked","openchat_invited","roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","IG_90_オプチャ案内を停止して終了","J01〜J02の全リンクへ同じクリックアクションを設定。実参加判定ではなくリンククリックを停止点にする。","","","","",""
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","19","レビュー中","アクション","面談無断欠席","IG_82_無断欠席再予約終了","ACT-NOSHOW-EXPIRE","無断欠席後3通終了・未再予約・面談未実施","NS-03配信後","UTAGE","ラベル・シナリオ遷移","無断欠席未再予約→オプチャ","","無断欠席後の再予約オファーを終了し、面談未実施者だけオプチャへ移行する","","","roadmap_noshow_rebook_expired","offer_noshow_rebook_active","roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","IG_90_オプチャ案内","YouTubeの無断欠席3通終了後の出口。事前キャンセル・日程変更はこのルートへ入れない。","","","","",""
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","20","レビュー中","メッセージ","入口・特典","IG_00_登録直後","IG-ENTRY-01","Instagram経由でLINE登録・未配布","登録直後","LINE","画像＋テキスト（特典リンク4件）（画像: 01_10大特典_受取ガイド.png）","IG-BEN-01","","【LINEメッセージ 1／text】
+ご登録ありがとうございます！😊
+こすもすです。
+
+さっそく、公式LINE登録特典をお届けします🎁
+
+━━━━━━━━━━
+① AI海外起業ビジネスモデル10選
+━━━━━━━━━━
+海外で生まれているAIビジネスを、10個に厳選してまとめています。
+
+▼こちらからご覧ください
+https://utagesystem.s3.ap-northeast-1.amazonaws.com/GX6OYW2fVtRD/O7A5XYh2PyVYoV5DWPTqUYkYOSiAt8Z9kYkydMPm.pdf
+
+━━━━━━━━━━
+② Claude Code・Codexなど
+環境セットアップ完全手順書
+━━━━━━━━━━
+AIを使ってホームページやツールを作るための準備を、初心者向けに解説しています。
+
+▼こちらからご覧ください
+https://utagesystem.s3.ap-northeast-1.amazonaws.com/GX6OYW2fVtRD/86Ln3pi7lvBUS3hi5m12ZvAI8UoMFEoXQLI00VIp.pdf
+
+━━━━━━━━━━
+③ これだけは知っておくべきコマンド5選
+━━━━━━━━━━
+AIを使ううえで、まず覚えておきたい基本コマンドをまとめています。
+
+▼こちらからご覧ください
+https://utagesystem.s3.ap-northeast-1.amazonaws.com/GX6OYW2fVtRD/YHSlEkeZB9T9gsqQGIPWmzvSq9m4QFLmnR8dtXFg.pdf
+
+━━━━━━━━━━
+④ 知っておくと差がつくSkills 10選
+━━━━━━━━━━
+AIに専門的な仕事を任せやすくする、便利なSkillsをまとめています。
+
+▼こちらからご覧ください
+https://utagesystem.s3.ap-northeast-1.amazonaws.com/GX6OYW2fVtRD/5bOaVbp2Mj7aqeVK3rQodv8Agq0D0j8nxLVup94C.pdf
+
+まずは気になるものから、ぜひご活用ください☺️
+
+先ほどお渡しした特典①〜④は、
+こちらのメッセージからいつでも確認できます😊✨
+
+「どれから見よう…」と迷ったら、
+まずは1番気になるものを1つだけ開いて、
+保存しておいてください👇🎁","特典1〜4をまとめて受け取る","[
+  {
+    ""url"": ""https://utagesystem.s3.ap-northeast-1.amazonaws.com/GX6OYW2fVtRD/O7A5XYh2PyVYoV5DWPTqUYkYOSiAt8Z9kYkydMPm.pdf"",
+    ""action_id"": null,
+    ""expiration_type"": ""none""
+  },
+  {
+    ""url"": ""https://utagesystem.s3.ap-northeast-1.amazonaws.com/GX6OYW2fVtRD/86Ln3pi7lvBUS3hi5m12ZvAI8UoMFEoXQLI00VIp.pdf"",
+    ""action_id"": null,
+    ""expiration_type"": ""none""
+  },
+  {
+    ""url"": ""https://utagesystem.s3.ap-northeast-1.amazonaws.com/GX6OYW2fVtRD/YHSlEkeZB9T9gsqQGIPWmzvSq9m4QFLmnR8dtXFg.pdf"",
+    ""action_id"": null,
+    ""expiration_type"": ""none""
+  },
+  {
+    ""url"": ""https://utagesystem.s3.ap-northeast-1.amazonaws.com/GX6OYW2fVtRD/5bOaVbp2Mj7aqeVK3rQodv8Agq0D0j8nxLVup94C.pdf"",
+    ""action_id"": null,
+    ""expiration_type"": ""none""
+  }
+]","ig_benefit_1to4_delivered","","面談予約済／商談中／成約／営業停止は除外","IG_10_セミナー募集","吉本さん原案 ENT-01 の文章・絵文字を使用。配信時刻・分岐・変数は確定済みInstagram設計を優先。","https://drive.usercontent.google.com/download?id=1Nh4_vdd1fOpvrmIFTaxjUSrK2ADEIV-t&export=view&confirm=t","=IF(U32="""","""",IMAGE(U32))","本文内リンク","公式LINE登録で豪華10大特典（AI×ひとり起業完全版）","吉本さん原案 8a963208-e6c2-4363-8049-9099e2528212.png を原寸・無加工で使用。文章・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","21","レビュー中","メッセージ","入口・特典","IG_10_セミナー募集","IG-SEM-01","特典①〜④配布済み・セミナー未申込","LINE登録から5分後","LINE","画像＋テキスト＋ボタン（画像: 02_第5特典_セミナー招待券.png）","IG-SEM-01","","【LINEメッセージ 1／text】
+%line_name%さん、大変お待たせしました！😊🌟
+
+登録特典の【特典⑤】として、
+特別なオンラインセミナーの招待券をお届けします🎟️✨
+
+毎月100名以上の方にご参加いただいている、AIとビジネスを繋げる時間となっております！
+どうぞ楽しみにしていてください🌟
+
+📢 セミナー：AIでひとり起業攻略法
+📅 日程①：[第1日程]
+📅 日程②：[第2日程]
+
+ご都合の合う日程を選択してください👇","日程①に申し込む / 日程②に申し込む / どちらの日程も合わない","[第1日程申込URL｜ACT-SEM-PAGE] / [第2日程申込URL｜ACT-SEM-PAGE] / [ACT-NODATE-VSL]","seminar_main_offered / offer_seminar_active","","seminar_page_clicked_unregistered / seminar_main_registered / offer_vsl_active / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","日程①・②→選択日程の申込催促／日程不可→IG_40_VSL_未開封","吉本さん原案の本文・絵文字・画像を維持し、2日程と第3ボタンだけ追加。","https://drive.usercontent.google.com/download?id=1_VhKIcMLuby5D7FQQ7MLGTJcMseY4f7I&export=view&confirm=t","=IF(U33="""","""",IMAGE(U33))","本文→CTA","登録特典⑤・オンラインセミナー招待券／参加者へ特典⑥〜⑩","吉本さん原案 7d3a84d1-785a-4cbe-95c8-eec7c4f543d5.png を原寸・無加工で使用。文章・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","22","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第1日程","LQpvKDFjDGsM","セミナー未申込・日程不可未選択・面談未予約","第1日程 14日前10:00（未経過時のみ）","LINE","テキスト","SEM-A01（開催14日前10:00）","","【LINEメッセージ 1／text】
+特典①〜④をご覧になって、
+「自分なら、何から始めればいいんだろう？🤔」
+と感じた方へ。
+
+先ほど、そのモヤモヤをすっきり解消する
+【特典⑤：セミナー招待券】をお送りしました！🎟️🚀
+質疑応答の時間もたくさんご用意しているので、まずは現状を変えるための一歩としてご参加していただければと思います☺️
+ぜひチェックしてください✨","セミナー招待券を受け取る","[第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","https://drive.usercontent.google.com/download?id=1hDHYwE25L5n73r3M4u7dnhZP935HQ8-5&export=view&confirm=t","=IF(U34="""","""",IMAGE(U34))","本文直前（画像→本文→CTA）","AIでひとり起業攻略法とは何か／具体的な次の一歩","吉本さん原案 a61066b1-911e-4aa9-9dae-effb289e7601.png を原寸・無加工で使用。文章・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","23","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第1日程","AqiRBjFsP3Kl","セミナー未申込・日程不可未選択・面談未予約","第1日程 12日前19:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-A02（開催12日前19:00）","","【LINEメッセージ 1／text】
+先ほどお送りした「セミナー招待状」は
+確認できましたか？😊
+
+残りの5大特典（⑥〜⑩）は、
+特に有料級の内容となっているため、
+セミナーの最後に【参加者限定】でお渡しします🎁
+
+予定が合う方は、忘れないうちに
+先に席だけ確保しておいてくださいね👇
+[第1日程申込URL]","セミナーに申し込む","[第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","https://drive.usercontent.google.com/download?id=1N4ce4deT64SE9bn9-tsgLF3B-K6o4coO&export=view&confirm=t","=IF(U35="""","""",IMAGE(U35))","本文直前（画像→本文→CTA）","セミナー参加限定特典①〜⑤（豪華特典⑥〜⑩）","吉本さん原案 84dbdc97-a0b4-4788-9d9c-6d402e369798.png を原寸・無加工で使用。文章・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","24","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第1日程","JHSy8ypSk7Oy","セミナー未申込・日程不可未選択・面談未予約","第1日程 10日前10:00（未経過時のみ）","LINE","画像＋テキスト＋ボタン（画像: 03_参加者限定_残り5特典.png）","SEM-A03（開催10日前10:00）","","【LINEメッセージ 1／text】
+セミナーの最後にお渡しする
+【限定特典⑥〜⑩】について少しご紹介します✨
+
+内容は、【AIで動画制作法】や、【AIを使ったホームページ制作法】など、
+セミナーの理解をさらに深めて「次の一歩」へすぐ踏み出せるような、
+超・実践的なお役立ち資料にしています！💡
+
+ぜひ楽しみにしていてくださいね😊
+▼セミナーのお申し込みはこちら
+[第1日程申込URL]","残り5特典を受け取るために参加する","[第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U03 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","25","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第1日程","pn1FoJ7Cr80a","セミナー未申込・日程不可未選択・面談未予約","第1日程 8日前19:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-A04（開催8日前19:00）","","【LINEメッセージ 1／text】
+今回のセミナーでは、単にAIの知識を
+増やすだけではなく、以下の3点を
+あなたのペースに合わせて整理していきます🌱✨
+
+１．今のあなたに実践できること🚀
+２．あなたの生活・仕事で「AIを活かせる場面」🤖
+３．今日からスタートできる「最初の一歩」💪
+
+▼お席の確保はこちらからどうぞ👇😊
+[第1日程申込URL]","セミナー内容を確認する","[第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U17 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","26","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第1日程","IG-SEM-D7-10-NEW","セミナー未申込・日程不可未選択・面談未予約","第1日程 7日前10:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-D7-01（開催7日前10:00）","","【LINEメッセージ 1／text】
+セミナー開催まで【あと1週間】です！🗓️✨
+
+
+▼お席の確保はこちらからどうぞ👇😊
+[第1日程申込URL]","セミナー内容を確認する","[第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U17 を基礎。本文・絵文字を優先し、開催1週間前の表記と分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","27","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第1日程","IG-SEM-D7-20-NEW","セミナー未申込・日程不可未選択・面談未予約","第1日程 7日前20:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-D7-02（開催7日前20:00）","","【LINEメッセージ 1／text】
+セミナー開催まで【あと1週間】です！🗓️✨
+
+セミナーのお申し込みは、お名前と
+メールアドレスを入力するだけで完了します📝✨
+
+ご登録後、参加URLをLINEとメールの
+両方へお送りします。
+
+まずは開催日時が合うかだけでも確認してみてくださいね👇😊
+[第1日程申込URL]","日時を確認して申し込む","[第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U18 を基礎。本文・絵文字を優先し、開催1週間前の表記と分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","28","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第1日程","hwMrSLSGqmde","セミナー未申込・日程不可未選択・面談未予約","第1日程 6日前10:00（未経過時のみ）","LINE","画像＋テキスト＋ボタン（画像: 04_セミナーで学べること.png）","SEM-A05（開催6日前10:00）","","【LINEメッセージ 1／text】
+今回のセミナーは、単に「AIの知識を増やす」
+だけのものではありません💡
+
+このセミナーで1番多い声は
+「AIを学んだけど成果が出ない理由がすっきり解決した！」✨
+「これまでYouTubeで学んできたけど、自分にあったAIの活かし方がようやくわかった！」💡
+「今の私が次にやるべきアクションが明確になりました！」🚀
+
+実はAIの知識だけ増やしても、ビジネスへの活かし方に繋がりません。
+「AIを自分の仕事やキャリアにどう活かすか」
+を整理し、聞いた後に【具体的に何をすればいいか】
+まで、一緒に考えられる内容になっています！🚀
+
+▼席の確保はこちらからどうぞ👇
+[第1日程申込URL]","セミナー詳細を見る","[第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U04 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","29","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第1日程","UGcaRCoMFOxK","セミナー未申込・日程不可未選択・面談未予約","第1日程 5日前19:00（未経過時のみ）","LINE","画像＋テキスト＋ボタン（画像: 05_参加者写真_差替テンプレ.png）","SEM-A06（開催5日前19:00）","","【LINEメッセージ 1／text】
+「AI初心者ですが、参加しても大丈夫ですか...？」
+というご質問をよくいただきましたが、
+全く問題ありませんのでご安心ください！😊
+
+むしろAIは初心者だからこその着眼点がかなり重要なんです！
+初心者だからこその、新しい発想や発見がある...!!😳
+
+過去のセミナーの様子や、
+参加者の方々のリアルな感想は、
+こちらからご確認いただけます👇✨
+https://seminar-voices.netlify.app/","内容を確認して申し込む","[第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U05 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。 実績・感想表現は公開前に根拠確認。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","30","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第1日程","RokpcnZILyfj","セミナー未申込・日程不可未選択・面談未予約","第1日程 4日前20:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-A07（開催4日前20:00）","","【LINEメッセージ 1／text】
+セミナーのお申し込みは、お名前と
+メールアドレスを入力するだけで完了します📝✨
+
+ご登録後、参加URLをLINEとメールの
+両方へお送りします。👍😊
+
+「当日にLINEのトークからURLを探すのが大変…💦」
+という時も、メールに情報が残っているので
+スムーズに参加できて安心です
+👇😊
+[第1日程申込URL]","日時を確認して申し込む","[第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U18 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","31","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第1日程","yfZhr4eBiYca","セミナー未申込・日程不可未選択・面談未予約","第1日程 3日前10:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-B01（開催3日前10:00）","","【LINEメッセージ 1／text】
+セミナー開催まで【あと3日】となりました！⏰
+
+
+このセミナーでは「AIの深い知識」ではなく、
+「AIをどうビジネスに繋げるか」を体系的に学べる時間になっています☺️✨
+
+""AIでホームページが作れる""、""AIで動画制作ができる""、
+ではその後は...？😥
+
+AIを学ぶだけではビジネスは出来ません💦
+その知識を発展させるための時間になっています🚀
+
+少しでもご興味ある方は、ぜひお早めにお申し込みください！✨
+
+📅 日時：[第1日程]
+💻 形式：オンライン（Zoomなど）
+
+参加用のURLは、お申し込み後に
+LINEとメールでお送りいたします。
+
+▼席の確保はお早めにどうぞ👇😊
+[第1日程申込URL]","参加登録する","[第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U06 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","32","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第1日程","DDbLkDS5Bs2y","セミナー未申込・日程不可未選択・面談未予約","第1日程 3日前20:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-B02（開催3日前20:00）","","【LINEメッセージ 1／text】
+「まだAIを触り始めたばかり…」
+という方でも、どうぞご安心ください😊
+
+むしろAIビジネスは触り始めた方の方が有利に働くことが多いです！
+その実態をセミナーでお伝えいたします🚀🔥
+
+あなたのこれまでの経験や、得意なことを
+振り返りながら、「自分にぴったりのAI活用法」
+を見つけるところから優しく進めていきます🌱
+
+▼詳細・お申し込みはこちらから👇
+[第1日程申込URL]","初心者向けセミナーに参加する","[第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U07 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","33","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第1日程","chBZyUC5u0cb","セミナー未申込・日程不可未選択・面談未予約","第1日程 2日前10:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-B03（開催2日前10:00）","","【LINEメッセージ 1／text】
+今回のセミナーは、
+特にこんな方におすすめです！💡
+
+🌟 AIを自分の仕事に活かしたい
+🌟 学ぶ順番をスッキリ整理したい
+🌟 自分の「強み」とAIを掛け合わせたい
+🌟 今日からできる具体的な一歩を決めたい
+
+1つでも当てはまる方は、
+ここが分岐点になると思います...!!
+一歩踏み出すか、足踏みをするか。
+少しでもご自身にプラスの影響を与えたい方はぜひ👇😊
+[第1日程申込URL]","自分に合うか確認する","[第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U08 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","34","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第1日程","bPqbxIX4OVHi","セミナー未申込・日程不可未選択・面談未予約","第1日程 2日前20:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-B04（開催2日前20:00）","","【LINEメッセージ 1／text】
+限定特典⑥〜⑩をお受け取りいただけるのは、
+セミナーを最後までご視聴いただいた方のみとなります🎁
+
+もし「途中までは参加できるけど、最後までは時間的に...」
+という方は、個別にメールからご連絡ください！
+ご参加いただけたことを確認できましたら、特典の方をお礼にお渡しいたします！
+
+「あとで予定を確認しよう」と思っていると
+満席になってしまうこともあるので、
+忘れないうちに席を確保しておいてくださいね👇✨
+[第1日程申込URL]","参加枠を確保する","[第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U09 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。 実績・感想表現は公開前に根拠確認。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","35","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第1日程","RSqeGyYE2rfk","セミナー未申込・日程不可未選択・面談未予約","第1日程 前日09:00","LINE","画像＋テキスト＋ボタン（画像: 06_セミナー前日_リマインド.png）","SEM-B05（開催前日09:00）","","【LINEメッセージ 1／text】
+いよいよ【明日開催】となりました！✨
+
+「自分に合う内容かな…？🔰」
+と迷われている方へ。
+
+AIを使ったことがない初心者の方でも、
+まだやりたい方向が決まっていなくても大丈夫！
+あなたの「今の状態」から一緒に整理していくセミナーです😊🌱
+
+むしろ""AI界隈は初心者が有利""だと確信しています！
+その理由はセミナーで語っていますので、ぜひ覗いてみてください
+
+📢 セミナー：AIでひとり起業攻略法
+📅 日時：[第1日程]
+
+参加を迷われている方、迷われているだけでも半歩先に進んでいる状態です。
+もう半歩踏み出すきっかけにしていただけると嬉しいです☺️
+忘れないうちにお申し込みを済ませてくださいね👇😊
+[第1日程申込URL]","明日のセミナーに申し込む","[第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U10 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","36","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第1日程","3343Rx0CqrIS","セミナー未申込・日程不可未選択・面談未予約","第1日程 前日15:00","LINE","テキスト＋ボタン","SEM-B06（開催前日15:00）","","【LINEメッセージ 1／text】
+【重要なご連絡】
+「セミナーに必要な知識はありますか？」
+と聞かれますが、知識は不要です！
+
+ほんの少しのAIへの興味と、
+ビジネスにしたいという気持ちがあれば十分すぎるぐらいです☺️
+
+あとはリラックスして視聴できる場所と、
+メモ用の筆記用具があれば準備はバッチリです👍
+
+顔出し声出しは不要ですので、お気軽にご参加ください🤲
+こちらからご確認くださいね👇","参加方法を確認する","[第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U11 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","37","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第1日程","24HUpDar6IB0","セミナー未申込・日程不可未選択・面談未予約","第1日程 前日21:00","LINE","テキスト＋ボタン","SEM-B07（開催前日21:00）","","【LINEメッセージ 1／text】
+【大変申し訳ございません】
+物凄く現実的で残酷なことをお伝えします。
+
+それは、
+""AIは学ぶだけでは、一生成功しません""
+
+これは別に大袈裟にいっているわけではありません。
+AIに限ったことではないですが、道具の使い方が分かっても、
+実践する場所や、活かす機会がないと意味がないんです。
+
+今回のセミナーでは、
+そういった状況から一気に抜け出せる内容となっています。
+
+ご参加いただける場合は、
+今夜のうちにお名前とメールアドレスを登録して、
+参加用URLを受け取っておいてくださいね👇✨
+[第1日程申込URL]","参加URLを受け取る","[第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U12 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","38","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第1日程","WvjKarVV5Oh3","セミナー未申込・日程不可未選択・面談未予約","第1日程 当日09:00","LINE","画像＋テキスト＋ボタン（画像: 07_セミナー当日_リマインド.png）","SEM-B08（開催当日09:00）","","【LINEメッセージ 1／text】
+＼ いよいよ本日開催です！🎉 ／
+
+📢 AIでひとり起業攻略法
+📅 [第1日程]
+
+まだ今からでもお申し込み可能です！
+
+最後までご参加いただいた方には、
+実践で使える超有料級の【特典⑥〜⑩】も
+プレゼントいたします！🎁
+
+お席が埋まる前に、ぜひご確認くだいね👇✨
+
+▼お申し込みはこちらから👇😊
+[第1日程申込URL]","本日のセミナーに申し込む","[第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U13 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","39","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第1日程","uFvnt0A4Njsx","セミナー未申込・日程不可未選択・面談未予約","第1日程 開始3時間前","LINE","テキスト＋ボタン","SEM-B09（開始3時間前）","","【LINEメッセージ 1／text】
+セミナー開始まで【あと3時間】となりました！⏰
+
+今からの駆け込みお申し込みも大歓迎です！👍
+ご登録後、すぐに参加用URLをお送りします。
+
+事前準備は不要です。
+顔出しや声出しも不要です☺️
+好きな飲み物を片手にリラックスしてご参加ください😌
+
+昨日の連絡を見て、
+「最後まで見るのは時間的に厳しくて...」
+というお声がありましたので、セミナーにご参加いただけたのがわかった場合、
+後からメールにてご連絡いただければ、特典の方をお送りいたしますのでご安心ください！
+
+ぜひご参加お待ちしております☺️
+
+▼こちらから席を確保してくださいね👇✨
+[第1日程申込URL]","参加URLを受け取る","[第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U14 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","40","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第1日程","Dq5k8JrM1aww","セミナー未申込・日程不可未選択・面談未予約","第1日程 開始30分前","LINE","テキスト＋ボタン","SEM-B10（開始30分前）","","【LINEメッセージ 1／text】
+あと30分でセミナーが開始します！⏳✨
+
+あと30分でセミナーが始まります！⏳🔥
+
+申込ページを見て迷っていた方への、
+これが【最後のご案内】となります。
+
+まだ申し込みが来ているため、時間延長いたしました💦
+こちらから滑り込みでのお申し込みをお待ちしております！👇😊
+[第1日程申込URL]","今から申し込む","[第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第1日程案内","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U15 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","41","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第1日程","c4DE7dl6EP7m","セミナー未申込・日程不可未選択・面談未予約","第1日程 開始10分前","LINE","テキスト＋ボタン","SEM-B11（開始10分前）","","【LINEメッセージ 1／text】
+まもなくセミナーを開始します！📢
+
+こちらが今回のセミナーお申し込みの
+【最後のご案内】となります。
+
+正直ながら見するだけでも、
+今回の内容は十分皆さんの分岐点になると確信しています。
+AIをビジネスに発展させるのに必要なのは、""知識""ではなく""きっかけ""です。
+
+まだ受付中ですので、こちらから
+今すぐ参加登録を完了してくださいね👇✨
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[第1日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[第1日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","IG_11_第2日程が最後","第1日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","42","レビュー中","メッセージ","セミナー募集","IG_11_第2日程が最後","IG-SEM-LAST-DATE","第1日程終了・セミナー未申込・日程不可未選択","第1日程終了後（第2日程の募集開始時刻）","LINE","text+button","SEM-LAST-DATE","","【LINEメッセージ 1／text】
+第1日程は終了しました。
+次が最後の日程です！📢
+
+📅 [第2日程]
+
+まだお申し込みでない方は、こちらから参加枠をご確認ください👇","最後の日程に申し込む","[第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","IG_10_セミナー募集_第2日程","2日程制に必要な最小限の新規文。","","","","",""
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","43","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第2日程","LQpvKDFjDGsM","セミナー未申込・日程不可未選択・面談未予約","第2日程 14日前10:00（未経過時のみ）","LINE","テキスト","SEM-A01（開催14日前10:00）","","【LINEメッセージ 1／text】
+特典①〜④をご覧になって、
+「自分なら、何から始めればいいんだろう？🤔」
+と感じた方へ。
+
+先ほど、そのモヤモヤをすっきり解消する
+【特典⑤：セミナー招待券】をお送りしました！🎟️🚀
+質疑応答の時間もたくさんご用意しているので、まずは現状を変えるための一歩としてご参加していただければと思います☺️
+ぜひチェックしてください✨","セミナー招待券を受け取る","[第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","https://drive.usercontent.google.com/download?id=1hDHYwE25L5n73r3M4u7dnhZP935HQ8-5&export=view&confirm=t","=IF(U55="""","""",IMAGE(U55))","本文直前（画像→本文→CTA）","AIでひとり起業攻略法とは何か／具体的な次の一歩","吉本さん原案 a61066b1-911e-4aa9-9dae-effb289e7601.png を原寸・無加工で使用。文章・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","44","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第2日程","AqiRBjFsP3Kl","セミナー未申込・日程不可未選択・面談未予約","第2日程 12日前19:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-A02（開催12日前19:00）","","【LINEメッセージ 1／text】
+先ほどお送りした「セミナー招待状」は
+確認できましたか？😊
+
+残りの5大特典（⑥〜⑩）は、
+特に有料級の内容となっているため、
+セミナーの最後に【参加者限定】でお渡しします🎁
+
+予定が合う方は、忘れないうちに
+先に席だけ確保しておいてくださいね👇
+[第2日程申込URL]","セミナーに申し込む","[第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","https://drive.usercontent.google.com/download?id=1N4ce4deT64SE9bn9-tsgLF3B-K6o4coO&export=view&confirm=t","=IF(U56="""","""",IMAGE(U56))","本文直前（画像→本文→CTA）","セミナー参加限定特典①〜⑤（豪華特典⑥〜⑩）","吉本さん原案 84dbdc97-a0b4-4788-9d9c-6d402e369798.png を原寸・無加工で使用。文章・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","45","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第2日程","JHSy8ypSk7Oy","セミナー未申込・日程不可未選択・面談未予約","第2日程 10日前10:00（未経過時のみ）","LINE","画像＋テキスト＋ボタン（画像: 03_参加者限定_残り5特典.png）","SEM-A03（開催10日前10:00）","","【LINEメッセージ 1／text】
+セミナーの最後にお渡しする
+【限定特典⑥〜⑩】について少しご紹介します✨
+
+内容は、【AIで動画制作法】や、【AIを使ったホームページ制作法】など、
+セミナーの理解をさらに深めて「次の一歩」へすぐ踏み出せるような、
+超・実践的なお役立ち資料にしています！💡
+
+ぜひ楽しみにしていてくださいね😊
+▼セミナーのお申し込みはこちら
+[第2日程申込URL]","残り5特典を受け取るために参加する","[第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U03 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","46","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第2日程","pn1FoJ7Cr80a","セミナー未申込・日程不可未選択・面談未予約","第2日程 8日前19:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-A04（開催8日前19:00）","","【LINEメッセージ 1／text】
+今回のセミナーでは、単にAIの知識を
+増やすだけではなく、以下の3点を
+あなたのペースに合わせて整理していきます🌱✨
+
+１．今のあなたに実践できること🚀
+２．あなたの生活・仕事で「AIを活かせる場面」🤖
+３．今日からスタートできる「最初の一歩」💪
+
+▼お席の確保はこちらからどうぞ👇😊
+[第2日程申込URL]","セミナー内容を確認する","[第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U17 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","47","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第2日程","IG-SEM-D7-10-NEW","セミナー未申込・日程不可未選択・面談未予約","第2日程 7日前10:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-D7-01（開催7日前10:00）","","【LINEメッセージ 1／text】
+セミナー開催まで【あと1週間】です！🗓️✨
+
+
+▼お席の確保はこちらからどうぞ👇😊
+[第2日程申込URL]","セミナー内容を確認する","[第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U17 を基礎。本文・絵文字を優先し、開催1週間前の表記と分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","48","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第2日程","IG-SEM-D7-20-NEW","セミナー未申込・日程不可未選択・面談未予約","第2日程 7日前20:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-D7-02（開催7日前20:00）","","【LINEメッセージ 1／text】
+セミナー開催まで【あと1週間】です！🗓️✨
+
+セミナーのお申し込みは、お名前と
+メールアドレスを入力するだけで完了します📝✨
+
+ご登録後、参加URLをLINEとメールの
+両方へお送りします。
+
+まずは開催日時が合うかだけでも確認してみてくださいね👇😊
+[第2日程申込URL]","日時を確認して申し込む","[第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U18 を基礎。本文・絵文字を優先し、開催1週間前の表記と分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","49","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第2日程","hwMrSLSGqmde","セミナー未申込・日程不可未選択・面談未予約","第2日程 6日前10:00（未経過時のみ）","LINE","画像＋テキスト＋ボタン（画像: 04_セミナーで学べること.png）","SEM-A05（開催6日前10:00）","","【LINEメッセージ 1／text】
+今回のセミナーは、単に「AIの知識を増やす」
+だけのものではありません💡
+
+このセミナーで1番多い声は
+「AIを学んだけど成果が出ない理由がすっきり解決した！」✨
+「これまでYouTubeで学んできたけど、自分にあったAIの活かし方がようやくわかった！」💡
+「今の私が次にやるべきアクションが明確になりました！」🚀
+
+実はAIの知識だけ増やしても、ビジネスへの活かし方に繋がりません。
+「AIを自分の仕事やキャリアにどう活かすか」
+を整理し、聞いた後に【具体的に何をすればいいか】
+まで、一緒に考えられる内容になっています！🚀
+
+▼席の確保はこちらからどうぞ👇
+[第2日程申込URL]","セミナー詳細を見る","[第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U04 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","50","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第2日程","UGcaRCoMFOxK","セミナー未申込・日程不可未選択・面談未予約","第2日程 5日前19:00（未経過時のみ）","LINE","画像＋テキスト＋ボタン（画像: 05_参加者写真_差替テンプレ.png）","SEM-A06（開催5日前19:00）","","【LINEメッセージ 1／text】
+「AI初心者ですが、参加しても大丈夫ですか...？」
+というご質問をよくいただきましたが、
+全く問題ありませんのでご安心ください！😊
+
+むしろAIは初心者だからこその着眼点がかなり重要なんです！
+初心者だからこその、新しい発想や発見がある...!!😳
+
+過去のセミナーの様子や、
+参加者の方々のリアルな感想は、
+こちらからご確認いただけます👇✨
+https://seminar-voices.netlify.app/","内容を確認して申し込む","[第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U05 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。 実績・感想表現は公開前に根拠確認。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","51","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第2日程","RokpcnZILyfj","セミナー未申込・日程不可未選択・面談未予約","第2日程 4日前20:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-A07（開催4日前20:00）","","【LINEメッセージ 1／text】
+セミナーのお申し込みは、お名前と
+メールアドレスを入力するだけで完了します📝✨
+
+ご登録後、参加URLをLINEとメールの
+両方へお送りします。👍😊
+
+「当日にLINEのトークからURLを探すのが大変…💦」
+という時も、メールに情報が残っているので
+スムーズに参加できて安心です
+👇😊
+[第2日程申込URL]","日時を確認して申し込む","[第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U18 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","52","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第2日程","yfZhr4eBiYca","セミナー未申込・日程不可未選択・面談未予約","第2日程 3日前10:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-B01（開催3日前10:00）","","【LINEメッセージ 1／text】
+セミナー開催まで【あと3日】となりました！⏰
+
+
+このセミナーでは「AIの深い知識」ではなく、
+「AIをどうビジネスに繋げるか」を体系的に学べる時間になっています☺️✨
+
+""AIでホームページが作れる""、""AIで動画制作ができる""、
+ではその後は...？😥
+
+AIを学ぶだけではビジネスは出来ません💦
+その知識を発展させるための時間になっています🚀
+
+少しでもご興味ある方は、ぜひお早めにお申し込みください！✨
+
+📅 日時：[第2日程]
+💻 形式：オンライン（Zoomなど）
+
+参加用のURLは、お申し込み後に
+LINEとメールでお送りいたします。
+
+▼席の確保はお早めにどうぞ👇😊
+[第2日程申込URL]","参加登録する","[第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U06 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","53","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第2日程","DDbLkDS5Bs2y","セミナー未申込・日程不可未選択・面談未予約","第2日程 3日前20:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-B02（開催3日前20:00）","","【LINEメッセージ 1／text】
+「まだAIを触り始めたばかり…」
+という方でも、どうぞご安心ください😊
+
+むしろAIビジネスは触り始めた方の方が有利に働くことが多いです！
+その実態をセミナーでお伝えいたします🚀🔥
+
+あなたのこれまでの経験や、得意なことを
+振り返りながら、「自分にぴったりのAI活用法」
+を見つけるところから優しく進めていきます🌱
+
+▼詳細・お申し込みはこちらから👇
+[第2日程申込URL]","初心者向けセミナーに参加する","[第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U07 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","54","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第2日程","chBZyUC5u0cb","セミナー未申込・日程不可未選択・面談未予約","第2日程 2日前10:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-B03（開催2日前10:00）","","【LINEメッセージ 1／text】
+今回のセミナーは、
+特にこんな方におすすめです！💡
+
+🌟 AIを自分の仕事に活かしたい
+🌟 学ぶ順番をスッキリ整理したい
+🌟 自分の「強み」とAIを掛け合わせたい
+🌟 今日からできる具体的な一歩を決めたい
+
+1つでも当てはまる方は、
+ここが分岐点になると思います...!!
+一歩踏み出すか、足踏みをするか。
+少しでもご自身にプラスの影響を与えたい方はぜひ👇😊
+[第2日程申込URL]","自分に合うか確認する","[第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U08 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","55","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第2日程","bPqbxIX4OVHi","セミナー未申込・日程不可未選択・面談未予約","第2日程 2日前20:00（未経過時のみ）","LINE","テキスト＋ボタン","SEM-B04（開催2日前20:00）","","【LINEメッセージ 1／text】
+限定特典⑥〜⑩をお受け取りいただけるのは、
+セミナーを最後までご視聴いただいた方のみとなります🎁
+
+もし「途中までは参加できるけど、最後までは時間的に...」
+という方は、個別にメールからご連絡ください！
+ご参加いただけたことを確認できましたら、特典の方をお礼にお渡しいたします！
+
+「あとで予定を確認しよう」と思っていると
+満席になってしまうこともあるので、
+忘れないうちに席を確保しておいてくださいね👇✨
+[第2日程申込URL]","参加枠を確保する","[第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U09 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。 実績・感想表現は公開前に根拠確認。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","56","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第2日程","RSqeGyYE2rfk","セミナー未申込・日程不可未選択・面談未予約","第2日程 前日09:00","LINE","画像＋テキスト＋ボタン（画像: 06_セミナー前日_リマインド.png）","SEM-B05（開催前日09:00）","","【LINEメッセージ 1／text】
+いよいよ【明日開催】となりました！✨
+
+「自分に合う内容かな…？🔰」
+と迷われている方へ。
+
+AIを使ったことがない初心者の方でも、
+まだやりたい方向が決まっていなくても大丈夫！
+あなたの「今の状態」から一緒に整理していくセミナーです😊🌱
+
+むしろ""AI界隈は初心者が有利""だと確信しています！
+その理由はセミナーで語っていますので、ぜひ覗いてみてください
+
+📢 セミナー：AIでひとり起業攻略法
+📅 日時：[第2日程]
+
+参加を迷われている方、迷われているだけでも半歩先に進んでいる状態です。
+もう半歩踏み出すきっかけにしていただけると嬉しいです☺️
+忘れないうちにお申し込みを済ませてくださいね👇😊
+[第2日程申込URL]","明日のセミナーに申し込む","[第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U10 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","57","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第2日程","3343Rx0CqrIS","セミナー未申込・日程不可未選択・面談未予約","第2日程 前日15:00","LINE","テキスト＋ボタン","SEM-B06（開催前日15:00）","","【LINEメッセージ 1／text】
+【重要なご連絡】
+「セミナーに必要な知識はありますか？」
+と聞かれますが、知識は不要です！
+
+ほんの少しのAIへの興味と、
+ビジネスにしたいという気持ちがあれば十分すぎるぐらいです☺️
+
+あとはリラックスして視聴できる場所と、
+メモ用の筆記用具があれば準備はバッチリです👍
+
+顔出し声出しは不要ですので、お気軽にご参加ください🤲
+こちらからご確認くださいね👇","参加方法を確認する","[第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U11 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","58","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第2日程","24HUpDar6IB0","セミナー未申込・日程不可未選択・面談未予約","第2日程 前日21:00","LINE","テキスト＋ボタン","SEM-B07（開催前日21:00）","","【LINEメッセージ 1／text】
+【大変申し訳ございません】
+物凄く現実的で残酷なことをお伝えします。
+
+それは、
+""AIは学ぶだけでは、一生成功しません""
+
+これは別に大袈裟にいっているわけではありません。
+AIに限ったことではないですが、道具の使い方が分かっても、
+実践する場所や、活かす機会がないと意味がないんです。
+
+今回のセミナーでは、
+そういった状況から一気に抜け出せる内容となっています。
+
+ご参加いただける場合は、
+今夜のうちにお名前とメールアドレスを登録して、
+参加用URLを受け取っておいてくださいね👇✨
+[第2日程申込URL]","参加URLを受け取る","[第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U12 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","59","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第2日程","WvjKarVV5Oh3","セミナー未申込・日程不可未選択・面談未予約","第2日程 当日09:00","LINE","画像＋テキスト＋ボタン（画像: 07_セミナー当日_リマインド.png）","SEM-B08（開催当日09:00）","","【LINEメッセージ 1／text】
+＼ いよいよ本日開催です！🎉 ／
+
+📢 AIでひとり起業攻略法
+📅 [第2日程]
+
+まだ今からでもお申し込み可能です！
+
+最後までご参加いただいた方には、
+実践で使える超有料級の【特典⑥〜⑩】も
+プレゼントいたします！🎁
+
+お席が埋まる前に、ぜひご確認くだいね👇✨
+
+▼お申し込みはこちらから👇😊
+[第2日程申込URL]","本日のセミナーに申し込む","[第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U13 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","60","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第2日程","uFvnt0A4Njsx","セミナー未申込・日程不可未選択・面談未予約","第2日程 開始3時間前","LINE","テキスト＋ボタン","SEM-B09（開始3時間前）","","【LINEメッセージ 1／text】
+セミナー開始まで【あと3時間】となりました！⏰
+
+今からの駆け込みお申し込みも大歓迎です！👍
+ご登録後、すぐに参加用URLをお送りします。
+
+事前準備は不要です。
+顔出しや声出しも不要です☺️
+好きな飲み物を片手にリラックスしてご参加ください😌
+
+昨日の連絡を見て、
+「最後まで見るのは時間的に厳しくて...」
+というお声がありましたので、セミナーにご参加いただけたのがわかった場合、
+後からメールにてご連絡いただければ、特典の方をお送りいたしますのでご安心ください！
+
+ぜひご参加お待ちしております☺️
+
+▼こちらから席を確保してくださいね👇✨
+[第2日程申込URL]","参加URLを受け取る","[第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U14 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","61","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第2日程","Dq5k8JrM1aww","セミナー未申込・日程不可未選択・面談未予約","第2日程 開始30分前","LINE","テキスト＋ボタン","SEM-B10（開始30分前）","","【LINEメッセージ 1／text】
+あと30分でセミナーが開始します！⏳✨
+
+あと30分でセミナーが始まります！⏳🔥
+
+申込ページを見て迷っていた方への、
+これが【最後のご案内】となります。
+
+まだ申し込みが来ているため、時間延長いたしました💦
+こちらから滑り込みでのお申し込みをお待ちしております！👇😊
+[第2日程申込URL]","今から申し込む","[第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","次の第2日程案内","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","吉本さん原案 SEM-U15 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","62","レビュー中","メッセージ","セミナー募集","IG_10_セミナー募集_第2日程","c4DE7dl6EP7m","セミナー未申込・日程不可未選択・面談未予約","第2日程 開始10分前","LINE","テキスト＋ボタン","SEM-B11（開始10分前）","","【LINEメッセージ 1／text】
+まもなくセミナーを開始します！📢
+
+こちらが今回のセミナーお申し込みの
+【最後のご案内】となります。
+
+正直ながら見するだけでも、
+今回の内容は十分皆さんの分岐点になると確信しています。
+AIをビジネスに発展させるのに必要なのは、""知識""ではなく""きっかけ""です。
+
+まだ受付中ですので、こちらから
+今すぐ参加登録を完了してくださいね👇✨
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【無料セミナー】AIでひとり起業攻略法"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIでひとり起業攻略法"",
+  ""text"": ""Zoomライブ・最新日程は申込ページへ"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""セミナーに申し込む"",
+      ""uri"": ""[第2日程申込URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","セミナーに申し込む","[第2日程申込URL｜ACT-SEM-PAGE]","","","seminar_page_clicked_unregistered / seminar_main_registered / seminar_date_unavailable / offer_vsl_active / roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","IG_29_第2日程終了未申込","第1日程終了後に開始。第2日程開始まで。未経過の配信だけ実行。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","63","レビュー中","メッセージ","セミナー未申込","IG_13_セミナー申込ページクリック未申込","SEM-C01","セミナー申込ページクリック済み・未申込","申込ページクリック15分後","LINE","テキスト","SEM-C01","","申込ページを開いていただき、
+ありがとうございます！😊🌟
+
+登録が完了すると、LINEとメールに
+参加用URLがすぐに届きます。
+
+もし届かない場合は、途中で入力が止まっている可能性があります💦
+こちらから簡単に再開できますので、一度ご確認をお願いいたします！👇✨
+[セミナー申込URL]","申込を完了する","[セミナー申込URL｜SEM-C再登録なし]","","","seminar_main_registered / offer_vsl_active / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","申込完了→IG_20／未申込→次メッセージ","Dさん作成 24行目から引用。本文は原文のまま。 技術変数のみ現行名へ置換。","","","","","Dさん原文を基礎に使用。独自加筆禁止。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","64","レビュー中","メッセージ","セミナー未申込","IG_13_セミナー申込ページクリック未申込","SEM-C02","セミナー申込ページクリック済み・未申込","クリック2時間後","LINE","テキスト","SEM-C02","","「セミナーで何が学べるんですか？」
+という声が多く届いています。
+
+このセミナーでは「AIの深い知識」ではなく、
+「AIをどうビジネスに繋げるか」を体系的に学べる時間になっています☺️✨
+
+""AIでホームページが作れる""、""AIで動画制作ができる""、
+ではその後は...？😥
+
+AIを学ぶだけではビジネスは出来ません💦
+その知識を発展させるための時間になっています🚀
+
+少しでもご興味ある方は、ぜひお早めにお申し込みください！✨
+[セミナー申込URL]","申込ページへ戻る","[セミナー申込URL｜SEM-C再登録なし]","","","seminar_main_registered / offer_vsl_active / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","申込完了→IG_20／未申込→次メッセージ","Dさん作成 25行目から引用。本文は原文のまま。 技術変数のみ現行名へ置換。","","","","","Dさん原文を基礎に使用。独自加筆禁止。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","65","レビュー中","メッセージ","セミナー未申込","IG_13_セミナー申込ページクリック未申込","SEM-C03","セミナー申込ページクリック済み・未申込","クリック6時間後","LINE","テキスト","SEM-C03","","参加登録の完了後は、参加用URLを
+LINEとメールの両方にお送りします📧✨
+
+「当日にLINEのトークからURLを探すのが大変…💦」
+という時も、メールに情報が残っているので
+スムーズに参加できて安心です👍😊
+[セミナー申込URL]","参加URLを受け取る","[セミナー申込URL｜SEM-C再登録なし]","","","seminar_main_registered / offer_vsl_active / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","申込完了→IG_20／未申込→次メッセージ","Dさん作成 26行目から引用。本文は原文のまま。 技術変数のみ現行名へ置換。","","","","","Dさん原文を基礎に使用。独自加筆禁止。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","66","レビュー中","メッセージ","セミナー未申込","IG_13_セミナー申込ページクリック未申込","SEM-C04","セミナー申込ページクリック済み・未申込","クリック12時間後","LINE","テキスト","SEM-C04","","「自分に合う内容かな…？🔰」
+と迷われている方へ。
+
+AIを使ったことがない初心者の方でも、
+まだやりたい方向が決まっていなくても大丈夫！
+あなたの「今の状態」から一緒に整理していくセミナーです😊🌱
+
+むしろ""AI界隈は初心者が有利""だと確信しています！
+その理由はセミナーで語っていますので、ぜひ覗いてみてください
+
+[セミナー申込URL]","内容を確認して申し込む","[セミナー申込URL｜SEM-C再登録なし]","","","seminar_main_registered / offer_vsl_active / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","申込完了→IG_20／未申込→次メッセージ","Dさん作成 27行目から引用。本文は原文のまま。 技術変数のみ現行名へ置換。","","","","","Dさん原文を基礎に使用。独自加筆禁止。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","67","レビュー中","メッセージ","セミナー未申込","IG_13_セミナー申込ページクリック未申込","SEM-C05","セミナー申込ページクリック済み・未申込","クリック24時間後","LINE","テキスト","SEM-C05","","[name]さん、昨日見てくださった
+セミナーの申込ページはこちらです🌱😊
+
+最後までご参加いただいた方には、
+実践で使える超有料級の【特典⑥〜⑩】も
+プレゼントいたします！🎁
+
+ぜひご確認くだいね👇✨
+[セミナー申込URL]","参加枠を確認する","[セミナー申込URL｜SEM-C再登録なし]","","","seminar_main_registered / offer_vsl_active / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","申込完了→IG_20／未申込→次メッセージ","Dさん作成 28行目から引用。事実未確認または現行仕様と不一致の箇所のみ削除。 技術変数のみ現行名へ置換。","","","","","Dさん原文を基礎に使用。独自加筆禁止。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","68","レビュー中","メッセージ","セミナー未申込","IG_13_セミナー申込ページクリック未申込","SEM-C06","セミナー申込ページクリック済み・未申込","クリック36時間後","LINE","テキスト","SEM-C06","","セミナーはオンライン（Zoom等）で開催します💻🍀
+
+筆記用具などがあれば、事前準備は不要です。
+好きな飲み物を片手にリラックスしてご参加ください😌
+
+ぜひご参加お待ちしております☺️","参加条件を確認する","[セミナー申込URL｜SEM-C再登録なし]","","","seminar_main_registered / offer_vsl_active / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","申込完了→IG_20／未申込→次メッセージ","Dさん作成 29行目から引用。事実未確認または現行仕様と不一致の箇所のみ削除。 技術変数のみ現行名へ置換。","","","","","Dさん原文を基礎に使用。独自加筆禁止。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","69","レビュー中","メッセージ","セミナー未申込","IG_13_セミナー申込ページクリック未申込","SEM-C07","セミナー申込ページクリック済み・未申込","D-1 20:00（未経過時のみ）","LINE","テキスト","SEM-C07","","明日のセミナーへのご参加を
+検討されている方へお知らせです⏰✨
+
+「AIでビジネスなんて自分なんかには...」
+「今の仕事にAI導入したいんだけど難しそうだから💦」
+「まだほぼ触ったことないから不安...」
+
+自信を持ってご安心くださいと言わせてください！
+それらの悩みをセミナーの時間で払拭いたします☺️
+もし、今抱えている悩みがあれば、
+セミナーの時間内であればいつでもチャットにて質疑応答を受け付けておりますので、ぜひご質問ください！🤲
+
+▼参加申し込みはこちらから
+[セミナー申込URL]","明日の参加URLを受け取る","[セミナー申込URL｜SEM-C再登録なし]","","","seminar_main_registered / offer_vsl_active / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","申込完了→IG_20／未申込→次メッセージ","Dさん作成 30行目から引用。事実未確認または現行仕様と不一致の箇所のみ削除。 技術変数のみ現行名へ置換。","","","","","Dさん原文を基礎に使用。独自加筆禁止。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","70","レビュー中","メッセージ","セミナー未申込","IG_13_セミナー申込ページクリック未申込","SEM-C08","セミナー申込ページクリック済み・未申込","当日09:00（未経過時のみ）","LINE","テキスト","SEM-C08","","＼ いよいよ本日開催です！🎉 ／
+
+お申し込みを完了させると、
+すぐにLINEとメールに参加用URLが届きます。
+
+ぜひお席を確保して、ご参加くださいね👇✨😊
+[セミナー申込URL]","本日のセミナーに申し込む","[セミナー申込URL｜SEM-C再登録なし]","","","seminar_main_registered / offer_vsl_active / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","申込完了→IG_20／未申込→次メッセージ","Dさん作成 31行目から引用。本文は原文のまま。 技術変数のみ現行名へ置換。","","","","","Dさん原文を基礎に使用。独自加筆禁止。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","71","レビュー中","メッセージ","セミナー未申込","IG_13_セミナー申込ページクリック未申込","SEM-C09","セミナー申込ページクリック済み・未申込","開始3時間前（未経過時のみ）","LINE","テキスト","SEM-C09","","セミナー開始まで【あと3時間】となりました！⏰
+
+「やっぱり参加したい！」と思われた方...
+まだまだ間に合います！
+
+ただ、そろそろ締め切る直前ですので、
+その前にお名前とメールアドレスをご登録の上、
+こちらから参加URLを受け取ってください👇😊✨
+[セミナー申込URL]","参加登録を完了する","[セミナー申込URL｜SEM-C再登録なし]","","","seminar_main_registered / offer_vsl_active / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","申込完了→IG_20／未申込→次メッセージ","Dさん作成 32行目から引用。本文は原文のまま。 技術変数のみ現行名へ置換。","","","","","Dさん原文を基礎に使用。独自加筆禁止。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","72","レビュー中","メッセージ","セミナー未申込","IG_13_セミナー申込ページクリック未申込","SEM-C10","セミナー申込ページクリック済み・未申込","開始30分前（未経過時のみ）","LINE","テキスト","SEM-C10","","あと30分でセミナーが始まります！⏳🔥
+
+申込ページを見て迷っていた方への、
+これが【最後のご案内】となります。
+
+こちらから滑り込みでのお申し込みをお待ちしております！👇😊
+[セミナー申込URL]","受付終了前に申し込む","[セミナー申込URL｜SEM-C再登録なし]","","","seminar_main_registered / offer_vsl_active / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","選択日程で分岐：第1日程終了→第2日程募集／第2日程終了→翌朝06:00 VSL","Dさん原文を維持。出口だけ2日程の確定フローへ変更。","","","","","Dさん原文を基礎に使用。独自加筆禁止。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","73","レビュー中","メッセージ","セミナー申込後","IG_20_09 申込者LINE（k6x新規）","fhJhNIy50WL7","セミナー申込済み","登録直後","LINE","テキスト","REG-L01（申込直後・参加URL）","","【LINEメッセージ 1／text】
+%line_name%さん、お申し込みありがとうございます！😊
+
+お申し込みいただいたセミナーの詳細は以下となります。
+
+📢 AIでひとり起業攻略法
+📅 日時：%event_schedule%
+💻 参加URL：[ZoomURL]
+
+当日は開始時刻の【3分前】を目安に
+お入りいただけるとスムーズです✨
+お会いできるのを楽しみにしています！","参加URLを保存する","[ZoomURL]","","","roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","次メッセージまたは状態分岐","吉本さん原案 REG-L01 の文章・絵文字を使用。配信時刻・分岐・変数は確定済みInstagram設計を優先。","","","本文直前（画像→本文→CTA）","","吉本さん原案 REG-L01 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","74","レビュー中","メッセージ","セミナー申込後","IG_20_09 申込者LINE（k6x新規）","QUYj2IR2g1p8","セミナー申込済み","イベント7日前 10:00","LINE","テキスト","REG-L02（D-7）","","【LINEメッセージ 1／text】
+セミナー開催の【1週間前】となりました！🗓️
+
+「うっかり忘れていた！」とならないように、
+カレンダーへのご登録や、参加用URLの保存が
+お済みか、今一度ご確認くださいね😊👇
+[ZoomURL]","参加情報を確認する","[ZoomURL]","","","roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","次メッセージまたは状態分岐","吉本さん原案 REG-L02 の文章・絵文字を使用。配信時刻・分岐・変数は確定済みInstagram設計を優先。","","","本文直前（画像→本文→CTA）","","吉本さん原案 REG-L02 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","75","レビュー中","メッセージ","セミナー申込後","IG_20_09 申込者LINE（k6x新規）","2ciSNpYtRfnb","セミナー申込済み","イベント3日前 10:05","LINE","テキスト","REG-L03（D-3）","","【LINEメッセージ 1／text】
+セミナー開催まで【あと3日】です！⏰✨
+
+お早めにお申し込みいただいた方にのみ、
+よりセミナーを充実した時間にする方法をお伝えします㊙️
+
+以下の3点を参加前に整理しておくのがオススメです！
+・今の仕事でのお悩み
+・自分の得意なこと
+・AIでやってみたいこと
+
+というのも、セミナー時は常に質疑応答を受け付けております。☺️
+特に最後には長い時間確保し、壁打ちの時間を用意しているので、
+少しだけ質問や解消したい事を考えておくと、
+私が全てお答えいたします🚀🔥
+
+楽しみにしていてください😊","参加URLを確認する","[ZoomURL]","","","roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","次メッセージまたは状態分岐","吉本さん原案 REG-L03 の文章・絵文字を使用。配信時刻・分岐・変数は確定済みInstagram設計を優先。","","","本文直前（画像→本文→CTA）","","吉本さん原案 REG-L03 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","76","レビュー中","メッセージ","セミナー申込後","IG_20_09 申込者LINE（k6x新規）","DIEmmzPsfmrf","セミナー申込済み","イベント1日前 19:00","LINE","テキスト","REG-L04（D-1・明日開催）","","【LINEメッセージ 1／text】
+いよいよ【明日開催】となりました！🎉
+
+開催が近づくにつれて、
+私の方もより一層気合いが入ってきました🚀🔥
+
+📅 日時：%event_schedule%
+💻 参加URL：[ZoomURL]
+
+画面越しで%line_name%さんにお会いできるのを、
+心より楽しみにしております！☺️✨","明日の参加URLを開く","[ZoomURL]","","","roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","次メッセージまたは状態分岐","吉本さん原案 REG-L04 の文章・絵文字を使用。配信時刻・分岐・変数は確定済みInstagram設計を優先。","https://drive.usercontent.google.com/download?id=1Z9VB42yiv1z89nCcPCO37reyGAPcLgtf&export=view&confirm=t","=IF(U88="""","""",IMAGE(U88))","本文直前（画像→本文→CTA）","いよいよ明日開催・AIでひとり起業攻略法","吉本さん原案 f4b7db08-16a9-43f0-aaf3-caa0cb744151.png を原寸・無加工で使用。文章・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","77","レビュー中","メッセージ","セミナー申込後","IG_20_09 申込者LINE（k6x新規）","MwJOVPgE3BV4","セミナー申込済み","イベント当日 09:05","LINE","テキスト","REG-L05（当日09:00）","","【LINEメッセージ 1／text】
+%line_name%さん、いよいよ【本日開催】です！🔔
+
+ご参加いただいたことを後悔させない内容に仕上がりました...!!
+間違いなく、AIビジネスの一歩を踏み出していただくキッカケになると思います！🔥
+
+開始時刻になりましたら、
+こちらのリンクからセミナーにご参加くださいね👇✨
+[ZoomURL]
+
+お楽しみに！😊","参加URLを開く","[ZoomURL]","","","roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","次メッセージまたは状態分岐","吉本さん原案 REG-L05 の文章・絵文字を使用。配信時刻・分岐・変数は確定済みInstagram設計を優先。","https://drive.usercontent.google.com/download?id=1XtcF3PKgU1v3is1AMfU6Y2u-m4SIP4u5&export=view&confirm=t","=IF(U89="""","""",IMAGE(U89))","本文直前（画像→本文→CTA）","いよいよ本日開催・まだ申込可能・参加者限定5特典","吉本さん原案 9994c0c9-dd85-4813-9d25-adadd2687812.png を原寸・無加工で使用。文章・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","78","レビュー中","メッセージ","セミナー申込後","IG_20_09 申込者LINE（k6x新規）","HA5p8YbgmKae","セミナー申込済み","イベント3時間5分前","LINE","テキスト","REG-L06（開始3時間前）","","【LINEメッセージ 1／text】
+セミナー開始まで【あと3時間】となりました！⏰
+
+直前に慌てないように、参加用URLが問題なく開けるか、
+今のうちに一度テストクリックしておくと安心です👇😊
+[ZoomURL]","接続先を確認する","[ZoomURL]","","","roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","次メッセージまたは状態分岐","吉本さん原案 REG-L06 の文章・絵文字を使用。配信時刻・分岐・変数は確定済みInstagram設計を優先。","","","本文直前（画像→本文→CTA）","","吉本さん原案 REG-L06 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","79","レビュー中","メッセージ","セミナー申込後","IG_20_09 申込者LINE（k6x新規）","2bUCN2biSqlZ","セミナー申込済み","イベント35分前","LINE","テキスト","REG-L07（開始30分前）","","【LINEメッセージ 1／text】
+セミナー開始まで【あと30分】です！⏳✨
+
+ぜひリラックスして、お好きな飲み物を片手にご参加ください！☕️
+着席が難しい場合も、
+ながら聞きでも十分有意義な時間になるよう設計していますので、
+ぜひお気軽に覗いてみてください🤲
+
+▼こちらからご参加いただけます👇😊
+[ZoomURL]","セミナーに参加する","[ZoomURL]","","","roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","次メッセージまたは状態分岐","吉本さん原案 REG-L07 の文章・絵文字を使用。配信時刻・分岐・変数は確定済みInstagram設計を優先。","https://drive.usercontent.google.com/download?id=1LzdwxCZo6t1L1_48Qto7ZCfEm0To2kw6&export=view&confirm=t","=IF(U91="""","""",IMAGE(U91))","本文直前（画像→本文→CTA）","いよいよ本日開催・まだ申込可能・参加者限定5特典（人物なし版）","吉本さん原案 e012febb-3b0a-4b8a-8ebb-91255149c38f.png を原寸・無加工で使用。文章・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","80","レビュー中","メッセージ","セミナー申込後","IG_20_09 申込者LINE（k6x新規）","itk1TAwfH0hB","セミナー申込済み","イベント当日 20:00","LINE","テキスト","REG-L08（開始時刻）","","【LINEメッセージ 1／text】
+セミナー【ただいま開始】いたしました！🎉
+
+途中からでも全く問題なくご参加いただけますので、
+ぜひこちらからお入りくださいね👇😊
+[ZoomURL]","今すぐ参加する","[ZoomURL]","","","roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","面談未実施→IG_30_再公開確認開始","吉本さん原案 REG-L08 の文章・絵文字を使用。配信時刻・分岐・変数は確定済みInstagram設計を優先。","https://drive.usercontent.google.com/download?id=1178CLZ6IuL48LtOLodOt42idmxdI649q&export=view&confirm=t","=IF(U92="""","""",IMAGE(U92))","本文直前（画像→本文→CTA）","20:00開始・AIでインスタ集客する方法・ライブ参加案内","吉本さん原案 edab37b2-5f31-4063-acc0-498b0d4d1096.png を原寸・無加工で使用。文章・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","81","レビュー中","メッセージ","セミナー申込後","IG_20_10 申込者メール（k6x新規）","Iadok2cdRNFH","セミナー申込済み","登録直後","メール","テキスト","REG-M01（申込直後メール）","[セミナー名] お申し込みありがとうございます","%line_name%さん
+
+
+この度はセミナーにお申し込みいただき、
+本当にありがとうございます！😊
+
+当日の参加情報は以下の通りです👇
+━━━━━━━━━━━━━━━━━━━━
+【セミナー】AIでひとり起業攻略法
+【日時】%event_schedule%
+【参加URL】[ZoomURL]
+━━━━━━━━━━━━━━━━━━━━
+
+当日はこのメールから参加URLを開いて
+ご入室いただけますので、大切に保存しておいてくださいね✨
+どうぞよろしくお願いいたします！
+
+","参加URLを保存する","","","","roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","次メッセージまたは状態分岐","吉本さん原案 REG-M01 の文章・絵文字を使用。発信者名のみ固定名称「すや」へ統一し、配信時刻・分岐・変数は確定済みInstagram設計を優先。","","","本文直前（画像→本文→CTA）","","吉本さん原案 REG-M01 を基礎。文章・絵文字を優先し、発信者名・配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","82","レビュー中","メッセージ","セミナー申込後","IG_20_10 申込者メール（k6x新規）","IG-REG-M-D7-NEW","セミナー申込済み","イベント7日前 08:00","メール","テキスト","","開催1週間前｜[セミナー名]","%line_name%さん
+
+セミナー開催の【1週間前】となりました！🗓️
+
+「うっかり忘れていた！」とならないように、
+カレンダーへのご登録や、参加用URLの保存が
+お済みか、今一度ご確認くださいね😊👇
+
+━━━━━━━━━━━━━━━━━━━━
+【日時】%event_schedule%
+【参加URL】[ZoomURL]
+━━━━━━━━━━━━━━━━━━━━
+
+","参加情報を確認する","[ZoomURL]","","","roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","次メッセージまたは状態分岐","吉本さん原案 REG-L02 の文章・絵文字をメール形式へ転用。配信時刻・分岐・変数は確定済みInstagram設計を優先。","","","本文直前（画像→本文→CTA）","","吉本さん原案 REG-L02 を基礎。本文・絵文字は維持し、メールに必要な宛名・参加情報・配信停止だけ既存メール形式で補う。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","83","レビュー中","メッセージ","セミナー申込後","IG_20_10 申込者メール（k6x新規）","IG-REG-M-D3-NEW","セミナー申込済み","イベント3日前 08:00","メール","テキスト","","開催3日前｜[セミナー名]","%line_name%さん
+
+
+セミナー開催まで【あと3日】です！⏰✨
+
+お早めにお申し込みいただいた方にのみ、
+よりセミナーを充実した時間にする方法をお伝えします㊙️
+
+以下の3点を参加前に整理しておくのがオススメです！
+・今の仕事でのお悩み
+・自分の得意なこと
+・AIでやってみたいこと
+
+というのも、セミナー時は常に質疑応答を受け付けております。☺️
+特に最後には長い時間確保し、壁打ちの時間を用意しているので、
+少しだけ質問や解消したい事を考えておくと、
+私が全てお答えいたします🚀🔥
+
+楽しみにしていてください😊
+
+━━━━━━━━━━━━━━━━━━━━
+【日時】%event_schedule%
+【参加URL】[ZoomURL]
+━━━━━━━━━━━━━━━━━━━━
+
+","参加URLを確認する","[ZoomURL]","","","roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","次メッセージまたは状態分岐","吉本さん原案 REG-L03 の文章・絵文字をメール形式へ転用。配信時刻・分岐・変数は確定済みInstagram設計を優先。","","","本文直前（画像→本文→CTA）","","吉本さん原案 REG-L03 を基礎。本文・絵文字は維持し、メールに必要な宛名・参加情報・配信停止だけ既存メール形式で補う。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","84","レビュー中","メッセージ","セミナー申込後","IG_20_10 申込者メール（k6x新規）","WjL2iv3dSDDl","セミナー申込済み","イベント1日前 19:00","メール","テキスト","","明日開催｜[セミナー名]","%line_name%さん
+
+
+明日はいよいよセミナー開催日です！✨
+
+━━━━━━━━━━━━━━━━━━━━
+【日時】%event_schedule%
+【参加URL】[ZoomURL]
+━━━━━━━━━━━━━━━━━━━━
+
+事前課題や特別な準備は一切ございません。
+リラックスして受講できる静かな環境だけ
+ご用意いただき、楽しみにお待ちくださいね！🍀
+
+配信停止をご希望の方はこちら：%cancel%","明日の参加URLを確認する","","","","roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","次メッセージまたは状態分岐","吉本さん原案 REG-M02 の文章・絵文字を使用。発信者名のみ固定名称「すや」へ統一し、配信時刻・分岐・変数は確定済みInstagram設計を優先。","","","本文直前（画像→本文→CTA）","","吉本さん原案 REG-M02 を基礎。文章・絵文字を優先し、発信者名・配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","85","レビュー中","メッセージ","セミナー申込後","IG_20_10 申込者メール（k6x新規）","aJvyaQPQ29RP","セミナー申込済み","イベント1時間5分前","メール","テキスト","","1時間後に開始｜[セミナー名]","%line_name%さん
+
+セミナー開始まで【あと1時間】となりました⏰✨
+
+━━━━━━━━━━━━━━━━━━━━
+【参加URL】[ZoomURL]
+━━━━━━━━━━━━━━━━━━━━
+
+当日は開始3分前を目安にお入りいただけますと、
+スムーズにスタートできます👍
+
+それでは、画面越しにお会いできるのを
+楽しみにしております！😊
+
+配信停止をご希望の方はこちら：%cancel%","セミナーに参加する","","","","roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","次メッセージまたは状態分岐","吉本さん原案 REG-M03 の文章・絵文字を使用。発信者名のみ固定名称「すや」へ統一し、配信時刻・分岐・変数は確定済みInstagram設計を優先。","","","本文直前（画像→本文→CTA）","","吉本さん原案 REG-M03 を基礎。文章・絵文字を優先し、発信者名・配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","86","レビュー中","メッセージ","セミナー後・面談","IG_30_参加者向け面談案内メール","IG-ATT-M01","セミナー申込済み・面談未予約","申込したセミナー開催日の翌朝06:00","メール","テキスト","ATT-M01","セミナー参加者向け｜ロードマップ作成会のご案内","件名：セミナー参加者向け｜ロードマップ作成会のご案内
+
+【LINEメッセージ 1／text】
+昨日のセミナー内容を「分かった」で終わらせず、自分の計画に変えたい方へ😊
+
+AIひとり起業ロードマップ作成会 では、今の経験や得意なことをもとに、最初の商品と集客までの順番を30分で整理していきますね🎁
+
+[ロードマップ作成会予約URL]
+
+配信停止をご希望の方はこちら：%cancel%","ロードマップ作成会を予約する","[ロードマップ作成会予約URL｜予約完了ACT-RM-BOOK]","","","roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","未予約→同日最終メール","YouTube ATT-N02原文をメール形式へ転用。受付は当日23:59。","","","","",""
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","87","レビュー中","メッセージ","セミナー後・面談","IG_30_参加者向け面談案内メール","IG-ATT-M02","セミナー申込済み・面談未予約","同日22:00","メール","テキスト","ATT-M02","本日23:59でロードマップ作成会の受付終了","件名：本日23:59で受付終了です
+
+【LINEメッセージ 1／text】
+これで最後です🔥
+
+AIひとり起業ロードマップ作成会 の受付をまもなく終了します。参加したい方は、今のうちに予約を完了してくださいね(^^)
+
+[ロードマップ作成会予約URL]
+
+配信停止をご希望の方はこちら：%cancel%","受付終了前に予約する","[ロードマップ作成会予約URL｜予約完了ACT-RM-BOOK]","","","roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","23:59締切→翌朝06:00 VSL","YouTube ATT-C10原文をメール形式へ転用。実際の受付締切と一致。","","","本文直前（画像→本文→CTA）","","吉本さん原案 IG-RQ-01 を基礎。本文・絵文字を維持し、メールに必要な宛名・配信停止だけ補う。VSL URLは直接記載しない。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","88","レビュー中","メッセージ","見逃し配信確認","IG_30_参加者向け面談案内","IG-ATT-N02（翌朝06:00）","セミナー申込済み・面談未予約","申込したセミナー開催日の翌朝06:00","LINE","テキスト＋ボタン","ATT-N02（翌朝06:00）","","【LINEメッセージ 1／text】
+昨日のセミナー内容を「分かった」で終わらせず、自分の計画に変えたい方へ😊
+
+AIひとり起業ロードマップ作成会 では、今の経験や得意なことをもとに、最初の商品と集客までの順番を30分で整理していきますね🎁","ロードマップ作成会を予約する","[ロードマップ作成会予約URL｜予約完了ACT-RM-BOOK]","","","roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","未予約→次メッセージ","YouTube原文をそのまま転用。受付は当日23:59で実際に閉じる。","","","本文→CTA","72時間の見逃し配信を希望しますか？","YouTube原本準拠。時間・媒体文脈以外のオリジナル文章は追加しない。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","89","レビュー中","メッセージ","見逃し配信確認","IG_30_参加者向け面談案内","IG-ATT-C09（締切前）","セミナー申込済み・面談未予約","同日20:00","LINE","テキスト＋ボタン","ATT-C09（締切前）","","【LINEメッセージ 1／text】
+あと数時間で、今回の参加者向け案内を終了しますね⏰
+
+考え続けるより、一度話して方向を明確にしたい方はこちらです👇
+
+────────────
+
+【LINEメッセージ 2／button】
+{
+  ""alt_text"": ""【個別】ロードマップ作成会・まもなく受付終了"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIひとり起業ロードマップ作成会"",
+  ""text"": ""今回の案内はまもなく終了"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""日程を見て予約する"",
+      ""uri"": ""https://utage-system.com/event/DkY6Co3mN1oB/register"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","ロードマップ作成会を予約する","[ロードマップ作成会予約URL｜予約完了ACT-RM-BOOK]","","","roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","未予約→次メッセージ","YouTube原文をそのまま転用。受付は当日23:59で実際に閉じる。","","","本文→CTA","72時間の見逃し配信を希望しますか？","YouTube原本準拠。時間以外のオリジナル文章は追加しない。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","90","レビュー中","メッセージ","見逃し配信確認","IG_30_参加者向け面談案内","IG-ATT-C10（最終）","セミナー申込済み・面談未予約","同日23:00","LINE","テキスト＋ボタン","ATT-C10（最終）","","【LINEメッセージ 1／text】
+これで最後です🔥
+
+AIひとり起業ロードマップ作成会 の受付をまもなく終了します。参加したい方は、今のうちに予約を完了してくださいね(^^)","ロードマップ作成会を予約する","[ロードマップ作成会予約URL｜予約完了ACT-RM-BOOK]","","","roadmap_booked / sales_in_progress / meeting_completed / sales_won / sales_stop","23:59締切→翌朝06:00 VSL","YouTube原文をそのまま転用。受付は当日23:59で実際に閉じる。","","","本文→CTA","72時間の見逃し配信・最終確認","YouTube原本準拠。時間以外のオリジナル文章は追加しない。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","91","レビュー中","メッセージ","VSL未視聴","IG_40_VSL_未開封","erP64nKaKQfs","72時間VSL開始済み・VSL状態該当","登録から0日後 10:00","LINE","画像＋テキスト＋ボタン（画像: 10_VSL_見逃し配信.png）","","","【LINEメッセージ 1／text】
+セミナー録画をご案内した方へ、
+特別にセミナー録画（VSL）を【3日間限定】で公開いたします！🎥✨
+
+🚨 公開終了：[VSL終了日時]
+
+▼期間が過ぎると見られなくなりますので、
+こちらから今すぐチェックしてくださいね👇😊
+[VSLURL]","3日限定動画を見る","[VSLURL｜視聴開始ACT-VSL-START（YouTube action複製）]","","","vsl_main_started / vsl_main_completed / roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","視聴開始→VSL途中／未視聴→継続／VSL初回開始から72時間→ACT-VSL-EXPIRE","吉本さん原案 VSL-U01 の文章・絵文字を使用。配信時刻・分岐・変数は確定済みInstagram設計を優先。","https://drive.usercontent.google.com/download?id=1yzVOowf9tGuaAintrOgi6rdIDqiE9tSt&export=view&confirm=t","=IF(U103="""","""",IMAGE(U103))","本文直前（画像→本文→CTA）","セミナー不参加者へ3日間限定の録画公開","未申込・日程不可ルートでのみ使用可。画像内の「セミナー不参加者へ」が申込済み・参加不明の読者には不正確になるため、申込済みルートでは使用しない。共通シナリオで入口別に分離できない場合は送信画像に設定せず、原本保管とする。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","92","レビュー中","メッセージ","VSL未視聴","IG_40_VSL_未開封","t0CViMJ6jbZk","72時間VSL開始済み・VSL状態該当","登録から0日後 13:00","LINE","テキスト＋ボタン","","","【LINEメッセージ 1／text】
+お届けしたセミナー録画では、
+「AIを自分の仕事やこれからのキャリアにどう活かすか？」
+という全体の流れを、分かりやすく整理しています💡🔰
+
+これからの一歩が見えてくる内容ですので、
+ぜひご覧くださいね👇😊
+[VSLURL]","動画を開く","[VSLURL｜視聴開始ACT-VSL-START（YouTube action複製）]","","","vsl_main_started / vsl_main_completed / roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","視聴開始→VSL途中／未視聴→継続／VSL初回開始から72時間→ACT-VSL-EXPIRE","吉本さん原案 VSL-U02 の文章・絵文字を使用。配信時刻・分岐・変数は確定済みInstagram設計を優先。","","","本文直前（画像→本文→CTA）","","吉本さん原案 VSL-U02 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","93","レビュー中","メッセージ","VSL未視聴","IG_40_VSL_未開封","WrAkXMAcgVcn","72時間VSL開始済み・VSL状態該当","登録から0日後 18:00","LINE","テキスト＋ボタン","","","【LINEメッセージ 1／text】
+%line_name%さん、セミナー録画（VSL）は
+もうご覧いただけましたでしょうか？😊🌱
+
+まだ開いていない場合は、後でスムーズに見られるよう、
+まずは「動画が再生できるか」だけでも
+確認しておうと安心です👇🎥
+[VSLURL]","視聴ページを確認する","[VSLURL｜視聴開始ACT-VSL-START（YouTube action複製）]","","","vsl_main_started / vsl_main_completed / roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","視聴開始→VSL途中／未視聴→継続／VSL初回開始から72時間→ACT-VSL-EXPIRE","吉本さん原案 VSL-U03 の文章・絵文字を使用。配信時刻・分岐・変数は確定済みInstagram設計を優先。","","","本文直前（画像→本文→CTA）","","吉本さん原案 VSL-U03 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","94","レビュー中","メッセージ","VSL未視聴","IG_40_VSL_未開封","mbbRaBAoA64G","72時間VSL開始済み・VSL状態該当","登録から0日後 21:00","LINE","テキスト＋ボタン","","","【LINEメッセージ 1／text】
+今回のセミナーのアーカイブは
+あと数時間で見られなくなっちゃいます…！😢⏰
+━━━━━━━━━━━━━━━━━━━━
+
+これまで500人以上が参加してくれた
+”超有料級のセミナー”がこちら！👇✨
+
+━━━━━━━━━━━━━
+🌟 2026年最新版 🌟
+AI×ひとり起業攻略法
+━━━━━━━━━━━━━
+
+ありがたいことに、すでに多くの方から
+
+「AIを学んだけど成果が出ない理由がすっきり解決した！」✨
+「これまでYouTubeで学んできたけど、自分にあったAIの活かし方がようやくわかった！」💡
+「今の私が次にやるべきアクションが明確になりました！」🚀
+
+などなど、たくさんの嬉しいお声をいただいています！🥰
+
+こちらの限定アーカイブですが、
+あと数時間で終了となります…！💦
+
+この時間を過ぎてしまうと
+本当に見られなくなってしまいますので、
+ぜひ今のうちにチェックしておいてくださいね！👀✨
+
+アーカイブの視聴はこちらから！
+↓↓↓","公開終了前に見る","[VSLURL｜視聴開始ACT-VSL-START（YouTube action複製）]","","","vsl_main_started / vsl_main_completed / roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","視聴開始→VSL途中／未視聴→継続／VSL初回開始から72時間→ACT-VSL-EXPIRE","吉本さん原案 VSL-U04 の文章・絵文字を使用。配信時刻・分岐・変数は確定済みInstagram設計を優先。","","","本文直前（画像→本文→CTA）","","吉本さん原案 VSL-U04 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。 実績・感想表現は公開前に根拠確認。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","95","レビュー中","メッセージ","VSL未視聴","IG_40_VSL_未開封","lhRYYqfY3Z65","72時間VSL開始済み・VSL状態該当","登録から1日後 09:00","LINE","テキスト","","","【LINEメッセージ 1／text】
+残り２日です。😊
+
+公開期間中に、AIエージェントで事業を形にする全体の流れをご確認ください。✨","","[VSLURL｜視聴開始ACT-VSL-START（YouTube action複製）]","","","vsl_main_started / vsl_main_completed / roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","視聴開始→VSL途中／未視聴→継続／VSL初回開始から72時間→ACT-VSL-EXPIRE","既存3日VSLの期限案内。事実未確認の「今回だけ」は使用しない。","","","本文直前（画像→本文→CTA）","","公開期限が実設定と一致することを確認して配信する。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","96","レビュー中","メッセージ","VSL未視聴","IG_40_VSL_未開封","40JbjOH3V041","72時間VSL開始済み・VSL状態該当","登録から1日後 13:00","LINE","テキスト＋ボタン","","","【LINEメッセージ 1／text】
+明日で完全終了です👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】期間限定・無料公開のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""無料公開は登録から3日間・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","動画を見る","[VSLURL｜視聴開始ACT-VSL-START（YouTube action複製）]","","","vsl_main_started / vsl_main_completed / roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","視聴開始→VSL途中／未視聴→継続／VSL初回開始から72時間→ACT-VSL-EXPIRE","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","97","レビュー中","メッセージ","VSL未視聴","IG_40_VSL_未開封","pl8XyFNAsg3R","72時間VSL開始済み・VSL状態該当","登録から1日後 18:00","LINE","テキスト","","","【LINEメッセージ 1／text】
+%line_name%さん、公開期間は明日までです。⏰
+
+視聴後特典で、AIひとり起業ロードマップ作成会が存在します。まずは内容を見て、自分に必要か判断してください。🔥","","[VSLURL｜視聴開始ACT-VSL-START（YouTube action複製）]","","","vsl_main_started / vsl_main_completed / roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","視聴開始→VSL途中／未視聴→継続／VSL初回開始から72時間→ACT-VSL-EXPIRE","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","98","レビュー中","メッセージ","VSL未視聴","IG_40_VSL_未開封","eLjR3vW1Po0s","72時間VSL開始済み・VSL状態該当","登録から1日後 21:00","LINE","テキスト＋ボタン","","","【LINEメッセージ 1／text】
+今日のうちに見始めておくと、明日は必要な箇所を見直す時間に使えます。😊
+
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】期間限定・無料公開のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""無料公開は登録から3日間・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","動画を見る","[VSLURL｜視聴開始ACT-VSL-START（YouTube action複製）]","","","vsl_main_started / vsl_main_completed / roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","視聴開始→VSL途中／未視聴→継続／VSL初回開始から72時間→ACT-VSL-EXPIRE","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","99","レビュー中","メッセージ","VSL未視聴","IG_40_VSL_未開封","pNiEq3QAw7li","72時間VSL開始済み・VSL状態該当","登録から2日後 08:00","LINE","テキスト","","","【LINEメッセージ 1／text】
+本日23:59で公開終了です。⏰
+
+日程が合わずセミナーに参加できなかった方も、今日中なら内容を確認できます。✨","","[VSLURL｜視聴開始ACT-VSL-START（YouTube action複製）]","","","vsl_main_started / vsl_main_completed / roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","視聴開始→VSL途中／未視聴→継続／VSL初回開始から72時間→ACT-VSL-EXPIRE","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","100","レビュー中","メッセージ","VSL未視聴","IG_40_VSL_未開封","rshejwulCzb8","72時間VSL開始済み・VSL状態該当","登録から2日後 10:00","LINE","テキスト＋ボタン","VSL-U10","","【LINEメッセージ 1／text】
+公開最終日になりました。🔥
+
+AIでのひとり起業に興味がある方は、今日の予定に視聴時間を入れてください。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】本日が公開最終日です"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""公開は本日まで・スマホ視聴OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","動画を見る","[VSLURL｜視聴開始ACT-VSL-START（YouTube action複製）]","","","vsl_main_started / vsl_main_completed / roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","視聴開始→VSL途中／未視聴→継続／VSL初回開始から72時間→ACT-VSL-EXPIRE","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","101","レビュー中","メッセージ","VSL未視聴","IG_40_VSL_未開封","rSdX9Ug0LLj1","72時間VSL開始済み・VSL状態該当","登録から2日後 12:00","LINE","テキスト","VSL-U11","","【LINEメッセージ 1／text】
+あと半日ほどで終了します。⏰
+
+ページを開いていないまま期限を迎えると、今回の動画は見られなくなります。
+今のうちにご覧ください。🔥","","[VSLURL｜視聴開始ACT-VSL-START（YouTube action複製）]","","","vsl_main_started / vsl_main_completed / roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","視聴開始→VSL途中／未視聴→継続／VSL初回開始から72時間→ACT-VSL-EXPIRE","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","102","レビュー中","メッセージ","VSL未視聴","IG_40_VSL_未開封","5LCZMUE4Si6x","72時間VSL開始済み・VSL状態該当","登録から2日後 15:00","LINE","テキスト＋ボタン","VSL-U12","","【LINEメッセージ 1／text】
+%line_name%さん、まだ間に合います。😊
+
+完璧に理解しようとせず、まず全体像を通して見るのがおすすめです。公開は本日23:59までです。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】公開は本日23:59まで"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""公開は本日23:59まで"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","動画を見る","[VSLURL｜視聴開始ACT-VSL-START（YouTube action複製）]","","","vsl_main_started / vsl_main_completed / roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","視聴開始→VSL途中／未視聴→継続／VSL初回開始から72時間→ACT-VSL-EXPIRE","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","103","レビュー中","メッセージ","VSL未視聴","IG_40_VSL_未開封","8lEagN0kny0j","72時間VSL開始済み・VSL状態該当","登録から2日後 18:00","LINE","テキスト","VSL-U13","","【LINEメッセージ 1／text】
+残り6時間。⏰
+
+限定公開は今夜で終了します。AIの情報収集から、自分の事業を作る側へ進みたい方はご視聴ください。✨","","[VSLURL｜視聴開始ACT-VSL-START（YouTube action複製）]","","","vsl_main_started / vsl_main_completed / roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","視聴開始→VSL途中／未視聴→継続／VSL初回開始から72時間→ACT-VSL-EXPIRE","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","104","レビュー中","メッセージ","VSL未視聴","IG_40_VSL_未開封","hYYgJFw7xNEl","72時間VSL開始済み・VSL状態該当","登録から2日後 21:00","LINE","テキスト＋ボタン","VSL-U14","","【LINEメッセージ 1／text】
+終了まであと3時間です。⏰
+
+視聴するか迷っていた方へ。ページを開けるのは本日23:59までです。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】終了まであと3時間です"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""終了まであと3時間"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","動画を見る","[VSLURL｜視聴開始ACT-VSL-START（YouTube action複製）]","","","vsl_main_started / vsl_main_completed / roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","視聴開始→VSL途中／未視聴→継続／VSL初回開始から72時間→ACT-VSL-EXPIRE","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","105","レビュー中","メッセージ","VSL未視聴","IG_40_VSL_未開封","ZjANTpPHmTOH","72時間VSL開始済み・VSL状態該当","登録から2日後 23:00","LINE","テキスト","VSL-U15","","【LINEメッセージ 1／text】
+あと1時間で公開終了です。⏰
+
+これが3日限定公開の最後のご案内です。今すぐ視聴ページを開いてください。🔥","","[VSLURL｜視聴開始ACT-VSL-START（YouTube action複製）]","","","vsl_main_started / vsl_main_completed / roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","視聴開始→VSL途中／未視聴→継続／VSL初回開始から72時間→ACT-VSL-EXPIRE","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","106","レビュー中","メッセージ","VSL途中","IG_40_VSL_一部視聴","jd8LZ2WGD22p","72時間VSL開始済み・VSL状態該当","登録から 0日 0時間 30分後","LINE","テキスト","VSL-P01","","【LINEメッセージ 1／text】
+動画（VSL）を開いていただき、
+ありがとうございます！😊🌟
+
+もし途中で忙しくなって止めてしまっていた場合は、
+こちらからすぐに「続き」から再開できます👇🎥
+[VSLURL]","続きを見る","[VSLURL｜視聴完了ACT-VSL-COMPLETE（YouTube判定複製）]","","","vsl_main_completed / roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","視聴完了→VSL完了・面談／VSL初回開始から72時間→ACT-VSL-EXPIRE","吉本さん原案 VSL-P01 の文章・絵文字を使用。配信時刻・分岐・変数は確定済みInstagram設計を優先。","","","本文直前（画像→本文→CTA）","","吉本さん原案 VSL-P01 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","107","レビュー中","メッセージ","VSL途中","IG_40_VSL_一部視聴","RLqgOQRNAf29","72時間VSL開始済み・VSL状態該当","登録から0日後 17:00","LINE","テキスト","VSL-P02","","【LINEメッセージ 1／text】
+忙しい毎日ですので、動画を一度に
+最後まで見られなくても大丈夫です😊🌱
+
+ただ、全体の内容がつながっているため、
+【公開期間中】に最後までチェックしていただくのが、
+1番理解が深まるのでおすすめです👇🎥
+[VSLURL]","続きから視聴する","[VSLURL｜視聴完了ACT-VSL-COMPLETE（YouTube判定複製）]","","","vsl_main_completed / roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","視聴完了→VSL完了・面談／VSL初回開始から72時間→ACT-VSL-EXPIRE","吉本さん原案 VSL-P02 の文章・絵文字を使用。配信時刻・分岐・変数は確定済みInstagram設計を優先。","","","本文直前（画像→本文→CTA）","","吉本さん原案 VSL-P02 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","108","レビュー中","メッセージ","VSL途中","IG_40_VSL_一部視聴","1P8u09TqQLyk","72時間VSL開始済み・VSL状態該当","登録から0日後 21:00","LINE","テキスト","VSL-P03","","【LINEメッセージ 1／text】
+動画が途中で止まってしまっている方へ📣🌱
+
+「もし自分がAIを使うなら、どんなことができるかな？」
+とご自身の状況に置き換えながら、
+ぜひ続きをのぞいてみてください😊🎥👇
+[VSLURL]","視聴を再開する","[VSLURL｜視聴完了ACT-VSL-COMPLETE（YouTube判定複製）]","","","vsl_main_completed / roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","視聴完了→VSL完了・面談／VSL初回開始から72時間→ACT-VSL-EXPIRE","吉本さん原案 VSL-P03 の文章・絵文字を使用。配信時刻・分岐・変数は確定済みInstagram設計を優先。","","","本文直前（画像→本文→CTA）","","吉本さん原案 VSL-P03 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","109","レビュー中","メッセージ","VSL途中","IG_40_VSL_一部視聴","hZGpXnuEz1xg","72時間VSL開始済み・VSL状態該当","登録から1日後 09:00","LINE","テキスト","VSL-P04","","【LINEメッセージ 1／text】
+動画の公開は【本日が最終日】です！⏰😭
+
+途中までご覧いただいた方は、
+完全に非公開になってしまう前に、
+ぜひこちらのリンクから続きへ戻ってくださいね👇🎥
+[VSLURL]","続きから再生する","[VSLURL｜視聴完了ACT-VSL-COMPLETE（YouTube判定複製）]","","","vsl_main_completed / roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","視聴完了→VSL完了・面談／VSL初回開始から72時間→ACT-VSL-EXPIRE","吉本さん原案 VSL-P04 の文章・絵文字を使用。配信時刻・分岐・変数は確定済みInstagram設計を優先。","","","本文直前（画像→本文→CTA）","","吉本さん原案 VSL-P04 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","110","レビュー中","メッセージ","VSL途中","IG_40_VSL_一部視聴","suBXJeaTTYkm","72時間VSL開始済み・VSL状態該当","登録から1日後 14:00","LINE","テキスト","VSL-P05","","【LINEメッセージ 1／text】
+動画（VSL）の公開終了まで、
+これが【本当に最後のご案内】となります！⏳💥
+
+正直今回限定のセミナー動画公開になるので、
+途中のまま終わらせてしまうのはもったいないと思います💦
+
+まだ一歩踏み出すのに足踏みしているという方は、
+今すぐこちらから続きをご確認ください👇🎥
+[VSLURL]","今すぐ続きを見る","[VSLURL｜視聴完了ACT-VSL-COMPLETE（YouTube判定複製）]","","","vsl_main_completed / roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","視聴完了→VSL完了・面談／VSL初回開始から72時間→ACT-VSL-EXPIRE","吉本さん原案 VSL-P05 の文章・絵文字を使用。配信時刻・分岐・変数は確定済みInstagram設計を優先。","","","本文直前（画像→本文→CTA）","","吉本さん原案 VSL-P05 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","111","レビュー中","メッセージ","VSL途中","IG_40_VSL_一部視聴","6kJfk5ZhL0ZI","72時間VSL開始済み・VSL状態該当","登録から1日後 20:00","LINE","テキスト","VSL-P06","","【LINEメッセージ 1／text】
+公開期限は あと28時間です。⏰
+
+視聴を始めた時刻にかかわらず延長はされないので、余裕があるうちに続きをご覧ください。✨","","[VSLURL｜視聴完了ACT-VSL-COMPLETE（YouTube判定複製）]","","","vsl_main_completed / roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","視聴完了→VSL完了・面談／VSL初回開始から72時間→ACT-VSL-EXPIRE","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","112","レビュー中","メッセージ","VSL途中","IG_40_VSL_一部視聴","Pkn7lktciPoS","72時間VSL開始済み・VSL状態該当","登録から2日後 09:00","LINE","テキスト","VSL-P07","","【LINEメッセージ 1／text】
+本日が視聴最終日です。⏰🎥","","[VSLURL｜視聴完了ACT-VSL-COMPLETE（YouTube判定複製）]","","","vsl_main_completed / roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","視聴完了→VSL完了・面談／VSL初回開始から72時間→ACT-VSL-EXPIRE","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","113","レビュー中","メッセージ","VSL途中","IG_40_VSL_一部視聴","CiZEgXL5O3Uz","72時間VSL開始済み・VSL状態該当","登録から2日後 14:00","LINE","テキスト＋ボタン","VSL-P08","","【LINEメッセージ 1／text】
+残り時間が少なくなってきました。⏰
+
+最後には、 AIひとり起業ロードマップ作成会の無料枠も案内しております。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】公開は本日23:59まで"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""公開は本日23:59まで"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","動画を見る","[VSLURL｜視聴完了ACT-VSL-COMPLETE（YouTube判定複製）]","","","vsl_main_completed / roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","視聴完了→VSL完了・面談／VSL初回開始から72時間→ACT-VSL-EXPIRE","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","114","レビュー中","メッセージ","VSL途中","IG_40_VSL_一部視聴","ETjHWlvzXGr3","72時間VSL開始済み・VSL状態該当","登録から2日後 19:00","LINE","テキスト","VSL-P09","","【LINEメッセージ 1／text】
+公開終了まであと数時間です。⏰📣","","[VSLURL｜視聴完了ACT-VSL-COMPLETE（YouTube判定複製）]","","","vsl_main_completed / roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","視聴完了→VSL完了・面談／VSL初回開始から72時間→ACT-VSL-EXPIRE","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","115","レビュー中","メッセージ","VSL途中","IG_40_VSL_一部視聴","WhfdR94zX0IG","72時間VSL開始済み・VSL状態該当","登録から2日後 22:30","LINE","テキスト＋ボタン","VSL-P10","","【LINEメッセージ 1／text】
+23:59で終了します。⏰
+
+視聴途中の方への最後のご案内です。今すぐこちらから続きをご覧ください。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【動画】本日23:59で終了します"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""LINE友だち限定 プレミアム無料動画"",
+  ""text"": ""本日23:59で終了"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""動画を見る"",
+      ""uri"": ""[VSLURL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","動画を見る","[VSLURL｜視聴完了ACT-VSL-COMPLETE（YouTube判定複製）]","","","vsl_main_completed / roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","視聴完了→VSL完了・面談／VSL初回開始から72時間→ACT-VSL-EXPIRE","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","116","レビュー中","メッセージ","VSL完了・面談","IG_40_VSL_視聴完了","DciEDgOwZDeT","72時間VSL開始済み・VSL状態該当","登録直後","LINE","画像","VSL-C01","","【LINEメッセージ 1／text】
+動画を最後までご視聴いただき、
+本当にありがとうございました！😊✨
+
+ご視聴いただいた方に特別なご案内なります...!!
+学んだ内容を、
+「自分の場合はどうアクションを起こせばいい？」
+と具体的に整理したい方に向けて、
+【30分の個別面談】をご用意いたしました！🌱👇
+
+
+今回の学びを、ぜひ自分ごととしてインプットして、
+貴重な一歩を踏み出すキッカケになれると嬉しいです！
+ご自身が抱えている悩みや、ビジネスモデルなどがあれば、
+どんなに細かいことでも構いませんので、壁打ちしましょう！☺️
+
+▼こちらからお申し込みください！
+[ロードマップ作成会URL]","個別面談の日程を見る","[ロードマップ作成会URL｜初回クリックACT-RM-PAGE（YouTube action複製）]","","","roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","面談ページ初回クリック→ATT-Cのみ／未クリック→72時間終了後オプチャ","吉本さん原案 VSL-C01 の文章・絵文字を使用。配信時刻・分岐・変数は確定済みInstagram設計を優先。","https://drive.usercontent.google.com/download?id=1zDdYksox-PG8m4w80F3160DbK4iy8DOM&export=view&confirm=t","=IF(U128="""","""",IMAGE(U128))","本文直前（画像→本文→CTA）","動画視聴者へ30分無料個別面談","吉本さん原案 b8df8636-aa27-4f4a-a7a1-7ce2e3631b87.png を原寸・無加工で使用。文章・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","117","レビュー中","メッセージ","VSL完了・面談","IG_40_VSL_視聴完了","wh7dGNiiq0ob","72時間VSL開始済み・VSL状態該当","登録から 0日 2時間 0分後","LINE","画像パネル＋本文＋ボタン","VSL-C02","","【LINEメッセージ 1／image】
+{
+  ""seq"": 0,
+  ""type"": ""image"",
+  ""original_content_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/VoadmjkSafaL.png""
+}
+
+【LINEメッセージ 2／text】
+動画をご覧いただいた方向けに、ロードマップ作成会をご用意しています。今回を機にぜひお申し込みください👇
+
+【LINEメッセージ 3／button】
+{
+  ""seq"": 2,
+  ""type"": ""button"",
+  ""alt_text"": ""【個別】AIひとり起業ロードマップ作成会のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIひとり起業ロードマップ作成会"",
+  ""text"": ""Zoom30分・名前とメールだけで予約OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""日程を見て予約する"",
+      ""uri"": ""[ロードマップ作成会URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","日程を見て予約する","[ロードマップ作成会URL｜初回クリックACT-RM-PAGE（YouTube action複製）]","","","roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","面談ページ初回クリック→ATT-Cのみ／未クリック→72時間終了後オプチャ","既存VSL視聴完了案内を使用。事実未確認の希少性表現は使用しない。","https://drive.usercontent.google.com/download?id=1Ohu9GY2Tfou6npPdp-9bE4CUJj4kzLxV&export=view&confirm=t","=IF(U129="""","""",IMAGE(U129))","本文直前（画像→本文→CTA）","セミナー参加者へ30分無料個別面談","原本保管。画像内に「セミナー参加者様へ」とあるが、本ファネルは参加／欠席を判定しないため、VSL完了者全体には送信しない。参加済みを別の確実な条件で判定できる場合だけ使用し、新しい参加判定分岐は本画像のために作らない。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","118","レビュー中","メッセージ","VSL完了・面談","IG_40_VSL_視聴完了","0Qha2c1IJnIT","72時間VSL開始済み・VSL状態該当","登録から 0日 5時間 0分後","LINE","テキスト","VSL-C03","","【LINEメッセージ 1／text】
+%line_name%さん、大変申し訳ございません...!!
+
+予想以上に個別面談へのご予約が多く、
+スケジュールがパンクする手前になってきたため、
+一旦今から24時間でお申し込みを締めきらせていただきます🙇💦
+
+もしモヤモヤした悩みを抱えている。
+そんな場合はぜひ個別面談を活用してください👇👍
+[ロードマップ作成会URL]","空き枠を見る","[ロードマップ作成会URL｜初回クリックACT-RM-PAGE（YouTube action複製）]","","","roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","面談ページ初回クリック→ATT-Cのみ／未クリック→72時間終了後オプチャ","吉本さん原案 VSL-C03 の文章・絵文字を使用。配信時刻・分岐・変数は確定済みInstagram設計を優先。","","","本文直前（画像→本文→CTA）","","吉本さん原案 VSL-C03 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。 実績・感想表現は公開前に根拠確認。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","119","レビュー中","メッセージ","VSL完了・面談","IG_40_VSL_視聴完了","QUfY1iY6FCsU","72時間VSL開始済み・VSL状態該当","登録から0日後 10:00","LINE","テキスト","VSL-C04","","【LINEメッセージ 1／text】
+個別面談のご予約は、お名前と
+メールアドレスを入力するだけで完了します📝🌱
+
+事前の課題や、準備する資料などは一切ありませんので、
+リラックスしてお気軽にお申し込みくださいね😊👇
+
+セミナー内容を
+「あぁ、良い話を聞いたな」だけで
+終わらせてしまうのは正直もったいない...💦
+
+個別面談では、あなたの今の経験や使える時間に合わせて、
+「まず何から手をつければいいか」をマンツーマンで明確にします！👍✨
+[ロードマップ作成会URL]","予約へ進む","[ロードマップ作成会URL｜初回クリックACT-RM-PAGE（YouTube action複製）]","","","roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","面談ページ初回クリック→ATT-Cのみ／未クリック→72時間終了後オプチャ","吉本さん原案 VSL-C04 の文章・絵文字を使用。配信時刻・分岐・変数は確定済みInstagram設計を優先。","","","本文直前（画像→本文→CTA）","","吉本さん原案 VSL-C04 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","120","レビュー中","メッセージ","VSL完了・面談","IG_40_VSL_視聴完了","2nRWHPzRXiBP","72時間VSL開始済み・VSL状態該当","登録から 1日 0時間 0分後","LINE","テキスト","VSL-C05","","【LINEメッセージ 1／text】
+個別面談の受付終了まで【あと3時間】となりました！⏳⏰
+「まだ相談するほど考えがまとまっていない…💦」
+と思っている方こそ大歓迎です！😊
+
+この面談は、完成した計画を発表する場ではなく、
+30分のおしゃべりを通して、
+モヤモヤした頭をすっきり整理する場所です。
+
+どうぞお気軽に頼ってくださいね👇🌱
+自分にぴったりのAI活用ロードマップを
+直接すっきり整理したい方は、
+こちらからお早めにお申し込みください👇😊
+[ロードマップ作成会URL]","終了前に予約する","[ロードマップ作成会URL｜初回クリックACT-RM-PAGE（YouTube action複製）]","","","roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","面談ページ初回クリック→ATT-Cのみ／未クリック→72時間終了後オプチャ","吉本さん原案 VSL-C05 の文章・絵文字を使用。配信時刻・分岐・変数は確定済みInstagram設計を優先。","","","本文直前（画像→本文→CTA）","","吉本さん原案 VSL-C05 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","121","レビュー中","メッセージ","VSL完了・面談","IG_40_VSL_視聴完了","JOAMSplqPBcC","72時間VSL開始済み・VSL状態該当","登録から 1日 4時間 0分後","LINE","テキスト","VSL-C06","","【LINEメッセージ 1／text】
+受付終了まで【あと1時間】です！⏰💥
+
+動画をご視聴いただいた方限定の個別面談のご案内は、
+これが本当に最後となります。💦
+
+ここで1歩を踏み出すかどうか、
+ここが未来を変える分岐点になるキッカケになればいいなと思っています🚀🔥
+
+今後このような案内はないので、
+チャンスを逃さないよう、ご希望の枠を確保してくださいね👇
+[ロードマップ作成会URL]","今すぐ予約する","[ロードマップ作成会URL｜初回クリックACT-RM-PAGE（YouTube action複製）]","","","roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","面談ページ初回クリック→ATT-Cのみ／未クリック→72時間終了後オプチャ","吉本さん原案 VSL-C06 の文章・絵文字を使用。配信時刻・分岐・変数は確定済みInstagram設計を優先。","","","本文直前（画像→本文→CTA）","","吉本さん原案 VSL-C06 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","122","レビュー中","メッセージ","VSL完了・面談","IG_40_VSL_視聴完了","xCT9FyxEdkBJ","72時間VSL開始済み・VSL状態該当","登録から1日後 10:00","LINE","テキスト＋ボタン","VSL-C07","","【LINEメッセージ 1／text】
+予約は名前とメールアドレスの2項目で完了します😊
+
+都合が変わった場合は日程変更できます。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【個別】AIひとり起業ロードマップ作成会のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIひとり起業ロードマップ作成会"",
+  ""text"": ""Zoom30分・名前とメールだけで予約OK"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""日程を見て予約する"",
+      ""uri"": ""[ロードマップ作成会URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","日程を見て予約する","[ロードマップ作成会URL｜初回クリックACT-RM-PAGE（YouTube action複製）]","","","roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","面談ページ初回クリック→ATT-Cのみ／未クリック→72時間終了後オプチャ","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","123","レビュー中","メッセージ","VSL完了・面談","IG_40_VSL_視聴完了","brqYAbNWbjhP","72時間VSL開始済み・VSL状態該当","登録から1日後 15:00","LINE","テキスト","VSL-C08","","【LINEメッセージ 1／text】
+あと9時間でロードマップ作成会の申し込みは終了します。⏰
+
+AIでできることが増えるほど、
+「あれもこれもやらなきゃ…」と
+迷ってしまいますよね🌀
+
+大切なのは、何をするかと同時に
+「今は何をやらないか（捨てるか）」を決めること💡
+
+優先順位をすっきり整理したい方は、
+ぜひ個別面談を活用してくださいね😊👇
+
+","","[ロードマップ作成会URL｜初回クリックACT-RM-PAGE（YouTube action複製）]","","","roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","面談ページ初回クリック→ATT-Cのみ／未クリック→72時間終了後オプチャ","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","124","レビュー中","メッセージ","VSL完了・面談","IG_40_VSL_視聴完了","zlm87BKwfnhi","72時間VSL開始済み・VSL状態該当","登録から1日後 21:00","LINE","テキスト＋ボタン","VSL-C09","","【LINEメッセージ 1／text】
+受付終了まであと3時間です。⏰
+
+自分に合う進め方を直接相談したい方は、こちらから予約してください。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""【個別】ロードマップ作成会・受付終了まであと3時間"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIひとり起業ロードマップ作成会"",
+  ""text"": ""受付終了まであと3時間"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""日程を見て予約する"",
+      ""uri"": ""[ロードマップ作成会URL]"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","日程を見て予約する","[ロードマップ作成会URL｜初回クリックACT-RM-PAGE（YouTube action複製）]","","","roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","面談ページ初回クリック→ATT-Cのみ／未クリック→72時間終了後オプチャ","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","125","レビュー中","メッセージ","VSL完了・面談","IG_40_VSL_視聴完了","Lw5hWl0hKeJK","72時間VSL開始済み・VSL状態該当","登録から1日後 23:00","LINE","テキスト","VSL-C10","","【LINEメッセージ 1／text】
+あと1時間で受付終了です。⏰
+
+大盛況につき勉強会参加者さま限定のロードマップ作成会のご案内は、
+【これで最後】とさせていただきます...!!🌱⏳
+
+「一人で考えると手が止まってしまいそう…💦」
+という方は、受付期限が終了する前に
+こちらから日程をご確認くださいね👇😊🌟
+[面談申込URL]","","[ロードマップ作成会URL｜初回クリックACT-RM-PAGE（YouTube action複製）]","","","roadmap_page_clicked_unbooked / offer_consult_48h_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","面談ページ初回クリック→ATT-Cのみ／未クリック→72時間終了後オプチャ","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","126","レビュー中","メッセージ","面談未予約","IG_27_面談ページクリック未予約","ATT-C01","ロードマップ作成会ページクリック済み・未予約","クリック15分後","LINE","テキスト","ATT-C01","","個別面談の日程ページを見ていただき、
+ありがとうございます！😊🌟
+
+もし「合う時間が空いていなかった…」という場合も、
+枠の調整で空き状況が変わっていることがあります。
+
+もう一度、こちらから最新のスケジュールを
+確認してみてくださいね👇✨
+[ロードマップ作成会URL]","日程を再確認する","[ロードマップ作成会URL｜受付終了=[面談受付終了日時]・再クリック延長なし]","","","roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","面談予約→IG_80／クリック48時間→ACT-CONSULT-EXPIRE→オプチャ","Dさん作成 53行目から引用。本文は原文のまま。 技術変数のみ現行名へ置換。","","","","","Dさん原文を基礎に使用。独自加筆禁止。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","127","レビュー中","メッセージ","面談未予約","IG_27_面談ページクリック未予約","ATT-C02","ロードマップ作成会ページクリック済み・未予約","2時間後","LINE","テキスト","ATT-C02","","個別面談は【オンラインで30分】です💻🌱
+
+「壁打ちとしてアドバイスだけ欲しい...」
+👆こういったご要望でももちろんOKです！
+
+どうぞお気軽に😊👇
+[ロードマップ作成会URL]","予約を完了する","[ロードマップ作成会URL｜受付終了=[面談受付終了日時]・再クリック延長なし]","","","roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","面談予約→IG_80／クリック48時間→ACT-CONSULT-EXPIRE→オプチャ","Dさん作成 54行目から引用。事実未確認または現行仕様と不一致の箇所のみ削除。 技術変数のみ現行名へ置換。","","","","","Dさん原文を基礎に使用。独自加筆禁止。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","128","レビュー中","メッセージ","面談未予約","IG_27_面談ページクリック未予約","ATT-C03","ロードマップ作成会ページクリック済み・未予約","5時間後","LINE","テキスト","ATT-C03","","「まだ目標がハッキリしていないので申し込み迷っています…」
+
+その気持ちめちゃめちゃわかります😭
+ただ、私の実体験からも言えるように、
+足踏みしている時間が1番もったいない...!!
+
+もし少しでもきっかけが欲しいと思っている方。
+勉強会で少しでも気になったことをヒントに、
+あなたの「今の状況」に合わせたロードマップを
+ゆっくり作っていきましょう🤝🌱👇
+[ロードマップ作成会URL]","空き枠を見る","[ロードマップ作成会URL｜受付終了=[面談受付終了日時]・再クリック延長なし]","","","roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","面談予約→IG_80／クリック48時間→ACT-CONSULT-EXPIRE→オプチャ","Dさん作成 55行目から引用。事実未確認または現行仕様と不一致の箇所のみ削除。 技術変数のみ現行名へ置換。","","","","","Dさん原文を基礎に使用。独自加筆禁止。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","129","レビュー中","メッセージ","面談未予約","IG_27_面談ページクリック未予約","ATT-C04","ロードマップ作成会ページクリック済み・未予約","10時間後","LINE","テキスト","ATT-C04","","AIを活用した成功者はみんなどんな共通点があるのか。
+
+""AIへの深い知識""、""界隈の幅広い人脈""
+私はどちらも違うと思います。
+
+勉強会で得た学びや「やってみたい！」という気持ちが
+新しいうちに、最初の一歩を決められるかどうかだと思います。
+
+チャンスやきっかけは誰にでも平等にあります。
+その思いや行動を途切れさせないことが1番の近道です🚀🔥
+
+モチベーションが高いうちに、ぜひ枠を確保してくださいね👇😊
+[ここに面談申込URL]
+[ロードマップ作成会URL]","面談を予約する","[ロードマップ作成会URL｜受付終了=[面談受付終了日時]・再クリック延長なし]","","","roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","面談予約→IG_80／クリック48時間→ACT-CONSULT-EXPIRE→オプチャ","Dさん作成 56行目から引用。本文は原文のまま。 技術変数のみ現行名へ置換。","","","","","Dさん原文を基礎に使用。独自加筆禁止。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","130","レビュー中","メッセージ","面談未予約","IG_27_面談ページクリック未予約","ATT-C05","ロードマップ作成会ページクリック済み・未予約","24時間後","LINE","テキスト","ATT-C05","","[name]さん、昨日ページを見て
+少し迷われていた方も多いかと思います😊🌱
+
+そこで、面談では具体的にどんなことをやるのかを、特別に少しお話しします。
+
+面談では、やることをさらに増やして忙しくするのではなく、
+「今やるべき優先順位」をシンプルに決めていきます。
+実は今置かれている状況にAIを入れるだけで、
+新しいルートが見えてくるものです。
+
+そこを壁打ちを繰り返しながら、私の経験をもとに壁打ちをしていきます☺️
+
+安心して、お気軽にご相談くださいね👇🤝
+[ロードマップ作成会URL]","日程を選ぶ","[ロードマップ作成会URL｜受付終了=[面談受付終了日時]・再クリック延長なし]","","","roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","面談予約→IG_80／クリック48時間→ACT-CONSULT-EXPIRE→オプチャ","Dさん作成 57行目から引用。事実未確認または現行仕様と不一致の箇所のみ削除。 技術変数のみ現行名へ置換。","","","","","Dさん原文を基礎に使用。独自加筆禁止。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","131","レビュー中","メッセージ","面談未予約","IG_27_面談ページクリック未予約","ATT-C06","ロードマップ作成会ページクリック済み・未予約","28時間後","LINE","テキスト","ATT-C06","","「相談内容を綺麗にまとめておかなきゃ…」
+なんて心配は、一切不要です！🙅‍♂️🌟
+
+もちろん、整理できる部分は整理した上で
+ご参加された方がスムーズに進む可能性は高いです。
+
+ただ、まとまらないモヤモヤをそのまま持ってきていただき、
+背伸びをせず等身大で進めていくのも、また1つ大事なキッカケに間違いなくなります。
+
+ですので、30分でお話ししながら一緒に整理していきましょう🌱😊👇
+[ロードマップ作成会URL]","30分で整理する","[ロードマップ作成会URL｜受付終了=[面談受付終了日時]・再クリック延長なし]","","","roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","面談予約→IG_80／クリック48時間→ACT-CONSULT-EXPIRE→オプチャ","Dさん作成 58行目から引用。本文は原文のまま。 技術変数のみ現行名へ置換。","","","","","Dさん原文を基礎に使用。独自加筆禁止。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","132","レビュー中","メッセージ","面談未予約","IG_27_面談ページクリック未予約","ATT-C07","ロードマップ作成会ページクリック済み・未予約","34時間後","LINE","テキスト","ATT-C07","","「もし急な予定が入ったらどうしよう…」
+という場合も、予約後に届くメッセージから
+簡単に日程変更できますのでご安心くださいね👍✨
+
+まずは、ご都合の合う枠があるかどうかだけでも
+こちらからチェックしてみてください👇😊
+[ロードマップ作成会URL]","空き時間を見る","[ロードマップ作成会URL｜受付終了=[面談受付終了日時]・再クリック延長なし]","","","roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","面談予約→IG_80／クリック48時間→ACT-CONSULT-EXPIRE→オプチャ","Dさん作成 59行目から引用。本文は原文のまま。 技術変数のみ現行名へ置換。","","","","","Dさん原文を基礎に使用。独自加筆禁止。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","133","レビュー中","メッセージ","面談未予約","IG_27_面談ページクリック未予約","ATT-C08","ロードマップ作成会ページクリック済み・未予約","39時間後","LINE","テキスト","ATT-C08","","【お詫びのご連絡】
+予告していた通り、ロードマップ作成会の受付終了まで【残り9時間】とさせていただきます！⏰
+
+少しでも「直接アドバイスをもらいたいな」と思われた方。
+これを機に一歩踏み出す勇気を持ってください。
+
+その後自分に向いているかは、自分で判断したらいいんです。
+大事なのは、
+""今その一歩を踏み出せるかどうか""
+
+ぜひ期限内にご都合の良い日程を確保してくださいね👇😊✨
+[ロードマップ作成会URL]","受付中の枠を見る","[ロードマップ作成会URL｜受付終了=[面談受付終了日時]・再クリック延長なし]","","","roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","面談予約→IG_80／クリック48時間→ACT-CONSULT-EXPIRE→オプチャ","Dさん作成 60行目から引用。事実未確認または現行仕様と不一致の箇所のみ削除。 技術変数のみ現行名へ置換。","","","","","Dさん原文を基礎に使用。独自加筆禁止。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","134","レビュー中","メッセージ","面談未予約","IG_27_面談ページクリック未予約","ATT-C09","ロードマップ作成会ページクリック済み・未予約","45時間後","LINE","テキスト","ATT-C09","","ロードマップ作成会の受付終了まで
+【あと3時間】です！⏳✨
+
+「AIを学んだけど成果が出ない...」
+「自分にあったAIの活かし方が全くわからない...」
+「今の私が次にやるべきことは何なのか...」
+
+という方は、こちらから滑り込みでお申し込みください👇
+その悩みを一緒に解決しましょう☺️[ロードマップ作成会URL]","終了前に予約する","[ロードマップ作成会URL｜受付終了=[面談受付終了日時]・再クリック延長なし]","","","roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","面談予約→IG_80／クリック48時間→ACT-CONSULT-EXPIRE→オプチャ","Dさん作成 61行目から引用。事実未確認または現行仕様と不一致の箇所のみ削除。 技術変数のみ現行名へ置換。","","","","","Dさん原文を基礎に使用。独自加筆禁止。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","135","レビュー中","メッセージ","面談未予約","IG_27_面談ページクリック未予約","ATT-C10","ロードマップ作成会ページクリック済み・未予約","47時間後","LINE","テキスト","ATT-C10","","ロードマップ作成会の受付終了まで【あと1時間】となりました！⏰💦
+
+これが本当に最後のご案内となります。
+
+ラストチャンスですので、こちらから
+ご希望の日時をお選びください👇✨
+[ロードマップ作成会URL]","今すぐ予約する","[ロードマップ作成会URL｜受付終了=[面談受付終了日時]・再クリック延長なし]","","","roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","面談予約→IG_80／クリック48時間→ACT-CONSULT-EXPIRE→オプチャ","Dさん作成 62行目から引用。事実未確認または現行仕様と不一致の箇所のみ削除。 技術変数のみ現行名へ置換。","","","","","Dさん原文を基礎に使用。独自加筆禁止。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","136","レビュー中","メッセージ","面談予約後","IG_80_05 面談予約リマインド（vVq新規）","k3OhRf27yoJ6","ロードマップ作成会予約済み","登録直後","LINE","テキスト","RSV-01（予約直後）","","【LINEメッセージ 1／text】
+%line_name%さん、ロードマップ作成会のご予約ありがとうございます。😊
+
+日時： %event_schedule%
+形式： Zoom（30分）
+参加URL： %event_info%
+
+当日はよろしくお願いいたします。
+","","","","","予約キャンセル済／日程変更済みの旧予約／roadmap_noshow_1／roadmap_noshow_2plus／meeting_completed／成約／営業停止は除外","面談実施→ACT-MEETING-COMPLETE／無断欠席→ACT-RM-NOSHOW／事前キャンセル・日程変更→旧予約停止","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","https://drive.usercontent.google.com/download?id=1YCKctnlBFecaORB5B8Aa4z0ZnoWchcW6&export=view&confirm=t","=IF(U148="""","""",IMAGE(U148))","本文直前（画像→本文→CTA）","個別面談の予約ありがとうございます","吉本さん原案 54f809d5-cf88-40f4-88b3-4147a1ec8fe7.png を原寸・無加工で使用。文章・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","137","レビュー中","メッセージ","面談予約後","IG_80_05 面談予約リマインド（vVq新規）","v7clpa04Kfjk","ロードマップ作成会予約済み","イベント1日前 19:00","LINE","テキスト","RSV-02（前日19:00）","","【LINEメッセージ 1／text】
+明日のリマインドになります。⏰
+
+%event_schedule%／Zoom30分
+%event_info%
+
+","","[
+  {
+    ""url"": ""https://zoom.us/j/*"",
+    ""action_id"": null,
+    ""expiration_type"": ""none""
+  }
+]","","","予約キャンセル済／日程変更済みの旧予約／roadmap_noshow_1／roadmap_noshow_2plus／meeting_completed／成約／営業停止は除外","面談実施→ACT-MEETING-COMPLETE／無断欠席→ACT-RM-NOSHOW／事前キャンセル・日程変更→旧予約停止","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","138","レビュー中","メッセージ","面談予約後","IG_80_05 面談予約リマインド（vVq新規）","B7xRXy9LCLzz","ロードマップ作成会予約済み","イベント当日 09:00","LINE","テキスト","RSV-03（当日朝09:00）","","【LINEメッセージ 1／text】
+%line_name%さん、本日が面談日です。😊
+
+開始時刻になりましたら、こちらからZoomへお入りください。
+%event_info%
+
+お話しできるのを楽しみにしています。🙌","","","","","予約キャンセル済／日程変更済みの旧予約／roadmap_noshow_1／roadmap_noshow_2plus／meeting_completed／成約／営業停止は除外","面談実施→ACT-MEETING-COMPLETE／無断欠席→ACT-RM-NOSHOW／事前キャンセル・日程変更→旧予約停止","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","139","レビュー中","メッセージ","面談予約後","IG_80_05 面談予約リマインド（vVq新規）","OP9miZrixzvV","ロードマップ作成会予約済み","イベント3時間0分前","LINE","テキスト","RSV-04（3時間前）","","【LINEメッセージ 1／text】
+面談まであと3時間です。⏰
+
+%event_info%
+
+","","","","","予約キャンセル済／日程変更済みの旧予約／roadmap_noshow_1／roadmap_noshow_2plus／meeting_completed／成約／営業停止は除外","面談実施→ACT-MEETING-COMPLETE／無断欠席→ACT-RM-NOSHOW／事前キャンセル・日程変更→旧予約停止","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","140","レビュー中","メッセージ","面談予約後","IG_80_05 面談予約リマインド（vVq新規）","vDsOxRKEpvb5","ロードマップ作成会予約済み","イベント30分前","LINE","テキスト","RSV-05（30分前）","","【LINEメッセージ 1／text】
+30分前のリマインドです。⏰
+
+こちらのZoomでお待ちしています。
+%event_info%
+
+それでは後ほど、よろしくお願いします。🙌","","","","","予約キャンセル済／日程変更済みの旧予約／roadmap_noshow_1／roadmap_noshow_2plus／meeting_completed／成約／営業停止は除外","面談実施→ACT-MEETING-COMPLETE／無断欠席→ACT-RM-NOSHOW／事前キャンセル・日程変更→旧予約停止","YouTube原文・絵文字・パネル構成を転用。URLと日時だけ媒体変数へ差し替える。","","","本文直前（画像→本文→CTA）","","YouTube原文をそのまま使用。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","141","レビュー中","メッセージ","面談無断欠席","IG_81_面談無断欠席再予約","NS-01","ロードマップ作成会の無断欠席確認","欠席確認直後","LINE","テキスト","NS-01","","[name]さん、こんにちは🌱
+本日の個別面談ですが、お会いできず少し心配しております🥺
+
+急なお仕事や、接続のトラブルなどがあったかと思います。
+ご事情もあると思いますので、お気になさらないでください😊
+
+もし「改めて相談したいな」と思われましたら、
+こちらからご都合の良い日程を再調整いただけます👇✨
+[ロードマップ作成会URL]","日程を取り直す","[ロードマップ作成会URL]","","","再予約済／sales_in_progress／meeting_completed／成約／営業停止は除外","再予約→IG_80／3通終了→ACT-NOSHOW-EXPIRE→オプチャ","Dさん作成 69行目から引用。本文は原文のまま。 技術変数のみ現行名へ置換。","","","","","Dさん原文を基礎に使用。独自加筆禁止。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","142","レビュー中","メッセージ","面談無断欠席","IG_81_面談無断欠席再予約","NS-02","ロードマップ作成会の無断欠席確認","翌日10:00","LINE","テキスト","NS-02","","昨日の個別面談ですが、まだ日程の
+再調整を受け付けておりますのでご安心ください😊✨
+
+事前の準備などは一切不要ですので、
+「ちょっとモヤモヤを聞いてほしいな」
+というくらいの気持ちでお気軽にどうぞ👇🍀
+[ロードマップ作成会URL]","再予約する","[ロードマップ作成会URL]","","","再予約済／sales_in_progress／meeting_completed／成約／営業停止は除外","再予約→IG_80／3通終了→ACT-NOSHOW-EXPIRE→オプチャ","Dさん作成 70行目から引用。本文は原文のまま。 技術変数のみ現行名へ置換。","","","","","Dさん原文を基礎に使用。独自加筆禁止。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","143","レビュー中","メッセージ","面談無断欠席","IG_81_面談無断欠席再予約","NS-03","ロードマップ作成会の無断欠席確認","翌日20:00","LINE","テキスト","NS-03","","個別面談の再予約のご案内は、
+【これで最後】となります🌱
+
+「やっぱり一度直接話して整理したい！」
+と思われた場合は、こちらから都合の良い日時を
+選んでくださいね。お待ちしております😊👇
+[ロードマップ作成会URL]","再予約枠を見る","[ロードマップ作成会URL]","","","再予約済／sales_in_progress／meeting_completed／成約／営業停止は除外","再予約→IG_80／3通終了→ACT-NOSHOW-EXPIRE→オプチャ","Dさん作成 71行目から引用。本文は原文のまま。 技術変数のみ現行名へ置換。","","","","","Dさん原文を基礎に使用。独自加筆禁止。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","144","レビュー中","メッセージ","オプチャ","IG_90_オプチャ_初回参加案内","Keai6IIELEtI","セミナー未申込／RQ未希望／VSL未転換／面談48時間未予約／無断欠席未再予約のうち面談未実施","登録直後","LINE","画像","OC-J01","","【LINEメッセージ 1／text】
+AIの学びを楽しく続けたい方へ、
+無料コミュニティを特別にご案内します！🌟
+
+ニックネーム（匿名）で気軽に参加でき、
+不定期で「AIでインスタを運用する方法」
+「有料級のスライドを爆速で生成する方法」など、
+無料のオンライン勉強会も開催しています😊👇
+
+[オプチャURL]","オプチャに参加する","[オプチャURL｜クリック時ACT-OPENCHAT-CLICK]","","","openchat_link_clicked / offer_seminar_active / offer_vsl_active / offer_consult_48h_active / offer_noshow_rebook_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","リンククリック→即停止／未クリック→次メッセージ","YouTube同様、オプチャリンククリックで残りの初回案内を停止。面談実施者は自動対象外。","https://drive.usercontent.google.com/download?id=1rO5MZ9rDi6NHj-7zdqZOQs7VtrrLGfpn&export=view&confirm=t","=IF(U156="""","""",IMAGE(U156))","本文直前（画像→本文→CTA）","LINEオープンチャット・無料勉強会の案内","吉本さん原案 生成画像1.png を原寸・無加工で使用。文章・絵文字・分岐・配信時刻は承認済み行を維持する。"
+"Instagram_10大特典","REVIEW_Instagram10大特典_20260810","145","レビュー中","メッセージ","オプチャ","IG_90_オプチャ_初回参加案内","NTIhWrYdF9wK","セミナー未申込／RQ未希望／VSL未転換／面談48時間未予約／無断欠席未再予約のうち面談未実施","登録から1日後 19:00","LINE","テキスト","OC-J02","","【LINEメッセージ 1／text】
+正直1人だけで新しいAIの情報を追いかけ続けるのは、
+なかなか大変で挫折してしまいがちです…🥺💦
+
+オプチャでは、仲間と一緒に学びながら、
+「自分の仕事にどう活かすか」を自然と考えられる
+温かい環境をご用意しています！ぜひ覗いてみてくださいね👇😊
+[オプチャURL]","オプチャを見る","[オプチャURL｜クリック時ACT-OPENCHAT-CLICK]","","","openchat_link_clicked / offer_seminar_active / offer_vsl_active / offer_consult_48h_active / offer_noshow_rebook_active / roadmap_booked / sales_in_progress / sales_next_meeting / meeting_completed / sales_won / sales_stop","リンククリック→即停止／未クリック→次メッセージ","YouTube同様、オプチャリンククリックで残りの初回案内を停止。面談実施者は自動対象外。","","","本文直前（画像→本文→CTA）","","吉本さん原案 OC-J02 を基礎。文章・絵文字を優先し、配信時刻・分岐・変数だけ現行確定ルールへ合わせる。"
