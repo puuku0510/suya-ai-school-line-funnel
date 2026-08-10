@@ -5,8 +5,18 @@
 - [日報Spreadsheet](https://docs.google.com/spreadsheets/d/1DylkYidyekEIZlBhlWnz5n-pGRCXiadgGGWqmCusME0/edit)
 - [チェック用スクリプト](../scripts/check-kaneko-daily-report.ps1)
 - [Claude Codeプロジェクトルール](../CLAUDE.md)
-- Claude Code専用コマンド: `/check-daily-report YYYY-MM-DD`
+- Claude Code専用コマンド: `/check-daily-report`
 - Spreadsheet ID: `1DylkYidyekEIZlBhlWnz5n-pGRCXiadgGGWqmCusME0`
+
+## 承認・ログインについて
+
+- GitHubリポジトリは公開されているため、閲覧・取得のためのGitHub招待や承認は不要です。
+- チェックスクリプトはSpreadsheetを読み取り専用URLから取得します。Googleログイン、OAuth、サービスアカウント、APIキーは不要です。
+- Spreadsheetへ数字を入力するときは、従来どおり編集権限を持つGoogleアカウントで開いてください。チェックスクリプトには編集権限はありません。
+- Claude Codeが初回実行時にコマンド実行やネットワーク通信の許可を表示した場合は、`powershell.exe` の実行と `docs.google.com` への読み取り通信を許可してください。
+- `-ExecutionPolicy Bypass` は今回のスクリプト実行中だけ有効です。Windows全体の設定は変更しません。
+
+注意: 現在は、リンクを知っている人が日報Spreadsheetを読み取れる設定です。個人情報・機密情報を入れる場合は公開読み取りを停止し、Google認証方式へ切り替えてください。
 
 ## この日報の仕組み
 
@@ -76,11 +86,13 @@
 5. `PASS` になるまで、指摘された黄色セルだけ修正する。
 6. 数式エラー・自動参照エラーは自分で直さず、管理者へ報告する。
 
-Claude Codeでは、次の専用コマンドでも実行できます。
+Claude Codeでは、毎日同じ専用コマンドを実行します。日付入力は不要です。
 
 ```text
-/check-daily-report 2026-08-10
+/check-daily-report
 ```
+
+日付を省略すると、日本時間の前日分を自動で検査します。過去日を再確認するときだけ `/check-daily-report 2026-08-10` のように日付を付けます。
 
 ## Claude Codeへ渡すプロンプト
 
@@ -88,9 +100,11 @@ Claude Codeでは、次の専用コマンドでも実行できます。
 このリポジトリを正本として扱ってください。
 最初に kaneko-daily-report-checker/README.md を読み、日報Spreadsheetの仕組みと入力ルールを理解してください。
 
-兼子さんが日報を入力しました。対象日を確認して、次を実行してください。
+兼子さんが日報を入力しました。通常は次を実行してください。日付を省略すると、日本時間の前日分が自動選択されます。
 
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./scripts/check-kaneko-daily-report.ps1 -TargetDate YYYY-MM-DD -JsonOutputPath ./daily-report-check.json
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./scripts/check-kaneko-daily-report.ps1 -JsonOutputPath ./daily-report-check.json
+
+過去日を再確認する場合だけ `-TargetDate YYYY-MM-DD` を追加してください。
 
 実行結果を、次の3区分で日本語で報告してください。
 1. 兼子さんが黄色セルへ追加入力・修正する項目
@@ -104,13 +118,13 @@ UTAGEやLINEの実数と照合していない場合は、入力形式だけを�
 
 ## 実行方法
 
-最新の入力日を自動判定:
+日本時間の前日分を自動判定（毎日の通常実行）:
 
 ```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\check-kaneko-daily-report.ps1
 ```
 
-対象日を指定:
+過去日を指定して再確認:
 
 ```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\check-kaneko-daily-report.ps1 -TargetDate 2026-08-10

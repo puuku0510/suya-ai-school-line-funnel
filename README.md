@@ -11,10 +11,10 @@ UTAGEで運用する媒体別LINEファネルの正本リポジトリです。�
 - [自動チェックスクリプト](scripts/check-kaneko-daily-report.ps1)
 
 ```powershell
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\check-kaneko-daily-report.ps1 -TargetDate YYYY-MM-DD
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\check-kaneko-daily-report.ps1
 ```
 
-判定が `PASS` になるまで、黄色い入力セルだけを修正します。数式、自動参照、ダッシュボード、ルート設定は兼子さんが変更しません。
+日付を指定しない場合、日本時間の前日分を自動で検査します。判定が `PASS` になるまで、黄色い入力セルだけを修正します。数式、自動参照、ダッシュボード、ルート設定は兼子さんが変更しません。
 
 ## 媒体別の正本
 

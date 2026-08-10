@@ -151,15 +151,15 @@ for ($i = 0; $i -lt $routeRows.Count; $i++) {
     if (-not [string]::IsNullOrWhiteSpace($values[1])) { [void]$officialLineNames.Add($values[1]) }
 }
 
-$allDatedRows = @()
-foreach ($row in @($lineRows + $funnelRows)) {
-    $values = Get-Values $row
-    $date = Get-DateValue $values[0]
-    if ($null -ne $date) { $allDatedRows += $date.Date }
-}
 if ($TargetDate -eq [datetime]::MinValue) {
-    if ($allDatedRows.Count -eq 0) { throw 'LINE日次・ファネル日次に対象日がありません。' }
-    $TargetDate = @($allDatedRows | Sort-Object -Descending)[0]
+    try {
+        $japanTimeZone = [System.TimeZoneInfo]::FindSystemTimeZoneById('Tokyo Standard Time')
+    }
+    catch {
+        $japanTimeZone = [System.TimeZoneInfo]::FindSystemTimeZoneById('Asia/Tokyo')
+    }
+    $japanNow = [System.TimeZoneInfo]::ConvertTimeFromUtc([datetime]::UtcNow, $japanTimeZone)
+    $TargetDate = $japanNow.Date.AddDays(-1)
 }
 $TargetDate = $TargetDate.Date
 
