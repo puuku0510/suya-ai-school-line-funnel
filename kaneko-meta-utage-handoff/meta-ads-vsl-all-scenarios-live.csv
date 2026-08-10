@@ -1,0 +1,2858 @@
+﻿"No.","シナリオ順","シナリオ名","配信区分","区分内順","媒体","管理名称","配信基準","配信タイミング","ステータス","送信元","件名","本文（全文・絵文字／改行保持）","URL・ボタン／アクション","配信条件","UTAGE編集URL","メッセージID"
+"","1","広告入口：無料解説動画LP","ファネルページ","","ページ","空白のファネル","","","公開中","","","LINEで無料動画を受け取る ▶
+
+期間限定・完全無料
+      0円
+    
+
+    
+      初心者向けスマホ視聴OK顔出し不要
+    
+
+  
+
+  
+    登録から受け取りまで10秒。営業電話や無理な勧誘はありません。
+
+    期間限定のため、予告なく配布を終了する場合があります
+  
+
+  
+    この無料動画で分かること
+
+    
+      ✓AIを仕事や収入につなげるための考え方がわかる
+
+      ✓自分に合ったAIビジネスの見つけ方がわかる
+
+      ✓LINEスタンプ・ホームページ制作・動画編集・ゲーム開発など、未経験から始めた実例を紹介
+
+      ✓AIエージェントで作業を効率化する仕組みをやさしく解説
+
+      ✓知識ゼロから最初の一歩を踏み出す方法
+
+SUYA（スヤ）
+
+        東大数学科卒のAI起業家・生成AI活用の専門家
+
+        開成中学・高校 → 東京大学数学科卒
+
+        メガベンチャーでのアプリ開発を経て起業
+
+        AIエージェントを活用し、複数のYouTubeチャンネルを運営
+
+        Anthropic公式13講座修了／所定評価合格・全講座修了証取得
+      
+
+    
+
+    
+      プライバシーポリシー｜特定商取引法に基づく表記｜運営会社
+    
+
+    © Xeno magic","","","https://utage-system.com/page/j1cI8q1ySjv2","j1cI8q1ySjv2"
+"","2","Meta計測・LINE遷移","ファネルページ","","ページ","サンクス_Meta（リダイレクト・計測）","","","公開中","","","LINEへ移動しています…
+自動で切り替わらない場合は こちら をタップしてください。","","","https://utage-system.com/page/fYOKv7Xjdqma","fYOKv7Xjdqma"
+"","3","プレミアム無料動画（VSL）","ファネルページ","","ページ","動画視聴ページ","","","公開中","","","LINE友だち限定
+
+プレミアム無料動画
+
+無料公開終了まで残り…
+
+無料個別相談に申し込む","","","https://utage-system.com/page/ud2vxiIdzVOc","ud2vxiIdzVOc"
+"1","4","META_VSL_10_未視聴","ステップ配信","2","アクション","META_VSL_10_未視聴_No.00_入口ラベル付与","immediately","登録直後","稼働中","","","【アクション実行】
+アクションID: mm34lEzhBt6E","アクションID: mm34lEzhBt6E","","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/action/Yys8Iic79z4A/edit","Yys8Iic79z4A"
+"2","4","META_VSL_10_未視聴","ステップ配信","24","LINE","META_VSL_10_未視聴_No.01","none","0日後 0:01","稼働中","","","【LINEメッセージ 1／text】
+%line_name%さん、お待たせしました🎬
+
+AI×ひとり起業のセミナー動画が公開されました！
+登録者限定の公開で、視聴開始から3日間だけご覧いただけます。まだの方はお早めにどうぞ。
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""AI×ひとり起業 セミナー動画が公開されました"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/vj9113W40AbX.png"",
+  ""title"": ""AI×ひとり起業｜無料セミナー動画"",
+  ""text"": ""未経験からAIで事業を作る全体像を、この1本に。今すぐ視聴👇"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""▶ 動画を見る"",
+      ""uri"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","[
+  {
+    ""url"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+    ""action_id"": ""3Unj2dV0Qc39"",
+    ""expiration_type"": ""none""
+  }
+]","[
+  {
+    ""rules"": [
+      {
+        ""key"": ""label"",
+        ""condition"": ""not-including"",
+        ""value"": [
+          ""2JXooWR9V9cd"",
+          ""q3mX5zbyI4kI"",
+          ""AjCisycMbEia"",
+          ""r2vnCTyseMYh"",
+          ""ztlcWnxeo2Gd"",
+          ""44XxGPtTHwBN"",
+          ""VHfYW7D9Sqaa"",
+          ""l7UEdnmvTDIV""
+        ]
+      }
+    ]
+  }
+]","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/line/haK9EW1F6dGj/edit","haK9EW1F6dGj"
+"3","4","META_VSL_10_未視聴","ステップ配信","25","LINE","META_VSL_10_未視聴_No.02","none","0日後 0:20（時刻指定）","稼働中","","","【LINEメッセージ 1／text】
+こんな収入、想像できますか？👀
+
+・月収60万のフリーランス（元うつ直前の29歳）
+・クビになった無職が2ヶ月で月利25万超
+・2人チームでゲーム制作に挑戦
+
+全員に共通しているのは「AIを使った一人起業」です。
+
+「AI×ひとり起業」の動画では、その全貌をお伝えしています。","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""2JXooWR9V9cd"",
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/line/Eh25AatITjzh/edit","Eh25AatITjzh"
+"4","4","META_VSL_10_未視聴","ステップ配信","23","LINE","META_VSL_10_未視聴_No.03","none","0日後 0:40（時刻指定）","稼働中","","","【LINEメッセージ 1／text】
+あなたはどれですか？💡
+
+✅AIを使いたいけど何から始めればいいかわからない
+✅AIとビジネスが結びつかない
+✅副業をやってみたが全然稼げなかった
+✅現状のまま生活を続けた将来が不安
+✅顔や名前を出さずに稼ぎたい
+✅気を遣う組織の人間関係に疲れた
+✅何か自分ならヒットさせられる自信がある
+
+1つでも当てはまるなら、今日のセミナーが人生を変えるきっかけになるはずです。
+
+こちらからご覧ください👇
+https://utage-system.com/p/W8wW6ShW0iHd","[
+  {
+    ""url"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+    ""action_id"": ""3Unj2dV0Qc39"",
+    ""expiration_type"": ""none""
+  }
+]","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""2JXooWR9V9cd"",
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/line/WC3827mBJFHO/edit","WC3827mBJFHO"
+"5","4","META_VSL_10_未視聴","ステップ配信","22","LINE","META_VSL_10_未視聴_No.04","none","0日後 1:11（時刻指定）","稼働中","","","【LINEメッセージ 1／text】
+正直、かなり驚きました...📣
+
+「開成・東大卒の方としゃべる機会なんて今までなかった」
+「会社経営のハードルがぐっと下がった」
+「こんな私でも副業で成功できそう」
+
+セミナー参加者から、こんな声をいただいています。
+
+これまで1万人以上のサポートをしてきた僕だから言えます。
+
+今の時代、学歴もキャリアも関係ない。
+AIがあれば、誰でも一人で戦える。
+
+こちらからご覧ください👇
+https://utage-system.com/p/W8wW6ShW0iHd","[
+  {
+    ""url"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+    ""action_id"": ""3Unj2dV0Qc39"",
+    ""expiration_type"": ""none""
+  }
+]","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""2JXooWR9V9cd"",
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/line/5daCsnJHV6yL/edit","5daCsnJHV6yL"
+"6","4","META_VSL_10_未視聴","ステップ配信","21","LINE","META_VSL_10_未視聴_No.05","none","0日後 1:40（時刻指定）","稼働中","","","【LINEメッセージ 1／text】
+1名の方から動画のリンクでエラーが出たと報告があったのですが、ご覧いただけていますか？👀
+
+もし開けないなどあれば、
+このLINEにそのままご返信ください。
+すぐ対応いたします。","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""2JXooWR9V9cd"",
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/line/U6JMWtSYBm5q/edit","U6JMWtSYBm5q"
+"7","4","META_VSL_10_未視聴","ステップ配信","20","LINE","META_VSL_10_未視聴_No.06","none","0日後 2:00（時刻指定）","稼働中","","","【LINEメッセージ 1／text】
+どれが気になりますか？🔥
+
+「AI×ひとり起業」の動画で、特に見てほしいところ👇
+
+① AIで今、何ができるのか（最新の海外事例）
+② なぜ今が最大のチャンスなのか
+③ AIエージェント6人でサプリ事業を立ち上げるリアルデモ
+④ 2人チームでゲームを制作した事例
+⑤ 最初の100万円を3ヶ月で稼ぐ方法
+etc...
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""AI×ひとり起業 セミナー動画（見どころ①〜⑤）"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/vj9113W40AbX.png"",
+  ""title"": ""AI×ひとり起業｜無料セミナー動画"",
+  ""text"": ""①〜⑤の見どころを、この1本に凝縮。今すぐ視聴👇"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""▶ 動画を見る"",
+      ""uri"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","[
+  {
+    ""url"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+    ""action_id"": ""3Unj2dV0Qc39"",
+    ""expiration_type"": ""none""
+  }
+]","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""2JXooWR9V9cd"",
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/line/sFwFyXeWR1rB/edit","sFwFyXeWR1rB"
+"8","4","META_VSL_10_未視聴","ステップ配信","19","LINE","META_VSL_10_未視聴_No.07","none","0日後 3:00（時刻指定）","稼働中","","","【LINEメッセージ 1／text】
+知ってました？🌱
+
+AIで一人起業して成功している人の共通点は、「これまでのキャリアと全く関係ない事業にチャレンジしている」ことです。
+
+パソコンを触ったことがない人でも、コードが書けない人でも、今日からできる話です。
+
+具体的な事例は、動画セミナーの中で紹介しています。
+
+こちらからご覧ください👇
+https://utage-system.com/p/W8wW6ShW0iHd","[
+  {
+    ""url"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+    ""action_id"": ""3Unj2dV0Qc39"",
+    ""expiration_type"": ""none""
+  }
+]","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""2JXooWR9V9cd"",
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/line/SoYoTrpBFj6u/edit","SoYoTrpBFj6u"
+"9","4","META_VSL_10_未視聴","ステップ配信","18","LINE","META_VSL_10_未視聴_No.08","none","0日後 4:00（時刻指定）","稼働中","","","【LINEメッセージ 1／text】
+こんなLINEが届きました。🙌
+
+「すやさんの動画を見て、昨日まで何もできない自分だと思っていたのに、今日から変われる気がしてきました」
+
+あなたにも、ぜひこの感覚を体験してほしいです。","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""2JXooWR9V9cd"",
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/line/Zb3EHARIxtCJ/edit","Zb3EHARIxtCJ"
+"10","4","META_VSL_10_未視聴","ステップ配信","17","LINE","META_VSL_10_未視聴_No.09","none","0日後 6:00（時刻指定）","稼働中","","","【LINEメッセージ 1／text】
+【炎上覚悟】今の会社員の現実✨
+
+弁護士の国家資格の残存年数：14年
+行政書士の残存年数：4年
+トラック運転手：12年
+
+AIによって、仕事の半分以上が置き換えられる時代が来ています。
+
+「AIを使って稼ぐ側」に回るための方法を、今日の動画で全部話しています。
+
+こちらからご覧ください👇
+https://utage-system.com/p/W8wW6ShW0iHd","[
+  {
+    ""url"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+    ""action_id"": ""3Unj2dV0Qc39"",
+    ""expiration_type"": ""none""
+  }
+]","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""2JXooWR9V9cd"",
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/line/o3tG1Shi6XoS/edit","o3tG1Shi6XoS"
+"11","4","META_VSL_10_未視聴","ステップ配信","16","LINE","META_VSL_10_未視聴_No.10","none","2日後 12:00","稼働中","","","【LINEメッセージ 1／text】
+「AIで稼げる」は幻想じゃない。✨
+
+動画では、Claude CodeというAIエージェントを使って、睡眠サプリ事業をゼロから立ち上げるデモをリアルにお見せしています。
+
+OEM工場のリサーチから商品デザイン・広告動画の制作まで、10分〜2時間でここまで進みます。
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""AI×ひとり起業 セミナー動画（サプリ事業デモ）"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/vj9113W40AbX.png"",
+  ""title"": ""AI×ひとり起業｜無料セミナー動画"",
+  ""text"": ""AIがサプリ事業を立ち上げる実演を収録。今すぐ視聴👇"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""▶ 動画を見る"",
+      ""uri"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","[
+  {
+    ""url"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+    ""action_id"": ""3Unj2dV0Qc39"",
+    ""expiration_type"": ""none""
+  }
+]","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""2JXooWR9V9cd"",
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/line/J3VR7ags7te8/edit","J3VR7ags7te8"
+"12","4","META_VSL_10_未視聴","ステップ配信","15","LINE","META_VSL_10_未視聴_No.11","none","2日後 13:00","稼働中","","","【LINEメッセージ 1／text】
+登録者限定の公開は、まもなく終了します。🔥
+
+「後で見よう」と思っているうちに、見逃してしまう方が多いです。今のうちに、せめてブラウザで開いておいてください。
+
+おかげさまで動画は大反響をいただいていて、感想もすでにLINEで多数届いている状況です！
+
+%line_name%さんの眠った強みが活かされる小さな事業の設計を、お手伝いさせていただけませんか？","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""2JXooWR9V9cd"",
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/line/WR6USAYMcCoe/edit","WR6USAYMcCoe"
+"13","4","META_VSL_10_未視聴","ステップ配信","14","LINE","META_VSL_10_未視聴_No.12","none","2日後 16:00","稼働中","","","【LINEメッセージ 1／text】
+気をつけてください。📣
+
+%line_name%さん、こんにちは！すやです😊
+
+この動画には、一度見ると「AIで稼げない」という思い込みが崩れる仕掛けがあります。
+
+それを体感せずに「自分には無理」と思い続けるのは、あまりにももったいない。ぜひ動画を見て、実際に体感してください！
+
+https://utage-system.com/p/W8wW6ShW0iHd","[
+  {
+    ""url"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+    ""action_id"": ""3Unj2dV0Qc39"",
+    ""expiration_type"": ""none""
+  }
+]","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""2JXooWR9V9cd"",
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/line/qLS74k5Pv3aD/edit","qLS74k5Pv3aD"
+"14","4","META_VSL_10_未視聴","ステップ配信","12","LINE","META_VSL_10_未視聴_No.13","none","2日後 17:00","稼働中","","","【LINEメッセージ 1／text】
+登録者限定の公開は、まもなく終了します。⏳
+
+まだの方は、お早めにご覧ください。","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""2JXooWR9V9cd"",
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/line/yyRt009EaaX2/edit","yyRt009EaaX2"
+"15","4","META_VSL_10_未視聴","ステップ配信","13","LINE","META_VSL_10_未視聴_No.14","none","2日後 20:00","稼働中","","","【LINEメッセージ 1／text】
+3ヶ月で100万円という現実✨
+
+「そんなの無理でしょ」と思う方が多いですが、これはうちのスクール生の平均的な到達数字です。
+
+月に換算すると、約３３万円。
+
+AIの利用料は月数千円だけ。
+
+だから、ほぼ全額が手元に残る計算になります。","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""2JXooWR9V9cd"",
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/line/fcOPQYChu28k/edit","fcOPQYChu28k"
+"16","4","META_VSL_10_未視聴","ステップ配信","11","LINE","META_VSL_10_未視聴_No.15","none","2日後 21:00","稼働中","","","【LINEメッセージ 1／text】
+【業務連絡】限定公開は、まもなく終了します。🌱
+
+まだの方はお早めに、こちらからご覧ください👇
+https://utage-system.com/p/W8wW6ShW0iHd","[
+  {
+    ""url"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+    ""action_id"": ""3Unj2dV0Qc39"",
+    ""expiration_type"": ""none""
+  }
+]","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""2JXooWR9V9cd"",
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/line/FTgvzY87p9qI/edit","FTgvzY87p9qI"
+"17","4","META_VSL_10_未視聴","ステップ配信","10","LINE","META_VSL_10_未視聴_No.16","none","2日後 21:30","稼働中","","","【LINEメッセージ 1／text】
+ネタバレします。🙌
+
+この動画の最後では、AIエージェントでマネタイズするための「隠された真実」に触れています。
+
+・なぜ、これまで頑張っても人生が変わらなかったのか
+・ブログ、物販、SNS、YouTube…をAIに任せるとうまくいく理由
+・「知らない」が最大の武器に反転する理由
+・AIはツールではなく…
+・「自分で努力しなきゃ」を手放した人たちの共通点
+
+…その答えが、ここにあります。
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""AI×ひとり起業 セミナー動画（隠された真実）"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/vj9113W40AbX.png"",
+  ""title"": ""AI×ひとり起業｜無料セミナー動画"",
+  ""text"": ""「隠された真実」は動画の最後に。今すぐ視聴👇"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""▶ 動画を見る"",
+      ""uri"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","[
+  {
+    ""url"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+    ""action_id"": ""3Unj2dV0Qc39"",
+    ""expiration_type"": ""none""
+  }
+]","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""2JXooWR9V9cd"",
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/line/yjOM54N7ac0Z/edit","yjOM54N7ac0Z"
+"18","4","META_VSL_10_未視聴","ステップ配信","9","LINE","META_VSL_10_未視聴_No.17","none","2日後 22:30","稼働中","","","【LINEメッセージ 1／text】
+公開終了が近づいています。⏳
+
+まだの方は、お早めにご覧ください！","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""2JXooWR9V9cd"",
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/line/5KAIZRmR5Kf7/edit","5KAIZRmR5Kf7"
+"19","4","META_VSL_10_未視聴","ステップ配信","8","LINE","META_VSL_10_未視聴_No.18","none","2日後 23:00","稼働中","","","【LINEメッセージ 1／text】
+なぜAIで一人起業が「今」なのか。😊
+
+CodexやClaude Codeが普及してから、まだ数か月。
+
+iPhoneが出た直後に「今からアプリを作っても遅い？」と思った人がいたでしょうか。
+
+今がまさに、そのタイミングです。
+
+こちらからご覧ください👇
+https://utage-system.com/p/W8wW6ShW0iHd","[
+  {
+    ""url"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+    ""action_id"": ""3Unj2dV0Qc39"",
+    ""expiration_type"": ""none""
+  }
+]","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""2JXooWR9V9cd"",
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/line/bWn2NthgEXGg/edit","bWn2NthgEXGg"
+"20","4","META_VSL_10_未視聴","ステップ配信","7","LINE","META_VSL_10_未視聴_No.19","none","2日後 23:10","稼働中","","","【LINEメッセージ 1／text】
+東大卒→ホスト→起業失敗→そこからの再起💡
+
+すやさんの経歴、初めて聞いたときは「波乱万丈すぎる」と思いましたが、聞けばわかります。
+
+一度どん底まで落ちた人の話だから、説得力が違う。
+
+そんな感想をいただいています。
+
+こちらからご覧ください👇
+https://utage-system.com/p/W8wW6ShW0iHd","[
+  {
+    ""url"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+    ""action_id"": ""3Unj2dV0Qc39"",
+    ""expiration_type"": ""none""
+  }
+]","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""2JXooWR9V9cd"",
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/line/xooxPVmjakPe/edit","xooxPVmjakPe"
+"21","4","META_VSL_10_未視聴","ステップ配信","5","LINE","META_VSL_10_未視聴_No.20","none","2日後 23:20","稼働中","","","【LINEメッセージ 1／text】
+この動画を見てほしい人📣
+
+・「稼げない」が口癖になっている人
+・毎日同じ仕事を繰り返している人
+・やりたいことがあるのに踏み出せていない人
+
+あなたに、ぜひ見てほしいです。
+
+こちらからご覧ください👇
+https://utage-system.com/p/W8wW6ShW0iHd","[
+  {
+    ""url"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+    ""action_id"": ""3Unj2dV0Qc39"",
+    ""expiration_type"": ""none""
+  }
+]","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""2JXooWR9V9cd"",
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/line/71JfkU8wzpfS/edit","71JfkU8wzpfS"
+"22","4","META_VSL_10_未視聴","ステップ配信","6","LINE","META_VSL_10_未視聴_No.21","none","2日後 23:50","稼働中","","","【LINEメッセージ 1／text】
+公開はまもなく終了します。👀
+
+「本当にこの動画、価値があるの？」という方へ。本編の一部を一覧でお送りしますね！
+
+・7年以上かけて研究してきた起業の成功法則
+・100名以上と向き合って見つけた、AIが得意な人と苦手な人の違い
+・どん底から這い上がれた決定的な発見
+・強みを活かした小さな事業を作ったAI起業家の話
+・一度聴いたらやらずにはいられなくなる「とある仕掛け」
+
+こんな内容を、惜しみなく語っています。
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""AI×ひとり起業 セミナー動画（まもなく終了）"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/vj9113W40AbX.png"",
+  ""title"": ""AI×ひとり起業｜無料セミナー動画"",
+  ""text"": ""公開はまもなく終了。最後に、この1本を👇"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""▶ 今すぐ見る"",
+      ""uri"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","[
+  {
+    ""url"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+    ""action_id"": ""3Unj2dV0Qc39"",
+    ""expiration_type"": ""none""
+  }
+]","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""2JXooWR9V9cd"",
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/line/PcM8sk8hvyp8/edit","PcM8sk8hvyp8"
+"23","4","META_VSL_10_未視聴","ステップ配信","3","LINE","META_VSL_10_未視聴_No.23","none","2日後 23:55","稼働中","","","【LINEメッセージ 1／text】
+業務連絡です。動画の限定公開は、まもなく終了します！🌱
+
+一人でコツコツ継続できない。
+AIを触るだけでも腰が重い。
+ビジネスに挑戦したくても資金がない。
+
+…でも全部、考え方が少し違っただけでした。
+
+100名以上のAI起業をサポートしてわかった「うまくいく人」と「いかない人」の、たった１つの分岐点。
+
+そのすべてが、この動画の中にあります。
+
+もしまだ動画を見ていないという方は、一度このLINEにご返信ください。
+
+特別にご案内できる場合があります。","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""2JXooWR9V9cd"",
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/line/eAHjsbLEd4ho/edit","eAHjsbLEd4ho"
+"24","4","META_VSL_10_未視聴","ステップ配信","4","LINE","META_VSL_10_未視聴_No.22","none","3日後 0:00","稼働中","","","【LINEメッセージ 1／text】
+限定公開は終了します。🙏
+
+お付き合いいただき、ありがとうございました。
+
+今後も役に立つ情報をお届けしますので、引き続きよろしくお願いします！","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""2JXooWR9V9cd"",
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/line/a45Y9p62Wdho/edit","a45Y9p62Wdho"
+"25","4","META_VSL_10_未視聴","ステップ配信","1","アクション","META_VSL_10_未視聴_No.99_期限切れ→再公開へ","none","3日後 0:01","稼働中","","","【アクション実行】
+アクションID: bPIIsRPmXW4W","アクションID: bPIIsRPmXW4W","[
+  {
+    ""rules"": [
+      {
+        ""key"": ""label"",
+        ""condition"": ""not-including"",
+        ""value"": [
+          ""VHfYW7D9Sqaa"",
+          ""AjCisycMbEia"",
+          ""l7UEdnmvTDIV"",
+          ""44XxGPtTHwBN""
+        ]
+      }
+    ]
+  }
+]","https://utage-system.com/account/3TS1vbmqlbNx/scenario/E5mkccX7YYbv/step/action/NrgooeJ1mUpt/edit","NrgooeJ1mUpt"
+"26","5","META_VSL_20_一部視聴","ステップ配信","17","LINE","META_VSL_20_一部視聴_No.01","none","0日後 0:30（時刻指定）","稼働中","","","【LINEメッセージ 1／text】
+ありがとうございます。でも… ✨
+
+「AIひとり起業セミナー」は、後半ほど「自分でもできるかも」が強くなる構成です。
+
+特にラスト30分は、一度知ると見る前の自分に戻れません。
+
+視聴は３日間できます。下のボタンから続きをどうぞ👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""🎥 セミナー動画の続き（ラスト30分は必見）"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/vj9113W40AbX.png"",
+  ""title"": ""AI×ひとり起業｜セミナー動画"",
+  ""text"": ""後半ほど効いてくる。ラスト30分は必見です。"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""▶ 続きを見る"",
+      ""uri"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","[
+  {
+    ""url"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+    ""action_id"": ""3Unj2dV0Qc39"",
+    ""expiration_type"": ""none""
+  }
+]","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/rreS3iu3mwJM/step/line/kPPIUwI9Tprf/edit","kPPIUwI9Tprf"
+"27","5","META_VSL_20_一部視聴","ステップ配信","16","LINE","META_VSL_20_一部視聴_No.02","none","0日後 1:00（時刻指定）","稼働中","","","【LINEメッセージ 1／text】
+これ、誰のことかわかりますか？ 👀 😊
+
+・上司に意見を求められると頭が真っ白になる
+・夜中まで仕事しても終わらない
+・「気にしすぎ」と言われてもモヤモヤが消えない
+・本当にやりたいことがわからない
+
+↑これ、すやさんの昔の話です。
+
+その人が今、12人のAIエージェントで事業を回している。
+
+もし1つでも当てはまったら、最後まで見る価値があります。
+
+答えは、動画の後半にあります。","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/rreS3iu3mwJM/step/line/STeMFboiTdJf/edit","STeMFboiTdJf"
+"28","5","META_VSL_20_一部視聴","ステップ配信","15","LINE","META_VSL_20_一部視聴_No.03","none","0日後 3:00（時刻指定）","稼働中","","","【LINEメッセージ 1／text】
+こんなLINEが来ました。 🔥 💡
+
+あなたはどう思いますか？","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/rreS3iu3mwJM/step/line/9MRiu1rLUq3E/edit","9MRiu1rLUq3E"
+"29","5","META_VSL_20_一部視聴","ステップ配信","14","LINE","META_VSL_20_一部視聴_No.04","none","1日後 0:00（時刻指定）","稼働中","","","【LINEメッセージ 1／text】
+まだ途中ですか？ 📣
+
+%line_name%さん、後半に入ると「何か」が変わり始める方が多いです。
+
+「もっと早く出会いたかった」——そんな声も届いています。
+
+最後まで見た方には「ロードマップ作成会」のご案内も。続きは下から👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""🎥 セミナー動画の続き｜作成会のご案内も"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/vj9113W40AbX.png"",
+  ""title"": ""AI×ひとり起業｜セミナー動画"",
+  ""text"": ""後半で「何か」が変わり始める。最後まで見る価値あり。"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""▶ 続きを見る"",
+      ""uri"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","[
+  {
+    ""url"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+    ""action_id"": ""3Unj2dV0Qc39"",
+    ""expiration_type"": ""none""
+  }
+]","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/rreS3iu3mwJM/step/line/g8FaGWLitch9/edit","g8FaGWLitch9"
+"30","5","META_VSL_20_一部視聴","ステップ配信","13","LINE","META_VSL_20_一部視聴_No.05","none","1日後 19:00","稼働中","","","【LINEメッセージ 1／text】
+こんな事業が生まれています。 🙌 👀
+
+動画の後半で紹介している「AIで一人起業した先輩たち」、もうご覧になりましたか？
+
+まだの方のために一部だけ↓
+・LINEスタンプで20万円
+・ホームページ制作でコナラ90万円
+・ゲーム制作で25万円
+
+全ての事例は後半でご紹介しています。
+
+「自分にもできるかも」と思ったら…次のステップもあります。","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/rreS3iu3mwJM/step/line/iCVxSXGeFH3l/edit","iCVxSXGeFH3l"
+"31","5","META_VSL_20_一部視聴","ステップ配信","12","LINE","META_VSL_20_一部視聴_No.06","none","2日後 0:00","稼働中","","","【LINEメッセージ 1／text】
+後半に残っているものを教えます。 🔥
+
+まだ間に合います。気になるものから、下のカードでどうぞ👇
+
+【LINEメッセージ 2／carousel】
+{
+  ""seq"": 1,
+  ""type"": ""carousel"",
+  ""alt_text"": ""🎥 動画の見どころダイジェスト（続きはこちら）"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""columns"": [
+    {
+      ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/vj9113W40AbX.png"",
+      ""title"": ""① claude codeで事業を実演"",
+      ""text"": ""サプリ事業をゼロから立ち上げる実演デモ"",
+      ""actions"": [
+        {
+          ""type"": ""url"",
+          ""label"": ""▶ 続きを見る"",
+          ""uri"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+          ""add_label_id"": null,
+          ""del_label_id"": null
+        }
+      ]
+    },
+    {
+      ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/vj9113W40AbX.png"",
+      ""title"": ""② Robloxでゲーム事業"",
+      ""text"": ""AIでゲームを作って収益化する方法"",
+      ""actions"": [
+        {
+          ""type"": ""url"",
+          ""label"": ""▶ 続きを見る"",
+          ""uri"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+          ""add_label_id"": null,
+          ""del_label_id"": null
+        }
+      ]
+    },
+    {
+      ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/vj9113W40AbX.png"",
+      ""title"": ""③ 3ヶ月で最初の100万円"",
+      ""text"": ""最初の100万円をどう作るかの具体策"",
+      ""actions"": [
+        {
+          ""type"": ""url"",
+          ""label"": ""▶ 続きを見る"",
+          ""uri"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+          ""add_label_id"": null,
+          ""del_label_id"": null
+        }
+      ]
+    },
+    {
+      ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/vj9113W40AbX.png"",
+      ""title"": ""④ ロードマップ作成会のご案内"",
+      ""text"": ""最後まで見た方へ。20名限定のご案内です"",
+      ""actions"": [
+        {
+          ""type"": ""url"",
+          ""label"": ""▶ 続きを見る"",
+          ""uri"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+          ""add_label_id"": null,
+          ""del_label_id"": null
+        }
+      ]
+    }
+  ]
+}","[
+  {
+    ""url"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+    ""action_id"": ""3Unj2dV0Qc39"",
+    ""expiration_type"": ""none""
+  }
+]","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/rreS3iu3mwJM/step/line/yCdNwQ9nG6Z0/edit","yCdNwQ9nG6Z0"
+"32","5","META_VSL_20_一部視聴","ステップ配信","11","LINE","META_VSL_20_一部視聴_No.07","none","2日後 6:00","稼働中","","","【LINEメッセージ 1／text】
+大切なお知らせ。 🌱
+
+動画が見られるのは、視聴開始から3日間です。まだ期間の残っている方は、ぜひこの機会に。
+
+せっかくの機会です。後半まで、ぜひ最後までどうぞ👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""🎥 動画が見られるのは視聴開始から3日間"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/vj9113W40AbX.png"",
+  ""title"": ""AI×ひとり起業｜セミナー動画"",
+  ""text"": ""視聴は開始から3日間。後半まで見てください。"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""▶ 続きを見る"",
+      ""uri"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","[
+  {
+    ""url"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+    ""action_id"": ""3Unj2dV0Qc39"",
+    ""expiration_type"": ""none""
+  }
+]","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/rreS3iu3mwJM/step/line/jYebh1apXIK9/edit","jYebh1apXIK9"
+"33","5","META_VSL_20_一部視聴","ステップ配信","10","LINE","META_VSL_20_一部視聴_No.08","none","2日後 12:00","稼働中","","","【LINEメッセージ 1／text】
+知ってました？実は… 💡 🙌
+
+動画が見られるのは、視聴開始から3日間だけ。もう期間の終わりが近づいている方もいます。
+
+「後で見よう」って思ってるうちに、見逃してしまう方が多いんです。今のうちにせめてブラウザで開いておいてください。
+
+お陰様で動画は大反響をいただいていて、
+感想もすでにLINEで50件以上もらっている状況です！
+
+最後まで見てくれた方には「ロードマップ作成会」もご用意しています。","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/rreS3iu3mwJM/step/line/t1W4iWtRg5MS/edit","t1W4iWtRg5MS"
+"34","5","META_VSL_20_一部視聴","ステップ配信","9","LINE","META_VSL_20_一部視聴_No.09","none","2日後 17:00","稼働中","","","【LINEメッセージ 1／text】
+公開終了が近づいています。 📣 ✨
+
+視聴開始から3日で公開終了です。まだの方はお早めに。","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/rreS3iu3mwJM/step/line/K8S3lIMPZw6H/edit","K8S3lIMPZw6H"
+"35","5","META_VSL_20_一部視聴","ステップ配信","8","LINE","META_VSL_20_一部視聴_No.10","none","2日後 20:00","稼働中","","","【LINEメッセージ 1／text】
+気をつけてください。 😊
+
+%line_name%さん、すやです。
+
+「AIひとり起業セミナー」は、見るだけで常識が覆る「気づき」が起きる仕掛けにしています。
+
+一度見たら元に戻れません。中途半端はもったいないので、集中できる時に下から👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""🎥 セミナー動画の続き（集中できる時に）"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/vj9113W40AbX.png"",
+  ""title"": ""AI×ひとり起業｜セミナー動画"",
+  ""text"": ""見るだけで常識が覆る。集中できる時にどうぞ。"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""▶ 続きを見る"",
+      ""uri"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","[
+  {
+    ""url"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+    ""action_id"": ""3Unj2dV0Qc39"",
+    ""expiration_type"": ""none""
+  }
+]","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/rreS3iu3mwJM/step/line/D7yWDy1NtKpn/edit","D7yWDy1NtKpn"
+"36","5","META_VSL_20_一部視聴","ステップ配信","7","LINE","META_VSL_20_一部視聴_No.11","none","2日後 21:00","稼働中","","","【LINEメッセージ 1／text】
+なぜここまで推すのか 🔥 💡
+
+すやさんがAIひとり起業ロードマップ作成会をやっている理由は一つです。
+
+「AIで一人起業できる人を増やしたい」
+
+ロードマップ作成会は30分、無理な勧誘なし。枠は20名限定です。
+
+最後まで見た人だけがお申し込みいただけます。","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/rreS3iu3mwJM/step/line/b1uXbNrVZymT/edit","b1uXbNrVZymT"
+"37","5","META_VSL_20_一部視聴","ステップ配信","6","LINE","META_VSL_20_一部視聴_No.12","none","2日後 22:00","稼働中","","","【LINEメッセージ 1／text】
+【業務連絡】残りわずかです。 📣
+
+最後まで見た方には、ロードマップ作成会のご案内があります。
+
+一緒に、あなたのAI起業プランを設計しましょう。続きは下から👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""🎥 残りわずか｜作成会のご案内もこちら"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/vj9113W40AbX.png"",
+  ""title"": ""AI×ひとり起業｜セミナー動画"",
+  ""text"": ""最後まで見た方へロードマップ作成会のご案内。"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""▶ 続きを見る"",
+      ""uri"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","[
+  {
+    ""url"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+    ""action_id"": ""3Unj2dV0Qc39"",
+    ""expiration_type"": ""none""
+  }
+]","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/rreS3iu3mwJM/step/line/2bSpAuHDET2G/edit","2bSpAuHDET2G"
+"38","5","META_VSL_20_一部視聴","ステップ配信","4","LINE","META_VSL_20_一部視聴_No.13","none","2日後 22:30","稼働中","","","【LINEメッセージ 1／text】
+まだ見ていない後半があるとしたら… 👀
+
+・「AIで今、何を作れるのか」実演デモ
+・「3ヶ月で100万円」の作り方
+
+視聴開始から3日で公開終了します。期間の残っているうちに、ぜひ👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""🎥 実演デモと『100万円の作り方』｜まもなく終了"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/vj9113W40AbX.png"",
+  ""title"": ""AI×ひとり起業｜セミナー動画"",
+  ""text"": ""実演デモと「100万円の作り方」は視聴開始から3日間。"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""▶ 続きを見る"",
+      ""uri"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","[
+  {
+    ""url"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+    ""action_id"": ""3Unj2dV0Qc39"",
+    ""expiration_type"": ""none""
+  }
+]","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/rreS3iu3mwJM/step/line/a8WhgVRp7rtW/edit","a8WhgVRp7rtW"
+"39","5","META_VSL_20_一部視聴","ステップ配信","5","LINE","META_VSL_20_一部視聴_No.14","none","2日後 23:00","稼働中","","","【LINEメッセージ 1／text】
+公開終了が近づいています！ ✨ 🔥
+
+視聴開始から3日で公開終了です。まだの方はお早めに。","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/rreS3iu3mwJM/step/line/zgQARjP9IzQs/edit","zgQARjP9IzQs"
+"40","5","META_VSL_20_一部視聴","ステップ配信","3","LINE","META_VSL_20_一部視聴_No.15","none","2日後 23:50","稼働中","","","【LINEメッセージ 1／text】
+公開終了が近づいています。 🌱
+
+後半の一番大事な話は「最初の100万円をどう作るか」。
+
+視聴開始から3日で公開終了します。まだの方はお早めに👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""🎥 まもなく公開終了｜最初の100万円の作り方"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/vj9113W40AbX.png"",
+  ""title"": ""AI×ひとり起業｜セミナー動画"",
+  ""text"": ""後半の核心「最初の100万円の作り方」。お早めに。"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""▶ 続きを見る"",
+      ""uri"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","[
+  {
+    ""url"": ""https://utage-system.com/p/W8wW6ShW0iHd"",
+    ""action_id"": ""3Unj2dV0Qc39"",
+    ""expiration_type"": ""none""
+  }
+]","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/rreS3iu3mwJM/step/line/9cluaHIEN09z/edit","9cluaHIEN09z"
+"41","5","META_VSL_20_一部視聴","ステップ配信","2","LINE","META_VSL_20_一部視聴_No.16","none","3日後 0:00","稼働中","","","【LINEメッセージ 1／text】
+視聴期間が終了する頃かと思います。💡
+
+%line_name%さん、何度もLINEにお付き合いくださりありがとうございました。
+
+最後までご覧いただいた方には「ロードマップ作成会」（30分・無理な勧誘なし）をご案内しています。気になる方は、こちらから👇
+https://utage-system.com/event/Nfqn55r0Vb3J/register
+
+今後も特別なイベント等でご連絡いたしますので、引き続きよろしくお願いいたします！","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""q3mX5zbyI4kI"",
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/rreS3iu3mwJM/step/line/ioIHxqUootpu/edit","ioIHxqUootpu"
+"42","5","META_VSL_20_一部視聴","ステップ配信","1","アクション","META_VSL_20_一部視聴_No.99_期限切れ→再公開へ","none","3日後 0:01","稼働中","","","【アクション実行】
+アクションID: bPIIsRPmXW4W","アクションID: bPIIsRPmXW4W","[
+  {
+    ""rules"": [
+      {
+        ""key"": ""label"",
+        ""condition"": ""not-including"",
+        ""value"": [
+          ""VHfYW7D9Sqaa"",
+          ""AjCisycMbEia"",
+          ""l7UEdnmvTDIV"",
+          ""44XxGPtTHwBN""
+        ]
+      }
+    ]
+  }
+]","https://utage-system.com/account/3TS1vbmqlbNx/scenario/rreS3iu3mwJM/step/action/BRTIXj2RZvTE/edit","BRTIXj2RZvTE"
+"43","2","META_VSL_30_視聴完了_作成会","ステップ配信","12","LINE","META_VSL_30_視聴完了_作成会_No.01","none","0日後 0:00（時刻指定）","稼働中","","","【LINEメッセージ 1／text】
+%line_name%さん、最後まで視聴いただきありがとうございました🎉
+
+「AIで一人起業できる」と少しでも感じてもらえたなら嬉しいです。今なら30分の個別面談を受付中です。
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""個別ロードマップ作成会（無料）のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/MRk2d9Q2jxYD.png"",
+  ""title"": ""個別ロードマップ作成会（無料）"",
+  ""text"": ""あなたに合ったAI起業プランを一緒に設計。30分・オンライン・枠数限定👇"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""▶ 面談を予約する"",
+      ""uri"": ""https://utage-system.com/event/Nfqn55r0Vb3J/register"",
+      ""add_label_id"": ""ARYnpQ7QAC1a"",
+      ""del_label_id"": null
+    }
+  ]
+}","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/GFLybO0hExQd/step/line/Cyzvram0KYxT/edit","Cyzvram0KYxT"
+"44","2","META_VSL_30_視聴完了_作成会","ステップ配信","11","LINE","META_VSL_30_視聴完了_作成会_No.02","none","0日後 1:00（時刻指定）","稼働中","","","【LINEメッセージ 1／text】
+ロードマップ作成会で何をするのか、わかりやすくお伝えします。 👀 😊
+
+・今のあなたの状況をヒアリング
+・AIでどんな事業が向いているか診断
+・最初の100万円を稼ぐまでのロードマップ設計
+
+ロードマップ作成会は30分です。
+
+その30分で「あとは動くだけ」の状態にします。","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/GFLybO0hExQd/step/line/BDXL2rSwij3v/edit","BDXL2rSwij3v"
+"45","2","META_VSL_30_視聴完了_作成会","ステップ配信","10","LINE","META_VSL_30_視聴完了_作成会_No.03","none","0日後 2:00（時刻指定）","稼働中","","","【LINEメッセージ 1／text】
+残り枠が少なくなっています。⏳
+
+ロードマップ作成会は20名限定。
+
+「見てよかった」で終わらせるか、「あの日から変わった」にするか。
+
+その分岐点が、この30分です。
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""🎁 ロードマップ作成会（無料）｜残り枠わずか"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/MRk2d9Q2jxYD.png"",
+  ""title"": ""個別ロードマップ作成会（無料）"",
+  ""text"": ""あなた専用のロードマップを30分で設計。参加無料・オンライン開催です。"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""▶ 面談を予約する"",
+      ""uri"": ""https://utage-system.com/event/Nfqn55r0Vb3J/register"",
+      ""add_label_id"": ""ARYnpQ7QAC1a"",
+      ""del_label_id"": null
+    }
+  ]
+}","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/GFLybO0hExQd/step/line/rWf0sbZ5jCSn/edit","rWf0sbZ5jCSn"
+"46","2","META_VSL_30_視聴完了_作成会","ステップ配信","9","LINE","META_VSL_30_視聴完了_作成会_No.04","none","0日後 4:00（時刻指定）","稼働中","","","【LINEメッセージ 1／text】
+同じセミナーを見た先輩たちです。📣
+
+・LINEスタンプで２０万円（ロードマップ作成会後1ヶ月）
+・ホームページ制作でコナラ90万円（ロードマップ作成会後2ヶ月）
+・ゲーム制作で２５万円（ロードマップ作成会後6週間）
+
+全員、ロードマップ作成会で設計してからスタートしています。
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""🎁 個別ロードマップ作成会（無料）のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/MRk2d9Q2jxYD.png"",
+  ""title"": ""個別ロードマップ作成会（無料）"",
+  ""text"": ""あなた専用のロードマップを30分で設計。参加無料・オンライン開催です。"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""▶ 面談を予約する"",
+      ""uri"": ""https://utage-system.com/event/Nfqn55r0Vb3J/register"",
+      ""add_label_id"": ""ARYnpQ7QAC1a"",
+      ""del_label_id"": null
+    }
+  ]
+}","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/GFLybO0hExQd/step/line/UHgTdqm3lTnE/edit","UHgTdqm3lTnE"
+"47","2","META_VSL_30_視聴完了_作成会","ステップ配信","8","LINE","META_VSL_30_視聴完了_作成会_No.05","none","1日後 11:20","稼働中","","","【LINEメッセージ 1／text】
+「じゃあ自分はどこから始めればいいの？」 🙌 👀
+
+セミナーを最後まで見て、こう思いませんでしたか？
+
+それを、ロードマップ作成会で一緒に整理していきます。
+
+・今のスキルで何が作れるか
+・どんなビジネスモデルが合っているか
+・最初の一歩は何か
+
+全部、30分で整理できます。","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/GFLybO0hExQd/step/line/COhVZy6lHmmo/edit","COhVZy6lHmmo"
+"48","2","META_VSL_30_視聴完了_作成会","ステップ配信","7","LINE","META_VSL_30_視聴完了_作成会_No.06","none","1日後 19:00","稼働中","","","【LINEメッセージ 1／text】
+チャンスを逃していいですか？🔥
+
+ロードマップ作成会の枠は20名限定です。
+
+今の状況を整理し、あなたに合った最初の一歩を一緒に設計します。
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""🎁 ロードマップ作成会（無料）｜20名限定"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/MRk2d9Q2jxYD.png"",
+  ""title"": ""個別ロードマップ作成会（無料）"",
+  ""text"": ""あなた専用のロードマップを30分で設計。参加無料・オンライン開催です。"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""▶ 面談を予約する"",
+      ""uri"": ""https://utage-system.com/event/Nfqn55r0Vb3J/register"",
+      ""add_label_id"": ""ARYnpQ7QAC1a"",
+      ""del_label_id"": null
+    }
+  ]
+}","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/GFLybO0hExQd/step/line/vCNaYjR9trOf/edit","vCNaYjR9trOf"
+"49","2","META_VSL_30_視聴完了_作成会","ステップ配信","6","LINE","META_VSL_30_視聴完了_作成会_No.07","none","2日後 13:00","稼働中","","","【LINEメッセージ 1／text】
+本日で受付を締め切ります。⏰
+
+セミナーの内容を、知識で終わらせるか、自分の事業として実行するか。
+
+その分岐点が、このロードマップ作成会です。
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""🎁 本日締切｜個別ロードマップ作成会（無料）"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/MRk2d9Q2jxYD.png"",
+  ""title"": ""個別ロードマップ作成会（無料）"",
+  ""text"": ""あなた専用のロードマップを30分で設計。参加無料・オンライン開催です。"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""▶ 面談を予約する"",
+      ""uri"": ""https://utage-system.com/event/Nfqn55r0Vb3J/register"",
+      ""add_label_id"": ""ARYnpQ7QAC1a"",
+      ""del_label_id"": null
+    }
+  ]
+}","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/GFLybO0hExQd/step/line/MWeMU1Yv9zeX/edit","MWeMU1Yv9zeX"
+"50","2","META_VSL_30_視聴完了_作成会","ステップ配信","5","LINE","META_VSL_30_視聴完了_作成会_No.08","none","2日後 18:46","稼働中","","","【LINEメッセージ 1／text】
+満員御礼！ですが1つだけ。 💡 🙌
+
+ロードマップ作成会の枠、満員になりました。
+
+「間に合わなかった、でもどうしても話したい！」という複数の声をいただきまして。
+
+枠をいくつか追加しました。","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/GFLybO0hExQd/step/line/QIQvBn4HkAWN/edit","QIQvBn4HkAWN"
+"51","2","META_VSL_30_視聴完了_作成会","ステップ配信","4","LINE","META_VSL_30_視聴完了_作成会_No.09","none","2日後 20:13","稼働中","","","【LINEメッセージ 1／text】
+すやさんが伝えたいのは、たった1つです。✨
+
+東大卒ホスト。起業失敗。どん底。
+
+そこから「AIで一人起業できる」と気づいただけで、全部変わった。
+
+あなたにも、その気づきを人生で体験してほしい。
+
+一緒に第一歩を踏み出しませんか？
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""🎁 個別ロードマップ作成会（無料）のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/MRk2d9Q2jxYD.png"",
+  ""title"": ""個別ロードマップ作成会（無料）"",
+  ""text"": ""あなた専用のロードマップを30分で設計。参加無料・オンライン開催です。"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""▶ 面談を予約する"",
+      ""uri"": ""https://utage-system.com/event/Nfqn55r0Vb3J/register"",
+      ""add_label_id"": ""ARYnpQ7QAC1a"",
+      ""del_label_id"": null
+    }
+  ]
+}","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/GFLybO0hExQd/step/line/mLmHIk3zhexf/edit","mLmHIk3zhexf"
+"52","2","META_VSL_30_視聴完了_作成会","ステップ配信","3","LINE","META_VSL_30_視聴完了_作成会_No.10","none","2日後 23:00","稼働中","","","【LINEメッセージ 1／text】
+あと1時間で受付を終了します。 😊
+
+セミナーを見て「やってみたい」と思った気持ちを、今行動に変えましょう。
+
+個別相談のお申し込みはこちら👇
+https://utage-system.com/event/Nfqn55r0Vb3J/register","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/GFLybO0hExQd/step/line/yOC2kYUPBztq/edit","yOC2kYUPBztq"
+"53","2","META_VSL_30_視聴完了_作成会","ステップ配信","2","LINE","META_VSL_30_視聴完了_作成会_No.11","none","2日後 23:50","稼働中","","","【LINEメッセージ 1／text】
+ラスト10分です。 💡
+
+何度もLINEにお付き合いくださり、ありがとうございます。
+
+ロードマップ作成会でお待ちしています。
+
+お申し込みはこちら👇
+https://utage-system.com/event/Nfqn55r0Vb3J/register","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/GFLybO0hExQd/step/line/a02hFP8T22OQ/edit","a02hFP8T22OQ"
+"54","2","META_VSL_30_視聴完了_作成会","ステップ配信","1","LINE","META_VSL_30_視聴完了_作成会_No.12","none","3日後 0:00","稼働中","","","【LINEメッセージ 1／text】
+ありがとうございました。📣
+
+只今をもって、AIひとり起業ロードマップ作成会の受付を終了しました。
+
+%line_name%さん、何度もLINEにお付き合いくださりありがとうございました。
+
+今後も特別なイベント等でご連絡いたします。またよろしくお願いいたします！
+
+無料勉強会などはこちらのオプチャで開催しています。ぜひご登録ください👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""📣 AIマニアの放課後（無料オプチャ）ご招待"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": null,
+  ""title"": ""AIマニアの放課後（無料オプチャ）"",
+  ""text"": ""無料勉強会やAIの最新情報をお届け。気軽に参加できるオープンチャットです。"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""▶ オプチャに参加"",
+      ""uri"": ""https://line.me/ti/g2/qtQ6WBe1vMODUq86aG-DL8AlkyGa_5J56xW0Xg?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"",
+      ""add_label_id"": ""s0QL6Qsj3wFv"",
+      ""del_label_id"": null
+    }
+  ]
+}","[
+  {
+    ""url"": ""https://line.me/ti/g2/qtQ6WBe1vMODUq86aG-DL8AlkyGa_5J56xW0Xg?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"",
+    ""action_id"": null,
+    ""expiration_type"": ""none""
+  }
+]","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/GFLybO0hExQd/step/line/gitDdOuhvLxL/edit","gitDdOuhvLxL"
+"55","3","META_VSL_40_再公開希望","ステップ配信","8","LINE","META_VSL_40_再公開希望_No.01","none","0日後 0:30（時刻指定）","稼働中","","","【LINEメッセージ 1／text】
+申込期限を逃してしまいましたか？📣
+
+ロードマップ作成会の受付が終了しました。
+
+「もう一度申し込みたい」という方にだけ、２４時間限定で再受付します。
+
+再受付を希望する方は、下のボタンをタップしてください。
+
+※タップした瞬間に再受付リンクをお届けします
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""⏰ 見逃した動画、２４時間限定で再受付"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/vj9113W40AbX.png"",
+  ""title"": ""見逃した動画を、もう一度"",
+  ""text"": ""24時間限定の再受付です。下のボタンからどうぞ👇"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""▶ もう一度見る"",
+      ""uri"": ""https://utage-system.com/p/hpSOBvvLDxDl"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","[
+  {
+    ""url"": ""https://utage-system.com/p/hpSOBvvLDxDl"",
+    ""action_id"": ""tM04yX2DTkab"",
+    ""expiration_type"": ""none""
+  }
+]","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/k2m48DZSB7KC/step/line/oVy32U22j70c/edit","oVy32U22j70c"
+"56","3","META_VSL_40_再公開希望","ステップ配信","7","LINE","META_VSL_40_再公開希望_No.02","none","0日後 2:00（時刻指定）","稼働中","","","【LINEメッセージ 1／text】
+気になるのはどれですか？👀
+
+「AIひとり起業セミナー」のロードマップ作成会で話せる内容です↓
+
+・今のスキルで何が作れるか
+・どんなビジネスモデルが向いているか
+・最初の100万円のロードマップ
+・AIエージェントのセットアップ方法
+・スクールの詳細とサポート内容
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""🎥 動画の後半で話す内容（もう一度見る）"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/vj9113W40AbX.png"",
+  ""title"": ""この続きは、動画の後半で"",
+  ""text"": ""気になる内容があれば、もう一度見たいをタップ👇"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""▶ もう一度見たい"",
+      ""uri"": ""https://utage-system.com/p/hpSOBvvLDxDl"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","[
+  {
+    ""url"": ""https://utage-system.com/p/hpSOBvvLDxDl"",
+    ""action_id"": ""tM04yX2DTkab"",
+    ""expiration_type"": ""none""
+  }
+]","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/k2m48DZSB7KC/step/line/6Sh2O51Y5W7g/edit","6Sh2O51Y5W7g"
+"57","3","META_VSL_40_再公開希望","ステップ配信","6","LINE","META_VSL_40_再公開希望_No.03","none","0日後 5:00（時刻指定）","稼働中","","","【LINEメッセージ 1／text】
+ゾッとしました。🔥
+
+「動画をみたら、今まで自分にできないと思ってたことが全部できそうになった」
+
+↑こんなメッセージが届いています。
+
+他にも…
+「後半30分で自分のロードマップが見えてきました」
+「もっと早く見ておけばよかった」
+
+再受付は明日の24時まで受け付けています。
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""⏰ 明日24時まで｜動画の再受付"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/vj9113W40AbX.png"",
+  ""title"": ""あなたのロードマップも、ここで"",
+  ""text"": ""続きが気になったら、もう一度見たいをタップ👇"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""▶ もう一度見たい"",
+      ""uri"": ""https://utage-system.com/p/hpSOBvvLDxDl"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","[
+  {
+    ""url"": ""https://utage-system.com/p/hpSOBvvLDxDl"",
+    ""action_id"": ""tM04yX2DTkab"",
+    ""expiration_type"": ""none""
+  }
+]","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/k2m48DZSB7KC/step/line/39gsui2z8BiQ/edit","39gsui2z8BiQ"
+"58","3","META_VSL_40_再公開希望","ステップ配信","5","LINE","META_VSL_40_再公開希望_No.04","none","0日後 19:00","稼働中","","","【LINEメッセージ 1／text】
+あと5時間。迷っていますか？ 🌱 📣
+
+再受付の締め切り、あと5時間です。
+
+AIで起業した先輩たちの変化↓
+・副業で稼げなかった → LINEスタンプで月２０万
+・何から始めるか分からなかった → ゲーム制作で２５万
+・パソコンが苦手だった → ホームページ制作で９０万
+
+全員、ロードマップを設計してからのスタートです。","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/k2m48DZSB7KC/step/line/aZ8zSq43T3fe/edit","aZ8zSq43T3fe"
+"59","3","META_VSL_40_再公開希望","ステップ配信","4","LINE","META_VSL_40_再公開希望_No.05","none","0日後 20:00","稼働中","","","【LINEメッセージ 1／text】
+一度話すと、変わります。 🙌 👀
+
+「動画を見てみたら、全部がつながった」
+
+という声が多いです。
+
+なぜかというと、頭の中でバラバラだった情報が、自分ゴトとして整理されるから。
+
+再受付の締め切りは今日の24時まで。","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/k2m48DZSB7KC/step/line/kOZZT0X1PqZ4/edit","kOZZT0X1PqZ4"
+"60","3","META_VSL_40_再公開希望","ステップ配信","3","LINE","META_VSL_40_再公開希望_No.06","none","0日後 23:00","稼働中","","","【LINEメッセージ 1／text】
+残り1時間です。🔥
+
+実は、動画を最後まで見た方にロードマップ作成会をご案内しています。
+
+動画は倍速でも見れるので、実質50分。
+
+見れるのは、今から1時間です。
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""⏰ 残り1時間｜動画はまもなく終了"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/vj9113W40AbX.png"",
+  ""title"": ""残り1時間。今すぐ続きを"",
+  ""text"": ""倍速なら実質50分。今から1時間限定です👇"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""▶ 今すぐ見る"",
+      ""uri"": ""https://utage-system.com/p/hpSOBvvLDxDl"",
+      ""add_label_id"": null,
+      ""del_label_id"": null
+    }
+  ]
+}","[
+  {
+    ""url"": ""https://utage-system.com/p/hpSOBvvLDxDl"",
+    ""action_id"": ""tM04yX2DTkab"",
+    ""expiration_type"": ""none""
+  }
+]","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/k2m48DZSB7KC/step/line/HPAnrPa7eSDH/edit","HPAnrPa7eSDH"
+"61","3","META_VSL_40_再公開希望","ステップ配信","2","LINE","META_VSL_40_再公開希望_No.07","none","0日後 23:50","稼働中","","","【LINEメッセージ 1／text】
+あと10分。最後に1つだけ。 😊 🌱
+
+再受付の締め切り、残り10分です。
+
+この動画は「変わりたいのか、変わらなくていいのか」を決める場所ではありません。
+
+「どうやって変わるか」を一緒に決める場所です。","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/k2m48DZSB7KC/step/line/Z9MMIJHspsAe/edit","Z9MMIJHspsAe"
+"62","3","META_VSL_40_再公開希望","ステップ配信","1","LINE","META_VSL_40_再公開希望_No.08","none","1日後 0:00","稼働中","","","【LINEメッセージ 1／text】
+ありがとうございました。 💡 🙌
+
+再受付、終了しました。
+
+お付き合いいただきありがとうございました。
+
+またタイミングを見てご連絡いたします！","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/k2m48DZSB7KC/step/line/09CusysdD3Ke/edit","09CusysdD3Ke"
+"63","1","META_VSL_50_24時間再公開","ステップ配信","7","LINE","META_VSL_50_24時間再公開_No.01","none","0日後 1:00（時刻指定）","稼働中","","","【LINEメッセージ 1／text】
+まだ迷っていますか？😊
+
+動画を見た方からは「自分にもできそう」という声が続々。面談で特に反響が大きいのは『自分に向いている事業の見つけ方』です。
+
+⏳ 再受付は残り23時間。
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""個別ロードマップ作成会（無料）のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/MRk2d9Q2jxYD.png"",
+  ""title"": ""個別ロードマップ作成会（無料）"",
+  ""text"": ""正解を教えるのではなく、一緒に探す３０分。今すぐご予約を👇"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""▶ 面談を予約する"",
+      ""uri"": ""https://utage-system.com/event/Nfqn55r0Vb3J/register"",
+      ""add_label_id"": ""ARYnpQ7QAC1a"",
+      ""del_label_id"": null
+    }
+  ]
+}","[
+  {
+    ""url"": ""https://utage-system.com/p/hpSOBvvLDxDl"",
+    ""action_id"": null,
+    ""expiration_type"": ""none""
+  }
+]","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/a1gHcFv4AC8Z/step/line/wWtfcGzHRNDw/edit","wWtfcGzHRNDw"
+"64","1","META_VSL_50_24時間再公開","ステップ配信","6","LINE","META_VSL_50_24時間再公開_No.02","none","0日後 19:00","稼働中","","","【LINEメッセージ 1／text】
+え、もう5時間しかないの？😳
+
+実はあと5時間で再受付が終わります。面談で話せる内容はこちら👇
+
+【LINEメッセージ 2／carousel】
+{
+  ""seq"": 1,
+  ""type"": ""carousel"",
+  ""alt_text"": ""面談で話せる内容ダイジェスト"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""columns"": [
+    {
+      ""thumbnail_image_url"": null,
+      ""title"": ""① 事業の発掘"",
+      ""text"": ""あなたに合ったAI事業を一緒に見つけます"",
+      ""actions"": [
+        {
+          ""type"": ""url"",
+          ""label"": ""面談を予約する"",
+          ""uri"": ""https://utage-system.com/event/Nfqn55r0Vb3J/register"",
+          ""add_label_id"": ""ARYnpQ7QAC1a"",
+          ""del_label_id"": null
+        }
+      ]
+    },
+    {
+      ""thumbnail_image_url"": null,
+      ""title"": ""② 100万円ロードマップ"",
+      ""text"": ""最初の100万円までの道筋を具体的に設計"",
+      ""actions"": [
+        {
+          ""type"": ""url"",
+          ""label"": ""面談を予約する"",
+          ""uri"": ""https://utage-system.com/event/Nfqn55r0Vb3J/register"",
+          ""add_label_id"": ""ARYnpQ7QAC1a"",
+          ""del_label_id"": null
+        }
+      ]
+    },
+    {
+      ""thumbnail_image_url"": null,
+      ""title"": ""③ AIエージェント設定"",
+      ""text"": ""AIの導入・セットアップ方法まで実践で"",
+      ""actions"": [
+        {
+          ""type"": ""url"",
+          ""label"": ""面談を予約する"",
+          ""uri"": ""https://utage-system.com/event/Nfqn55r0Vb3J/register"",
+          ""add_label_id"": ""ARYnpQ7QAC1a"",
+          ""del_label_id"": null
+        }
+      ]
+    },
+    {
+      ""thumbnail_image_url"": null,
+      ""title"": ""④ スクール詳細"",
+      ""text"": ""必要な方にはスクールの詳細もご案内（59.8万〜）"",
+      ""actions"": [
+        {
+          ""type"": ""url"",
+          ""label"": ""面談を予約する"",
+          ""uri"": ""https://utage-system.com/event/Nfqn55r0Vb3J/register"",
+          ""add_label_id"": ""ARYnpQ7QAC1a"",
+          ""del_label_id"": null
+        }
+      ]
+    }
+  ]
+}","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/a1gHcFv4AC8Z/step/line/cGGqkgJsa7yQ/edit","cGGqkgJsa7yQ"
+"65","1","META_VSL_50_24時間再公開","ステップ配信","5","LINE","META_VSL_50_24時間再公開_No.03","none","0日後 20:00","稼働中","","","【LINEメッセージ 1／text】
+恐ろしい事実に、お気づきですか？💡
+
+再受付は、実質あと4時間ほど。
+
+ロードマップ作成会は、たった30分。
+「30分で変わるの？」と思った方ほど、変わっています。
+
+『あとで』と思っているうちに、本気で終わります。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""個別ロードマップ作成会（無料）のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/MRk2d9Q2jxYD.png"",
+  ""title"": ""個別ロードマップ作成会（無料）"",
+  ""text"": ""30分で、あなたの道筋を一緒に描きます。今すぐ予約👇"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""▶ 面談を予約する"",
+      ""uri"": ""https://utage-system.com/event/Nfqn55r0Vb3J/register"",
+      ""add_label_id"": ""ARYnpQ7QAC1a"",
+      ""del_label_id"": null
+    }
+  ]
+}","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/a1gHcFv4AC8Z/step/line/9t0kqeZ3nSWB/edit","9t0kqeZ3nSWB"
+"66","1","META_VSL_50_24時間再公開","ステップ配信","4","LINE","META_VSL_50_24時間再公開_No.04","none","0日後 21:00","稼働中","","","【LINEメッセージ 1／text】
+証言者の声 📣
+
+「ロードマップ作成会を受けた後、何から始めればいいかが明確になりました」
+「すやさんの話を聞いて、ようやく自分のビジョンが見えた気がします」
+「AIエージェントを実際に触りながら一緒に考えてもらえて、本当によかった」
+
+⏳ 配布時間、残り3時間です。👇
+
+【LINEメッセージ 2／button】
+{
+  ""seq"": 1,
+  ""type"": ""button"",
+  ""alt_text"": ""個別ロードマップ作成会（無料）のご案内"",
+  ""react_type"": ""free"",
+  ""react_press_again_text"": null,
+  ""thumbnail_image_url"": ""https://utagesystem.s3.ap-northeast-1.wasabisys.com/GX6OYW2fVtRD/MRk2d9Q2jxYD.png"",
+  ""title"": ""個別ロードマップ作成会（無料）"",
+  ""text"": ""あなたの『ようやく見えた』を、一緒に。今すぐ予約👇"",
+  ""actions"": [
+    {
+      ""type"": ""url"",
+      ""label"": ""▶ 面談を予約する"",
+      ""uri"": ""https://utage-system.com/event/Nfqn55r0Vb3J/register"",
+      ""add_label_id"": ""ARYnpQ7QAC1a"",
+      ""del_label_id"": null
+    }
+  ]
+}","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/a1gHcFv4AC8Z/step/line/jiRmlw6dNRtO/edit","jiRmlw6dNRtO"
+"67","1","META_VSL_50_24時間再公開","ステップ配信","3","LINE","META_VSL_50_24時間再公開_No.05","none","0日後 22:00","稼働中","","","【LINEメッセージ 1／text】
+気づかない間に… 🙌 👀
+
+実は、もう静かにラストチャンスが来ています。
+
+あと約2時間。
+
+「あとで」って思ってるうちに本気で終わってたりします。
+
+ちなみに再々受付のご予定もございません！笑
+
+ですので、実質これがラストのチャンスです。","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/a1gHcFv4AC8Z/step/line/ZPbnOkctolFp/edit","ZPbnOkctolFp"
+"68","1","META_VSL_50_24時間再公開","ステップ配信","2","LINE","META_VSL_50_24時間再公開_No.06","none","0日後 23:50","稼働中","","","【LINEメッセージ 1／text】
+ラスト10分です…！ 🔥
+
+再受付は残り10分を切りました。
+
+ロードマップ作成会では「自分に何が向いているか」を一緒に考えます。
+
+正解を教えるのではなく、一緒に探す場所です。
+
+こちらからご覧ください👇
+https://utage-system.com/p/hpSOBvvLDxDl","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/a1gHcFv4AC8Z/step/line/TTvZQeR1LPKj/edit","TTvZQeR1LPKj"
+"69","1","META_VSL_50_24時間再公開","ステップ配信","1","LINE","META_VSL_50_24時間再公開_No.07","none","1日後 0:00","稼働中","","","【LINEメッセージ 1／text】
+再受付、終了いたしました！ 😊 🌱
+
+お付き合いいただきありがとうございました！！！！
+
+ご縁を感じてロードマップ作成会にお申し込みいただけた方は、この後も引き続きよろしくお願いいたします。
+
+またタイミングを見てご連絡いたします！","","{
+    ""rules"":  [
+                  {
+                      ""key"":  ""label"",
+                      ""condition"":  ""not-including"",
+                      ""value"":  [
+                                    ""AjCisycMbEia"",
+                                    ""r2vnCTyseMYh"",
+                                    ""ztlcWnxeo2Gd"",
+                                    ""44XxGPtTHwBN"",
+                                    ""VHfYW7D9Sqaa"",
+                                    ""l7UEdnmvTDIV""
+                                ]
+                  }
+              ]
+}","https://utage-system.com/account/3TS1vbmqlbNx/scenario/a1gHcFv4AC8Z/step/line/k8erg9qQ0BqW/edit","k8erg9qQ0BqW"
+"70","6","AIでひとり起業個別相談リマインダ","ステップ配信","1","アクション","予約完了→除外ラベル付与(Meta)_登録直後","none","登録直後","稼働中","","","【アクション実行】
+アクションID: 8GfQ3CBKX6Mm","アクションID: 8GfQ3CBKX6Mm","","https://utage-system.com/account/3TS1vbmqlbNx/scenario/CwPiD5bpWYMZ/step/action/wsjySSuvqlE3/edit","wsjySSuvqlE3"
+"71","6","AIでひとり起業個別相談リマインダ","ステップ配信","6","LINE","","none","登録直後","稼働中","","","【LINEメッセージ 1／text】
+【️申込を承りました】
+%event_info%
+お手元のカレンダー、手帳などに予定のメモをお願いします🗓","[
+  {
+    ""url"": ""参加用Zoom / Google Meet URL"",
+    ""action_id"": null,
+    ""expiration_type"": ""none""
+  }
+]","","https://utage-system.com/account/3TS1vbmqlbNx/scenario/CwPiD5bpWYMZ/step/line/snLTk3EmI436/edit","snLTk3EmI436"
+"72","6","AIでひとり起業個別相談リマインダ","ステップ配信","7","メール","申込時","none","登録直後","稼働中","すや / info-cosmos@xenomagic.com","【重要】%event_name%へのお申込みが完了しました","%name% 様
+
+この度は
+%event_name%
+にお申込み頂きありがとうございます。
+
+お申込み頂いたご予約について
+ご案内をさせて頂きます。
+
+■　お申込者情報
+━━━━━━━━━━━━━━━━
+
+お名前：%name%
+メールアドレス：%mail%
+電話番号：%phone%
+
+
+■　日程・参加方法
+━━━━━━━━━━━━━━━━
+
+%event_info%
+
+
+■　キャンセルについて
+━━━━━━━━━━━━━━━━
+
+キャンセルを希望される場合は事前に『必ず』ご連絡ください。
+
+
+━━━━━━━━━━━━━━━━
+%event_name%運営事務局
+%from_mail%
+━━━━━━━━━━━━━━━━","","","https://utage-system.com/account/3TS1vbmqlbNx/scenario/CwPiD5bpWYMZ/step/mail/SPsn6KbytBvM/edit","SPsn6KbytBvM"
+"73","6","AIでひとり起業個別相談リマインダ","リマインダ配信","13","メール","開催14日前","event_date","イベント参加日時｜14日前後:14前 8:00","稼働中","すや / info-cosmos@xenomagic.com","【開催14日前】%event_name%","%name% 様
+
+この度は
+%event_name%
+にお申込み頂きありがとうございます。
+
+開催14日前になりましたので
+リマインドをさせて頂きます。
+
+■　お申込者情報
+━━━━━━━━━━━━━━━━
+
+お名前：%name%
+メールアドレス：%mail%
+電話番号：%phone%
+
+
+■　日程・参加方法
+━━━━━━━━━━━━━━━━
+
+%event_info%
+
+
+■　キャンセルについて
+━━━━━━━━━━━━━━━━
+
+キャンセルを希望される場合は事前に『必ず』ご連絡ください。
+
+
+━━━━━━━━━━━━━━━━
+%event_name%運営事務局
+%from_mail%
+━━━━━━━━━━━━━━━━","","","https://utage-system.com/account/3TS1vbmqlbNx/scenario/CwPiD5bpWYMZ/reminder/Ip6SrIR5EeNw/edit","Ip6SrIR5EeNw"
+"74","6","AIでひとり起業個別相談リマインダ","リマインダ配信","8","メール","開催7日前","event_date","イベント参加日時｜7日前後:7前 8:00","稼働中","すや / info-cosmos@xenomagic.com","【開催7日前】%event_name%","%name% 様
+
+この度は
+%event_name%
+にお申込み頂きありがとうございます。
+
+開催7日前になりましたので
+リマインドをさせて頂きます。
+
+■　お申込者情報
+━━━━━━━━━━━━━━━━
+
+お名前：%name%
+メールアドレス：%mail%
+電話番号：%phone%
+
+
+■　日程・参加方法
+━━━━━━━━━━━━━━━━
+
+%event_info%
+
+
+■　キャンセルについて
+━━━━━━━━━━━━━━━━
+
+キャンセルを希望される場合は事前に『必ず』ご連絡ください。
+
+
+━━━━━━━━━━━━━━━━
+%event_name%運営事務局
+%from_mail%
+━━━━━━━━━━━━━━━━","","","https://utage-system.com/account/3TS1vbmqlbNx/scenario/CwPiD5bpWYMZ/reminder/H4uoR159z2Lt/edit","H4uoR159z2Lt"
+"75","6","AIでひとり起業個別相談リマインダ","リマインダ配信","9","メール","開催3日前","event_date","イベント参加日時｜3日前後:3前 8:00","稼働中","すや / info-cosmos@xenomagic.com","【開催3日前】%event_name%","%name% 様
+
+この度は
+%event_name%
+にお申込み頂きありがとうございます。
+
+開催3日前になりましたので
+リマインドをさせて頂きます。
+
+■　お申込者情報
+━━━━━━━━━━━━━━━━
+
+お名前：%name%
+メールアドレス：%mail%
+電話番号：%phone%
+
+
+■　日程・参加方法
+━━━━━━━━━━━━━━━━
+
+%event_info%
+
+
+■　キャンセルについて
+━━━━━━━━━━━━━━━━
+
+キャンセルを希望される場合は事前に『必ず』ご連絡ください。
+
+
+━━━━━━━━━━━━━━━━
+%event_name%運営事務局
+%from_mail%
+━━━━━━━━━━━━━━━━","","","https://utage-system.com/account/3TS1vbmqlbNx/scenario/CwPiD5bpWYMZ/reminder/4kp3aUnFOP7b/edit","4kp3aUnFOP7b"
+"76","6","AIでひとり起業個別相談リマインダ","リマインダ配信","10","メール","開催前日","event_date","イベント参加日時｜1日前後:1前 8:00","稼働中","すや / info-cosmos@xenomagic.com","【明日開催】%event_name%","%name% 様
+
+この度は
+%event_name%
+にお申込み頂きありがとうございます。
+
+開催前日になりましたので
+リマインドをさせて頂きます。
+
+■　お申込者情報
+━━━━━━━━━━━━━━━━
+
+お名前：%name%
+メールアドレス：%mail%
+電話番号：%phone%
+
+
+■　日程・参加方法
+━━━━━━━━━━━━━━━━
+
+%event_info%
+
+
+■　キャンセルについて
+━━━━━━━━━━━━━━━━
+
+キャンセルを希望される場合は事前に『必ず』ご連絡ください。
+
+
+━━━━━━━━━━━━━━━━
+%event_name%運営事務局
+%from_mail%
+━━━━━━━━━━━━━━━━","","","https://utage-system.com/account/3TS1vbmqlbNx/scenario/CwPiD5bpWYMZ/reminder/R2UY6Z1NjyBO/edit","R2UY6Z1NjyBO"
+"77","6","AIでひとり起業個別相談リマインダ","リマインダ配信","11","メール","開催当日","event_date","イベント参加日時｜0日前後:0後 8:00","稼働中","すや / info-cosmos@xenomagic.com","【本日開催】%event_name%","%name% 様
+
+この度は
+%event_name%
+にお申込み頂きありがとうございます。
+
+開催当日になりましたので
+リマインドをさせて頂きます。
+
+■　お申込者情報
+━━━━━━━━━━━━━━━━
+
+お名前：%name%
+メールアドレス：%mail%
+電話番号：%phone%
+
+
+■　日程・参加方法
+━━━━━━━━━━━━━━━━
+
+%event_info%
+
+
+■　キャンセルについて
+━━━━━━━━━━━━━━━━
+
+キャンセルを希望される場合は事前に『必ず』ご連絡ください。
+
+
+━━━━━━━━━━━━━━━━
+%event_name%運営事務局
+%from_mail%
+━━━━━━━━━━━━━━━━","","","https://utage-system.com/account/3TS1vbmqlbNx/scenario/CwPiD5bpWYMZ/reminder/7S3XPEmv8uJz/edit","7S3XPEmv8uJz"
+"78","6","AIでひとり起業個別相談リマインダ","リマインダ配信","12","メール","開催60分前","event_date","イベント参加日時｜0日前後:0後 1:00","稼働中","すや / info-cosmos@xenomagic.com","【開催60分前】%event_name%","%name% 様
+
+この度は
+%event_name%
+にお申込み頂きありがとうございます。
+
+開催60分前になりましたので
+リマインドをさせて頂きます。
+
+■　お申込者情報
+━━━━━━━━━━━━━━━━
+
+お名前：%name%
+メールアドレス：%mail%
+電話番号：%phone%
+
+
+■　日程・参加方法
+━━━━━━━━━━━━━━━━
+
+%event_info%
+
+
+■　キャンセルについて
+━━━━━━━━━━━━━━━━
+
+キャンセルを希望される場合は事前に『必ず』ご連絡ください。
+
+
+━━━━━━━━━━━━━━━━
+%event_name%運営事務局
+%from_mail%
+━━━━━━━━━━━━━━━━","","","https://utage-system.com/account/3TS1vbmqlbNx/scenario/CwPiD5bpWYMZ/reminder/5iw6qjIef3fq/edit","5iw6qjIef3fq"
+"79","6","AIでひとり起業個別相談リマインダ","リマインダ配信","2","LINE","","event_date","イベント参加日時｜0日前後:0後 0:02","稼働中","","","【LINEメッセージ 1／text】
+【️2分前になりました】
+%event_info%
+お時間になりましたらご入室下さい😊","[
+  {
+    ""url"": ""参加用Zoom / Google Meet URL"",
+    ""action_id"": null,
+    ""expiration_type"": ""none""
+  }
+]","","https://utage-system.com/account/3TS1vbmqlbNx/scenario/CwPiD5bpWYMZ/reminder/Jy2EE3a6aPw1/edit","Jy2EE3a6aPw1"
+"80","6","AIでひとり起業個別相談リマインダ","リマインダ配信","3","LINE","","event_date","イベント参加日時｜0日前後:0後 9:00","稼働中","","","【LINEメッセージ 1／text】
+【️本日はよろしくお願い致します】
+%event_info%
+静かな所で参加されますようお願い致します🙏","[
+  {
+    ""url"": ""参加用Zoom / Google Meet URL"",
+    ""action_id"": null,
+    ""expiration_type"": ""none""
+  }
+]","","https://utage-system.com/account/3TS1vbmqlbNx/scenario/CwPiD5bpWYMZ/reminder/gImukXDN0GQX/edit","gImukXDN0GQX"
+"81","6","AIでひとり起業個別相談リマインダ","リマインダ配信","4","LINE","","event_date","イベント参加日時｜1日前後:1前 21:00","稼働中","","","【LINEメッセージ 1／text】
+【️いよいよ明日です】
+%event_info%
+お話できるのを楽しみにしております😊","[
+  {
+    ""url"": ""参加用Zoom / Google Meet URL"",
+    ""action_id"": null,
+    ""expiration_type"": ""none""
+  }
+]","","https://utage-system.com/account/3TS1vbmqlbNx/scenario/CwPiD5bpWYMZ/reminder/ASZHZM2d9jit/edit","ASZHZM2d9jit"
+"82","6","AIでひとり起業個別相談リマインダ","リマインダ配信","5","LINE","","event_date","イベント参加日時｜3日前後:3前 21:00","稼働中","","","【LINEメッセージ 1／text】
+【️3日前になりました】
+%event_info%
+日程の変更を希望される場合は事前にこちらまでご連絡ください🙇‍♂️","[
+  {
+    ""url"": ""参加用Zoom / Google Meet URL"",
+    ""action_id"": null,
+    ""expiration_type"": ""none""
+  }
+]","","https://utage-system.com/account/3TS1vbmqlbNx/scenario/CwPiD5bpWYMZ/reminder/xMhF4UMpBs20/edit","xMhF4UMpBs20"
