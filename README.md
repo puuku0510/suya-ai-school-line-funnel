@@ -2,6 +2,20 @@
 
 UTAGEで運用する媒体別LINEファネルの正本リポジトリです。媒体ごとに入口と分岐が異なるため、資料・アカウント・シナリオ・URLを混在させないでください。
 
+## 兼子さんの日報チェック
+
+兼子さんがLINE・ファネル日報を入力した後は、[`kaneko-daily-report-checker/`](kaneko-daily-report-checker/) の説明に従って入力監査を実行してください。
+
+- [日報Spreadsheet](https://docs.google.com/spreadsheets/d/1DylkYidyekEIZlBhlWnz5n-pGRCXiadgGGWqmCusME0/edit)
+- [仕組み・毎日の手順・Claude Code用プロンプト](kaneko-daily-report-checker/README.md)
+- [自動チェックスクリプト](scripts/check-kaneko-daily-report.ps1)
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\check-kaneko-daily-report.ps1 -TargetDate YYYY-MM-DD
+```
+
+判定が `PASS` になるまで、黄色い入力セルだけを修正します。数式、自動参照、ダッシュボード、ルート設定は兼子さんが変更しません。
+
 ## 媒体別の正本
 
 | 媒体 | 正しい入口 | 正本 |

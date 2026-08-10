@@ -2,3 +2,5 @@
 .uv-python/
 *.tmp
 ~$*
+.codex-temp-*
+daily-report-check.json
