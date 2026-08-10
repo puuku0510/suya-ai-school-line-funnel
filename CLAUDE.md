@@ -36,3 +36,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\check-kaneko-d
 - UTAGE・LINE実数を推測しない。実数照合を依頼された場合だけ各管理画面を読み取りで確認する。
 
 チェック結果が `FAIL` でも、入力値の自動修正は別の明示依頼があるまで行いません。
+
+## LINEファネル統合ダッシュボードを確認するとき
+
+`kaneko-daily-report-checker/LINEファネル統合ダッシュボード.md` を読み、`/check-funnel-dashboard` または `scripts/check-funnel-dashboard.ps1` を実行します。自動ダッシュボードではUTAGEの永続イベントラベルと処理状態ラベルを正本にし、手入力台帳を増やしません。`pending` は公開後の初回同期前であり、正常稼働済みとは報告しません。

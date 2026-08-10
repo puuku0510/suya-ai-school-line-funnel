@@ -9,6 +9,7 @@ UTAGEで運用する媒体別LINEファネルの正本リポジトリです。�
 - [日報Spreadsheet](https://docs.google.com/spreadsheets/d/1DylkYidyekEIZlBhlWnz5n-pGRCXiadgGGWqmCusME0/edit)
 - [仕組み・毎日の手順・Claude Code用プロンプト](kaneko-daily-report-checker/README.md)
 - [自動チェックスクリプト](scripts/check-kaneko-daily-report.ps1)
+- [LINEファネル統合ダッシュボードの仕組み](kaneko-daily-report-checker/LINEファネル統合ダッシュボード.md)
 
 ```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\check-kaneko-daily-report.ps1

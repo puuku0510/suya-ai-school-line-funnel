@@ -5,7 +5,9 @@
 - [日報Spreadsheet](https://docs.google.com/spreadsheets/d/1DylkYidyekEIZlBhlWnz5n-pGRCXiadgGGWqmCusME0/edit)
 - [チェック用スクリプト](../scripts/check-kaneko-daily-report.ps1)
 - [Claude Codeプロジェクトルール](../CLAUDE.md)
+- [LINEファネル統合ダッシュボード](LINEファネル統合ダッシュボード.md)
 - Claude Code専用コマンド: `/check-daily-report`
+- ダッシュボード確認コマンド: `/check-funnel-dashboard`
 - Spreadsheet ID: `1DylkYidyekEIZlBhlWnz5n-pGRCXiadgGGWqmCusME0`
 
 ## 承認・ログインについて
