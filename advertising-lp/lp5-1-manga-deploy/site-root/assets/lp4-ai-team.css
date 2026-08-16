@@ -1,0 +1,266 @@
+/* LP4: AI employees / one-person company hero.
+   The long-form body intentionally inherits LP3's finished component system. */
+
+.lp4-body {
+  --lp4-midnight: #04172b;
+  --lp4-navy: #082f55;
+  --lp4-cobalt: #1768d5;
+  --lp4-cyan: #38d5ee;
+  --lp4-amber: #ffd65a;
+  --lp4-ink: #071b34;
+}
+
+.lp4-body .lp4-hero {
+  min-height: 840px;
+  background: #eef8fb;
+}
+
+.lp4-body .lp4-hero::before {
+  z-index: 1;
+  background:
+    linear-gradient(180deg, rgb(255 255 255 / 92%) 0%, rgb(255 255 255 / 62%) 27%, rgb(255 255 255 / 10%) 48%, rgb(255 255 255 / 3%) 59%, rgb(3 24 43 / 94%) 100%),
+    linear-gradient(90deg, rgb(255 255 255 / 74%) 0%, rgb(255 255 255 / 16%) 64%, transparent 100%);
+}
+
+.lp4-body .lp4-hero::after {
+  z-index: 1;
+  opacity: .64;
+  background:
+    linear-gradient(90deg, #168ec7, var(--lp4-cyan), transparent) top left / 100% 4px no-repeat,
+    radial-gradient(circle at 8% 15%, rgb(19 137 188 / 24%) 0 1px, transparent 2px) 0 0 / 31px 31px,
+    linear-gradient(132deg, transparent 0 64%, rgb(20 145 192 / 10%) 64.1%, transparent 64.4%);
+}
+
+.lp4-body .lp4-hero .clone-hero__visual img {
+  object-position: 52% center;
+  filter: saturate(.96) contrast(1.02) brightness(1.02);
+}
+
+.lp4-body .lp4-hero .clone-hero__visual::after {
+  background:
+    linear-gradient(90deg, rgb(255 255 255 / 38%), transparent 72%),
+    linear-gradient(180deg, transparent 55%, rgb(3 24 43 / 82%));
+  box-shadow: none;
+}
+
+.lp4-body .lp4-hero .clone-hero__top {
+  width: calc(100% - 32px);
+  margin-inline: auto;
+  padding: 20px 0 0;
+  text-align: left;
+}
+
+.lp4-body .lp4-hero .clone-hero__eyebrow {
+  min-height: 28px;
+  max-width: calc(100% - 88px);
+  padding: 6px 11px;
+  border-color: rgb(18 126 177 / 42%);
+  color: #07527d;
+  background: rgb(255 255 255 / 76%);
+  box-shadow: 0 8px 28px rgb(22 93 126 / 12%);
+  font-size: 10px;
+  letter-spacing: .05em;
+}
+
+.lp4-body .lp4-hero .clone-hero__promise {
+  width: fit-content;
+  margin: 17px 0 0;
+  color: #082c4b;
+  font-size: clamp(29px, 8.2vw, 38px);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -.07em;
+  text-shadow: 0 2px 0 rgb(255 255 255 / 92%), 0 5px 22px rgb(19 85 116 / 16%);
+}
+
+.lp4-body .lp4-hero .clone-hero__promise::after {
+  display: block;
+  width: 54%;
+  height: 5px;
+  margin-top: 8px;
+  border-radius: 99px;
+  background: linear-gradient(90deg, var(--lp4-cyan), rgb(56 213 238 / 0%));
+  content: "";
+  box-shadow: 0 0 18px rgb(56 213 238 / 48%);
+}
+
+.lp4-body .lp4-hero .clone-hero__title {
+  display: block;
+  width: min(100%, 350px);
+  margin: 12px 0 0 !important;
+  padding: 0;
+  border: 0;
+  color: #071f38;
+  background: none;
+  font-family: "Noto Sans JP", "Hiragino Sans", Meiryo, sans-serif;
+  font-size: clamp(33px, 9.6vw, 43px);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -.075em;
+  white-space: normal;
+  text-shadow: 0 2px 0 rgb(255 255 255 / 95%), 0 5px 24px rgb(18 83 112 / 18%);
+  backdrop-filter: none;
+}
+
+.lp4-body .lp4-hero .clone-hero__title br {
+  display: block;
+}
+
+.lp4-body .lp4-hero .clone-hero__title strong {
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+  margin: 3px 0 2px;
+  padding: 0 3px 2px;
+  color: #071f38;
+  font-size: 1.08em;
+  letter-spacing: -.09em;
+}
+
+.lp4-body .lp4-hero .clone-hero__title strong::after {
+  position: absolute;
+  z-index: -1;
+  right: -5px;
+  bottom: 1px;
+  left: -3px;
+  height: 14px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #087fc5, var(--lp4-cyan));
+  box-shadow: 0 4px 20px rgb(56 213 238 / 35%);
+  content: "";
+  transform: skewX(-9deg);
+}
+
+.lp4-body .lp4-hero .clone-hero__title span {
+  margin: 0;
+  color: #d88700;
+  font-size: 1.1em;
+  text-shadow: 0 2px 0 #fff, 0 5px 18px rgb(216 135 0 / 18%);
+}
+
+.lp4-body .lp4-hero .clone-hero__format {
+  display: inline-block;
+  width: auto;
+  max-width: calc(100% - 78px);
+  margin: 11px 0 0;
+  padding: 6px 10px;
+  border: 1px solid rgb(14 119 169 / 32%);
+  border-radius: 7px;
+  color: #07527d;
+  background: rgb(255 255 255 / 78%);
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.35;
+  letter-spacing: .04em;
+  white-space: normal;
+  backdrop-filter: blur(7px);
+}
+
+.lp4-body .lp4-hero .clone-hero__top .clone-hero__badge {
+  top: 15px;
+  right: 0;
+  width: 78px;
+  height: 78px;
+  border-color: #fff;
+  background: radial-gradient(circle, #fff 56%, #dffaff 57% 68%, #fff 69%);
+  box-shadow: 0 12px 32px rgb(0 9 20 / 40%), inset 0 0 0 2px rgb(23 104 213 / 18%);
+}
+
+.lp4-body .lp4-hero .clone-hero__badge-en,
+.lp4-body .lp4-hero .clone-hero__badge-zero {
+  color: #1262a6;
+}
+
+.lp4-body .lp4-hero > .clone-hero__schedule {
+  bottom: 151px;
+  border-color: rgb(124 226 242 / 42%);
+  background: rgb(3 31 57 / 62%);
+  box-shadow: 0 14px 34px rgb(0 9 20 / 28%);
+}
+
+.lp4-body .lp4-hero .ui-entry-pass__stub {
+  background: linear-gradient(180deg, #d8f8ff, #a9e5f2);
+}
+
+.lp4-body .lp4-hero .ui-entry-pass__stub span,
+.lp4-body .lp4-hero .ui-entry-pass__stub strong,
+.lp4-body .lp4-hero .ui-entry-pass__stub small {
+  color: var(--lp4-ink);
+}
+
+.lp4-body .lp4-hero .ui-entry-pass__label {
+  color: #97effb;
+}
+
+.lp4-body .lp4-hero .ui-entry-pass__pointer {
+  color: #075b87;
+  background: #e9fbff;
+}
+
+.lp4-body .lp4-hero .ui-cta-benefit {
+  border: 1px solid rgb(124 226 242 / 26%);
+  background: rgb(1 18 36 / 68%);
+}
+
+.lp4-body .clone-offer__header::after {
+  background: linear-gradient(90deg, var(--lp4-cyan), var(--lp4-cobalt));
+}
+
+.lp4-body .clone-market {
+  background-color: var(--lp4-midnight);
+}
+
+@media (min-width: 560px) {
+  .lp4-body .lp4-hero {
+    min-height: 880px;
+  }
+
+  .lp4-body .lp4-hero .clone-hero__top {
+    padding-top: 30px;
+  }
+
+  .lp4-body .lp4-hero .clone-hero__eyebrow {
+    font-size: 12px;
+  }
+
+  .lp4-body .lp4-hero .clone-hero__title {
+    width: 460px;
+    font-size: 46px;
+  }
+
+  .lp4-body .lp4-hero .clone-hero__format {
+    font-size: 13px;
+  }
+
+  .lp4-body .lp4-hero .clone-hero__top .clone-hero__badge {
+    top: 25px;
+    right: 0;
+    width: 92px;
+    height: 92px;
+  }
+
+  .lp4-body .lp4-hero .clone-hero__visual img {
+    object-position: 50% center;
+  }
+}
+
+@media (max-width: 374px) {
+  .lp4-body .lp4-hero {
+    min-height: 850px;
+  }
+
+  .lp4-body .lp4-hero .clone-hero__title {
+    font-size: 31px;
+  }
+
+  .lp4-body .lp4-hero .clone-hero__format {
+    max-width: calc(100% - 72px);
+    font-size: 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lp4-body .lp4-hero .ui-entry-pass__pointer {
+    animation: none;
+  }
+}

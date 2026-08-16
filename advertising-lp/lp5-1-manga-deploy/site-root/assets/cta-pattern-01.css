@@ -1,0 +1,122 @@
+/* Approved CTA pattern 01: one clear action, shared by every active LP. */
+:root {
+  --cta-01-navy: #082a4b;
+  --cta-01-green: #28c866;
+  --cta-01-green-dark: #089545;
+  --cta-01-yellow: #ffd44f;
+  --cta-01-coral: #ef6848;
+}
+
+.clone-body a.ui-cta,
+body[data-page] a.lp-cta {
+  color: #fff !important;
+  background: linear-gradient(180deg, #38d877, #22bd5d);
+  border-color: #fff;
+  box-shadow:
+    0 7px 0 var(--cta-01-green-dark),
+    0 12px 23px rgba(8, 42, 75, .22),
+    inset 0 2px 0 rgba(255, 255, 255, .34);
+}
+
+.clone-body a.ui-cta .ui-cta__text,
+body[data-page] a.lp-cta .cta-01-copy {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  color: #fff;
+  text-align: center;
+}
+
+.clone-body a.ui-cta .cta-now-label,
+body[data-page] a.lp-cta .cta-now-label {
+  display: inline-block;
+  flex: 0 0 auto;
+  padding: 7px 7px 6px;
+  border: 2px solid #fff;
+  color: var(--cta-01-navy);
+  background: var(--cta-01-yellow);
+  box-shadow: 3px 3px 0 var(--cta-01-coral);
+  font-size: 13px;
+  font-weight: 1000;
+  line-height: 1;
+  white-space: nowrap;
+  transform: rotate(-3deg);
+}
+
+.clone-body a.ui-cta .cta-now-rest,
+body[data-page] a.lp-cta .cta-now-rest {
+  min-width: 0;
+  color: #fff;
+  font-size: clamp(16px, 4vw, 21px);
+  font-weight: 950;
+  line-height: 1.35;
+  text-shadow:
+    0 2px 0 #087f3e,
+    2px 3px 0 rgba(8, 42, 75, .42);
+}
+
+/* LP2 uses the older CTA component without separate side-icon markup. */
+body[data-page] a.lp-cta {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 34px;
+  min-height: 68px;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 12px 9px 18px;
+  border: 3px solid #fff;
+  border-radius: 18px;
+}
+
+body[data-page] a.lp-cta::after {
+  position: static;
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--cta-01-green-dark);
+  background: #fff;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, .14);
+  content: "›";
+  font-size: 27px;
+  line-height: 1;
+}
+
+@media (max-width: 389px) {
+  .clone-body a.ui-cta .ui-cta__text,
+  body[data-page] a.lp-cta .cta-01-copy {
+    gap: 4px;
+  }
+
+  .clone-body a.ui-cta .cta-now-label,
+  body[data-page] a.lp-cta .cta-now-label {
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 11px;
+  }
+
+  .clone-body a.ui-cta .cta-now-rest,
+  body[data-page] a.lp-cta .cta-now-rest {
+    font-size: 15px;
+  }
+
+  body[data-page] a.lp-cta {
+    grid-template-columns: minmax(0, 1fr) 32px;
+    padding-left: 10px;
+  }
+
+  body[data-page] a.lp-cta::after {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .clone-body a.ui-cta .cta-now-label,
+  body[data-page] a.lp-cta .cta-now-label {
+    transform: none;
+  }
+}
